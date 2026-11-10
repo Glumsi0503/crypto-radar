@@ -7,7 +7,7 @@ import urllib.request
 from pathlib import Path
 
 SYMBOLS = ("BTCUSDT", "ETHUSDT", "SOLUSDT", "LINKUSDT", "AAVEUSDT", "UNIUSDT", "AVAXUSDT", "NEARUSDT", "ATOMUSDT", "INJUSDT", "ARBUSDT", "OPUSDT")
-EXCHANGES = ("binance", "bybit", "okx")
+EXCHANGES = ("binance", "bybit", "okx", "gate", "bitget")
 CANDLE_MS = 900_000
 
 def utc_now():
@@ -28,11 +28,22 @@ def fetch(exchange, symbol):
         obj = get_json(url)
         if obj.get("retCode") != 0: raise ValueError(str(obj.get("retMsg")))
         bars = [{"ts":int(x[0]),"open":float(x[1]),"close":float(x[4]),"volume":float(x[6])} for x in obj["result"]["list"]]
-    else:
+    elif exchange == "okx":
         url = f"https://www.okx.com/api/v5/market/candles?instId={symbol[:-4]}-USDT&bar=15m&limit=30"
         obj = get_json(url)
         if obj.get("code") != "0": raise ValueError(str(obj.get("msg")))
         bars = [{"ts":int(x[0]),"open":float(x[1]),"close":float(x[4]),"volume":float(x[7]),"confirmed":x[8]=="1"} for x in obj["data"]]
+    elif exchange == "gate":
+        url = f"https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair={symbol[:-4]}_USDT&interval=15m&limit=30"
+        rows = get_json(url)
+        bars = [{"ts":int(x[0])*1000,"open":float(x[5]),"close":float(x[2]),"volume":float(x[1]),"confirmed":bool(x[7]) if len(x)>7 else True} for x in rows]
+    elif exchange == "bitget":
+        url = f"https://api.bitget.com/api/v3/market/candles?category=SPOT&symbol={symbol}&interval=15m&limit=30"
+        obj = get_json(url)
+        if obj.get("code") != "00000": raise ValueError(str(obj.get("msg")))
+        bars = [{"ts":int(x[0]),"open":float(x[1]),"close":float(x[4]),"volume":float(x[6])} for x in obj["data"]]
+    else:
+        raise ValueError("unknown exchange")
     return url, sorted(bars, key=lambda b:b["ts"])
 
 def evaluate(bars, now_ms):
