@@ -1,0 +1,412 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-11-10T07:23:04+00:00",
+  "quality": {
+    "status": "LIVE_DATA_OBTAINED",
+    "checks": 36,
+    "valid_checks": 12,
+    "full_market_coverage": false
+  },
+  "research_only": [],
+  "sources": [
+    {
+      "symbol": "BTCUSDT",
+      "venue": "binance",
+      "queried_at_utc": "2026-11-10T07:22:55+00:00",
+      "source_url": null,
+      "status": "error",
+      "error": "HTTPError: HTTP Error 451: "
+    },
+    {
+      "symbol": "BTCUSDT",
+      "venue": "bybit",
+      "queried_at_utc": "2026-11-10T07:22:56+00:00",
+      "source_url": null,
+      "status": "error",
+      "error": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+      "symbol": "BTCUSDT",
+      "venue": "okx",
+      "queried_at_utc": "2026-11-10T07:22:56+00:00",
+      "source_url": "https://www.okx.com/api/v5/market/candles?instId=BTC-USDT&bar=15m&limit=30",
+      "status": "ok",
+      "data": {
+        "valid": true,
+        "candle_start_utc": "2026-11-10T07:00:00+00:00",
+        "change_percent": 0.02625,
+        "volume_multiplier": 0.758,
+        "spot_quote_volume_usdt": 1739546.5,
+        "baseline_quote_volume_usdt": 2294935.9,
+        "spot_close_usdt": 74678.6,
+        "pattern_met": false
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "venue": "binance",
+      "queried_at_utc": "2026-11-10T07:22:56+00:00",
+      "source_url": null,
+      "status": "error",
+      "error": "HTTPError: HTTP Error 451: "
+    },
+    {
+      "symbol": "ETHUSDT",
+      "venue": "bybit",
+      "queried_at_utc": "2026-11-10T07:22:57+00:00",
+      "source_url": null,
+      "status": "error",
+      "error": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+      "symbol": "ETHUSDT",
+      "venue": "okx",
+      "queried_at_utc": "2026-11-10T07:22:57+00:00",
+      "source_url": "https://www.okx.com/api/v5/market/candles?instId=ETH-USDT&bar=15m&limit=30",
+      "status": "ok",
+      "data": {
+        "valid": true,
+        "candle_start_utc": "2026-11-10T07:00:00+00:00",
+        "change_percent": -0.05194,
+        "volume_multiplier": 0.8888,
+        "spot_quote_volume_usdt": 1022522.66,
+        "baseline_quote_volume_usdt": 1150449.1,
+        "spot_close_usdt": 2116.75,
+        "pattern_met": false
+      }
+    },
+    {
+      "symbol": "SOLUSDT",
+      "venue": "binance",
+      "queried_at_utc": "2026-11-10T07:22:57+00:00",
+      "source_url": null,
+      "status": "error",
+      "error": "HTTPError: HTTP Error 451: "
+    },
+    {
+      "symbol": "SOLUSDT",
+      "venue": "bybit",
+      "queried_at_utc": "2026-11-10T07:22:57+00:00",
+      "source_url": null,
+      "status": "error",
+      "error": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+      "symbol": "SOLUSDT",
+      "venue": "okx",
+      "queried_at_utc": "2026-11-10T07:22:57+00:00",
+      "source_url": "https://www.okx.com/api/v5/market/candles?instId=SOL-USDT&bar=15m&limit=30",
+      "status": "ok",
+      "data": {
+        "valid": true,
+        "candle_start_utc": "2026-11-10T07:00:00+00:00",
+        "change_percent": -0.01161,
+        "volume_multiplier": 0.6399,
+        "spot_quote_volume_usdt": 199564.99,
+        "baseline_quote_volume_usdt": 311862.26,
+        "spot_close_usdt": 86.1,
+        "pattern_met": false
+      }
+    },
+    {
+      "symbol": "LINKUSDT",
+      "venue": "binance",
+      "queried_at_utc": "2026-11-10T07:22:58+00:00",
+      "source_url": null,
+      "status": "error",
+      "error": "HTTPError: HTTP Error 451: "
+    },
+    {
+      "symbol": "LINKUSDT",
+      "venue": "bybit",
+      "queried_at_utc": "2026-11-10T07:22:58+00:00",
+      "source_url": null,
+      "status": "error",
+      "error": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+      "symbol": "LINKUSDT",
+      "venue": "okx",
+      "queried_at_utc": "2026-11-10T07:22:58+00:00",
+      "source_url": "https://www.okx.com/api/v5/market/candles?instId=LINK-USDT&bar=15m&limit=30",
+      "status": "ok",
+      "data": {
+        "valid": true,
+        "candle_start_utc": "2026-11-10T07:00:00+00:00",
+        "change_percent": 0.04708,
+        "volume_multiplier": 1.5445,
+        "spot_quote_volume_usdt": 52171.24,
+        "baseline_quote_volume_usdt": 33779.39,
+        "spot_close_usdt": 10.625,
+        "pattern_met": false
+      }
+    },
+    {
+      "symbol": "AAVEUSDT",
+      "venue": "binance",
+      "queried_at_utc": "2026-11-10T07:22:58+00:00",
+      "source_url": null,
+      "status": "error",
+      "error": "HTTPError: HTTP Error 451: "
+    },
+    {
+      "symbol": "AAVEUSDT",
+      "venue": "bybit",
+      "queried_at_utc": "2026-11-10T07:22:59+00:00",
+      "source_url": null,
+      "status": "error",
+      "error": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+      "symbol": "AAVEUSDT",
+      "venue": "okx",
+      "queried_at_utc": "2026-11-10T07:22:59+00:00",
+      "source_url": "https://www.okx.com/api/v5/market/candles?instId=AAVE-USDT&bar=15m&limit=30",
+      "status": "ok",
+      "data": {
+        "valid": true,
+        "candle_start_utc": "2026-11-10T07:00:00+00:00",
+        "change_percent": 0.26822,
+        "volume_multiplier": 0.4604,
+        "spot_quote_volume_usdt": 21968.52,
+        "baseline_quote_volume_usdt": 47713.99,
+        "spot_close_usdt": 127.1,
+        "pattern_met": false
+      }
+    },
+    {
+      "symbol": "UNIUSDT",
+      "venue": "binance",
+      "queried_at_utc": "2026-11-10T07:22:59+00:00",
+      "source_url": null,
+      "status": "error",
+      "error": "HTTPError: HTTP Error 451: "
+    },
+    {
+      "symbol": "UNIUSDT",
+      "venue": "bybit",
+      "queried_at_utc": "2026-11-10T07:22:59+00:00",
+      "source_url": null,
+      "status": "error",
+      "error": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+      "symbol": "UNIUSDT",
+      "venue": "okx",
+      "queried_at_utc": "2026-11-10T07:23:00+00:00",
+      "source_url": "https://www.okx.com/api/v5/market/candles?instId=UNI-USDT&bar=15m&limit=30",
+      "status": "ok",
+      "data": {
+        "valid": true,
+        "candle_start_utc": "2026-11-10T07:00:00+00:00",
+        "change_percent": 0.21201,
+        "volume_multiplier": 6.7389,
+        "spot_quote_volume_usdt": 520899.76,
+        "baseline_quote_volume_usdt": 77297.59,
+        "spot_close_usdt": 7.09,
+        "pattern_met": false
+      }
+    },
+    {
+      "symbol": "AVAXUSDT",
+      "venue": "binance",
+      "queried_at_utc": "2026-11-10T07:23:00+00:00",
+      "source_url": null,
+      "status": "error",
+      "error": "HTTPError: HTTP Error 451: "
+    },
+    {
+      "symbol": "AVAXUSDT",
+      "venue": "bybit",
+      "queried_at_utc": "2026-11-10T07:23:00+00:00",
+      "source_url": null,
+      "status": "error",
+      "error": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+      "symbol": "AVAXUSDT",
+      "venue": "okx",
+      "queried_at_utc": "2026-11-10T07:23:00+00:00",
+      "source_url": "https://www.okx.com/api/v5/market/candles?instId=AVAX-USDT&bar=15m&limit=30",
+      "status": "ok",
+      "data": {
+        "valid": true,
+        "candle_start_utc": "2026-11-10T07:00:00+00:00",
+        "change_percent": -0.21209,
+        "volume_multiplier": 1.3007,
+        "spot_quote_volume_usdt": 48359.62,
+        "baseline_quote_volume_usdt": 37179.13,
+        "spot_close_usdt": 8.469,
+        "pattern_met": false
+      }
+    },
+    {
+      "symbol": "NEARUSDT",
+      "venue": "binance",
+      "queried_at_utc": "2026-11-10T07:23:01+00:00",
+      "source_url": null,
+      "status": "error",
+      "error": "HTTPError: HTTP Error 451: "
+    },
+    {
+      "symbol": "NEARUSDT",
+      "venue": "bybit",
+      "queried_at_utc": "2026-11-10T07:23:01+00:00",
+      "source_url": null,
+      "status": "error",
+      "error": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+      "symbol": "NEARUSDT",
+      "venue": "okx",
+      "queried_at_utc": "2026-11-10T07:23:01+00:00",
+      "source_url": "https://www.okx.com/api/v5/market/candles?instId=NEAR-USDT&bar=15m&limit=30",
+      "status": "ok",
+      "data": {
+        "valid": true,
+        "candle_start_utc": "2026-11-10T07:00:00+00:00",
+        "change_percent": -0.35695,
+        "volume_multiplier": 5.2157,
+        "spot_quote_volume_usdt": 376068.87,
+        "baseline_quote_volume_usdt": 72103.93,
+        "spot_close_usdt": 3.629,
+        "pattern_met": false
+      }
+    },
+    {
+      "symbol": "ATOMUSDT",
+      "venue": "binance",
+      "queried_at_utc": "2026-11-10T07:23:01+00:00",
+      "source_url": null,
+      "status": "error",
+      "error": "HTTPError: HTTP Error 451: "
+    },
+    {
+      "symbol": "ATOMUSDT",
+      "venue": "bybit",
+      "queried_at_utc": "2026-11-10T07:23:01+00:00",
+      "source_url": null,
+      "status": "error",
+      "error": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+      "symbol": "ATOMUSDT",
+      "venue": "okx",
+      "queried_at_utc": "2026-11-10T07:23:02+00:00",
+      "source_url": "https://www.okx.com/api/v5/market/candles?instId=ATOM-USDT&bar=15m&limit=30",
+      "status": "ok",
+      "data": {
+        "valid": true,
+        "candle_start_utc": "2026-11-10T07:00:00+00:00",
+        "change_percent": -0.4298,
+        "volume_multiplier": 0.1816,
+        "spot_quote_volume_usdt": 2506.12,
+        "baseline_quote_volume_usdt": 13800.39,
+        "spot_close_usdt": 1.39,
+        "pattern_met": false
+      }
+    },
+    {
+      "symbol": "INJUSDT",
+      "venue": "binance",
+      "queried_at_utc": "2026-11-10T07:23:02+00:00",
+      "source_url": null,
+      "status": "error",
+      "error": "HTTPError: HTTP Error 451: "
+    },
+    {
+      "symbol": "INJUSDT",
+      "venue": "bybit",
+      "queried_at_utc": "2026-11-10T07:23:02+00:00",
+      "source_url": null,
+      "status": "error",
+      "error": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+      "symbol": "INJUSDT",
+      "venue": "okx",
+      "queried_at_utc": "2026-11-10T07:23:02+00:00",
+      "source_url": "https://www.okx.com/api/v5/market/candles?instId=INJ-USDT&bar=15m&limit=30",
+      "status": "ok",
+      "data": {
+        "valid": true,
+        "candle_start_utc": "2026-11-10T07:00:00+00:00",
+        "change_percent": -0.56255,
+        "volume_multiplier": 0.4187,
+        "spot_quote_volume_usdt": 10082.25,
+        "baseline_quote_volume_usdt": 24081.96,
+        "spot_close_usdt": 8.131,
+        "pattern_met": false
+      }
+    },
+    {
+      "symbol": "ARBUSDT",
+      "venue": "binance",
+      "queried_at_utc": "2026-11-10T07:23:03+00:00",
+      "source_url": null,
+      "status": "error",
+      "error": "HTTPError: HTTP Error 451: "
+    },
+    {
+      "symbol": "ARBUSDT",
+      "venue": "bybit",
+      "queried_at_utc": "2026-11-10T07:23:03+00:00",
+      "source_url": null,
+      "status": "error",
+      "error": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+      "symbol": "ARBUSDT",
+      "venue": "okx",
+      "queried_at_utc": "2026-11-10T07:23:03+00:00",
+      "source_url": "https://www.okx.com/api/v5/market/candles?instId=ARB-USDT&bar=15m&limit=30",
+      "status": "ok",
+      "data": {
+        "valid": true,
+        "candle_start_utc": "2026-11-10T07:00:00+00:00",
+        "change_percent": -1.8098,
+        "volume_multiplier": 5.7265,
+        "spot_quote_volume_usdt": 208335.65,
+        "baseline_quote_volume_usdt": 36381.03,
+        "spot_close_usdt": 0.16819,
+        "pattern_met": false
+      }
+    },
+    {
+      "symbol": "OPUSDT",
+      "venue": "binance",
+      "queried_at_utc": "2026-11-10T07:23:03+00:00",
+      "source_url": null,
+      "status": "error",
+      "error": "HTTPError: HTTP Error 451: "
+    },
+    {
+      "symbol": "OPUSDT",
+      "venue": "bybit",
+      "queried_at_utc": "2026-11-10T07:23:04+00:00",
+      "source_url": null,
+      "status": "error",
+      "error": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+      "symbol": "OPUSDT",
+      "venue": "okx",
+      "queried_at_utc": "2026-11-10T07:23:04+00:00",
+      "source_url": "https://www.okx.com/api/v5/market/candles?instId=OP-USDT&bar=15m&limit=30",
+      "status": "ok",
+      "data": {
+        "valid": true,
+        "candle_start_utc": "2026-11-10T07:00:00+00:00",
+        "change_percent": -0.44493,
+        "volume_multiplier": 1.1281,
+        "spot_quote_volume_usdt": 24293.77,
+        "baseline_quote_volume_usdt": 21535.88,
+        "spot_close_usdt": 0.10069,
+        "pattern_met": false
+      }
+    }
+  ],
+  "bitvavo_de_spot_status": "NOT_VERIFIED",
+  "alerts_permitted": false,
+  "disclaimer": "No Bitvavo DE verification, no 5-method cross-check, no liquidity test, no ChatGPT automation integration."
+}
