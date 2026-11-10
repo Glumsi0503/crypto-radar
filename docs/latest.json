@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at_utc": "2026-11-10T21:20:41+00:00",
+  "generated_at_utc": "2026-11-10T22:04:37+00:00",
   "quality": {
     "status": "LIVE_DATA_OBTAINED",
     "checks": 60,
@@ -12,7 +12,7 @@
     {
       "symbol": "BTCUSDT",
       "venue": "binance",
-      "queried_at_utc": "2026-11-10T21:20:16+00:00",
+      "queried_at_utc": "2026-11-10T22:04:13+00:00",
       "source_url": null,
       "status": "error",
       "error": "HTTPError: HTTP Error 451: "
@@ -20,7 +20,7 @@
     {
       "symbol": "BTCUSDT",
       "venue": "bybit",
-      "queried_at_utc": "2026-11-10T21:20:16+00:00",
+      "queried_at_utc": "2026-11-10T22:04:13+00:00",
       "source_url": null,
       "status": "error",
       "error": "HTTPError: HTTP Error 403: Forbidden"
@@ -28,58 +28,58 @@
     {
       "symbol": "BTCUSDT",
       "venue": "okx",
-      "queried_at_utc": "2026-11-10T21:20:17+00:00",
+      "queried_at_utc": "2026-11-10T22:04:13+00:00",
       "source_url": "https://www.okx.com/api/v5/market/candles?instId=BTC-USDT&bar=15m&limit=30",
       "status": "ok",
       "data": {
         "valid": true,
-        "candle_start_utc": "2026-11-10T21:00:00+00:00",
-        "change_percent": 0.21752,
-        "volume_multiplier": 2.8666,
-        "spot_quote_volume_usdt": 25152601.14,
-        "baseline_quote_volume_usdt": 8774339.28,
-        "spot_close_usdt": 73945.7,
+        "candle_start_utc": "2026-11-10T21:45:00+00:00",
+        "change_percent": -0.02572,
+        "volume_multiplier": 0.275,
+        "spot_quote_volume_usdt": 2158169.03,
+        "baseline_quote_volume_usdt": 7848686.95,
+        "spot_close_usdt": 73856.7,
         "pattern_met": false
       }
     },
     {
       "symbol": "BTCUSDT",
       "venue": "gate",
-      "queried_at_utc": "2026-11-10T21:20:17+00:00",
+      "queried_at_utc": "2026-11-10T22:04:14+00:00",
       "source_url": "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=BTC_USDT&interval=15m&limit=30",
       "status": "ok",
       "data": {
         "valid": true,
-        "candle_start_utc": "2026-11-10T21:00:00+00:00",
-        "change_percent": 0.2136,
-        "volume_multiplier": 1.3669,
-        "spot_quote_volume_usdt": 16498638.13,
-        "baseline_quote_volume_usdt": 12070232.67,
-        "spot_close_usdt": 73939.7,
+        "candle_start_utc": "2026-11-10T21:45:00+00:00",
+        "change_percent": -0.02572,
+        "volume_multiplier": 0.3992,
+        "spot_quote_volume_usdt": 4229976.26,
+        "baseline_quote_volume_usdt": 10594841.06,
+        "spot_close_usdt": 73851.4,
         "pattern_met": false
       }
     },
     {
       "symbol": "BTCUSDT",
       "venue": "bitget",
-      "queried_at_utc": "2026-11-10T21:20:18+00:00",
+      "queried_at_utc": "2026-11-10T22:04:15+00:00",
       "source_url": "https://api.bitget.com/api/v3/market/candles?category=SPOT&symbol=BTCUSDT&interval=15m&limit=30",
       "status": "ok",
       "data": {
         "valid": true,
-        "candle_start_utc": "2026-11-10T21:00:00+00:00",
-        "change_percent": 0.20863,
-        "volume_multiplier": 1.3194,
-        "spot_quote_volume_usdt": 3963257.06,
-        "baseline_quote_volume_usdt": 3003895.55,
-        "spot_close_usdt": 73939.52,
+        "candle_start_utc": "2026-11-10T21:45:00+00:00",
+        "change_percent": -0.02213,
+        "volume_multiplier": 0.1992,
+        "spot_quote_volume_usdt": 430009.48,
+        "baseline_quote_volume_usdt": 2159195.81,
+        "spot_close_usdt": 73853.17,
         "pattern_met": false
       }
     },
     {
       "symbol": "ETHUSDT",
       "venue": "binance",
-      "queried_at_utc": "2026-11-10T21:20:19+00:00",
+      "queried_at_utc": "2026-11-10T22:04:15+00:00",
       "source_url": null,
       "status": "error",
       "error": "HTTPError: HTTP Error 451: "
@@ -87,7 +87,7 @@
     {
       "symbol": "ETHUSDT",
       "venue": "bybit",
-      "queried_at_utc": "2026-11-10T21:20:19+00:00",
+      "queried_at_utc": "2026-11-10T22:04:15+00:00",
       "source_url": null,
       "status": "error",
       "error": "HTTPError: HTTP Error 403: Forbidden"
@@ -95,58 +95,58 @@
     {
       "symbol": "ETHUSDT",
       "venue": "okx",
-      "queried_at_utc": "2026-11-10T21:20:19+00:00",
+      "queried_at_utc": "2026-11-10T22:04:15+00:00",
       "source_url": "https://www.okx.com/api/v5/market/candles?instId=ETH-USDT&bar=15m&limit=30",
       "status": "ok",
       "data": {
         "valid": true,
-        "candle_start_utc": "2026-11-10T21:00:00+00:00",
-        "change_percent": 0.06214,
-        "volume_multiplier": 0.8435,
-        "spot_quote_volume_usdt": 3140907.01,
-        "baseline_quote_volume_usdt": 3723836.25,
-        "spot_close_usdt": 2061.0,
+        "candle_start_utc": "2026-11-10T21:45:00+00:00",
+        "change_percent": -0.10588,
+        "volume_multiplier": 0.1734,
+        "spot_quote_volume_usdt": 450785.92,
+        "baseline_quote_volume_usdt": 2599443.11,
+        "spot_close_usdt": 2056.7,
         "pattern_met": false
       }
     },
     {
       "symbol": "ETHUSDT",
       "venue": "gate",
-      "queried_at_utc": "2026-11-10T21:20:19+00:00",
+      "queried_at_utc": "2026-11-10T22:04:16+00:00",
       "source_url": "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=ETH_USDT&interval=15m&limit=30",
       "status": "ok",
       "data": {
         "valid": true,
-        "candle_start_utc": "2026-11-10T21:00:00+00:00",
-        "change_percent": 0.06749,
-        "volume_multiplier": 1.4604,
-        "spot_quote_volume_usdt": 6786628.27,
-        "baseline_quote_volume_usdt": 4647082.16,
-        "spot_close_usdt": 2060.9,
+        "candle_start_utc": "2026-11-10T21:45:00+00:00",
+        "change_percent": -0.10442,
+        "volume_multiplier": 0.3163,
+        "spot_quote_volume_usdt": 1193224.04,
+        "baseline_quote_volume_usdt": 3772341.88,
+        "spot_close_usdt": 2056.77,
         "pattern_met": false
       }
     },
     {
       "symbol": "ETHUSDT",
       "venue": "bitget",
-      "queried_at_utc": "2026-11-10T21:20:20+00:00",
+      "queried_at_utc": "2026-11-10T22:04:17+00:00",
       "source_url": "https://api.bitget.com/api/v3/market/candles?category=SPOT&symbol=ETHUSDT&interval=15m&limit=30",
       "status": "ok",
       "data": {
         "valid": true,
-        "candle_start_utc": "2026-11-10T21:00:00+00:00",
-        "change_percent": 0.06846,
-        "volume_multiplier": 2.3716,
-        "spot_quote_volume_usdt": 4547462.69,
-        "baseline_quote_volume_usdt": 1917483.53,
-        "spot_close_usdt": 2061.02,
+        "candle_start_utc": "2026-11-10T21:45:00+00:00",
+        "change_percent": -0.1049,
+        "volume_multiplier": 0.1094,
+        "spot_quote_volume_usdt": 189650.24,
+        "baseline_quote_volume_usdt": 1733879.09,
+        "spot_close_usdt": 2056.93,
         "pattern_met": false
       }
     },
     {
       "symbol": "SOLUSDT",
       "venue": "binance",
-      "queried_at_utc": "2026-11-10T21:20:21+00:00",
+      "queried_at_utc": "2026-11-10T22:04:17+00:00",
       "source_url": null,
       "status": "error",
       "error": "HTTPError: HTTP Error 451: "
@@ -154,7 +154,7 @@
     {
       "symbol": "SOLUSDT",
       "venue": "bybit",
-      "queried_at_utc": "2026-11-10T21:20:21+00:00",
+      "queried_at_utc": "2026-11-10T22:04:17+00:00",
       "source_url": null,
       "status": "error",
       "error": "HTTPError: HTTP Error 403: Forbidden"
@@ -162,58 +162,58 @@
     {
       "symbol": "SOLUSDT",
       "venue": "okx",
-      "queried_at_utc": "2026-11-10T21:20:21+00:00",
+      "queried_at_utc": "2026-11-10T22:04:17+00:00",
       "source_url": "https://www.okx.com/api/v5/market/candles?instId=SOL-USDT&bar=15m&limit=30",
       "status": "ok",
       "data": {
         "valid": true,
-        "candle_start_utc": "2026-11-10T21:00:00+00:00",
-        "change_percent": 0.14404,
-        "volume_multiplier": 1.5623,
-        "spot_quote_volume_usdt": 1590078.61,
-        "baseline_quote_volume_usdt": 1017802.94,
-        "spot_close_usdt": 83.43,
+        "candle_start_utc": "2026-11-10T21:45:00+00:00",
+        "change_percent": -0.14375,
+        "volume_multiplier": 0.1707,
+        "spot_quote_volume_usdt": 132805.3,
+        "baseline_quote_volume_usdt": 778018.13,
+        "spot_close_usdt": 83.36,
         "pattern_met": false
       }
     },
     {
       "symbol": "SOLUSDT",
       "venue": "gate",
-      "queried_at_utc": "2026-11-10T21:20:21+00:00",
+      "queried_at_utc": "2026-11-10T22:04:18+00:00",
       "source_url": "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=SOL_USDT&interval=15m&limit=30",
       "status": "ok",
       "data": {
         "valid": true,
-        "candle_start_utc": "2026-11-10T21:00:00+00:00",
-        "change_percent": 0.13204,
-        "volume_multiplier": 1.2901,
-        "spot_quote_volume_usdt": 1827849.63,
-        "baseline_quote_volume_usdt": 1416833.62,
-        "spot_close_usdt": 83.42,
+        "candle_start_utc": "2026-11-10T21:45:00+00:00",
+        "change_percent": -0.15573,
+        "volume_multiplier": 0.2511,
+        "spot_quote_volume_usdt": 310693.54,
+        "baseline_quote_volume_usdt": 1237539.89,
+        "spot_close_usdt": 83.35,
         "pattern_met": false
       }
     },
     {
       "symbol": "SOLUSDT",
       "venue": "bitget",
-      "queried_at_utc": "2026-11-10T21:20:22+00:00",
+      "queried_at_utc": "2026-11-10T22:04:19+00:00",
       "source_url": "https://api.bitget.com/api/v3/market/candles?category=SPOT&symbol=SOLUSDT&interval=15m&limit=30",
       "status": "ok",
       "data": {
         "valid": true,
-        "candle_start_utc": "2026-11-10T21:00:00+00:00",
-        "change_percent": 0.13202,
-        "volume_multiplier": 1.051,
-        "spot_quote_volume_usdt": 834599.45,
-        "baseline_quote_volume_usdt": 794119.24,
-        "spot_close_usdt": 83.43,
+        "candle_start_utc": "2026-11-10T21:45:00+00:00",
+        "change_percent": -0.13178,
+        "volume_multiplier": 0.1937,
+        "spot_quote_volume_usdt": 126139.48,
+        "baseline_quote_volume_usdt": 651264.16,
+        "spot_close_usdt": 83.36,
         "pattern_met": false
       }
     },
     {
       "symbol": "LINKUSDT",
       "venue": "binance",
-      "queried_at_utc": "2026-11-10T21:20:23+00:00",
+      "queried_at_utc": "2026-11-10T22:04:19+00:00",
       "source_url": null,
       "status": "error",
       "error": "HTTPError: HTTP Error 451: "
@@ -221,7 +221,7 @@
     {
       "symbol": "LINKUSDT",
       "venue": "bybit",
-      "queried_at_utc": "2026-11-10T21:20:23+00:00",
+      "queried_at_utc": "2026-11-10T22:04:19+00:00",
       "source_url": null,
       "status": "error",
       "error": "HTTPError: HTTP Error 403: Forbidden"
@@ -229,58 +229,58 @@
     {
       "symbol": "LINKUSDT",
       "venue": "okx",
-      "queried_at_utc": "2026-11-10T21:20:23+00:00",
+      "queried_at_utc": "2026-11-10T22:04:19+00:00",
       "source_url": "https://www.okx.com/api/v5/market/candles?instId=LINK-USDT&bar=15m&limit=30",
       "status": "ok",
       "data": {
         "valid": true,
-        "candle_start_utc": "2026-11-10T21:00:00+00:00",
-        "change_percent": 0.4069,
-        "volume_multiplier": 2.3378,
-        "spot_quote_volume_usdt": 186915.0,
-        "baseline_quote_volume_usdt": 79952.76,
-        "spot_close_usdt": 10.364,
+        "candle_start_utc": "2026-11-10T21:45:00+00:00",
+        "change_percent": -0.08684,
+        "volume_multiplier": 0.087,
+        "spot_quote_volume_usdt": 4940.39,
+        "baseline_quote_volume_usdt": 56777.96,
+        "spot_close_usdt": 10.355,
         "pattern_met": false
       }
     },
     {
       "symbol": "LINKUSDT",
       "venue": "gate",
-      "queried_at_utc": "2026-11-10T21:20:24+00:00",
+      "queried_at_utc": "2026-11-10T22:04:20+00:00",
       "source_url": "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=LINK_USDT&interval=15m&limit=30",
       "status": "ok",
       "data": {
         "valid": true,
-        "candle_start_utc": "2026-11-10T21:00:00+00:00",
-        "change_percent": 0.40694,
-        "volume_multiplier": 1.611,
-        "spot_quote_volume_usdt": 161374.96,
-        "baseline_quote_volume_usdt": 100169.57,
-        "spot_close_usdt": 10.363,
-        "pattern_met": false
-      }
-    },
-    {
-      "symbol": "LINKUSDT",
-      "venue": "bitget",
-      "queried_at_utc": "2026-11-10T21:20:24+00:00",
-      "source_url": "https://api.bitget.com/api/v3/market/candles?category=SPOT&symbol=LINKUSDT&interval=15m&limit=30",
-      "status": "ok",
-      "data": {
-        "valid": true,
-        "candle_start_utc": "2026-11-10T21:00:00+00:00",
-        "change_percent": 0.31967,
-        "volume_multiplier": 0.8892,
-        "spot_quote_volume_usdt": 27925.32,
-        "baseline_quote_volume_usdt": 31404.49,
+        "candle_start_utc": "2026-11-10T21:45:00+00:00",
+        "change_percent": 0.01932,
+        "volume_multiplier": 1.3519,
+        "spot_quote_volume_usdt": 135572.84,
+        "baseline_quote_volume_usdt": 100282.55,
         "spot_close_usdt": 10.356,
         "pattern_met": false
       }
     },
     {
+      "symbol": "LINKUSDT",
+      "venue": "bitget",
+      "queried_at_utc": "2026-11-10T22:04:20+00:00",
+      "source_url": "https://api.bitget.com/api/v3/market/candles?category=SPOT&symbol=LINKUSDT&interval=15m&limit=30",
+      "status": "ok",
+      "data": {
+        "valid": true,
+        "candle_start_utc": "2026-11-10T21:45:00+00:00",
+        "change_percent": 0.11599,
+        "volume_multiplier": 0.049,
+        "spot_quote_volume_usdt": 1046.1,
+        "baseline_quote_volume_usdt": 21334.69,
+        "spot_close_usdt": 10.358,
+        "pattern_met": false
+      }
+    },
+    {
       "symbol": "AAVEUSDT",
       "venue": "binance",
-      "queried_at_utc": "2026-11-10T21:20:25+00:00",
+      "queried_at_utc": "2026-11-10T22:04:21+00:00",
       "source_url": null,
       "status": "error",
       "error": "HTTPError: HTTP Error 451: "
@@ -288,7 +288,7 @@
     {
       "symbol": "AAVEUSDT",
       "venue": "bybit",
-      "queried_at_utc": "2026-11-10T21:20:25+00:00",
+      "queried_at_utc": "2026-11-10T22:04:21+00:00",
       "source_url": null,
       "status": "error",
       "error": "HTTPError: HTTP Error 403: Forbidden"
@@ -296,58 +296,58 @@
     {
       "symbol": "AAVEUSDT",
       "venue": "okx",
-      "queried_at_utc": "2026-11-10T21:20:25+00:00",
+      "queried_at_utc": "2026-11-10T22:04:21+00:00",
       "source_url": "https://www.okx.com/api/v5/market/candles?instId=AAVE-USDT&bar=15m&limit=30",
       "status": "ok",
       "data": {
         "valid": true,
-        "candle_start_utc": "2026-11-10T21:00:00+00:00",
-        "change_percent": 0.14571,
-        "volume_multiplier": 1.7413,
-        "spot_quote_volume_usdt": 86195.47,
-        "baseline_quote_volume_usdt": 49499.92,
-        "spot_close_usdt": 123.71,
+        "candle_start_utc": "2026-11-10T21:45:00+00:00",
+        "change_percent": 0.10469,
+        "volume_multiplier": 0.8119,
+        "spot_quote_volume_usdt": 37408.2,
+        "baseline_quote_volume_usdt": 46074.6,
+        "spot_close_usdt": 124.31,
         "pattern_met": false
       }
     },
     {
       "symbol": "AAVEUSDT",
       "venue": "gate",
-      "queried_at_utc": "2026-11-10T21:20:26+00:00",
+      "queried_at_utc": "2026-11-10T22:04:22+00:00",
       "source_url": "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=AAVE_USDT&interval=15m&limit=30",
       "status": "ok",
       "data": {
         "valid": true,
-        "candle_start_utc": "2026-11-10T21:00:00+00:00",
-        "change_percent": 0.18616,
-        "volume_multiplier": 3.4465,
-        "spot_quote_volume_usdt": 281839.76,
-        "baseline_quote_volume_usdt": 81775.53,
-        "spot_close_usdt": 123.78,
+        "candle_start_utc": "2026-11-10T21:45:00+00:00",
+        "change_percent": 0.12078,
+        "volume_multiplier": 0.2028,
+        "spot_quote_volume_usdt": 20463.47,
+        "baseline_quote_volume_usdt": 100924.2,
+        "spot_close_usdt": 124.34,
         "pattern_met": false
       }
     },
     {
       "symbol": "AAVEUSDT",
       "venue": "bitget",
-      "queried_at_utc": "2026-11-10T21:20:26+00:00",
+      "queried_at_utc": "2026-11-10T22:04:22+00:00",
       "source_url": "https://api.bitget.com/api/v3/market/candles?category=SPOT&symbol=AAVEUSDT&interval=15m&limit=30",
       "status": "ok",
       "data": {
         "valid": true,
-        "candle_start_utc": "2026-11-10T21:00:00+00:00",
-        "change_percent": 0.17,
-        "volume_multiplier": 1.504,
-        "spot_quote_volume_usdt": 10368.41,
-        "baseline_quote_volume_usdt": 6893.99,
-        "spot_close_usdt": 123.74,
+        "candle_start_utc": "2026-11-10T21:45:00+00:00",
+        "change_percent": 0.0886,
+        "volume_multiplier": 0.6713,
+        "spot_quote_volume_usdt": 3999.69,
+        "baseline_quote_volume_usdt": 5957.85,
+        "spot_close_usdt": 124.27,
         "pattern_met": false
       }
     },
     {
       "symbol": "UNIUSDT",
       "venue": "binance",
-      "queried_at_utc": "2026-11-10T21:20:27+00:00",
+      "queried_at_utc": "2026-11-10T22:04:23+00:00",
       "source_url": null,
       "status": "error",
       "error": "HTTPError: HTTP Error 451: "
@@ -355,7 +355,7 @@
     {
       "symbol": "UNIUSDT",
       "venue": "bybit",
-      "queried_at_utc": "2026-11-10T21:20:27+00:00",
+      "queried_at_utc": "2026-11-10T22:04:23+00:00",
       "source_url": null,
       "status": "error",
       "error": "HTTPError: HTTP Error 403: Forbidden"
@@ -363,58 +363,58 @@
     {
       "symbol": "UNIUSDT",
       "venue": "okx",
-      "queried_at_utc": "2026-11-10T21:20:27+00:00",
+      "queried_at_utc": "2026-11-10T22:04:23+00:00",
       "source_url": "https://www.okx.com/api/v5/market/candles?instId=UNI-USDT&bar=15m&limit=30",
       "status": "ok",
       "data": {
         "valid": true,
-        "candle_start_utc": "2026-11-10T21:00:00+00:00",
-        "change_percent": 0.46352,
-        "volume_multiplier": 2.647,
-        "spot_quote_volume_usdt": 558033.49,
-        "baseline_quote_volume_usdt": 210820.61,
-        "spot_close_usdt": 6.719,
+        "candle_start_utc": "2026-11-10T21:45:00+00:00",
+        "change_percent": 0.19351,
+        "volume_multiplier": 0.2447,
+        "spot_quote_volume_usdt": 46289.29,
+        "baseline_quote_volume_usdt": 189163.46,
+        "spot_close_usdt": 6.731,
         "pattern_met": false
       }
     },
     {
       "symbol": "UNIUSDT",
       "venue": "gate",
-      "queried_at_utc": "2026-11-10T21:20:28+00:00",
+      "queried_at_utc": "2026-11-10T22:04:23+00:00",
       "source_url": "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=UNI_USDT&interval=15m&limit=30",
       "status": "ok",
       "data": {
         "valid": true,
-        "candle_start_utc": "2026-11-10T21:00:00+00:00",
-        "change_percent": 0.49357,
-        "volume_multiplier": 2.689,
-        "spot_quote_volume_usdt": 342489.05,
-        "baseline_quote_volume_usdt": 127367.71,
-        "spot_close_usdt": 6.719,
+        "candle_start_utc": "2026-11-10T21:45:00+00:00",
+        "change_percent": 0.2084,
+        "volume_multiplier": 0.3247,
+        "spot_quote_volume_usdt": 44771.59,
+        "baseline_quote_volume_usdt": 137875.16,
+        "spot_close_usdt": 6.732,
         "pattern_met": false
       }
     },
     {
       "symbol": "UNIUSDT",
       "venue": "bitget",
-      "queried_at_utc": "2026-11-10T21:20:28+00:00",
+      "queried_at_utc": "2026-11-10T22:04:24+00:00",
       "source_url": "https://api.bitget.com/api/v3/market/candles?category=SPOT&symbol=UNIUSDT&interval=15m&limit=30",
       "status": "ok",
       "data": {
         "valid": true,
-        "candle_start_utc": "2026-11-10T21:00:00+00:00",
-        "change_percent": 0.52348,
-        "volume_multiplier": 0.8827,
-        "spot_quote_volume_usdt": 17730.04,
-        "baseline_quote_volume_usdt": 20085.2,
-        "spot_close_usdt": 6.721,
+        "candle_start_utc": "2026-11-10T21:45:00+00:00",
+        "change_percent": 0.25328,
+        "volume_multiplier": 0.3324,
+        "spot_quote_volume_usdt": 6000.44,
+        "baseline_quote_volume_usdt": 18051.15,
+        "spot_close_usdt": 6.729,
         "pattern_met": false
       }
     },
     {
       "symbol": "AVAXUSDT",
       "venue": "binance",
-      "queried_at_utc": "2026-11-10T21:20:29+00:00",
+      "queried_at_utc": "2026-11-10T22:04:25+00:00",
       "source_url": null,
       "status": "error",
       "error": "HTTPError: HTTP Error 451: "
@@ -422,7 +422,7 @@
     {
       "symbol": "AVAXUSDT",
       "venue": "bybit",
-      "queried_at_utc": "2026-11-10T21:20:29+00:00",
+      "queried_at_utc": "2026-11-10T22:04:25+00:00",
       "source_url": null,
       "status": "error",
       "error": "HTTPError: HTTP Error 403: Forbidden"
@@ -430,58 +430,58 @@
     {
       "symbol": "AVAXUSDT",
       "venue": "okx",
-      "queried_at_utc": "2026-11-10T21:20:29+00:00",
+      "queried_at_utc": "2026-11-10T22:04:25+00:00",
       "source_url": "https://www.okx.com/api/v5/market/candles?instId=AVAX-USDT&bar=15m&limit=30",
       "status": "ok",
       "data": {
         "valid": true,
-        "candle_start_utc": "2026-11-10T21:00:00+00:00",
-        "change_percent": 0.28947,
-        "volume_multiplier": 0.8374,
-        "spot_quote_volume_usdt": 39219.72,
-        "baseline_quote_volume_usdt": 46832.92,
-        "spot_close_usdt": 8.315,
+        "candle_start_utc": "2026-11-10T21:45:00+00:00",
+        "change_percent": 0.13231,
+        "volume_multiplier": 0.1036,
+        "spot_quote_volume_usdt": 3884.34,
+        "baseline_quote_volume_usdt": 37480.04,
+        "spot_close_usdt": 8.325,
         "pattern_met": false
       }
     },
     {
       "symbol": "AVAXUSDT",
       "venue": "gate",
-      "queried_at_utc": "2026-11-10T21:20:30+00:00",
+      "queried_at_utc": "2026-11-10T22:04:26+00:00",
       "source_url": "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=AVAX_USDT&interval=15m&limit=30",
       "status": "ok",
       "data": {
         "valid": true,
-        "candle_start_utc": "2026-11-10T21:00:00+00:00",
-        "change_percent": 0.32577,
-        "volume_multiplier": 1.073,
-        "spot_quote_volume_usdt": 63244.08,
-        "baseline_quote_volume_usdt": 58942.88,
-        "spot_close_usdt": 8.315,
+        "candle_start_utc": "2026-11-10T21:45:00+00:00",
+        "change_percent": 0.02406,
+        "volume_multiplier": 0.1958,
+        "spot_quote_volume_usdt": 9942.88,
+        "baseline_quote_volume_usdt": 50777.71,
+        "spot_close_usdt": 8.316,
         "pattern_met": false
       }
     },
     {
       "symbol": "AVAXUSDT",
       "venue": "bitget",
-      "queried_at_utc": "2026-11-10T21:20:30+00:00",
+      "queried_at_utc": "2026-11-10T22:04:26+00:00",
       "source_url": "https://api.bitget.com/api/v3/market/candles?category=SPOT&symbol=AVAXUSDT&interval=15m&limit=30",
       "status": "ok",
       "data": {
         "valid": true,
-        "candle_start_utc": "2026-11-10T21:00:00+00:00",
-        "change_percent": 0.3016,
-        "volume_multiplier": 2.7095,
-        "spot_quote_volume_usdt": 31967.88,
-        "baseline_quote_volume_usdt": 11798.33,
-        "spot_close_usdt": 8.314,
+        "candle_start_utc": "2026-11-10T21:45:00+00:00",
+        "change_percent": 0.14447,
+        "volume_multiplier": 0.5629,
+        "spot_quote_volume_usdt": 6007.33,
+        "baseline_quote_volume_usdt": 10671.55,
+        "spot_close_usdt": 8.318,
         "pattern_met": false
       }
     },
     {
       "symbol": "NEARUSDT",
       "venue": "binance",
-      "queried_at_utc": "2026-11-10T21:20:31+00:00",
+      "queried_at_utc": "2026-11-10T22:04:27+00:00",
       "source_url": null,
       "status": "error",
       "error": "HTTPError: HTTP Error 451: "
@@ -489,7 +489,7 @@
     {
       "symbol": "NEARUSDT",
       "venue": "bybit",
-      "queried_at_utc": "2026-11-10T21:20:31+00:00",
+      "queried_at_utc": "2026-11-10T22:04:27+00:00",
       "source_url": null,
       "status": "error",
       "error": "HTTPError: HTTP Error 403: Forbidden"
@@ -497,58 +497,58 @@
     {
       "symbol": "NEARUSDT",
       "venue": "okx",
-      "queried_at_utc": "2026-11-10T21:20:31+00:00",
+      "queried_at_utc": "2026-11-10T22:04:27+00:00",
       "source_url": "https://www.okx.com/api/v5/market/candles?instId=NEAR-USDT&bar=15m&limit=30",
       "status": "ok",
       "data": {
         "valid": true,
-        "candle_start_utc": "2026-11-10T21:00:00+00:00",
-        "change_percent": 0.02811,
-        "volume_multiplier": 0.4066,
-        "spot_quote_volume_usdt": 76589.44,
-        "baseline_quote_volume_usdt": 188382.33,
-        "spot_close_usdt": 3.558,
+        "candle_start_utc": "2026-11-10T21:45:00+00:00",
+        "change_percent": 0.41899,
+        "volume_multiplier": 0.5093,
+        "spot_quote_volume_usdt": 68681.11,
+        "baseline_quote_volume_usdt": 134865.37,
+        "spot_close_usdt": 3.595,
         "pattern_met": false
       }
     },
     {
       "symbol": "NEARUSDT",
       "venue": "gate",
-      "queried_at_utc": "2026-11-10T21:20:32+00:00",
+      "queried_at_utc": "2026-11-10T22:04:28+00:00",
       "source_url": "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=NEAR_USDT&interval=15m&limit=30",
       "status": "ok",
       "data": {
         "valid": true,
-        "candle_start_utc": "2026-11-10T21:00:00+00:00",
-        "change_percent": 0.02812,
-        "volume_multiplier": 0.5768,
-        "spot_quote_volume_usdt": 191886.97,
-        "baseline_quote_volume_usdt": 332658.41,
-        "spot_close_usdt": 3.557,
+        "candle_start_utc": "2026-11-10T21:45:00+00:00",
+        "change_percent": 0.36313,
+        "volume_multiplier": 0.8754,
+        "spot_quote_volume_usdt": 232905.44,
+        "baseline_quote_volume_usdt": 266042.42,
+        "spot_close_usdt": 3.593,
         "pattern_met": false
       }
     },
     {
       "symbol": "NEARUSDT",
       "venue": "bitget",
-      "queried_at_utc": "2026-11-10T21:20:32+00:00",
+      "queried_at_utc": "2026-11-10T22:04:28+00:00",
       "source_url": "https://api.bitget.com/api/v3/market/candles?category=SPOT&symbol=NEARUSDT&interval=15m&limit=30",
       "status": "ok",
       "data": {
         "valid": true,
-        "candle_start_utc": "2026-11-10T21:00:00+00:00",
-        "change_percent": -0.05621,
-        "volume_multiplier": 0.4348,
-        "spot_quote_volume_usdt": 21029.76,
-        "baseline_quote_volume_usdt": 48366.26,
-        "spot_close_usdt": 3.556,
+        "candle_start_utc": "2026-11-10T21:45:00+00:00",
+        "change_percent": 0.41888,
+        "volume_multiplier": 0.7983,
+        "spot_quote_volume_usdt": 21793.64,
+        "baseline_quote_volume_usdt": 27299.96,
+        "spot_close_usdt": 3.596,
         "pattern_met": false
       }
     },
     {
       "symbol": "ATOMUSDT",
       "venue": "binance",
-      "queried_at_utc": "2026-11-10T21:20:33+00:00",
+      "queried_at_utc": "2026-11-10T22:04:29+00:00",
       "source_url": null,
       "status": "error",
       "error": "HTTPError: HTTP Error 451: "
@@ -556,7 +556,7 @@
     {
       "symbol": "ATOMUSDT",
       "venue": "bybit",
-      "queried_at_utc": "2026-11-10T21:20:33+00:00",
+      "queried_at_utc": "2026-11-10T22:04:29+00:00",
       "source_url": null,
       "status": "error",
       "error": "HTTPError: HTTP Error 403: Forbidden"
@@ -564,58 +564,58 @@
     {
       "symbol": "ATOMUSDT",
       "venue": "okx",
-      "queried_at_utc": "2026-11-10T21:20:33+00:00",
+      "queried_at_utc": "2026-11-10T22:04:29+00:00",
       "source_url": "https://www.okx.com/api/v5/market/candles?instId=ATOM-USDT&bar=15m&limit=30",
       "status": "ok",
       "data": {
         "valid": true,
-        "candle_start_utc": "2026-11-10T21:00:00+00:00",
+        "candle_start_utc": "2026-11-10T21:45:00+00:00",
         "change_percent": 0.0,
-        "volume_multiplier": 1.6749,
-        "spot_quote_volume_usdt": 11500.87,
-        "baseline_quote_volume_usdt": 6866.49,
-        "spot_close_usdt": 1.399,
+        "volume_multiplier": 0.2918,
+        "spot_quote_volume_usdt": 1713.55,
+        "baseline_quote_volume_usdt": 5871.67,
+        "spot_close_usdt": 1.395,
         "pattern_met": false
       }
     },
     {
       "symbol": "ATOMUSDT",
       "venue": "gate",
-      "queried_at_utc": "2026-11-10T21:20:33+00:00",
+      "queried_at_utc": "2026-11-10T22:04:29+00:00",
       "source_url": "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=ATOM_USDT&interval=15m&limit=30",
       "status": "ok",
       "data": {
         "valid": true,
-        "candle_start_utc": "2026-11-10T21:00:00+00:00",
-        "change_percent": 0.21475,
-        "volume_multiplier": 0.6841,
-        "spot_quote_volume_usdt": 593.98,
-        "baseline_quote_volume_usdt": 868.22,
-        "spot_close_usdt": 1.4,
+        "candle_start_utc": "2026-11-10T21:45:00+00:00",
+        "change_percent": 0.07174,
+        "volume_multiplier": 0.1587,
+        "spot_quote_volume_usdt": 138.86,
+        "baseline_quote_volume_usdt": 874.84,
+        "spot_close_usdt": 1.395,
         "pattern_met": false
       }
     },
     {
       "symbol": "ATOMUSDT",
       "venue": "bitget",
-      "queried_at_utc": "2026-11-10T21:20:34+00:00",
+      "queried_at_utc": "2026-11-10T22:04:30+00:00",
       "source_url": "https://api.bitget.com/api/v3/market/candles?category=SPOT&symbol=ATOMUSDT&interval=15m&limit=30",
       "status": "ok",
       "data": {
         "valid": true,
-        "candle_start_utc": "2026-11-10T21:00:00+00:00",
-        "change_percent": 0.07158,
-        "volume_multiplier": 2.1682,
-        "spot_quote_volume_usdt": 2118.12,
-        "baseline_quote_volume_usdt": 976.88,
-        "spot_close_usdt": 1.398,
+        "candle_start_utc": "2026-11-10T21:45:00+00:00",
+        "change_percent": 0.14358,
+        "volume_multiplier": 0.0637,
+        "spot_quote_volume_usdt": 38.03,
+        "baseline_quote_volume_usdt": 597.33,
+        "spot_close_usdt": 1.395,
         "pattern_met": false
       }
     },
     {
       "symbol": "INJUSDT",
       "venue": "binance",
-      "queried_at_utc": "2026-11-10T21:20:35+00:00",
+      "queried_at_utc": "2026-11-10T22:04:31+00:00",
       "source_url": null,
       "status": "error",
       "error": "HTTPError: HTTP Error 451: "
@@ -623,7 +623,7 @@
     {
       "symbol": "INJUSDT",
       "venue": "bybit",
-      "queried_at_utc": "2026-11-10T21:20:35+00:00",
+      "queried_at_utc": "2026-11-10T22:04:31+00:00",
       "source_url": null,
       "status": "error",
       "error": "HTTPError: HTTP Error 403: Forbidden"
@@ -631,58 +631,58 @@
     {
       "symbol": "INJUSDT",
       "venue": "okx",
-      "queried_at_utc": "2026-11-10T21:20:35+00:00",
+      "queried_at_utc": "2026-11-10T22:04:31+00:00",
       "source_url": "https://www.okx.com/api/v5/market/candles?instId=INJ-USDT&bar=15m&limit=30",
       "status": "ok",
       "data": {
         "valid": true,
-        "candle_start_utc": "2026-11-10T21:00:00+00:00",
-        "change_percent": 1.07688,
-        "volume_multiplier": 0.6054,
-        "spot_quote_volume_usdt": 11731.34,
-        "baseline_quote_volume_usdt": 19378.6,
-        "spot_close_usdt": 8.072,
+        "candle_start_utc": "2026-11-10T21:45:00+00:00",
+        "change_percent": -0.23419,
+        "volume_multiplier": 1.9841,
+        "spot_quote_volume_usdt": 32231.81,
+        "baseline_quote_volume_usdt": 16245.26,
+        "spot_close_usdt": 8.094,
         "pattern_met": false
       }
     },
     {
       "symbol": "INJUSDT",
       "venue": "gate",
-      "queried_at_utc": "2026-11-10T21:20:35+00:00",
+      "queried_at_utc": "2026-11-10T22:04:31+00:00",
       "source_url": "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=INJ_USDT&interval=15m&limit=30",
       "status": "ok",
       "data": {
         "valid": true,
-        "candle_start_utc": "2026-11-10T21:00:00+00:00",
-        "change_percent": 1.14107,
-        "volume_multiplier": 1.0762,
-        "spot_quote_volume_usdt": 34574.66,
-        "baseline_quote_volume_usdt": 32127.04,
-        "spot_close_usdt": 8.066,
+        "candle_start_utc": "2026-11-10T21:45:00+00:00",
+        "change_percent": -0.16038,
+        "volume_multiplier": 3.12,
+        "spot_quote_volume_usdt": 93650.19,
+        "baseline_quote_volume_usdt": 30016.54,
+        "spot_close_usdt": 8.093,
         "pattern_met": false
       }
     },
     {
       "symbol": "INJUSDT",
       "venue": "bitget",
-      "queried_at_utc": "2026-11-10T21:20:36+00:00",
+      "queried_at_utc": "2026-11-10T22:04:32+00:00",
       "source_url": "https://api.bitget.com/api/v3/market/candles?category=SPOT&symbol=INJUSDT&interval=15m&limit=30",
       "status": "ok",
       "data": {
         "valid": true,
-        "candle_start_utc": "2026-11-10T21:00:00+00:00",
-        "change_percent": 1.21722,
-        "volume_multiplier": 0.6456,
-        "spot_quote_volume_usdt": 8352.29,
-        "baseline_quote_volume_usdt": 12937.75,
-        "spot_close_usdt": 8.066,
+        "candle_start_utc": "2026-11-10T21:45:00+00:00",
+        "change_percent": -0.24664,
+        "volume_multiplier": 2.3385,
+        "spot_quote_volume_usdt": 27181.01,
+        "baseline_quote_volume_usdt": 11623.43,
+        "spot_close_usdt": 8.089,
         "pattern_met": false
       }
     },
     {
       "symbol": "ARBUSDT",
       "venue": "binance",
-      "queried_at_utc": "2026-11-10T21:20:37+00:00",
+      "queried_at_utc": "2026-11-10T22:04:33+00:00",
       "source_url": null,
       "status": "error",
       "error": "HTTPError: HTTP Error 451: "
@@ -690,7 +690,7 @@
     {
       "symbol": "ARBUSDT",
       "venue": "bybit",
-      "queried_at_utc": "2026-11-10T21:20:37+00:00",
+      "queried_at_utc": "2026-11-10T22:04:33+00:00",
       "source_url": null,
       "status": "error",
       "error": "HTTPError: HTTP Error 403: Forbidden"
@@ -698,58 +698,58 @@
     {
       "symbol": "ARBUSDT",
       "venue": "okx",
-      "queried_at_utc": "2026-11-10T21:20:37+00:00",
+      "queried_at_utc": "2026-11-10T22:04:33+00:00",
       "source_url": "https://www.okx.com/api/v5/market/candles?instId=ARB-USDT&bar=15m&limit=30",
       "status": "ok",
       "data": {
         "valid": true,
-        "candle_start_utc": "2026-11-10T21:00:00+00:00",
-        "change_percent": -0.09416,
-        "volume_multiplier": 1.4674,
-        "spot_quote_volume_usdt": 112739.9,
-        "baseline_quote_volume_usdt": 76828.11,
-        "spot_close_usdt": 0.15916,
+        "candle_start_utc": "2026-11-10T21:45:00+00:00",
+        "change_percent": 0.66738,
+        "volume_multiplier": 1.4218,
+        "spot_quote_volume_usdt": 99950.62,
+        "baseline_quote_volume_usdt": 70301.07,
+        "spot_close_usdt": 0.15989,
         "pattern_met": false
       }
     },
     {
       "symbol": "ARBUSDT",
       "venue": "gate",
-      "queried_at_utc": "2026-11-10T21:20:37+00:00",
+      "queried_at_utc": "2026-11-10T22:04:33+00:00",
       "source_url": "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=ARB_USDT&interval=15m&limit=30",
       "status": "ok",
       "data": {
         "valid": true,
-        "candle_start_utc": "2026-11-10T21:00:00+00:00",
-        "change_percent": -0.06905,
-        "volume_multiplier": 0.7876,
-        "spot_quote_volume_usdt": 44842.46,
-        "baseline_quote_volume_usdt": 56939.16,
-        "spot_close_usdt": 0.15919,
+        "candle_start_utc": "2026-11-10T21:45:00+00:00",
+        "change_percent": 0.73057,
+        "volume_multiplier": 1.1119,
+        "spot_quote_volume_usdt": 57968.36,
+        "baseline_quote_volume_usdt": 52132.48,
+        "spot_close_usdt": 0.15994,
         "pattern_met": false
       }
     },
     {
       "symbol": "ARBUSDT",
       "venue": "bitget",
-      "queried_at_utc": "2026-11-10T21:20:38+00:00",
+      "queried_at_utc": "2026-11-10T22:04:34+00:00",
       "source_url": "https://api.bitget.com/api/v3/market/candles?category=SPOT&symbol=ARBUSDT&interval=15m&limit=30",
       "status": "ok",
       "data": {
         "valid": true,
-        "candle_start_utc": "2026-11-10T21:00:00+00:00",
-        "change_percent": 0.09414,
-        "volume_multiplier": 1.4084,
-        "spot_quote_volume_usdt": 11976.11,
-        "baseline_quote_volume_usdt": 8503.49,
-        "spot_close_usdt": 0.15949,
+        "candle_start_utc": "2026-11-10T21:45:00+00:00",
+        "change_percent": 0.64199,
+        "volume_multiplier": 0.6289,
+        "spot_quote_volume_usdt": 4854.87,
+        "baseline_quote_volume_usdt": 7720.17,
+        "spot_close_usdt": 0.1599,
         "pattern_met": false
       }
     },
     {
       "symbol": "OPUSDT",
       "venue": "binance",
-      "queried_at_utc": "2026-11-10T21:20:39+00:00",
+      "queried_at_utc": "2026-11-10T22:04:35+00:00",
       "source_url": null,
       "status": "error",
       "error": "HTTPError: HTTP Error 451: "
@@ -757,7 +757,7 @@
     {
       "symbol": "OPUSDT",
       "venue": "bybit",
-      "queried_at_utc": "2026-11-10T21:20:39+00:00",
+      "queried_at_utc": "2026-11-10T22:04:35+00:00",
       "source_url": null,
       "status": "error",
       "error": "HTTPError: HTTP Error 403: Forbidden"
@@ -765,51 +765,51 @@
     {
       "symbol": "OPUSDT",
       "venue": "okx",
-      "queried_at_utc": "2026-11-10T21:20:39+00:00",
+      "queried_at_utc": "2026-11-10T22:04:35+00:00",
       "source_url": "https://www.okx.com/api/v5/market/candles?instId=OP-USDT&bar=15m&limit=30",
       "status": "ok",
       "data": {
         "valid": true,
-        "candle_start_utc": "2026-11-10T21:00:00+00:00",
-        "change_percent": 0.41718,
-        "volume_multiplier": 1.1376,
-        "spot_quote_volume_usdt": 33153.72,
-        "baseline_quote_volume_usdt": 29143.18,
-        "spot_close_usdt": 0.09869,
+        "candle_start_utc": "2026-11-10T21:45:00+00:00",
+        "change_percent": 0.2645,
+        "volume_multiplier": 0.8521,
+        "spot_quote_volume_usdt": 23478.47,
+        "baseline_quote_volume_usdt": 27554.3,
+        "spot_close_usdt": 0.09856,
         "pattern_met": false
       }
     },
     {
       "symbol": "OPUSDT",
       "venue": "gate",
-      "queried_at_utc": "2026-11-10T21:20:39+00:00",
+      "queried_at_utc": "2026-11-10T22:04:35+00:00",
       "source_url": "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=OP_USDT&interval=15m&limit=30",
       "status": "ok",
       "data": {
         "valid": true,
-        "candle_start_utc": "2026-11-10T21:00:00+00:00",
-        "change_percent": 0.52953,
-        "volume_multiplier": 0.8695,
-        "spot_quote_volume_usdt": 1550.12,
-        "baseline_quote_volume_usdt": 1782.73,
-        "spot_close_usdt": 0.09872,
+        "candle_start_utc": "2026-11-10T21:45:00+00:00",
+        "change_percent": 0.10153,
+        "volume_multiplier": 0.2629,
+        "spot_quote_volume_usdt": 450.61,
+        "baseline_quote_volume_usdt": 1713.7,
+        "spot_close_usdt": 0.09859,
         "pattern_met": false
       }
     },
     {
       "symbol": "OPUSDT",
       "venue": "bitget",
-      "queried_at_utc": "2026-11-10T21:20:40+00:00",
+      "queried_at_utc": "2026-11-10T22:04:36+00:00",
       "source_url": "https://api.bitget.com/api/v3/market/candles?category=SPOT&symbol=OPUSDT&interval=15m&limit=30",
       "status": "ok",
       "data": {
         "valid": true,
-        "candle_start_utc": "2026-11-10T21:00:00+00:00",
-        "change_percent": 0.34553,
-        "volume_multiplier": 0.316,
-        "spot_quote_volume_usdt": 183.75,
-        "baseline_quote_volume_usdt": 581.49,
-        "spot_close_usdt": 0.09874,
+        "candle_start_utc": "2026-11-10T21:45:00+00:00",
+        "change_percent": 0.74551,
+        "volume_multiplier": 0.2417,
+        "spot_quote_volume_usdt": 142.64,
+        "baseline_quote_volume_usdt": 590.24,
+        "spot_close_usdt": 0.09865,
         "pattern_met": false
       }
     }
