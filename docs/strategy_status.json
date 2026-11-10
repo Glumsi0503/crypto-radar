@@ -1,0 +1,33 @@
+{
+  "generated_at_utc": "2026-11-10T07:34:44.529941+00:00",
+  "status": "RESEARCH_ONLY",
+  "eligible_for_real_trading": false,
+  "candidates": [],
+  "paper_open": 0,
+  "paper_performance": {
+    "closed": 0,
+    "winners": 0,
+    "win_rate_percent": null,
+    "avg_net_return_percent": null,
+    "notes": "Observation-only simulation; fees approximated at 0.25% per side; excludes slippage, intrabar execution, tax and survivorship effects."
+  },
+  "strategy_rules": {
+    "min_two_spot_venues": true,
+    "price_spread_max_percent": 1.0,
+    "candle_gain_min_percent": 2,
+    "candle_gain_max_percent": 8,
+    "volume_multiple_min": 2,
+    "min_quote_volume_per_venue_usdt": 100000,
+    "max_simultaneous_paper_positions": 3,
+    "stop_observation_percent": -2.5,
+    "target_observation_percent": 5,
+    "max_holding_hours": 72,
+    "estimated_fee_per_side_percent": 0.25
+  },
+  "limits": [
+    "Pilot watchlist only, no Germany Bitvavo eligibility or account-level buyability checks",
+    "Prices from independent USDT venues do not equal Bitvavo EUR execution prices",
+    "Paper checkpoints are not proof of actual stop or target fills",
+    "No risk-adjusted or statistically validated profitability yet"
+  ]
+}
