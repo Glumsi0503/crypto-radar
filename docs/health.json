@@ -1,0 +1,34 @@
+{
+  "generated_at_utc": "2026-11-10T23:08:52.908723+00:00",
+  "data_quality": "USABLE_RESEARCH_ONLY",
+  "checks": {
+    "latest": {
+      "exists": true,
+      "fresh": true,
+      "valid": true,
+      "age_minutes": 0.67,
+      "checks": 60,
+      "valid_checks": 36
+    },
+    "enrichment": {
+      "exists": true,
+      "fresh": true,
+      "valid": true,
+      "age_minutes": 0.02,
+      "market_valid": 48,
+      "fundamental_reachable": 4
+    },
+    "strategy_status": {
+      "exists": true,
+      "fresh": true,
+      "valid": true,
+      "age_minutes": 0.0
+    }
+  },
+  "trade_alerts_permitted": false,
+  "automated_remediation": "fail-closed; never reuse stale reports; continue independent sources next run",
+  "notes": [
+    "Enrichment fundamental_reachable does not establish fundamental growth.",
+    "No German Bitvavo account-level eligibility proof; no trading alerts."
+  ]
+}
