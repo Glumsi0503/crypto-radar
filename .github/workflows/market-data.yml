@@ -1,6 +1,11 @@
 name: Crypto radar public market data
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - 'market_data.py'
+      - 'tests/**'
+      - '.github/workflows/market-data.yml'
   schedule:
     - cron: "7,22,37,52 * * * *"
 permissions:
