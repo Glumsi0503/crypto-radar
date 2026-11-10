@@ -6,6 +6,7 @@ on:
       - 'market_data.py'
       - 'bitvavo_probe.py'
       - 'strategy.py'
+      - 'enrichment.py'
       - 'tests/**'
       - '.github/workflows/market-data.yml'
   schedule:
@@ -28,6 +29,9 @@ jobs:
         run: python -m unittest discover -s tests -v
       - name: Collect public spot data
         run: python market_data.py
+      - name: Enrich independent 1h and daily spot data plus fundamental diagnostics
+        if: always()
+        run: python enrichment.py
       - name: Test Bitvavo public API (diagnostic only)
         if: always()
         run: python bitvavo_probe.py
@@ -42,6 +46,7 @@ jobs:
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git add docs/latest.json docs/bitvavo_probe.json
+            if test -f docs/enrichment.json; then git add docs/enrichment.json; fi
             if test -f docs/strategy_status.json; then git add docs/strategy_status.json docs/paper_journal.json; fi
             git diff --staged --quiet || (git commit -m "Refresh public OHLCV diagnostics" && git push)
           fi
