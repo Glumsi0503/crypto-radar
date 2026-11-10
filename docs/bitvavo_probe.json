@@ -1,0 +1,42 @@
+{
+  "generated_at_utc": "2026-11-10T07:28:02.421192+00:00",
+  "provider": "Bitvavo public exchange API",
+  "scope": "BTC-EUR PUBLIC DATA DIAGNOSTIC ONLY",
+  "checks": {
+    "market": {
+      "ok": true,
+      "http_status": 200,
+      "markets": [
+        {
+          "market": "BTC-EUR",
+          "status": "trading",
+          "base": "BTC",
+          "quote": "EUR"
+        }
+      ]
+    },
+    "candles": {
+      "ok": true,
+      "http_status": 200,
+      "rows": 25,
+      "latest_timestamp_ms": 1794294900000,
+      "row_shape_valid": true
+    },
+    "ticker": {
+      "ok": true,
+      "http_status": 200,
+      "tickers": [
+        {
+          "market": "BTC-EUR",
+          "timestamp": 1794295681580,
+          "bid": "66503",
+          "ask": "66504",
+          "volumeQuote": "35618883.00117546"
+        }
+      ]
+    }
+  },
+  "german_customer_spot_eligibility_verified": false,
+  "reason": "Public market status cannot prove individual German-account regional availability",
+  "use_in_trade_signals": false
+}
