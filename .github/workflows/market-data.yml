@@ -7,6 +7,7 @@ on:
       - 'bitvavo_probe.py'
       - 'strategy.py'
       - 'enrichment.py'
+      - 'healthcheck.py'
       - 'tests/**'
       - '.github/workflows/market-data.yml'
   schedule:
@@ -28,9 +29,14 @@ jobs:
       - name: Verify OHLCV calculations
         run: python -m unittest discover -s tests -v
       - name: Collect public spot data
-        run: python market_data.py
+        id: collect
+        continue-on-error: true
+        run: |
+          python market_data.py
+          touch /tmp/crypto_radar_fresh_market
       - name: Enrich independent 1h and daily spot data plus fundamental diagnostics
         if: always()
+        continue-on-error: true
         run: python enrichment.py
       - name: Test Bitvavo public API (diagnostic only)
         if: always()
@@ -38,7 +44,10 @@ jobs:
       - name: Evaluate research-only paper strategy
         if: always()
         run: |
-          if test -f docs/latest.json; then python strategy.py; fi
+          if test -f /tmp/crypto_radar_fresh_market; then python strategy.py; else echo 'No fresh collection: skip paper evaluation'; fi
+      - name: Audit report freshness and quality
+        if: always()
+        run: python healthcheck.py
       - name: Publish data report
         if: always()
         run: |
@@ -47,6 +56,7 @@ jobs:
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git add docs/latest.json docs/bitvavo_probe.json
             if test -f docs/enrichment.json; then git add docs/enrichment.json; fi
+            if test -f docs/health.json; then git add docs/health.json; fi
             if test -f docs/strategy_status.json; then git add docs/strategy_status.json docs/paper_journal.json; fi
             git diff --staged --quiet || (git commit -m "Refresh public OHLCV diagnostics" && git push)
           fi
