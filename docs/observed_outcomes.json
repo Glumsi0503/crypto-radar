@@ -1,0 +1,43 @@
+{
+  "generated_at_utc": "2026-11-13T16:10:39.620088+00:00",
+  "research_only": true,
+  "no_actual_orders_or_fills": true,
+  "fee_assumption_roundtrip_percent": 0.5,
+  "slippage_modelled": false,
+  "observation_count": 0,
+  "checkpoint_summary": {
+    "1h": {
+      "observed": 0,
+      "missed": 0,
+      "median_net_percent": null,
+      "positive_fraction": null,
+      "sufficient_sample": false
+    },
+    "4h": {
+      "observed": 0,
+      "missed": 0,
+      "median_net_percent": null,
+      "positive_fraction": null,
+      "sufficient_sample": false
+    },
+    "24h": {
+      "observed": 0,
+      "missed": 0,
+      "median_net_percent": null,
+      "positive_fraction": null,
+      "sufficient_sample": false
+    },
+    "72h": {
+      "observed": 0,
+      "missed": 0,
+      "median_net_percent": null,
+      "positive_fraction": null,
+      "sufficient_sample": false
+    }
+  },
+  "warnings": [
+    "Checkpoint prices are scheduled observations, not real stop/target fills.",
+    "Missed checkpoints remain missing, never interpolated.",
+    "No strategy tuning without adequate out-of-sample results."
+  ]
+}

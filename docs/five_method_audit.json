@@ -1,0 +1,2068 @@
+{
+  "generated_at_utc": "2026-11-13T16:10:39.571780+00:00",
+  "spot_source_at_utc": "2026-11-13T16:09:37+00:00",
+  "enrichment_fresh": true,
+  "derivatives_fresh": true,
+  "research_only": true,
+  "auto_push_connected": false,
+  "trade_alert_authorized": false,
+  "method_names": [
+    "momentum",
+    "smart_money",
+    "short_squeeze",
+    "fundamental_divergence",
+    "catalyst"
+  ],
+  "symbols_evaluated": 60,
+  "coins": [
+    {
+      "symbol": "AAVEUSDT",
+      "methods": {
+        "momentum": {
+          "status": "not_confirmed",
+          "reason": "No matching two-venue momentum pattern",
+          "evidence": []
+        },
+        "smart_money": {
+          "status": "not_evaluable",
+          "reason": "No independently verified wallet purchases",
+          "evidence": []
+        },
+        "short_squeeze": {
+          "status": "not_evaluable",
+          "reason": "No fresh and verified funding/OI pair",
+          "evidence": []
+        },
+        "fundamental_divergence": {
+          "status": "not_confirmed",
+          "reason": "Growth or token value capture criteria not established",
+          "evidence": [
+            {
+              "metric": "fees",
+              "growth_7d_percent": -12.767,
+              "window_end_utc": "2026-11-13T00:00:00+00:00",
+              "source": "https://api.llama.fi/summary/fees/aave?dataType=dailyFees"
+            }
+          ]
+        },
+        "catalyst": {
+          "status": "not_evaluable",
+          "reason": "No dated official catalyst events ingested",
+          "evidence": []
+        }
+      },
+      "supported_methods": [],
+      "trade_ready": false,
+      "exchange_buyability_checked": false
+    },
+    {
+      "symbol": "ADAUSDT",
+      "methods": {
+        "momentum": {
+          "status": "not_confirmed",
+          "reason": "No matching two-venue momentum pattern",
+          "evidence": []
+        },
+        "smart_money": {
+          "status": "not_evaluable",
+          "reason": "No independently verified wallet purchases",
+          "evidence": []
+        },
+        "short_squeeze": {
+          "status": "not_evaluable",
+          "reason": "No fresh and verified funding/OI pair",
+          "evidence": []
+        },
+        "fundamental_divergence": {
+          "status": "not_evaluable",
+          "reason": "No verified comparable 7-day fundamental metrics",
+          "evidence": []
+        },
+        "catalyst": {
+          "status": "not_evaluable",
+          "reason": "No dated official catalyst events ingested",
+          "evidence": []
+        }
+      },
+      "supported_methods": [],
+      "trade_ready": false,
+      "exchange_buyability_checked": false
+    },
+    {
+      "symbol": "APTUSDT",
+      "methods": {
+        "momentum": {
+          "status": "not_confirmed",
+          "reason": "No matching two-venue momentum pattern",
+          "evidence": []
+        },
+        "smart_money": {
+          "status": "not_evaluable",
+          "reason": "No independently verified wallet purchases",
+          "evidence": []
+        },
+        "short_squeeze": {
+          "status": "not_evaluable",
+          "reason": "No fresh and verified funding/OI pair",
+          "evidence": []
+        },
+        "fundamental_divergence": {
+          "status": "not_evaluable",
+          "reason": "No verified comparable 7-day fundamental metrics",
+          "evidence": []
+        },
+        "catalyst": {
+          "status": "not_evaluable",
+          "reason": "No dated official catalyst events ingested",
+          "evidence": []
+        }
+      },
+      "supported_methods": [],
+      "trade_ready": false,
+      "exchange_buyability_checked": false
+    },
+    {
+      "symbol": "ARBUSDT",
+      "methods": {
+        "momentum": {
+          "status": "not_confirmed",
+          "reason": "No matching two-venue momentum pattern",
+          "evidence": []
+        },
+        "smart_money": {
+          "status": "not_evaluable",
+          "reason": "No independently verified wallet purchases",
+          "evidence": []
+        },
+        "short_squeeze": {
+          "status": "not_evaluable",
+          "reason": "No fresh and verified funding/OI pair",
+          "evidence": []
+        },
+        "fundamental_divergence": {
+          "status": "not_confirmed",
+          "reason": "Growth or token value capture criteria not established",
+          "evidence": [
+            {
+              "metric": "fees",
+              "growth_7d_percent": -2.232,
+              "window_end_utc": "2026-11-13T00:00:00+00:00",
+              "source": "https://api.llama.fi/summary/fees/arbitrum?dataType=dailyFees"
+            }
+          ]
+        },
+        "catalyst": {
+          "status": "not_evaluable",
+          "reason": "No dated official catalyst events ingested",
+          "evidence": []
+        }
+      },
+      "supported_methods": [],
+      "trade_ready": false,
+      "exchange_buyability_checked": false
+    },
+    {
+      "symbol": "ARIAUSDT",
+      "methods": {
+        "momentum": {
+          "status": "not_confirmed",
+          "reason": "No matching two-venue momentum pattern",
+          "evidence": []
+        },
+        "smart_money": {
+          "status": "not_evaluable",
+          "reason": "No independently verified wallet purchases",
+          "evidence": []
+        },
+        "short_squeeze": {
+          "status": "not_evaluable",
+          "reason": "No fresh and verified funding/OI pair",
+          "evidence": []
+        },
+        "fundamental_divergence": {
+          "status": "not_evaluable",
+          "reason": "No verified comparable 7-day fundamental metrics",
+          "evidence": []
+        },
+        "catalyst": {
+          "status": "not_evaluable",
+          "reason": "No dated official catalyst events ingested",
+          "evidence": []
+        }
+      },
+      "supported_methods": [],
+      "trade_ready": false,
+      "exchange_buyability_checked": false
+    },
+    {
+      "symbol": "ATOMUSDT",
+      "methods": {
+        "momentum": {
+          "status": "not_confirmed",
+          "reason": "No matching two-venue momentum pattern",
+          "evidence": []
+        },
+        "smart_money": {
+          "status": "not_evaluable",
+          "reason": "No independently verified wallet purchases",
+          "evidence": []
+        },
+        "short_squeeze": {
+          "status": "not_evaluable",
+          "reason": "No fresh and verified funding/OI pair",
+          "evidence": []
+        },
+        "fundamental_divergence": {
+          "status": "not_evaluable",
+          "reason": "No verified comparable 7-day fundamental metrics",
+          "evidence": []
+        },
+        "catalyst": {
+          "status": "not_evaluable",
+          "reason": "No dated official catalyst events ingested",
+          "evidence": []
+        }
+      },
+      "supported_methods": [],
+      "trade_ready": false,
+      "exchange_buyability_checked": false
+    },
+    {
+      "symbol": "AVAXUSDT",
+      "methods": {
+        "momentum": {
+          "status": "not_confirmed",
+          "reason": "No matching two-venue momentum pattern",
+          "evidence": []
+        },
+        "smart_money": {
+          "status": "not_evaluable",
+          "reason": "No independently verified wallet purchases",
+          "evidence": []
+        },
+        "short_squeeze": {
+          "status": "not_evaluable",
+          "reason": "No fresh and verified funding/OI pair",
+          "evidence": []
+        },
+        "fundamental_divergence": {
+          "status": "not_evaluable",
+          "reason": "No verified comparable 7-day fundamental metrics",
+          "evidence": []
+        },
+        "catalyst": {
+          "status": "not_evaluable",
+          "reason": "No dated official catalyst events ingested",
+          "evidence": []
+        }
+      },
+      "supported_methods": [],
+      "trade_ready": false,
+      "exchange_buyability_checked": false
+    },
+    {
+      "symbol": "BCHUSDT",
+      "methods": {
+        "momentum": {
+          "status": "not_confirmed",
+          "reason": "No matching two-venue momentum pattern",
+          "evidence": []
+        },
+        "smart_money": {
+          "status": "not_evaluable",
+          "reason": "No independently verified wallet purchases",
+          "evidence": []
+        },
+        "short_squeeze": {
+          "status": "not_evaluable",
+          "reason": "No fresh and verified funding/OI pair",
+          "evidence": []
+        },
+        "fundamental_divergence": {
+          "status": "not_evaluable",
+          "reason": "No verified comparable 7-day fundamental metrics",
+          "evidence": []
+        },
+        "catalyst": {
+          "status": "not_evaluable",
+          "reason": "No dated official catalyst events ingested",
+          "evidence": []
+        }
+      },
+      "supported_methods": [],
+      "trade_ready": false,
+      "exchange_buyability_checked": false
+    },
+    {
+      "symbol": "BNBUSDT",
+      "methods": {
+        "momentum": {
+          "status": "not_confirmed",
+          "reason": "No matching two-venue momentum pattern",
+          "evidence": []
+        },
+        "smart_money": {
+          "status": "not_evaluable",
+          "reason": "No independently verified wallet purchases",
+          "evidence": []
+        },
+        "short_squeeze": {
+          "status": "not_evaluable",
+          "reason": "No fresh and verified funding/OI pair",
+          "evidence": []
+        },
+        "fundamental_divergence": {
+          "status": "not_evaluable",
+          "reason": "No verified comparable 7-day fundamental metrics",
+          "evidence": []
+        },
+        "catalyst": {
+          "status": "not_evaluable",
+          "reason": "No dated official catalyst events ingested",
+          "evidence": []
+        }
+      },
+      "supported_methods": [],
+      "trade_ready": false,
+      "exchange_buyability_checked": false
+    },
+    {
+      "symbol": "BONKUSDT",
+      "methods": {
+        "momentum": {
+          "status": "not_confirmed",
+          "reason": "No matching two-venue momentum pattern",
+          "evidence": []
+        },
+        "smart_money": {
+          "status": "not_evaluable",
+          "reason": "No independently verified wallet purchases",
+          "evidence": []
+        },
+        "short_squeeze": {
+          "status": "not_evaluable",
+          "reason": "No fresh and verified funding/OI pair",
+          "evidence": []
+        },
+        "fundamental_divergence": {
+          "status": "not_evaluable",
+          "reason": "No verified comparable 7-day fundamental metrics",
+          "evidence": []
+        },
+        "catalyst": {
+          "status": "not_evaluable",
+          "reason": "No dated official catalyst events ingested",
+          "evidence": []
+        }
+      },
+      "supported_methods": [],
+      "trade_ready": false,
+      "exchange_buyability_checked": false
+    },
+    {
+      "symbol": "BTCUSDT",
+      "methods": {
+        "momentum": {
+          "status": "not_confirmed",
+          "reason": "No matching two-venue momentum pattern",
+          "evidence": []
+        },
+        "smart_money": {
+          "status": "not_evaluable",
+          "reason": "No independently verified wallet purchases",
+          "evidence": []
+        },
+        "short_squeeze": {
+          "status": "not_evaluable",
+          "reason": "Funding interval and 4h OI plus spot confirmation not yet complete",
+          "evidence": [
+            {
+              "funding_percent": 0.00449,
+              "oi_change_4h_percent": null,
+              "funding_interval_unverified": true,
+              "funding_url": "https://www.okx.com/api/v5/public/funding-rate?instId=BTC-USDT-SWAP",
+              "oi_url": "https://www.okx.com/api/v5/public/open-interest?instType=SWAP&instId=BTC-USDT-SWAP"
+            }
+          ]
+        },
+        "fundamental_divergence": {
+          "status": "not_evaluable",
+          "reason": "No verified comparable 7-day fundamental metrics",
+          "evidence": []
+        },
+        "catalyst": {
+          "status": "not_evaluable",
+          "reason": "No dated official catalyst events ingested",
+          "evidence": []
+        }
+      },
+      "supported_methods": [],
+      "trade_ready": false,
+      "exchange_buyability_checked": false
+    },
+    {
+      "symbol": "BTWUSDT",
+      "methods": {
+        "momentum": {
+          "status": "not_confirmed",
+          "reason": "No matching two-venue momentum pattern",
+          "evidence": []
+        },
+        "smart_money": {
+          "status": "not_evaluable",
+          "reason": "No independently verified wallet purchases",
+          "evidence": []
+        },
+        "short_squeeze": {
+          "status": "not_evaluable",
+          "reason": "No fresh and verified funding/OI pair",
+          "evidence": []
+        },
+        "fundamental_divergence": {
+          "status": "not_evaluable",
+          "reason": "No verified comparable 7-day fundamental metrics",
+          "evidence": []
+        },
+        "catalyst": {
+          "status": "not_evaluable",
+          "reason": "No dated official catalyst events ingested",
+          "evidence": []
+        }
+      },
+      "supported_methods": [],
+      "trade_ready": false,
+      "exchange_buyability_checked": false
+    },
+    {
+      "symbol": "CRVUSDT",
+      "methods": {
+        "momentum": {
+          "status": "not_confirmed",
+          "reason": "No matching two-venue momentum pattern",
+          "evidence": []
+        },
+        "smart_money": {
+          "status": "not_evaluable",
+          "reason": "No independently verified wallet purchases",
+          "evidence": []
+        },
+        "short_squeeze": {
+          "status": "not_evaluable",
+          "reason": "No fresh and verified funding/OI pair",
+          "evidence": []
+        },
+        "fundamental_divergence": {
+          "status": "not_evaluable",
+          "reason": "No verified comparable 7-day fundamental metrics",
+          "evidence": []
+        },
+        "catalyst": {
+          "status": "not_evaluable",
+          "reason": "No dated official catalyst events ingested",
+          "evidence": []
+        }
+      },
+      "supported_methods": [],
+      "trade_ready": false,
+      "exchange_buyability_checked": false
+    },
+    {
+      "symbol": "DNAUSDT",
+      "methods": {
+        "momentum": {
+          "status": "not_confirmed",
+          "reason": "No matching two-venue momentum pattern",
+          "evidence": []
+        },
+        "smart_money": {
+          "status": "not_evaluable",
+          "reason": "No independently verified wallet purchases",
+          "evidence": []
+        },
+        "short_squeeze": {
+          "status": "not_evaluable",
+          "reason": "No fresh and verified funding/OI pair",
+          "evidence": []
+        },
+        "fundamental_divergence": {
+          "status": "not_evaluable",
+          "reason": "No verified comparable 7-day fundamental metrics",
+          "evidence": []
+        },
+        "catalyst": {
+          "status": "not_evaluable",
+          "reason": "No dated official catalyst events ingested",
+          "evidence": []
+        }
+      },
+      "supported_methods": [],
+      "trade_ready": false,
+      "exchange_buyability_checked": false
+    },
+    {
+      "symbol": "DOGEUSDT",
+      "methods": {
+        "momentum": {
+          "status": "not_confirmed",
+          "reason": "No matching two-venue momentum pattern",
+          "evidence": []
+        },
+        "smart_money": {
+          "status": "not_evaluable",
+          "reason": "No independently verified wallet purchases",
+          "evidence": []
+        },
+        "short_squeeze": {
+          "status": "not_evaluable",
+          "reason": "No fresh and verified funding/OI pair",
+          "evidence": []
+        },
+        "fundamental_divergence": {
+          "status": "not_evaluable",
+          "reason": "No verified comparable 7-day fundamental metrics",
+          "evidence": []
+        },
+        "catalyst": {
+          "status": "not_evaluable",
+          "reason": "No dated official catalyst events ingested",
+          "evidence": []
+        }
+      },
+      "supported_methods": [],
+      "trade_ready": false,
+      "exchange_buyability_checked": false
+    },
+    {
+      "symbol": "ENAUSDT",
+      "methods": {
+        "momentum": {
+          "status": "not_confirmed",
+          "reason": "No matching two-venue momentum pattern",
+          "evidence": []
+        },
+        "smart_money": {
+          "status": "not_evaluable",
+          "reason": "No independently verified wallet purchases",
+          "evidence": []
+        },
+        "short_squeeze": {
+          "status": "not_evaluable",
+          "reason": "No fresh and verified funding/OI pair",
+          "evidence": []
+        },
+        "fundamental_divergence": {
+          "status": "not_evaluable",
+          "reason": "No verified comparable 7-day fundamental metrics",
+          "evidence": []
+        },
+        "catalyst": {
+          "status": "not_evaluable",
+          "reason": "No dated official catalyst events ingested",
+          "evidence": []
+        }
+      },
+      "supported_methods": [],
+      "trade_ready": false,
+      "exchange_buyability_checked": false
+    },
+    {
+      "symbol": "ETHUSDT",
+      "methods": {
+        "momentum": {
+          "status": "not_confirmed",
+          "reason": "No matching two-venue momentum pattern",
+          "evidence": []
+        },
+        "smart_money": {
+          "status": "not_evaluable",
+          "reason": "No independently verified wallet purchases",
+          "evidence": []
+        },
+        "short_squeeze": {
+          "status": "not_evaluable",
+          "reason": "Funding interval and 4h OI plus spot confirmation not yet complete",
+          "evidence": [
+            {
+              "funding_percent": -0.002342,
+              "oi_change_4h_percent": null,
+              "funding_interval_unverified": true,
+              "funding_url": "https://www.okx.com/api/v5/public/funding-rate?instId=ETH-USDT-SWAP",
+              "oi_url": "https://www.okx.com/api/v5/public/open-interest?instType=SWAP&instId=ETH-USDT-SWAP"
+            }
+          ]
+        },
+        "fundamental_divergence": {
+          "status": "not_evaluable",
+          "reason": "No verified comparable 7-day fundamental metrics",
+          "evidence": []
+        },
+        "catalyst": {
+          "status": "not_evaluable",
+          "reason": "No dated official catalyst events ingested",
+          "evidence": []
+        }
+      },
+      "supported_methods": [],
+      "trade_ready": false,
+      "exchange_buyability_checked": false
+    },
+    {
+      "symbol": "FETUSDT",
+      "methods": {
+        "momentum": {
+          "status": "not_confirmed",
+          "reason": "No matching two-venue momentum pattern",
+          "evidence": []
+        },
+        "smart_money": {
+          "status": "not_evaluable",
+          "reason": "No independently verified wallet purchases",
+          "evidence": []
+        },
+        "short_squeeze": {
+          "status": "not_evaluable",
+          "reason": "No fresh and verified funding/OI pair",
+          "evidence": []
+        },
+        "fundamental_divergence": {
+          "status": "not_evaluable",
+          "reason": "No verified comparable 7-day fundamental metrics",
+          "evidence": []
+        },
+        "catalyst": {
+          "status": "not_evaluable",
+          "reason": "No dated official catalyst events ingested",
+          "evidence": []
+        }
+      },
+      "supported_methods": [],
+      "trade_ready": false,
+      "exchange_buyability_checked": false
+    },
+    {
+      "symbol": "GRAMUSDT",
+      "methods": {
+        "momentum": {
+          "status": "not_confirmed",
+          "reason": "No matching two-venue momentum pattern",
+          "evidence": []
+        },
+        "smart_money": {
+          "status": "not_evaluable",
+          "reason": "No independently verified wallet purchases",
+          "evidence": []
+        },
+        "short_squeeze": {
+          "status": "not_evaluable",
+          "reason": "No fresh and verified funding/OI pair",
+          "evidence": []
+        },
+        "fundamental_divergence": {
+          "status": "not_evaluable",
+          "reason": "No verified comparable 7-day fundamental metrics",
+          "evidence": []
+        },
+        "catalyst": {
+          "status": "not_evaluable",
+          "reason": "No dated official catalyst events ingested",
+          "evidence": []
+        }
+      },
+      "supported_methods": [],
+      "trade_ready": false,
+      "exchange_buyability_checked": false
+    },
+    {
+      "symbol": "GRTUSDT",
+      "methods": {
+        "momentum": {
+          "status": "not_confirmed",
+          "reason": "No matching two-venue momentum pattern",
+          "evidence": []
+        },
+        "smart_money": {
+          "status": "not_evaluable",
+          "reason": "No independently verified wallet purchases",
+          "evidence": []
+        },
+        "short_squeeze": {
+          "status": "not_evaluable",
+          "reason": "No fresh and verified funding/OI pair",
+          "evidence": []
+        },
+        "fundamental_divergence": {
+          "status": "not_evaluable",
+          "reason": "No verified comparable 7-day fundamental metrics",
+          "evidence": []
+        },
+        "catalyst": {
+          "status": "not_evaluable",
+          "reason": "No dated official catalyst events ingested",
+          "evidence": []
+        }
+      },
+      "supported_methods": [],
+      "trade_ready": false,
+      "exchange_buyability_checked": false
+    },
+    {
+      "symbol": "HYPEUSDT",
+      "methods": {
+        "momentum": {
+          "status": "not_confirmed",
+          "reason": "No matching two-venue momentum pattern",
+          "evidence": []
+        },
+        "smart_money": {
+          "status": "not_evaluable",
+          "reason": "No independently verified wallet purchases",
+          "evidence": []
+        },
+        "short_squeeze": {
+          "status": "not_evaluable",
+          "reason": "Funding interval and 4h OI plus spot confirmation not yet complete",
+          "evidence": [
+            {
+              "funding_percent": -0.001016,
+              "oi_change_4h_percent": null,
+              "funding_interval_unverified": true,
+              "funding_url": "https://www.okx.com/api/v5/public/funding-rate?instId=HYPE-USDT-SWAP",
+              "oi_url": "https://www.okx.com/api/v5/public/open-interest?instType=SWAP&instId=HYPE-USDT-SWAP"
+            }
+          ]
+        },
+        "fundamental_divergence": {
+          "status": "not_evaluable",
+          "reason": "No verified comparable 7-day fundamental metrics",
+          "evidence": []
+        },
+        "catalyst": {
+          "status": "not_evaluable",
+          "reason": "No dated official catalyst events ingested",
+          "evidence": []
+        }
+      },
+      "supported_methods": [],
+      "trade_ready": false,
+      "exchange_buyability_checked": false
+    },
+    {
+      "symbol": "IMXUSDT",
+      "methods": {
+        "momentum": {
+          "status": "not_confirmed",
+          "reason": "No matching two-venue momentum pattern",
+          "evidence": []
+        },
+        "smart_money": {
+          "status": "not_evaluable",
+          "reason": "No independently verified wallet purchases",
+          "evidence": []
+        },
+        "short_squeeze": {
+          "status": "not_evaluable",
+          "reason": "No fresh and verified funding/OI pair",
+          "evidence": []
+        },
+        "fundamental_divergence": {
+          "status": "not_evaluable",
+          "reason": "No verified comparable 7-day fundamental metrics",
+          "evidence": []
+        },
+        "catalyst": {
+          "status": "not_evaluable",
+          "reason": "No dated official catalyst events ingested",
+          "evidence": []
+        }
+      },
+      "supported_methods": [],
+      "trade_ready": false,
+      "exchange_buyability_checked": false
+    },
+    {
+      "symbol": "INITUSDT",
+      "methods": {
+        "momentum": {
+          "status": "not_confirmed",
+          "reason": "No matching two-venue momentum pattern",
+          "evidence": []
+        },
+        "smart_money": {
+          "status": "not_evaluable",
+          "reason": "No independently verified wallet purchases",
+          "evidence": []
+        },
+        "short_squeeze": {
+          "status": "not_evaluable",
+          "reason": "No fresh and verified funding/OI pair",
+          "evidence": []
+        },
+        "fundamental_divergence": {
+          "status": "not_evaluable",
+          "reason": "No verified comparable 7-day fundamental metrics",
+          "evidence": []
+        },
+        "catalyst": {
+          "status": "not_evaluable",
+          "reason": "No dated official catalyst events ingested",
+          "evidence": []
+        }
+      },
+      "supported_methods": [],
+      "trade_ready": false,
+      "exchange_buyability_checked": false
+    },
+    {
+      "symbol": "INJUSDT",
+      "methods": {
+        "momentum": {
+          "status": "not_confirmed",
+          "reason": "No matching two-venue momentum pattern",
+          "evidence": []
+        },
+        "smart_money": {
+          "status": "not_evaluable",
+          "reason": "No independently verified wallet purchases",
+          "evidence": []
+        },
+        "short_squeeze": {
+          "status": "not_evaluable",
+          "reason": "No fresh and verified funding/OI pair",
+          "evidence": []
+        },
+        "fundamental_divergence": {
+          "status": "not_evaluable",
+          "reason": "No verified comparable 7-day fundamental metrics",
+          "evidence": []
+        },
+        "catalyst": {
+          "status": "not_evaluable",
+          "reason": "No dated official catalyst events ingested",
+          "evidence": []
+        }
+      },
+      "supported_methods": [],
+      "trade_ready": false,
+      "exchange_buyability_checked": false
+    },
+    {
+      "symbol": "JUPUSDT",
+      "methods": {
+        "momentum": {
+          "status": "not_confirmed",
+          "reason": "No matching two-venue momentum pattern",
+          "evidence": []
+        },
+        "smart_money": {
+          "status": "not_evaluable",
+          "reason": "No independently verified wallet purchases",
+          "evidence": []
+        },
+        "short_squeeze": {
+          "status": "not_evaluable",
+          "reason": "No fresh and verified funding/OI pair",
+          "evidence": []
+        },
+        "fundamental_divergence": {
+          "status": "not_evaluable",
+          "reason": "No verified comparable 7-day fundamental metrics",
+          "evidence": []
+        },
+        "catalyst": {
+          "status": "not_evaluable",
+          "reason": "No dated official catalyst events ingested",
+          "evidence": []
+        }
+      },
+      "supported_methods": [],
+      "trade_ready": false,
+      "exchange_buyability_checked": false
+    },
+    {
+      "symbol": "KASUSDT",
+      "methods": {
+        "momentum": {
+          "status": "not_confirmed",
+          "reason": "No matching two-venue momentum pattern",
+          "evidence": []
+        },
+        "smart_money": {
+          "status": "not_evaluable",
+          "reason": "No independently verified wallet purchases",
+          "evidence": []
+        },
+        "short_squeeze": {
+          "status": "not_evaluable",
+          "reason": "No fresh and verified funding/OI pair",
+          "evidence": []
+        },
+        "fundamental_divergence": {
+          "status": "not_evaluable",
+          "reason": "No verified comparable 7-day fundamental metrics",
+          "evidence": []
+        },
+        "catalyst": {
+          "status": "not_evaluable",
+          "reason": "No dated official catalyst events ingested",
+          "evidence": []
+        }
+      },
+      "supported_methods": [],
+      "trade_ready": false,
+      "exchange_buyability_checked": false
+    },
+    {
+      "symbol": "KGENUSDT",
+      "methods": {
+        "momentum": {
+          "status": "not_confirmed",
+          "reason": "No matching two-venue momentum pattern",
+          "evidence": []
+        },
+        "smart_money": {
+          "status": "not_evaluable",
+          "reason": "No independently verified wallet purchases",
+          "evidence": []
+        },
+        "short_squeeze": {
+          "status": "not_evaluable",
+          "reason": "No fresh and verified funding/OI pair",
+          "evidence": []
+        },
+        "fundamental_divergence": {
+          "status": "not_evaluable",
+          "reason": "No verified comparable 7-day fundamental metrics",
+          "evidence": []
+        },
+        "catalyst": {
+          "status": "not_evaluable",
+          "reason": "No dated official catalyst events ingested",
+          "evidence": []
+        }
+      },
+      "supported_methods": [],
+      "trade_ready": false,
+      "exchange_buyability_checked": false
+    },
+    {
+      "symbol": "KORUGUSDT",
+      "methods": {
+        "momentum": {
+          "status": "not_confirmed",
+          "reason": "No matching two-venue momentum pattern",
+          "evidence": []
+        },
+        "smart_money": {
+          "status": "not_evaluable",
+          "reason": "No independently verified wallet purchases",
+          "evidence": []
+        },
+        "short_squeeze": {
+          "status": "not_evaluable",
+          "reason": "No fresh and verified funding/OI pair",
+          "evidence": []
+        },
+        "fundamental_divergence": {
+          "status": "not_evaluable",
+          "reason": "No verified comparable 7-day fundamental metrics",
+          "evidence": []
+        },
+        "catalyst": {
+          "status": "not_evaluable",
+          "reason": "No dated official catalyst events ingested",
+          "evidence": []
+        }
+      },
+      "supported_methods": [],
+      "trade_ready": false,
+      "exchange_buyability_checked": false
+    },
+    {
+      "symbol": "LDOUSDT",
+      "methods": {
+        "momentum": {
+          "status": "not_confirmed",
+          "reason": "No matching two-venue momentum pattern",
+          "evidence": []
+        },
+        "smart_money": {
+          "status": "not_evaluable",
+          "reason": "No independently verified wallet purchases",
+          "evidence": []
+        },
+        "short_squeeze": {
+          "status": "not_evaluable",
+          "reason": "No fresh and verified funding/OI pair",
+          "evidence": []
+        },
+        "fundamental_divergence": {
+          "status": "not_evaluable",
+          "reason": "No verified comparable 7-day fundamental metrics",
+          "evidence": []
+        },
+        "catalyst": {
+          "status": "not_evaluable",
+          "reason": "No dated official catalyst events ingested",
+          "evidence": []
+        }
+      },
+      "supported_methods": [],
+      "trade_ready": false,
+      "exchange_buyability_checked": false
+    },
+    {
+      "symbol": "LINKUSDT",
+      "methods": {
+        "momentum": {
+          "status": "not_confirmed",
+          "reason": "No matching two-venue momentum pattern",
+          "evidence": []
+        },
+        "smart_money": {
+          "status": "not_evaluable",
+          "reason": "No independently verified wallet purchases",
+          "evidence": []
+        },
+        "short_squeeze": {
+          "status": "not_evaluable",
+          "reason": "No fresh and verified funding/OI pair",
+          "evidence": []
+        },
+        "fundamental_divergence": {
+          "status": "not_confirmed",
+          "reason": "Growth or token value capture criteria not established",
+          "evidence": [
+            {
+              "metric": "fees",
+              "growth_7d_percent": -2.651,
+              "window_end_utc": "2026-11-13T00:00:00+00:00",
+              "source": "https://api.llama.fi/summary/fees/chainlink?dataType=dailyFees"
+            }
+          ]
+        },
+        "catalyst": {
+          "status": "not_evaluable",
+          "reason": "No dated official catalyst events ingested",
+          "evidence": []
+        }
+      },
+      "supported_methods": [],
+      "trade_ready": false,
+      "exchange_buyability_checked": false
+    },
+    {
+      "symbol": "LSKUSDT",
+      "methods": {
+        "momentum": {
+          "status": "not_confirmed",
+          "reason": "No matching two-venue momentum pattern",
+          "evidence": []
+        },
+        "smart_money": {
+          "status": "not_evaluable",
+          "reason": "No independently verified wallet purchases",
+          "evidence": []
+        },
+        "short_squeeze": {
+          "status": "not_evaluable",
+          "reason": "No fresh and verified funding/OI pair",
+          "evidence": []
+        },
+        "fundamental_divergence": {
+          "status": "not_evaluable",
+          "reason": "No verified comparable 7-day fundamental metrics",
+          "evidence": []
+        },
+        "catalyst": {
+          "status": "not_evaluable",
+          "reason": "No dated official catalyst events ingested",
+          "evidence": []
+        }
+      },
+      "supported_methods": [],
+      "trade_ready": false,
+      "exchange_buyability_checked": false
+    },
+    {
+      "symbol": "LTCUSDT",
+      "methods": {
+        "momentum": {
+          "status": "not_confirmed",
+          "reason": "No matching two-venue momentum pattern",
+          "evidence": []
+        },
+        "smart_money": {
+          "status": "not_evaluable",
+          "reason": "No independently verified wallet purchases",
+          "evidence": []
+        },
+        "short_squeeze": {
+          "status": "not_evaluable",
+          "reason": "No fresh and verified funding/OI pair",
+          "evidence": []
+        },
+        "fundamental_divergence": {
+          "status": "not_evaluable",
+          "reason": "No verified comparable 7-day fundamental metrics",
+          "evidence": []
+        },
+        "catalyst": {
+          "status": "not_evaluable",
+          "reason": "No dated official catalyst events ingested",
+          "evidence": []
+        }
+      },
+      "supported_methods": [],
+      "trade_ready": false,
+      "exchange_buyability_checked": false
+    },
+    {
+      "symbol": "MORPHOUSDT",
+      "methods": {
+        "momentum": {
+          "status": "not_confirmed",
+          "reason": "No matching two-venue momentum pattern",
+          "evidence": []
+        },
+        "smart_money": {
+          "status": "not_evaluable",
+          "reason": "No independently verified wallet purchases",
+          "evidence": []
+        },
+        "short_squeeze": {
+          "status": "not_evaluable",
+          "reason": "No fresh and verified funding/OI pair",
+          "evidence": []
+        },
+        "fundamental_divergence": {
+          "status": "not_evaluable",
+          "reason": "No verified comparable 7-day fundamental metrics",
+          "evidence": []
+        },
+        "catalyst": {
+          "status": "not_evaluable",
+          "reason": "No dated official catalyst events ingested",
+          "evidence": []
+        }
+      },
+      "supported_methods": [],
+      "trade_ready": false,
+      "exchange_buyability_checked": false
+    },
+    {
+      "symbol": "NEARUSDT",
+      "methods": {
+        "momentum": {
+          "status": "not_confirmed",
+          "reason": "No matching two-venue momentum pattern",
+          "evidence": []
+        },
+        "smart_money": {
+          "status": "not_evaluable",
+          "reason": "No independently verified wallet purchases",
+          "evidence": []
+        },
+        "short_squeeze": {
+          "status": "not_evaluable",
+          "reason": "No fresh and verified funding/OI pair",
+          "evidence": []
+        },
+        "fundamental_divergence": {
+          "status": "not_evaluable",
+          "reason": "No verified comparable 7-day fundamental metrics",
+          "evidence": []
+        },
+        "catalyst": {
+          "status": "not_evaluable",
+          "reason": "No dated official catalyst events ingested",
+          "evidence": []
+        }
+      },
+      "supported_methods": [],
+      "trade_ready": false,
+      "exchange_buyability_checked": false
+    },
+    {
+      "symbol": "ONDOUSDT",
+      "methods": {
+        "momentum": {
+          "status": "not_confirmed",
+          "reason": "No matching two-venue momentum pattern",
+          "evidence": []
+        },
+        "smart_money": {
+          "status": "not_evaluable",
+          "reason": "No independently verified wallet purchases",
+          "evidence": []
+        },
+        "short_squeeze": {
+          "status": "not_evaluable",
+          "reason": "No fresh and verified funding/OI pair",
+          "evidence": []
+        },
+        "fundamental_divergence": {
+          "status": "not_evaluable",
+          "reason": "No verified comparable 7-day fundamental metrics",
+          "evidence": []
+        },
+        "catalyst": {
+          "status": "not_evaluable",
+          "reason": "No dated official catalyst events ingested",
+          "evidence": []
+        }
+      },
+      "supported_methods": [],
+      "trade_ready": false,
+      "exchange_buyability_checked": false
+    },
+    {
+      "symbol": "OPUSDT",
+      "methods": {
+        "momentum": {
+          "status": "not_confirmed",
+          "reason": "No matching two-venue momentum pattern",
+          "evidence": []
+        },
+        "smart_money": {
+          "status": "not_evaluable",
+          "reason": "No independently verified wallet purchases",
+          "evidence": []
+        },
+        "short_squeeze": {
+          "status": "not_evaluable",
+          "reason": "No fresh and verified funding/OI pair",
+          "evidence": []
+        },
+        "fundamental_divergence": {
+          "status": "not_evaluable",
+          "reason": "No verified comparable 7-day fundamental metrics",
+          "evidence": []
+        },
+        "catalyst": {
+          "status": "not_evaluable",
+          "reason": "No dated official catalyst events ingested",
+          "evidence": []
+        }
+      },
+      "supported_methods": [],
+      "trade_ready": false,
+      "exchange_buyability_checked": false
+    },
+    {
+      "symbol": "OSMOUSDT",
+      "methods": {
+        "momentum": {
+          "status": "not_confirmed",
+          "reason": "No matching two-venue momentum pattern",
+          "evidence": []
+        },
+        "smart_money": {
+          "status": "not_evaluable",
+          "reason": "No independently verified wallet purchases",
+          "evidence": []
+        },
+        "short_squeeze": {
+          "status": "not_evaluable",
+          "reason": "No fresh and verified funding/OI pair",
+          "evidence": []
+        },
+        "fundamental_divergence": {
+          "status": "not_evaluable",
+          "reason": "No verified comparable 7-day fundamental metrics",
+          "evidence": []
+        },
+        "catalyst": {
+          "status": "not_evaluable",
+          "reason": "No dated official catalyst events ingested",
+          "evidence": []
+        }
+      },
+      "supported_methods": [],
+      "trade_ready": false,
+      "exchange_buyability_checked": false
+    },
+    {
+      "symbol": "PEARLUSDT",
+      "methods": {
+        "momentum": {
+          "status": "not_confirmed",
+          "reason": "No matching two-venue momentum pattern",
+          "evidence": []
+        },
+        "smart_money": {
+          "status": "not_evaluable",
+          "reason": "No independently verified wallet purchases",
+          "evidence": []
+        },
+        "short_squeeze": {
+          "status": "not_evaluable",
+          "reason": "No fresh and verified funding/OI pair",
+          "evidence": []
+        },
+        "fundamental_divergence": {
+          "status": "not_evaluable",
+          "reason": "No verified comparable 7-day fundamental metrics",
+          "evidence": []
+        },
+        "catalyst": {
+          "status": "not_evaluable",
+          "reason": "No dated official catalyst events ingested",
+          "evidence": []
+        }
+      },
+      "supported_methods": [],
+      "trade_ready": false,
+      "exchange_buyability_checked": false
+    },
+    {
+      "symbol": "PENGUUSDT",
+      "methods": {
+        "momentum": {
+          "status": "not_confirmed",
+          "reason": "No matching two-venue momentum pattern",
+          "evidence": []
+        },
+        "smart_money": {
+          "status": "not_evaluable",
+          "reason": "No independently verified wallet purchases",
+          "evidence": []
+        },
+        "short_squeeze": {
+          "status": "not_evaluable",
+          "reason": "No fresh and verified funding/OI pair",
+          "evidence": []
+        },
+        "fundamental_divergence": {
+          "status": "not_evaluable",
+          "reason": "No verified comparable 7-day fundamental metrics",
+          "evidence": []
+        },
+        "catalyst": {
+          "status": "not_evaluable",
+          "reason": "No dated official catalyst events ingested",
+          "evidence": []
+        }
+      },
+      "supported_methods": [],
+      "trade_ready": false,
+      "exchange_buyability_checked": false
+    },
+    {
+      "symbol": "PEPEUSDT",
+      "methods": {
+        "momentum": {
+          "status": "not_confirmed",
+          "reason": "No matching two-venue momentum pattern",
+          "evidence": []
+        },
+        "smart_money": {
+          "status": "not_evaluable",
+          "reason": "No independently verified wallet purchases",
+          "evidence": []
+        },
+        "short_squeeze": {
+          "status": "not_evaluable",
+          "reason": "No fresh and verified funding/OI pair",
+          "evidence": []
+        },
+        "fundamental_divergence": {
+          "status": "not_evaluable",
+          "reason": "No verified comparable 7-day fundamental metrics",
+          "evidence": []
+        },
+        "catalyst": {
+          "status": "not_evaluable",
+          "reason": "No dated official catalyst events ingested",
+          "evidence": []
+        }
+      },
+      "supported_methods": [],
+      "trade_ready": false,
+      "exchange_buyability_checked": false
+    },
+    {
+      "symbol": "PUMPUSDT",
+      "methods": {
+        "momentum": {
+          "status": "not_confirmed",
+          "reason": "No matching two-venue momentum pattern",
+          "evidence": []
+        },
+        "smart_money": {
+          "status": "not_evaluable",
+          "reason": "No independently verified wallet purchases",
+          "evidence": []
+        },
+        "short_squeeze": {
+          "status": "not_evaluable",
+          "reason": "No fresh and verified funding/OI pair",
+          "evidence": []
+        },
+        "fundamental_divergence": {
+          "status": "not_evaluable",
+          "reason": "No verified comparable 7-day fundamental metrics",
+          "evidence": []
+        },
+        "catalyst": {
+          "status": "not_evaluable",
+          "reason": "No dated official catalyst events ingested",
+          "evidence": []
+        }
+      },
+      "supported_methods": [],
+      "trade_ready": false,
+      "exchange_buyability_checked": false
+    },
+    {
+      "symbol": "PYTHUSDT",
+      "methods": {
+        "momentum": {
+          "status": "not_confirmed",
+          "reason": "No matching two-venue momentum pattern",
+          "evidence": []
+        },
+        "smart_money": {
+          "status": "not_evaluable",
+          "reason": "No independently verified wallet purchases",
+          "evidence": []
+        },
+        "short_squeeze": {
+          "status": "not_evaluable",
+          "reason": "No fresh and verified funding/OI pair",
+          "evidence": []
+        },
+        "fundamental_divergence": {
+          "status": "not_evaluable",
+          "reason": "No verified comparable 7-day fundamental metrics",
+          "evidence": []
+        },
+        "catalyst": {
+          "status": "not_evaluable",
+          "reason": "No dated official catalyst events ingested",
+          "evidence": []
+        }
+      },
+      "supported_methods": [],
+      "trade_ready": false,
+      "exchange_buyability_checked": false
+    },
+    {
+      "symbol": "RENDERUSDT",
+      "methods": {
+        "momentum": {
+          "status": "not_confirmed",
+          "reason": "No matching two-venue momentum pattern",
+          "evidence": []
+        },
+        "smart_money": {
+          "status": "not_evaluable",
+          "reason": "No independently verified wallet purchases",
+          "evidence": []
+        },
+        "short_squeeze": {
+          "status": "not_evaluable",
+          "reason": "No fresh and verified funding/OI pair",
+          "evidence": []
+        },
+        "fundamental_divergence": {
+          "status": "not_evaluable",
+          "reason": "No verified comparable 7-day fundamental metrics",
+          "evidence": []
+        },
+        "catalyst": {
+          "status": "not_evaluable",
+          "reason": "No dated official catalyst events ingested",
+          "evidence": []
+        }
+      },
+      "supported_methods": [],
+      "trade_ready": false,
+      "exchange_buyability_checked": false
+    },
+    {
+      "symbol": "RITUALUSDT",
+      "methods": {
+        "momentum": {
+          "status": "not_confirmed",
+          "reason": "No matching two-venue momentum pattern",
+          "evidence": []
+        },
+        "smart_money": {
+          "status": "not_evaluable",
+          "reason": "No independently verified wallet purchases",
+          "evidence": []
+        },
+        "short_squeeze": {
+          "status": "not_evaluable",
+          "reason": "No fresh and verified funding/OI pair",
+          "evidence": []
+        },
+        "fundamental_divergence": {
+          "status": "not_evaluable",
+          "reason": "No verified comparable 7-day fundamental metrics",
+          "evidence": []
+        },
+        "catalyst": {
+          "status": "not_evaluable",
+          "reason": "No dated official catalyst events ingested",
+          "evidence": []
+        }
+      },
+      "supported_methods": [],
+      "trade_ready": false,
+      "exchange_buyability_checked": false
+    },
+    {
+      "symbol": "RUNEUSDT",
+      "methods": {
+        "momentum": {
+          "status": "not_confirmed",
+          "reason": "No matching two-venue momentum pattern",
+          "evidence": []
+        },
+        "smart_money": {
+          "status": "not_evaluable",
+          "reason": "No independently verified wallet purchases",
+          "evidence": []
+        },
+        "short_squeeze": {
+          "status": "not_evaluable",
+          "reason": "No fresh and verified funding/OI pair",
+          "evidence": []
+        },
+        "fundamental_divergence": {
+          "status": "not_evaluable",
+          "reason": "No verified comparable 7-day fundamental metrics",
+          "evidence": []
+        },
+        "catalyst": {
+          "status": "not_evaluable",
+          "reason": "No dated official catalyst events ingested",
+          "evidence": []
+        }
+      },
+      "supported_methods": [],
+      "trade_ready": false,
+      "exchange_buyability_checked": false
+    },
+    {
+      "symbol": "SEIUSDT",
+      "methods": {
+        "momentum": {
+          "status": "not_confirmed",
+          "reason": "No matching two-venue momentum pattern",
+          "evidence": []
+        },
+        "smart_money": {
+          "status": "not_evaluable",
+          "reason": "No independently verified wallet purchases",
+          "evidence": []
+        },
+        "short_squeeze": {
+          "status": "not_evaluable",
+          "reason": "No fresh and verified funding/OI pair",
+          "evidence": []
+        },
+        "fundamental_divergence": {
+          "status": "not_evaluable",
+          "reason": "No verified comparable 7-day fundamental metrics",
+          "evidence": []
+        },
+        "catalyst": {
+          "status": "not_evaluable",
+          "reason": "No dated official catalyst events ingested",
+          "evidence": []
+        }
+      },
+      "supported_methods": [],
+      "trade_ready": false,
+      "exchange_buyability_checked": false
+    },
+    {
+      "symbol": "SOLUSDT",
+      "methods": {
+        "momentum": {
+          "status": "not_confirmed",
+          "reason": "No matching two-venue momentum pattern",
+          "evidence": []
+        },
+        "smart_money": {
+          "status": "not_evaluable",
+          "reason": "No independently verified wallet purchases",
+          "evidence": []
+        },
+        "short_squeeze": {
+          "status": "not_evaluable",
+          "reason": "Funding interval and 4h OI plus spot confirmation not yet complete",
+          "evidence": [
+            {
+              "funding_percent": 0.001942,
+              "oi_change_4h_percent": null,
+              "funding_interval_unverified": true,
+              "funding_url": "https://www.okx.com/api/v5/public/funding-rate?instId=SOL-USDT-SWAP",
+              "oi_url": "https://www.okx.com/api/v5/public/open-interest?instType=SWAP&instId=SOL-USDT-SWAP"
+            }
+          ]
+        },
+        "fundamental_divergence": {
+          "status": "not_evaluable",
+          "reason": "No verified comparable 7-day fundamental metrics",
+          "evidence": []
+        },
+        "catalyst": {
+          "status": "not_evaluable",
+          "reason": "No dated official catalyst events ingested",
+          "evidence": []
+        }
+      },
+      "supported_methods": [],
+      "trade_ready": false,
+      "exchange_buyability_checked": false
+    },
+    {
+      "symbol": "STORJUSDT",
+      "methods": {
+        "momentum": {
+          "status": "not_confirmed",
+          "reason": "No matching two-venue momentum pattern",
+          "evidence": []
+        },
+        "smart_money": {
+          "status": "not_evaluable",
+          "reason": "No independently verified wallet purchases",
+          "evidence": []
+        },
+        "short_squeeze": {
+          "status": "not_evaluable",
+          "reason": "No fresh and verified funding/OI pair",
+          "evidence": []
+        },
+        "fundamental_divergence": {
+          "status": "not_evaluable",
+          "reason": "No verified comparable 7-day fundamental metrics",
+          "evidence": []
+        },
+        "catalyst": {
+          "status": "not_evaluable",
+          "reason": "No dated official catalyst events ingested",
+          "evidence": []
+        }
+      },
+      "supported_methods": [],
+      "trade_ready": false,
+      "exchange_buyability_checked": false
+    },
+    {
+      "symbol": "SUIUSDT",
+      "methods": {
+        "momentum": {
+          "status": "not_confirmed",
+          "reason": "No matching two-venue momentum pattern",
+          "evidence": []
+        },
+        "smart_money": {
+          "status": "not_evaluable",
+          "reason": "No independently verified wallet purchases",
+          "evidence": []
+        },
+        "short_squeeze": {
+          "status": "not_evaluable",
+          "reason": "Funding interval and 4h OI plus spot confirmation not yet complete",
+          "evidence": [
+            {
+              "funding_percent": 0.002862,
+              "oi_change_4h_percent": null,
+              "funding_interval_unverified": true,
+              "funding_url": "https://www.okx.com/api/v5/public/funding-rate?instId=SUI-USDT-SWAP",
+              "oi_url": "https://www.okx.com/api/v5/public/open-interest?instType=SWAP&instId=SUI-USDT-SWAP"
+            }
+          ]
+        },
+        "fundamental_divergence": {
+          "status": "not_evaluable",
+          "reason": "No verified comparable 7-day fundamental metrics",
+          "evidence": []
+        },
+        "catalyst": {
+          "status": "not_evaluable",
+          "reason": "No dated official catalyst events ingested",
+          "evidence": []
+        }
+      },
+      "supported_methods": [],
+      "trade_ready": false,
+      "exchange_buyability_checked": false
+    },
+    {
+      "symbol": "TAOUSDT",
+      "methods": {
+        "momentum": {
+          "status": "not_confirmed",
+          "reason": "No matching two-venue momentum pattern",
+          "evidence": []
+        },
+        "smart_money": {
+          "status": "not_evaluable",
+          "reason": "No independently verified wallet purchases",
+          "evidence": []
+        },
+        "short_squeeze": {
+          "status": "not_evaluable",
+          "reason": "No fresh and verified funding/OI pair",
+          "evidence": []
+        },
+        "fundamental_divergence": {
+          "status": "not_evaluable",
+          "reason": "No verified comparable 7-day fundamental metrics",
+          "evidence": []
+        },
+        "catalyst": {
+          "status": "not_evaluable",
+          "reason": "No dated official catalyst events ingested",
+          "evidence": []
+        }
+      },
+      "supported_methods": [],
+      "trade_ready": false,
+      "exchange_buyability_checked": false
+    },
+    {
+      "symbol": "TIAUSDT",
+      "methods": {
+        "momentum": {
+          "status": "not_confirmed",
+          "reason": "No matching two-venue momentum pattern",
+          "evidence": []
+        },
+        "smart_money": {
+          "status": "not_evaluable",
+          "reason": "No independently verified wallet purchases",
+          "evidence": []
+        },
+        "short_squeeze": {
+          "status": "not_evaluable",
+          "reason": "No fresh and verified funding/OI pair",
+          "evidence": []
+        },
+        "fundamental_divergence": {
+          "status": "not_evaluable",
+          "reason": "No verified comparable 7-day fundamental metrics",
+          "evidence": []
+        },
+        "catalyst": {
+          "status": "not_evaluable",
+          "reason": "No dated official catalyst events ingested",
+          "evidence": []
+        }
+      },
+      "supported_methods": [],
+      "trade_ready": false,
+      "exchange_buyability_checked": false
+    },
+    {
+      "symbol": "TONUSDT",
+      "methods": {
+        "momentum": {
+          "status": "not_evaluable",
+          "reason": "No verified spot candles for this symbol",
+          "evidence": []
+        },
+        "smart_money": {
+          "status": "not_evaluable",
+          "reason": "No independently verified wallet purchases",
+          "evidence": []
+        },
+        "short_squeeze": {
+          "status": "not_evaluable",
+          "reason": "No fresh and verified funding/OI pair",
+          "evidence": []
+        },
+        "fundamental_divergence": {
+          "status": "not_evaluable",
+          "reason": "No verified comparable 7-day fundamental metrics",
+          "evidence": []
+        },
+        "catalyst": {
+          "status": "not_evaluable",
+          "reason": "No dated official catalyst events ingested",
+          "evidence": []
+        }
+      },
+      "supported_methods": [],
+      "trade_ready": false,
+      "exchange_buyability_checked": false
+    },
+    {
+      "symbol": "TRXUSDT",
+      "methods": {
+        "momentum": {
+          "status": "not_confirmed",
+          "reason": "No matching two-venue momentum pattern",
+          "evidence": []
+        },
+        "smart_money": {
+          "status": "not_evaluable",
+          "reason": "No independently verified wallet purchases",
+          "evidence": []
+        },
+        "short_squeeze": {
+          "status": "not_evaluable",
+          "reason": "No fresh and verified funding/OI pair",
+          "evidence": []
+        },
+        "fundamental_divergence": {
+          "status": "not_evaluable",
+          "reason": "No verified comparable 7-day fundamental metrics",
+          "evidence": []
+        },
+        "catalyst": {
+          "status": "not_evaluable",
+          "reason": "No dated official catalyst events ingested",
+          "evidence": []
+        }
+      },
+      "supported_methods": [],
+      "trade_ready": false,
+      "exchange_buyability_checked": false
+    },
+    {
+      "symbol": "UNIUSDT",
+      "methods": {
+        "momentum": {
+          "status": "not_confirmed",
+          "reason": "No matching two-venue momentum pattern",
+          "evidence": []
+        },
+        "smart_money": {
+          "status": "not_evaluable",
+          "reason": "No independently verified wallet purchases",
+          "evidence": []
+        },
+        "short_squeeze": {
+          "status": "not_evaluable",
+          "reason": "No fresh and verified funding/OI pair",
+          "evidence": []
+        },
+        "fundamental_divergence": {
+          "status": "not_confirmed",
+          "reason": "Growth or token value capture criteria not established",
+          "evidence": [
+            {
+              "metric": "fees",
+              "growth_7d_percent": -35.351,
+              "window_end_utc": "2026-11-13T00:00:00+00:00",
+              "source": "https://api.llama.fi/summary/fees/uniswap?dataType=dailyFees"
+            }
+          ]
+        },
+        "catalyst": {
+          "status": "not_evaluable",
+          "reason": "No dated official catalyst events ingested",
+          "evidence": []
+        }
+      },
+      "supported_methods": [],
+      "trade_ready": false,
+      "exchange_buyability_checked": false
+    },
+    {
+      "symbol": "WIFUSDT",
+      "methods": {
+        "momentum": {
+          "status": "not_confirmed",
+          "reason": "No matching two-venue momentum pattern",
+          "evidence": []
+        },
+        "smart_money": {
+          "status": "not_evaluable",
+          "reason": "No independently verified wallet purchases",
+          "evidence": []
+        },
+        "short_squeeze": {
+          "status": "not_evaluable",
+          "reason": "No fresh and verified funding/OI pair",
+          "evidence": []
+        },
+        "fundamental_divergence": {
+          "status": "not_evaluable",
+          "reason": "No verified comparable 7-day fundamental metrics",
+          "evidence": []
+        },
+        "catalyst": {
+          "status": "not_evaluable",
+          "reason": "No dated official catalyst events ingested",
+          "evidence": []
+        }
+      },
+      "supported_methods": [],
+      "trade_ready": false,
+      "exchange_buyability_checked": false
+    },
+    {
+      "symbol": "WPAYUSDT",
+      "methods": {
+        "momentum": {
+          "status": "not_confirmed",
+          "reason": "No matching two-venue momentum pattern",
+          "evidence": []
+        },
+        "smart_money": {
+          "status": "not_evaluable",
+          "reason": "No independently verified wallet purchases",
+          "evidence": []
+        },
+        "short_squeeze": {
+          "status": "not_evaluable",
+          "reason": "No fresh and verified funding/OI pair",
+          "evidence": []
+        },
+        "fundamental_divergence": {
+          "status": "not_evaluable",
+          "reason": "No verified comparable 7-day fundamental metrics",
+          "evidence": []
+        },
+        "catalyst": {
+          "status": "not_evaluable",
+          "reason": "No dated official catalyst events ingested",
+          "evidence": []
+        }
+      },
+      "supported_methods": [],
+      "trade_ready": false,
+      "exchange_buyability_checked": false
+    },
+    {
+      "symbol": "XLMUSDT",
+      "methods": {
+        "momentum": {
+          "status": "not_confirmed",
+          "reason": "No matching two-venue momentum pattern",
+          "evidence": []
+        },
+        "smart_money": {
+          "status": "not_evaluable",
+          "reason": "No independently verified wallet purchases",
+          "evidence": []
+        },
+        "short_squeeze": {
+          "status": "not_evaluable",
+          "reason": "No fresh and verified funding/OI pair",
+          "evidence": []
+        },
+        "fundamental_divergence": {
+          "status": "not_evaluable",
+          "reason": "No verified comparable 7-day fundamental metrics",
+          "evidence": []
+        },
+        "catalyst": {
+          "status": "not_evaluable",
+          "reason": "No dated official catalyst events ingested",
+          "evidence": []
+        }
+      },
+      "supported_methods": [],
+      "trade_ready": false,
+      "exchange_buyability_checked": false
+    },
+    {
+      "symbol": "XRPUSDT",
+      "methods": {
+        "momentum": {
+          "status": "not_confirmed",
+          "reason": "No matching two-venue momentum pattern",
+          "evidence": []
+        },
+        "smart_money": {
+          "status": "not_evaluable",
+          "reason": "No independently verified wallet purchases",
+          "evidence": []
+        },
+        "short_squeeze": {
+          "status": "not_evaluable",
+          "reason": "No fresh and verified funding/OI pair",
+          "evidence": []
+        },
+        "fundamental_divergence": {
+          "status": "not_evaluable",
+          "reason": "No verified comparable 7-day fundamental metrics",
+          "evidence": []
+        },
+        "catalyst": {
+          "status": "not_evaluable",
+          "reason": "No dated official catalyst events ingested",
+          "evidence": []
+        }
+      },
+      "supported_methods": [],
+      "trade_ready": false,
+      "exchange_buyability_checked": false
+    },
+    {
+      "symbol": "ZECUSDT",
+      "methods": {
+        "momentum": {
+          "status": "not_confirmed",
+          "reason": "No matching two-venue momentum pattern",
+          "evidence": []
+        },
+        "smart_money": {
+          "status": "not_evaluable",
+          "reason": "No independently verified wallet purchases",
+          "evidence": []
+        },
+        "short_squeeze": {
+          "status": "not_evaluable",
+          "reason": "No fresh and verified funding/OI pair",
+          "evidence": []
+        },
+        "fundamental_divergence": {
+          "status": "not_evaluable",
+          "reason": "No verified comparable 7-day fundamental metrics",
+          "evidence": []
+        },
+        "catalyst": {
+          "status": "not_evaluable",
+          "reason": "No dated official catalyst events ingested",
+          "evidence": []
+        }
+      },
+      "supported_methods": [],
+      "trade_ready": false,
+      "exchange_buyability_checked": false
+    },
+    {
+      "symbol": "ZORAUSDT",
+      "methods": {
+        "momentum": {
+          "status": "not_confirmed",
+          "reason": "No matching two-venue momentum pattern",
+          "evidence": []
+        },
+        "smart_money": {
+          "status": "not_evaluable",
+          "reason": "No independently verified wallet purchases",
+          "evidence": []
+        },
+        "short_squeeze": {
+          "status": "not_evaluable",
+          "reason": "No fresh and verified funding/OI pair",
+          "evidence": []
+        },
+        "fundamental_divergence": {
+          "status": "not_evaluable",
+          "reason": "No verified comparable 7-day fundamental metrics",
+          "evidence": []
+        },
+        "catalyst": {
+          "status": "not_evaluable",
+          "reason": "No dated official catalyst events ingested",
+          "evidence": []
+        }
+      },
+      "supported_methods": [],
+      "trade_ready": false,
+      "exchange_buyability_checked": false
+    }
+  ],
+  "interpretation": "Each strategy needs its own evidence; absence is never a confirming signal."
+}
