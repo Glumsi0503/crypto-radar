@@ -55,7 +55,7 @@ def evaluate(bars, now_ms):
     last=sample[-1]
     if now_ms-(last["ts"]+CANDLE_MS)>CANDLE_MS*2:
         return {"valid":False,"reason":"stale_candle"}
-    if last["open"]<=0 or any(b["volume"]<0 for b in sample):
+    if any(b["open"]<=0 or b["close"]<=0 or b["volume"]<0 or not (float("-inf") < b["volume"] < float("inf")) for b in sample):
         return {"valid":False,"reason":"invalid_ohlcv"}
     base=sum(b["volume"] for b in sample[:-1])/20
     if base<=0:return {"valid":False,"reason":"zero_baseline_volume"}
@@ -90,14 +90,14 @@ def collect(symbols=SYMBOLS, venues=EXCHANGES, fetcher=fetch, current_ms=None):
         confirmed=[p for p in positives if sum(x["candle_start_utc"]==p["candle_start_utc"] for x in positives)>=2]
         if confirmed:
             research.append({"symbol":symbol,"status":"RESEARCH_ONLY","venues":confirmed,
-                             "bitvavo_de_spot_verified":False,"trade_alert":False})
+                             "exchange_availability_unverified":True,"trade_alert":False})
     good=sum(x["status"]=="ok" for x in observations)
     return {"schema_version":1,"generated_at_utc":utc_now(),
             "quality":{"status":"LIVE_DATA_OBTAINED" if good else "NO_VALID_DATA","checks":len(observations),
                        "valid_checks":good,"full_market_coverage":False},
             "research_only":research,"sources":observations,
-            "bitvavo_de_spot_status":"NOT_VERIFIED","alerts_permitted":False,
-            "disclaimer":"No Bitvavo DE verification, no 5-method cross-check, no liquidity test, no ChatGPT automation integration."}
+            "exchange_availability_status":"NOT_CHECKED","alerts_permitted":False,
+            "disclaimer":"Research only: no venue-specific buying checks, five-method cross-check or direct notification integration."}
 
 if __name__=="__main__":
     report=collect()
