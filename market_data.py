@@ -6,8 +6,8 @@ import time
 import urllib.request
 from pathlib import Path
 
-SYMBOLS = ("BTCUSDT", "ETHUSDT", "SOLUSDT", "LINKUSDT", "AAVEUSDT", "UNIUSDT", "AVAXUSDT", "NEARUSDT", "ATOMUSDT", "INJUSDT", "ARBUSDT", "OPUSDT")
-EXCHANGES = ("binance", "bybit", "okx", "gate", "bitget")
+SYMBOLS = ("BTCUSDT", "ETHUSDT", "SOLUSDT", "LINKUSDT", "AAVEUSDT", "UNIUSDT", "AVAXUSDT", "NEARUSDT", "ATOMUSDT", "INJUSDT", "ARBUSDT", "OPUSDT", "OSMOUSDT", "XMNUSDT", "SUIUSDT", "SEIUSDT", "APTUSDT", "TIAUSDT", "FETUSDT", "RENDERUSDT", "ONDOUSDT", "PEPEUSDT", "WIFUSDT", "BONKUSDT", "HYPEUSDT", "INITUSDT", "LSKUSDT", "STORJUSDT", "ZORAUSDT", "MORPHOUSDT")
+EXCHANGES = ("okx", "gate", "bitget")  # empirically accessible sources; preserve alternatives in fetch() for future reassessment
 CANDLE_MS = 900_000
 
 def utc_now():
