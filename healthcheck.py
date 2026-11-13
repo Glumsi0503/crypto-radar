@@ -13,7 +13,7 @@ def parse(s):
 def audit(root=Path("docs"), now=None):
     now=now or dt.datetime.now(UTC)
     details={}
-    for name in ("latest","enrichment","strategy_status"):
+    for name in ("latest","enrichment","strategy_status","signal_feed","discovery","derivatives"):
         path=root/(name+".json")
         item={"exists":path.exists(),"fresh":False,"valid":False}
         if path.exists():
@@ -32,8 +32,19 @@ def audit(root=Path("docs"), now=None):
                     item["market_valid"]=q.get("market_valid",0)
                     item["fundamental_reachable"]=q.get("fundamental_reachable",0)
                     item["valid"]=isinstance(q.get("market_valid"),int) and q["market_valid"]>0 and item["fresh"]
-                else:
+                elif name=="strategy_status":
                     item["valid"]=item["fresh"] and obj.get("eligible_for_real_trading") is False
+                elif name=="signal_feed":
+                    source_age=(now-parse(obj["source_generated_at_utc"])).total_seconds()/60
+                    item["source_age_minutes"]=round(source_age,2)
+                    item["valid"]=item["fresh"] and 0<=source_age<=MAX_AGE_MIN and obj.get("research_only") is True
+                    item["new_event_count"]=obj.get("new_event_count",0)
+                elif name=="discovery":
+                    item["discovered"]=len(obj.get("candidates",[]))
+                    item["valid"]=item["fresh"] and obj.get("status")=="ok"
+                elif name=="derivatives":
+                    item["valid_snapshots"]=sum(x.get("status")=="ok" for x in obj.get("records",[]))
+                    item["valid"]=item["fresh"] and item["valid_snapshots"]>0
             except (OSError,ValueError,KeyError,TypeError) as e:
                 item["error"]=type(e).__name__+": "+str(e)[:120]
         details[name]=item
