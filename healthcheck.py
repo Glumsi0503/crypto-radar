@@ -41,7 +41,7 @@ def audit(root=Path("docs"), now=None):
             "checks":details,"trade_alerts_permitted":False,
             "automated_remediation":"fail-closed; never reuse stale reports; continue independent sources next run",
             "notes":["Enrichment fundamental_reachable does not establish fundamental growth.",
-                     "No German Bitvavo account-level eligibility proof; no trading alerts."]}
+                     "No account-level exchange buying checks or automatic trade execution; research-only diagnostics."]}
 if __name__=="__main__":
     root=Path("docs")
     root.mkdir(exist_ok=True)
