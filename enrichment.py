@@ -8,8 +8,8 @@ import urllib.request
 from pathlib import Path
 
 UTC = dt.timezone.utc
-SYMBOLS = ("BTC","ETH","SOL","LINK","AAVE","UNI","AVAX","NEAR","ATOM","INJ","ARB","OP")
-VENUES = ("okx","gate","bitget")
+SYMBOLS = ("BTC","ETH","SOL","LINK","AAVE","UNI","AVAX","NEAR","ATOM","INJ","ARB","OP","SUI","SEI","APT","TIA","FET","RENDER","ONDO","HYPE","ADA","XRP","DOGE","TAO")
+VENUES = ("okx","gate")  # proven 1h/1d OHLCV; Bitget v3 intervals failed HTTP 400
 INTERVAL_MS = {"1h":3600000,"1d":86400000}
 
 def now_utc():
@@ -94,7 +94,7 @@ def collect():
             time.sleep(0.1)
     return {"schema_version":1,"generated_at_utc":now_utc(),"research_only":True,
             "exchange_availability_status":"NOT_CHECKED","alerts_permitted":False,
-            "scope":"12-coin enrichment subset of 50-coin 15m universe; 1h and daily history, targeted DefiLlama endpoint health only",
+            "scope":"24-coin enrichment subset of 50-coin 15m universe; 1h and daily history, targeted DefiLlama endpoint health only",
             "market_checks":records,"fundamental_checks":fundamentals,
             "quality":{"market_valid":sum(x["status"]=="ok" for x in records),
                        "market_attempts":len(records),
