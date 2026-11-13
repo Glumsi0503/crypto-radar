@@ -6,6 +6,7 @@ on:
       - 'market_data.py'
       - 'discovery.py'
       - 'signal_feed.py'
+      - 'derivatives.py'
       - 'strategy.py'
       - 'enrichment.py'
       - 'healthcheck.py'
@@ -42,6 +43,10 @@ jobs:
         if: always()
         continue-on-error: true
         run: python enrichment.py
+      - name: Collect independent derivatives diagnostics
+        if: always()
+        continue-on-error: true
+        run: python derivatives.py
       - name: Evaluate research-only paper strategy
         if: always()
         run: |
