@@ -1,0 +1,31 @@
+name: Optional Bitvavo public EUR catalog
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'bitvavo_catalog.py'
+      - 'publish_bitvavo_catalog.py'
+      - 'tests/test_bitvavo_catalog.py'
+      - '.github/workflows/bitvavo-catalog.yml'
+  schedule:
+    - cron: "19 4 * * *"
+permissions:
+  contents: write
+concurrency:
+  group: crypto-public-bitvavo-catalog
+  cancel-in-progress: false
+jobs:
+  reference:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Verify Bitvavo reference list rules
+        run: python -m unittest discover -s tests -p test_bitvavo_catalog.py -v
+      - name: Fetch optional public EUR markets
+        run: python bitvavo_catalog.py
+      - name: Publish reference only (never a scanner dependency)
+        run: python publish_bitvavo_catalog.py
