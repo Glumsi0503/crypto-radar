@@ -13,7 +13,7 @@ def parse(s):
 def audit(root=Path("docs"), now=None):
     now=now or dt.datetime.now(UTC)
     details={}
-    for name in ("latest","enrichment","strategy_status","signal_feed","discovery","derivatives","five_method_audit","observed_outcomes"):
+    for name in ("latest","enrichment","strategy_status","signal_feed","discovery","derivatives","five_method_audit","observed_outcomes","radar_inbox"):
         path=root/(name+".json")
         item={"exists":path.exists(),"fresh":False,"valid":False}
         if path.exists():
@@ -51,6 +51,11 @@ def audit(root=Path("docs"), now=None):
                 elif name=="observed_outcomes":
                     item["observations"]=obj.get("observation_count",0)
                     item["valid"]=item["fresh"] and obj.get("no_actual_orders_or_fills") is True
+                elif name=="radar_inbox":
+                    source_age=(now-parse(obj["feed_generated_at_utc"])).total_seconds()/60
+                    audit_age=(now-parse(obj["audit_generated_at_utc"])).total_seconds()/60
+                    item["candidate_count"]=obj.get("candidate_count",0)
+                    item["valid"]=item["fresh"] and 0<=source_age<=MAX_AGE_MIN and 0<=audit_age<=MAX_AGE_MIN and obj.get("research_only") is True and obj.get("push_service_configured") is False
             except (OSError,ValueError,KeyError,TypeError) as e:
                 item["error"]=type(e).__name__+": "+str(e)[:120]
         details[name]=item
