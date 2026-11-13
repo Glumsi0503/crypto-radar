@@ -1,20 +1,20 @@
 {
-  "generated_at_utc": "2026-11-13T16:33:18.655867+00:00",
+  "generated_at_utc": "2026-11-13T16:50:23.835663+00:00",
   "data_quality": "USABLE_RESEARCH_ONLY",
   "checks": {
     "latest": {
       "exists": true,
       "fresh": true,
       "valid": true,
-      "age_minutes": 0.98,
-      "checks": 180,
-      "valid_checks": 153
+      "age_minutes": 1.08,
+      "checks": 150,
+      "valid_checks": 137
     },
     "enrichment": {
       "exists": true,
       "fresh": true,
       "valid": true,
-      "age_minutes": 0.04,
+      "age_minutes": 0.05,
       "market_valid": 96,
       "fundamental_reachable": 4
     },
@@ -29,15 +29,15 @@
       "fresh": true,
       "valid": true,
       "age_minutes": 0.0,
-      "source_age_minutes": 0.98,
+      "source_age_minutes": 1.08,
       "new_event_count": 0
     },
     "discovery": {
       "exists": true,
       "fresh": true,
-      "valid": true,
-      "age_minutes": 2.58,
-      "discovered": 10
+      "valid": false,
+      "age_minutes": 2.46,
+      "discovered": 0
     },
     "derivatives": {
       "exists": true,
@@ -51,7 +51,7 @@
       "fresh": true,
       "valid": true,
       "age_minutes": 0.0,
-      "evaluated": 60
+      "evaluated": 50
     },
     "observed_outcomes": {
       "exists": true,

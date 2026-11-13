@@ -1,59 +1,25 @@
 {
-  "generated_at_utc": "2026-11-13T16:30:44+00:00",
-  "source": "https://api.gateio.ws/api/v4/spot/tickers",
-  "min_24h_quote_volume_usdt": 2000000,
-  "status": "ok",
+  "generated_at_utc": "2026-11-13T16:47:56+00:00",
+  "source_urls": {
+    "gate": "https://api.gateio.ws/api/v4/spot/tickers",
+    "okx": "https://www.okx.com/api/v5/market/tickers?instType=SPOT"
+  },
+  "status": "no_correlated_candidates",
   "research_only": true,
-  "candidates": [
-    {
-      "symbol": "ARIAUSDT",
-      "quote_volume_24h_usdt": 14616561.57,
-      "abs_change_24h_percent": 32.8
-    },
-    {
-      "symbol": "BTWUSDT",
-      "quote_volume_24h_usdt": 4673475.36,
-      "abs_change_24h_percent": 16.7
-    },
-    {
-      "symbol": "KGENUSDT",
-      "quote_volume_24h_usdt": 2343125.34,
-      "abs_change_24h_percent": 16.42
-    },
-    {
-      "symbol": "GRAMUSDT",
-      "quote_volume_24h_usdt": 9865037.7,
-      "abs_change_24h_percent": 10.09
-    },
-    {
-      "symbol": "DNAUSDT",
-      "quote_volume_24h_usdt": 2592559.53,
-      "abs_change_24h_percent": 13.12
-    },
-    {
-      "symbol": "PEARLUSDT",
-      "quote_volume_24h_usdt": 3046897.9,
-      "abs_change_24h_percent": 11.92
-    },
-    {
-      "symbol": "WPAYUSDT",
-      "quote_volume_24h_usdt": 2532191.59,
-      "abs_change_24h_percent": 11.05
-    },
-    {
-      "symbol": "KORUGUSDT",
-      "quote_volume_24h_usdt": 2366044.41,
-      "abs_change_24h_percent": 10.58
-    },
-    {
-      "symbol": "RITUALUSDT",
-      "quote_volume_24h_usdt": 2282641.22,
-      "abs_change_24h_percent": 10.15
-    },
-    {
-      "symbol": "DELLGUSDT",
-      "quote_volume_24h_usdt": 2137816.24,
-      "abs_change_24h_percent": 9.37
-    }
-  ]
+  "candidates": [],
+  "selection_rules": {
+    "independent_venues": 2,
+    "min_gate_quote_24h_usdt": 2000000,
+    "min_okx_quote_24h_usdt": 1000000,
+    "min_each_venue_closed_15m_quote_usdt": 25000,
+    "max_price_disagreement_fraction": 0.02,
+    "closed_candles_per_venue_min": 21,
+    "exclude_leveraged_tokens": true
+  },
+  "diagnostics": {
+    "gate_shortlist": 21,
+    "ticker_correlated": 0,
+    "candle_rejected": [],
+    "validated": 0
+  }
 }
