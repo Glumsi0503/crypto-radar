@@ -7,7 +7,7 @@ GitHub Actions erhebt öffentliche Krypto-Marktdaten, führt **nur Forschungsana
 - Workflow: https://github.com/Glumsi0503/crypto-radar/actions/workflows/market-data.yml
 - Geplantes GitHub-Intervall: UTC-Minute 7/22/37/52 (best effort, Verzögerung möglich).
 - Die fünf separaten ChatGPT-Radare prüfen stündlich und können die öffentlich veröffentlichte Forschungsdatei **nur bei tatsächlicher Abrufbarkeit** auswerten.
-- Der Datensammler prüft 50 fest benannte Märkte plus bis zu zehn frisch entdeckte liquide USDT-Spot-Kandidaten. Neue Börsenticker sind keine Empfehlungen und müssen OHLCV-Gültigkeitsprüfungen bestehen.
+- Der Datensammler prüft 50 fest benannte Märkte plus **0 bis 10** dynamisch ausgewählte USDT-Spot-Kandidaten. Diese zusätzlichen Coins werden nur aufgenommen, wenn **Gate.io und OKX** jeweils ausreichenden 24h-USDT-Umsatz und aktuelle, preislich übereinstimmende Ticker melden **und** auf beiden Börsen mindestens 21 zusammenhängende, vollständig geschlossene 15m-Kerzen einschließlich ausreichendem Volumen verifiziert wurden. Die Vorprüfung betrachtet höchstens 80 Gate-Kandidaten und führt maximal 24 aufwendige Zwei-Börsen-Kerzenchecks durch. Bei fehlender Zweitbörse oder Datenqualität bleibt die Zusatzliste leer, ohne die 50 festen Coins auszuschalten. Kein Coin wird dadurch zur Kaufempfehlung.
 - 15-Minuten-OHLCV: OKX/Gate/Bitget, unabhängige Bestätigung auf zwei Spotbörsen für Momentum-Research.
 - Stunden- und Tagesdaten: 24 ausgewählte Coins auf OKX/Gate. Nicht alle 50 haben diese Zusatzabdeckung.
 - Fundamentals: gezielte DefiLlama-Zeitreihen, 7 abgeschlossene UTC-Tage gegen die vorigen 7; echte Token-Wertbindung ist nicht automatisch nachgewiesen.
