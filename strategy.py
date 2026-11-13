@@ -3,6 +3,7 @@
 import datetime as dt
 import json
 from pathlib import Path
+from statistics import median
 
 DATA=Path("docs/latest.json")
 STATE=Path("docs/paper_journal.json")
@@ -85,6 +86,8 @@ def update(report, journal, now):
     performance={"closed":len(closed),"winners":good,
                  "win_rate_percent":round(100*good/len(closed),2) if closed else None,
                  "avg_net_return_percent":round(sum(t["net_pnl_percent"] for t in closed)/len(closed),3) if closed else None,
+                 "median_net_return_percent":round(median(t["net_pnl_percent"] for t in closed),3) if closed else None,
+                 "sample_sufficient_for_review":len(closed)>=30,
                  "notes":"Observation-only simulation; fees approximated at 0.25% per side; excludes slippage, intrabar execution, tax and survivorship effects."}
     return {"generated_at_utc":now.isoformat(),"status":"RESEARCH_ONLY","eligible_for_real_trading":False,
             "candidates":findings,"paper_open":sum(t["state"]=="open" for t in trades),
