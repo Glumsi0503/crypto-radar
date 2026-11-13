@@ -106,7 +106,10 @@ def dynamic_symbols(path=Path("docs/discovery.json")):
         age=(dt.datetime.now(dt.timezone.utc)-dt.datetime.fromisoformat(obj["generated_at_utc"])).total_seconds()
         if obj.get("status")!="ok" or not 0<=age<=2400:return ()
         extras=[r["symbol"] for r in obj.get("candidates",[])[:10]
-                if isinstance(r.get("symbol"),str) and r["symbol"].endswith("USDT")]
+                if isinstance(r,dict) and r.get("two_venue_ohlcv_verified") is True
+                and r.get("validated_spot_venues")==["gate","okx"]
+                and isinstance(r.get("symbol"),str) and r["symbol"].endswith("USDT")
+                and r["symbol"] not in SYMBOLS]
         return tuple(dict.fromkeys(extras))
     except (OSError,ValueError,KeyError,TypeError):return ()
 
