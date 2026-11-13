@@ -20,6 +20,10 @@ def select(tickers, existing=CORE, limit=MAX_NEW):
             pair=row.get("currency_pair","")
             if not re.fullmatch(r"[A-Z0-9]{2,18}_USDT",pair): continue
             symbol=pair.replace("_","")
+            base=pair[:-5]
+            # Exclude exchange-issued leveraged tokens (e.g. ETH5L, ZEC5S,
+            # BTC3S, BTCBULL, ETHBEAR, BTCUP); these are not ordinary spot coins.
+            if re.search(r"(?:[2357]L|[2357]S|BULL|BEAR|UP|DOWN)$",base):continue
             if symbol in existing: continue
             volume=float(row.get("quote_volume",0))
             change=abs(float(row.get("change_percentage",0)))
