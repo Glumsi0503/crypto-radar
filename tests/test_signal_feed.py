@@ -22,7 +22,9 @@ class DiscoveryAndFeedTests(unittest.TestCase):
     def test_dynamic_liquid_filters(self):
         tickers=[{"currency_pair":"ABC_USDT","quote_volume":"3000000","change_percentage":"8","last":"1"},
                  {"currency_pair":"BAD_USDT","quote_volume":"2","change_percentage":"95","last":"1"},
-                 {"currency_pair":"XYZ_BTC","quote_volume":"90000000","change_percentage":"8","last":"1"}]
+                 {"currency_pair":"XYZ_BTC","quote_volume":"90000000","change_percentage":"8","last":"1"},
+                 {"currency_pair":"ETH5L_USDT","quote_volume":"90000000","change_percentage":"8","last":"1"},
+                 {"currency_pair":"ZEC5S_USDT","quote_volume":"90000000","change_percentage":"8","last":"1"}]
         self.assertEqual([x["symbol"] for x in select(tickers,existing=set())],["ABCUSDT"])
     def test_pre_watch_and_dedupe(self):
         feed,hist=build(report(),{"keys":[]},NOW)
