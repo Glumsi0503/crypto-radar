@@ -19,6 +19,16 @@ class HealthTest(unittest.TestCase):
             r=audit(p,NOW)
             self.assertEqual(r["data_quality"],"USABLE_RESEARCH_ONLY")
             self.assertFalse(r["trade_alerts_permitted"])
+    def test_signal_feed_must_have_fresh_source(self):
+        with tempfile.TemporaryDirectory() as d:
+            p=Path(d)
+            (p/"latest.json").write_text(json.dumps({"generated_at_utc":NOW.isoformat(),"quality":{"valid_checks":2}}))
+            (p/"signal_feed.json").write_text(json.dumps({
+                "generated_at_utc":NOW.isoformat(),
+                "source_generated_at_utc":(NOW-dt.timedelta(minutes=70)).isoformat(),
+                "research_only":True,"new_event_count":1}))
+            r=audit(p,NOW)
+            self.assertFalse(r["checks"]["signal_feed"]["valid"])
     def test_stale_report_rejected(self):
         with tempfile.TemporaryDirectory() as d:
             p=Path(d)
