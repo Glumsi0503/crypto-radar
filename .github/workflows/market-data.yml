@@ -8,6 +8,7 @@ on:
       - 'signal_feed.py'
       - 'derivatives.py'
       - 'five_method_audit.py'
+      - 'observed_outcomes.py'
       - 'strategy.py'
       - 'enrichment.py'
       - 'healthcheck.py'
@@ -60,6 +61,10 @@ jobs:
         if: always()
         run: |
           if test -f /tmp/crypto_radar_fresh_market; then python five_method_audit.py; else echo 'No fresh OHLCV: skip audit'; fi
+      - name: Evaluate timestamped paper outcomes
+        if: always()
+        run: |
+          if test -f /tmp/crypto_radar_fresh_market; then python observed_outcomes.py; else echo 'No fresh market: skip outcomes'; fi
       - name: Audit report freshness and quality
         if: always()
         run: python healthcheck.py
