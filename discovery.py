@@ -22,7 +22,7 @@ MIN_OKX_QUOTE_24H=1_000_000
 MIN_15M_QUOTE=25_000
 MAX_PRICE_DISAGREEMENT=0.02
 MAX_NEW=10
-MAX_PREFLIGHT=80
+MAX_PREFLIGHT=150
 MAX_CANDLE_PREFLIGHT=24
 CANDLE_MS=900_000
 LEVERAGED=re.compile(r"(?:[2357]L|[2357]S|BULL|BEAR|UP|DOWN)$")
@@ -49,7 +49,7 @@ def select(tickers, existing=CORE, limit=MAX_PREFLIGHT):
         try:change=abs(float(row.get("change_percentage",0)))
         except (TypeError,ValueError,OverflowError):continue
         if volume is None or price is None or not math.isfinite(change):continue
-        if volume<MIN_GATE_QUOTE_24H or not 1<=change<=150:continue
+        if volume<MIN_GATE_QUOTE_24H or not 0.25<=change<=150:continue
         # Lower sensitivity to large already-completed pumps.
         score=min(change,25)*math.sqrt(volume)
         choices.append((score,symbol,volume,change,price))
