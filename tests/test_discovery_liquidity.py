@@ -3,7 +3,7 @@ import json
 import tempfile
 import unittest
 from pathlib import Path
-from discovery import select,parse_okx_tickers,corroborate,verify_candles,run
+from discovery import select,parse_okx_tickers,parse_bitget_tickers,corroborate,verify_candles,run
 from market_data import CANDLE_MS,dynamic_symbols
 
 NOW_MS=int(dt.datetime(2026,11,13,16,0,tzinfo=dt.timezone.utc).timestamp()*1000)
@@ -31,6 +31,28 @@ class DiscoveryLiquidityTests(unittest.TestCase):
         self.assertTrue(chosen[0]["two_venue_ohlcv_verified"])
         self.assertEqual(chosen[0]["validated_spot_venues"],["gate","okx"])
         self.assertEqual(report["ticker_correlated"],1)
+    def test_bitget_spot_fallback(self):
+        bitget={"code":"00000","data":[{"symbol":"XYZUSDT",
+            "category":"SPOT","lastPrice":"10.02","turnover24h":"8000000",
+            "ts":str(NOW_MS)}]}
+        chosen,report=run([gate()],{"code":"0","data":[]},NOW_MS,
+                          fetcher,bitget_tickers=bitget)
+        self.assertEqual(len(chosen),1)
+        self.assertEqual(chosen[0]["validated_spot_venues"],["gate","bitget"])
+    def test_bitget_futures_never_count_as_second_spot(self):
+        bitget={"code":"00000","data":[{"symbol":"XYZUSDT",
+            "category":"USDT-FUTURES","lastPrice":"10","turnover24h":"8000000",
+            "ts":str(NOW_MS)}]}
+        chosen,_=run([gate()],{"code":"0","data":[]},NOW_MS,
+                     fetcher,bitget_tickers=bitget)
+        self.assertEqual(chosen,[])
+    def test_bitget_spot_low_turnover_rejected(self):
+        bitget={"code":"00000","data":[{"symbol":"XYZUSDT",
+            "category":"SPOT","lastPrice":"10","turnover24h":"100",
+            "ts":str(NOW_MS)}]}
+        chosen,_=run([gate()],{"code":"0","data":[]},NOW_MS,
+                     fetcher,bitget_tickers=bitget)
+        self.assertEqual(chosen,[])
     def test_gate_only_rejected(self):
         chosen,report=run([gate()],{"code":"0","data":[]},NOW_MS,fetcher)
         self.assertEqual(chosen,[])
