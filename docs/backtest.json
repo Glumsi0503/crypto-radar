@@ -1,0 +1,215 @@
+{
+  "generated_at_utc": "2026-11-13T16:11:03.766189+00:00",
+  "research_only": true,
+  "source": "Gate.io spot 15m historical candles",
+  "model": "Single-venue historical, forward walk; signal on closed bar, next-open entry.",
+  "assumed_fee_per_side": 0.0025,
+  "assumed_slippage_per_side": 0.001,
+  "stop_pct": 0.025,
+  "target_pct": 0.05,
+  "max_hold_15m_bars": 288,
+  "selection": "Fixed universe, no ex-post winner selection",
+  "limitations": [
+    "Limited OHLCV window and one venue; no cross-venue confirmation",
+    "Intrabar stop/target collision assigned to stop; real spread/liquidity unknown",
+    "Delisting and broader survivorship bias unresolved",
+    "Not a five-strategy validation or predictive performance proof"
+  ],
+  "coins": [
+    {
+      "symbol": "BTCUSDT",
+      "url": "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=BTC_USDT&interval=15m&limit=1000",
+      "status": "ok",
+      "bars": 999,
+      "start_utc": "2026-11-03T06:15:00+00:00",
+      "end_utc": "2026-11-13T15:45:00+00:00",
+      "completed_trades": 0,
+      "median_net_percent": null,
+      "mean_net_percent": null,
+      "sufficient_sample": false,
+      "trades": []
+    },
+    {
+      "symbol": "ETHUSDT",
+      "url": "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=ETH_USDT&interval=15m&limit=1000",
+      "status": "ok",
+      "bars": 999,
+      "start_utc": "2026-11-03T06:15:00+00:00",
+      "end_utc": "2026-11-13T15:45:00+00:00",
+      "completed_trades": 0,
+      "median_net_percent": null,
+      "mean_net_percent": null,
+      "sufficient_sample": false,
+      "trades": []
+    },
+    {
+      "symbol": "SOLUSDT",
+      "url": "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=SOL_USDT&interval=15m&limit=1000",
+      "status": "ok",
+      "bars": 999,
+      "start_utc": "2026-11-03T06:15:00+00:00",
+      "end_utc": "2026-11-13T15:45:00+00:00",
+      "completed_trades": 0,
+      "median_net_percent": null,
+      "mean_net_percent": null,
+      "sufficient_sample": false,
+      "trades": []
+    },
+    {
+      "symbol": "LINKUSDT",
+      "url": "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=LINK_USDT&interval=15m&limit=1000",
+      "status": "ok",
+      "bars": 999,
+      "start_utc": "2026-11-03T06:15:00+00:00",
+      "end_utc": "2026-11-13T15:45:00+00:00",
+      "completed_trades": 0,
+      "median_net_percent": null,
+      "mean_net_percent": null,
+      "sufficient_sample": false,
+      "trades": []
+    },
+    {
+      "symbol": "AAVEUSDT",
+      "url": "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=AAVE_USDT&interval=15m&limit=1000",
+      "status": "ok",
+      "bars": 999,
+      "start_utc": "2026-11-03T06:15:00+00:00",
+      "end_utc": "2026-11-13T15:45:00+00:00",
+      "completed_trades": 0,
+      "median_net_percent": null,
+      "mean_net_percent": null,
+      "sufficient_sample": false,
+      "trades": []
+    },
+    {
+      "symbol": "SUIUSDT",
+      "url": "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=SUI_USDT&interval=15m&limit=1000",
+      "status": "ok",
+      "bars": 999,
+      "start_utc": "2026-11-03T06:15:00+00:00",
+      "end_utc": "2026-11-13T15:45:00+00:00",
+      "completed_trades": 0,
+      "median_net_percent": null,
+      "mean_net_percent": null,
+      "sufficient_sample": false,
+      "trades": []
+    },
+    {
+      "symbol": "INJUSDT",
+      "url": "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=INJ_USDT&interval=15m&limit=1000",
+      "status": "ok",
+      "bars": 999,
+      "start_utc": "2026-11-03T06:15:00+00:00",
+      "end_utc": "2026-11-13T15:45:00+00:00",
+      "completed_trades": 1,
+      "median_net_percent": -3.0833,
+      "mean_net_percent": -3.0833,
+      "sufficient_sample": false,
+      "trades": [
+        {
+          "signal_candle_utc": "2026-11-13T13:30:00+00:00",
+          "entry_candle_utc": "2026-11-13T13:45:00+00:00",
+          "exit_candle_utc": "2026-11-13T15:30:00+00:00",
+          "net_percent": -3.0833,
+          "exit_model": "stop_assumed"
+        }
+      ]
+    },
+    {
+      "symbol": "ONDOUSDT",
+      "url": "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=ONDO_USDT&interval=15m&limit=1000",
+      "status": "ok",
+      "bars": 999,
+      "start_utc": "2026-11-03T06:15:00+00:00",
+      "end_utc": "2026-11-13T15:45:00+00:00",
+      "completed_trades": 1,
+      "median_net_percent": -3.0833,
+      "mean_net_percent": -3.0833,
+      "sufficient_sample": false,
+      "trades": [
+        {
+          "signal_candle_utc": "2026-11-09T15:15:00+00:00",
+          "entry_candle_utc": "2026-11-09T15:30:00+00:00",
+          "exit_candle_utc": "2026-11-10T13:30:00+00:00",
+          "net_percent": -3.0833,
+          "exit_model": "stop_assumed"
+        }
+      ]
+    },
+    {
+      "symbol": "HYPEUSDT",
+      "url": "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=HYPE_USDT&interval=15m&limit=1000",
+      "status": "ok",
+      "bars": 999,
+      "start_utc": "2026-11-03T06:15:00+00:00",
+      "end_utc": "2026-11-13T15:45:00+00:00",
+      "completed_trades": 0,
+      "median_net_percent": null,
+      "mean_net_percent": null,
+      "sufficient_sample": false,
+      "trades": []
+    },
+    {
+      "symbol": "AVAXUSDT",
+      "url": "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=AVAX_USDT&interval=15m&limit=1000",
+      "status": "ok",
+      "bars": 999,
+      "start_utc": "2026-11-03T06:15:00+00:00",
+      "end_utc": "2026-11-13T15:45:00+00:00",
+      "completed_trades": 1,
+      "median_net_percent": 4.3718,
+      "mean_net_percent": 4.3718,
+      "sufficient_sample": false,
+      "trades": [
+        {
+          "signal_candle_utc": "2026-11-09T12:30:00+00:00",
+          "entry_candle_utc": "2026-11-09T12:45:00+00:00",
+          "exit_candle_utc": "2026-11-09T13:30:00+00:00",
+          "net_percent": 4.3718,
+          "exit_model": "target_assumed"
+        }
+      ]
+    },
+    {
+      "symbol": "UNIUSDT",
+      "url": "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=UNI_USDT&interval=15m&limit=1000",
+      "status": "ok",
+      "bars": 999,
+      "start_utc": "2026-11-03T06:15:00+00:00",
+      "end_utc": "2026-11-13T15:45:00+00:00",
+      "completed_trades": 0,
+      "median_net_percent": null,
+      "mean_net_percent": null,
+      "sufficient_sample": false,
+      "trades": []
+    },
+    {
+      "symbol": "NEARUSDT",
+      "url": "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=NEAR_USDT&interval=15m&limit=1000",
+      "status": "ok",
+      "bars": 999,
+      "start_utc": "2026-11-03T06:15:00+00:00",
+      "end_utc": "2026-11-13T15:45:00+00:00",
+      "completed_trades": 1,
+      "median_net_percent": -3.0833,
+      "mean_net_percent": -3.0833,
+      "sufficient_sample": false,
+      "trades": [
+        {
+          "signal_candle_utc": "2026-11-11T11:45:00+00:00",
+          "entry_candle_utc": "2026-11-11T12:00:00+00:00",
+          "exit_candle_utc": "2026-11-11T15:15:00+00:00",
+          "net_percent": -3.0833,
+          "exit_model": "stop_assumed"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "valid_markets": 12,
+    "completed_trades": 4,
+    "median_net_percent": -3.0833,
+    "sufficient_sample": false,
+    "statistically_valid_strategy": false
+  }
+}
