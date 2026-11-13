@@ -32,7 +32,7 @@ def prewatch(markets):
     result=[]
     for symbol,rows in markets.items():
         qualified=[(venue,x) for venue,x in rows if
-                   EARLY_GAIN_MIN<=x.get("change_percent",-999)<CONFIRMED_GAIN_MIN and
+                   EARLY_GAIN_MIN<=x.get("change_percent",-999)<=8 and
                    x.get("volume_multiplier",0)>=EARLY_VOLUME_MIN and
                    x.get("spot_quote_volume_usdt",0)>=100000]
         by_candle={}
@@ -63,7 +63,10 @@ def build(report, history, now):
                       if venue in x["venues"] and d["candle_start_utc"]==x["candle_start_utc"]
                       and d["change_percent"]>=CONFIRMED_GAIN_MIN
                       and d["volume_multiplier"]>=CONFIRMED_VOLUME_MIN)>=2]
-    research=prewatch(markets)+confirmed
+    confirmed_candles={(x["symbol"],x["candle_start_utc"]) for x in confirmed}
+    early=[x for x in prewatch(markets)
+           if (x["symbol"],x["candle_start_utc"]) not in confirmed_candles]
+    research=early+confirmed
     seen=set(history.get("keys",[]))
     new=[]
     for item in research:
@@ -91,6 +94,7 @@ def build(report, history, now):
               "early_gain_min_percent":EARLY_GAIN_MIN,
               "early_volume_multiplier_min":EARLY_VOLUME_MIN,
               "confirmed_gain_min_percent":CONFIRMED_GAIN_MIN,
+              "early_gain_max_percent":8,
               "confirmed_volume_multiplier_min":CONFIRMED_VOLUME_MIN,
               "min_independent_spot_venues":2,
               "min_quote_volume_per_venue_usdt":100000,
