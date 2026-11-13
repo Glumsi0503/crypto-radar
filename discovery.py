@@ -75,7 +75,8 @@ def parse_okx_tickers(obj):
             volume=finite_positive(row.get("volCcy24h"))
             ts=int(row["ts"])
             if price is None or volume is None or ts<=0:continue
-            result[base+"USDT"]={"price":price,"quote_volume":volume,"ts":ts}
+            result[base+"USDT"]={"price":price,"quote_volume":volume,"ts":ts,
+                "move_percent":abs(100*(price/float(row["open24h"])-1)) if finite_positive(row.get("open24h")) else 0}
         except (KeyError,ValueError,TypeError,OverflowError):continue
     return result
 
@@ -96,7 +97,8 @@ def parse_bitget_tickers(obj):
             volume=finite_positive(row.get("turnover24h"))
             ts=int(row["ts"])
             if price is None or volume is None or ts<=0:continue
-            result[symbol]={"price":price,"quote_volume":volume,"ts":ts}
+            result[symbol]={"price":price,"quote_volume":volume,"ts":ts,
+                "move_percent":abs(100*float(row.get("price24hPcnt",0)))}
         except (KeyError,ValueError,TypeError,OverflowError):continue
     return result
 
@@ -122,10 +124,35 @@ def corroborate(shortlist,okx,current_ms,bitget=None):
             break
     return out
 
+def cross_second_venues(okx,bitget,current_ms):
+    """Independent OKX+Bitget spot alternatives for coins missing on Gate."""
+    pool=[]
+    for symbol,first in okx.items():
+        second=bitget.get(symbol)
+        if not second or symbol in CORE or not symbol.endswith("USDT"):continue
+        base=symbol[:-4]
+        if LEVERAGED.search(base):continue
+        if first["quote_volume"]<MIN_OKX_QUOTE_24H or second["quote_volume"]<MIN_OKX_QUOTE_24H:
+            continue
+        if any(not 0<=current_ms-row["ts"]<=10*60_000 for row in (first,second)):
+            continue
+        a,b=first["price"],second["price"]
+        if max(a,b)/min(a,b)-1>MAX_PRICE_DISAGREEMENT:continue
+        change=first.get("move_percent",0)
+        if not math.isfinite(change) or not 0.25<=change<=150:continue
+        pool.append({"symbol":symbol,"primary_venue":"okx","second_venue":"bitget",
+            "quote_volume_24h_usdt":round(first["quote_volume"],2),
+            "second_venue_quote_volume_24h_usdt":round(second["quote_volume"],2),
+            "abs_change_24h_percent":round(change,3),
+            "ticker_price_disagreement_percent":round(100*(max(a,b)/min(a,b)-1),3)})
+    pool.sort(key=lambda x:(-min(x["quote_volume_24h_usdt"],x["second_venue_quote_volume_24h_usdt"])**0.5*
+                            min(x["abs_change_24h_percent"],25),x["symbol"]))
+    return pool
+
 def verify_candles(candidate,now_ms,fetcher=fetch):
     """A candidate enters the added universe only after both 15m feeds validate."""
     observations=[]
-    for venue in ("gate",candidate["second_venue"]):
+    for venue in (candidate.get("primary_venue","gate"),candidate["second_venue"]):
         url,bars=fetcher(venue,candidate["symbol"])
         check=evaluate(bars,now_ms)
         if not check.get("valid"):raise ValueError(venue+":"+check.get("reason","invalid_candles"))
@@ -139,9 +166,9 @@ def verify_candles(candidate,now_ms,fetcher=fetch):
     a,b=c1["spot_close_usdt"],c2["spot_close_usdt"]
     if max(a,b)/min(a,b)-1>MAX_PRICE_DISAGREEMENT:
         raise ValueError("closed_candle_price_disagreement")
-    return {**candidate,"validated_spot_venues":["gate",candidate["second_venue"]],
+    return {**candidate,"validated_spot_venues":[candidate.get("primary_venue","gate"),candidate["second_venue"]],
         "verified_same_closed_15m_candle_utc":c1["candle_start_utc"],
-        "closed_15m_quote_volume_usdt":{"gate":c1["spot_quote_volume_usdt"],
+        "closed_15m_quote_volume_usdt":{candidate.get("primary_venue","gate"):c1["spot_quote_volume_usdt"],
                                          candidate["second_venue"]:c2["spot_quote_volume_usdt"]},
         "closed_15m_price_disagreement_percent":round(
             100*(max(a,b)/min(a,b)-1),3),
@@ -150,8 +177,14 @@ def verify_candles(candidate,now_ms,fetcher=fetch):
 
 def run(gate_tickers,okx_tickers,current_ms,fetcher=fetch,limit=MAX_NEW,bitget_tickers=None):
     shortlist=select(gate_tickers,limit=MAX_PREFLIGHT)
-    available=corroborate(shortlist,parse_okx_tickers(okx_tickers),current_ms,
-                          parse_bitget_tickers(bitget_tickers) if bitget_tickers is not None else None)
+    okx=parse_okx_tickers(okx_tickers)
+    bitget=parse_bitget_tickers(bitget_tickers) if bitget_tickers is not None else {}
+    gate_available=corroborate(shortlist,okx,current_ms,bitget)
+    secondary_available=cross_second_venues(okx,bitget,current_ms)
+    # Try Gate-originated shortlist first; then other liquid independent spot pairs.
+    available=gate_available+[
+        row for row in secondary_available
+        if row["symbol"] not in {x["symbol"] for x in gate_available}]
     confirmed=[]
     rejected=[]
     attempted=0
@@ -164,6 +197,7 @@ def run(gate_tickers,okx_tickers,current_ms,fetcher=fetch,limit=MAX_NEW,bitget_t
             rejected.append({"symbol":row["symbol"],
                              "reason":(type(exc).__name__+": "+str(exc))[:150]})
     return confirmed,{"gate_shortlist":len(shortlist),"ticker_correlated":len(available),
+                      "okx_bitget_pairs":len(secondary_available),
                       "candle_checked":attempted,"candle_rejected":rejected[:24],"validated":len(confirmed)}
 
 def main():
