@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-11-13T17:04:05.232071+00:00",
-  "spot_source_at_utc": "2026-11-13T17:03:08+00:00",
+  "generated_at_utc": "2026-11-13T17:12:05.124015+00:00",
+  "spot_source_at_utc": "2026-11-13T17:10:58+00:00",
   "enrichment_fresh": true,
   "derivatives_fresh": true,
   "research_only": true,
@@ -13,7 +13,7 @@
     "fundamental_divergence",
     "catalyst"
   ],
-  "symbols_evaluated": 51,
+  "symbols_evaluated": 50,
   "coins": [
     {
       "symbol": "AAVEUSDT",
@@ -150,39 +150,6 @@
               "source": "https://api.llama.fi/summary/fees/arbitrum?dataType=dailyFees"
             }
           ]
-        },
-        "catalyst": {
-          "status": "not_evaluable",
-          "reason": "No dated official catalyst events ingested",
-          "evidence": []
-        }
-      },
-      "supported_methods": [],
-      "trade_ready": false,
-      "exchange_buyability_checked": false
-    },
-    {
-      "symbol": "ARIAUSDT",
-      "methods": {
-        "momentum": {
-          "status": "not_confirmed",
-          "reason": "No matching two-venue momentum pattern",
-          "evidence": []
-        },
-        "smart_money": {
-          "status": "not_evaluable",
-          "reason": "No independently verified wallet purchases",
-          "evidence": []
-        },
-        "short_squeeze": {
-          "status": "not_evaluable",
-          "reason": "No fresh and verified funding/OI pair",
-          "evidence": []
-        },
-        "fundamental_divergence": {
-          "status": "not_evaluable",
-          "reason": "No verified comparable 7-day fundamental metrics",
-          "evidence": []
         },
         "catalyst": {
           "status": "not_evaluable",
@@ -344,7 +311,7 @@
           "reason": "Funding interval and 4h OI plus spot confirmation not yet complete",
           "evidence": [
             {
-              "funding_percent": 0.00756,
+              "funding_percent": 0.007867,
               "oi_change_4h_percent": null,
               "funding_interval_unverified": true,
               "funding_url": "https://www.okx.com/api/v5/public/funding-rate?instId=BTC-USDT-SWAP",
@@ -484,7 +451,7 @@
           "reason": "Funding interval and 4h OI plus spot confirmation not yet complete",
           "evidence": [
             {
-              "funding_percent": -0.000559,
+              "funding_percent": -0.000307,
               "oi_change_4h_percent": null,
               "funding_interval_unverified": true,
               "funding_url": "https://www.okx.com/api/v5/public/funding-rate?instId=ETH-USDT-SWAP",
@@ -591,7 +558,7 @@
           "reason": "Funding interval and 4h OI plus spot confirmation not yet complete",
           "evidence": [
             {
-              "funding_percent": -0.002811,
+              "funding_percent": -0.002913,
               "oi_change_4h_percent": null,
               "funding_interval_unverified": true,
               "funding_url": "https://www.okx.com/api/v5/public/funding-rate?instId=HYPE-USDT-SWAP",
@@ -1332,7 +1299,7 @@
           "reason": "Funding interval and 4h OI plus spot confirmation not yet complete",
           "evidence": [
             {
-              "funding_percent": 0.004309,
+              "funding_percent": 0.004631,
               "oi_change_4h_percent": null,
               "funding_interval_unverified": true,
               "funding_url": "https://www.okx.com/api/v5/public/funding-rate?instId=SOL-USDT-SWAP",
@@ -1406,7 +1373,7 @@
           "reason": "Funding interval and 4h OI plus spot confirmation not yet complete",
           "evidence": [
             {
-              "funding_percent": 0.005276,
+              "funding_percent": 0.005738,
               "oi_change_4h_percent": null,
               "funding_interval_unverified": true,
               "funding_url": "https://www.okx.com/api/v5/public/funding-rate?instId=SUI-USDT-SWAP",
