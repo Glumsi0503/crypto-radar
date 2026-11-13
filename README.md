@@ -1,47 +1,46 @@
-# Crypto-Radar – öffentliche Marktdatenbrücke
+# Crypto-Radar – Research-Datenbrücke (November 2026)
 
-Status (10. November 2026): Collector, Tests und GitHub-Actions-Workflow sind installiert. **Der erste erfolgreiche Live-Datenlauf und die Anbindung an ChatGPT-Automationen sind noch nicht nachgewiesen.**
+GitHub Actions erhebt öffentliche Krypto-Marktdaten, führt **nur Forschungsanalysen und hypothetische Papertrades** aus. Keine Orders, kein Echtgeldhandel, keine automatische Push-Integration von GitHub nach ChatGPT.
 
-## Test und laufende Datenerhebung
+## Betrieb
 
-- [GitHub Actions – Crypto radar public market data](https://github.com/Glumsi0503/crypto-radar/actions/workflows/market-data.yml)
-- Der Workflow ist auf UTC-Minuten 7/22/37/52 je Stunde angesetzt. GitHub-Schedules sind Best-Effort und können verzögert werden.
-- Nach einem erfolgreichen Lauf wird der Bericht unter `docs/latest.json` abgelegt. Öffentliche Rohansicht: https://raw.githubusercontent.com/Glumsi0503/crypto-radar/main/docs/latest.json
-- Unter `quality.valid_checks` muss **>0** stehen, bevor von nutzbaren Live-Marktdaten gesprochen werden darf. Das Feld `quality.full_market_coverage` bleibt `false`.
-- `research_only` bezeichnet rein technische Beobachtungen. Es gibt **keine Handelsalarme** und keine Bitvavo-DE-Verifikation.
+- Workflow: https://github.com/Glumsi0503/crypto-radar/actions/workflows/market-data.yml
+- Geplantes GitHub-Intervall: UTC-Minute 7/22/37/52 (best effort, Verzögerung möglich).
+- Die fünf separaten ChatGPT-Radare prüfen stündlich und können die öffentlich veröffentlichte Forschungsdatei **nur bei tatsächlicher Abrufbarkeit** auswerten.
+- Der Datensammler prüft 50 fest benannte Märkte plus bis zu zehn frisch entdeckte liquide USDT-Spot-Kandidaten. Neue Börsenticker sind keine Empfehlungen und müssen OHLCV-Gültigkeitsprüfungen bestehen.
+- 15-Minuten-OHLCV: OKX/Gate/Bitget, unabhängige Bestätigung auf zwei Spotbörsen für Momentum-Research.
+- Stunden- und Tagesdaten: 24 ausgewählte Coins auf OKX/Gate. Nicht alle 50 haben diese Zusatzabdeckung.
+- Fundamentals: gezielte DefiLlama-Zeitreihen, 7 abgeschlossene UTC-Tage gegen die vorigen 7; echte Token-Wertbindung ist nicht automatisch nachgewiesen.
+- Derivate: OKX Funding und Open Interest für wenige ausgewählte Coins; 4h-OI-Änderung erst nach tatsächlich gespeicherten Vergleichssnapshots, kein eigenständiges Squeeze-Signal.
+- Echte Smart-Money-Wallet-Käufe sind nicht automatisch vollständig erfasst. Fehlende Daten sind keine positive Bestätigung.
+- Bitvavo-DE-Handelbarkeit wird nicht geprüft; Nutzer müssen Börsenverfügbarkeit und Ausführbarkeit selbst kontrollieren.
 
-## Abdeckung
+## Maschinenlesbare Berichte
 
-Pilotliste: BTC, ETH, SOL, LINK, AAVE, UNI, AVAX, NEAR, ATOM, INJ, ARB und OP auf USDT-Spotmärkten der Börsen Binance, Bybit und OKX. Vergleich auf Basis von 21 vollständig geschlossenen und zusammenhängenden 15-Minuten-Kerzen. Preisplus mindestens 3 % in einer Kerze und Quote-Volumen mindestens 3× Durchschnitt der vorangehenden 20 vollständig geschlossenen Kerzen, bei zwei unabhängigen Börsen zum gleichen Kerzenzeitpunkt.
+- `docs/latest.json`: Spot-Kerzendaten, Quellenstatus, Abdeckung
+- `docs/discovery.json`: dynamische liquide Forschungs-Ticker
+- `docs/enrichment.json`: 1h/1d und begrenzte fundamentale Zeitreihen
+- `docs/derivatives.json`: zeitgestempelte Derivate-Snapshots, keine Handelsentscheidung
+- `docs/signal_feed.json`: deduplizierte **Research**-Stufen, nicht per Push zugestellt. `recent_events_3h` hilft stündlichen Lesern.
+- `docs/signal_history.json`, `docs/derivatives_history.json`: Ereignis-/Snapshot-Historie
+- `docs/paper_journal.json`, `docs/strategy_status.json`: unverbindliche hypothetische Papertrades, vereinfachte Gebührenannahmen und statistische Auswertung
+- `docs/health.json`: Datenqualitätskontrolle
 
-**Grenzen:** Nicht der gesamte Kryptomarkt. Keine 1h-Alternative, keine OI-/Funding-Daten, keine Wallet-/Fundamentaldaten, keine sichere regionale Bitvavo-DE-Spotfreigabe und kein implementierter Zugriff aus den fünf ChatGPT-Wächtern. Kein automatischer oder manueller Echtgeldhandel.
+Bei jedem Lesen müssen `generated_at_utc`, Quellenzeitstempel und `quality` geprüft werden. Ungültige, fehlende oder alte Daten dürfen kein Kaufsignal ergeben. Die GitHub-Datei `signal_feed.json` enthält keine vollständig bestätigten fünf Strategien und keine belegte Push-Zustellung.
 
-## Sicherheit
-
-Nur öffentliche API-Endpunkte. Keine API-Schlüssel, keine Wallet-Verknüpfung, keine Orders. Keine privaten Informationen oder Credentials ins öffentliche Repository schreiben.
-
-## Lokaler Test
+## Sicherheit und Tests
 
 ```bash
 python -m unittest discover -s tests -v
+python discovery.py
 python market_data.py
+python enrichment.py
+python derivatives.py
+python strategy.py
+python signal_feed.py
+python healthcheck.py
 ```
 
-Falls GitHub Actions keine Dateien schreiben darf: Repository Settings > Actions > General > Workflow permissions > **Read and write permissions** aktivieren. Fehlende Schreibberechtigung verhindert die Aktualisierung der JSON-Datei; sie sollte nicht als erfolgreicher Datenlauf gewertet werden.
+`publish_reports.py` publiziert ausschließlich in GitHub Actions und schützt vor veralteten Berichten und konkurrierenden Pushes. Keine API-Schlüssel oder Kontodaten ins öffentliche Repo schreiben.
 
-
-## Forschungsstrategie und Papertrade-Journal
-
-Seit 10. November 2026 ergänzt `strategy.py` die 15-Minuten-Datenerhebung um ein vorsichtiges, **nicht für Echtgeld freigegebenes** Konsens-Momentum-Modell:
-
-- Mindestens zwei verschiedene öffentliche SPOT-Börsen bestätigen dasselbe abgeschlossene 15-Minuten-Fenster.
-- Kerzenplus 2–8 %, auf beiden Börsen Quote-Volumen mindestens 2× über dem Durchschnitt der vorherigen 20 abgeschlossenen Kerzen.
-- Mindestens 100.000 USDT gehandeltes Quote-Volumen je Börse und höchstens 1 % Kursabweichung zwischen den Referenzbörsen.
-- Maximal drei offene Papierpositionen; Modell-Loss-Checkpoint −2,5 %, Ziel-Checkpoint +5 %, maximale Haltedauer 72 Stunden. Annahme: 0,25 % Gebühren pro Seite, Slippage nicht modelliert.
-- Open/Closed-Status und hypothetische Nettoergebnisse in `docs/paper_journal.json`; Zusammenfassung in `docs/strategy_status.json`, **erst nach erfolgreichem Workflow-Lauf**.
-- Trigger beruhen auf abgefragten Momentankursen: Ein Kurs, der zwischen zwei Läufen das Ziel oder Stop-Level berührt, wird möglicherweise verpasst. Das ist **keine realistische Ausführungssimulation**; keine Aussage zur tatsächlichen Profitabilität.
-- Alle fünf ChatGPT-Wächter enthalten Prüfhinweise zur Datenbrücke. Dass ihre Laufumgebung GitHub-Daten tatsächlich lesen kann, ist separat zu verifizieren.
-
-Ein gewünschtes Gewinnverhältnis von sieben profitablen Signalen aus zehn ist keine vorab garantierbare oder aus wenigen simulierten Positionen belegbare Erfolgsquote. Erwartungswert, Risikokontrolle und realistische Gebühren-/Slippageannahmen sind wichtiger als eine hohe bloße Trefferquote.
-
-Keine Kundenkonto-API-Schlüssel, keine private Token-/Kaufbarkeitsverifizierung, keine Orders, kein Echtgeld-Auto-Trading.
+**Wichtig:** Ein erfolgreicher GitHub-Workflow bestätigt den Datenfluss, nicht die Wirksamkeit einer Strategie. Die Papertrade-Checkpoints sind keine nachgewiesenen echten Fills, und die langfristige Profitabilität ist nicht belegt.
