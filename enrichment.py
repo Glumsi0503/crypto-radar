@@ -93,14 +93,14 @@ def collect():
             fundamentals.append(item)
             time.sleep(0.1)
     return {"schema_version":1,"generated_at_utc":now_utc(),"research_only":True,
-            "bitvavo_de_spot_verified":False,"alerts_permitted":False,
-            "scope":"12-coin pilot; 1h and daily history, targeted DefiLlama endpoint health only",
+            "exchange_availability_status":"NOT_CHECKED","alerts_permitted":False,
+            "scope":"12-coin enrichment subset of 50-coin 15m universe; 1h and daily history, targeted DefiLlama endpoint health only",
             "market_checks":records,"fundamental_checks":fundamentals,
             "quality":{"market_valid":sum(x["status"]=="ok" for x in records),
                        "market_attempts":len(records),
                        "fundamental_reachable":sum(x["status"]=="reachable" for x in fundamentals),
                        "fundamental_attempts":len(fundamentals)},
-            "limits":["No German account-level Bitvavo verification","No independent wallet-purchase verification",
+            "limits":["No exchange-specific buyability verification","No independent wallet-purchase verification",
                       "No funding/OI verification","Fundamental endpoint reachability does not establish growth or token value capture",
                       "No trade alerts or orders"]}
 
