@@ -1,0 +1,31 @@
+name: Crypto radar bounded historical backtest
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'backtest.py'
+      - 'publish_backtest.py'
+      - 'tests/test_backtest.py'
+      - '.github/workflows/backtest.yml'
+  schedule:
+    - cron: "13 3 * * *"
+permissions:
+  contents: write
+concurrency:
+  group: crypto-nightly-backtest
+  cancel-in-progress: false
+jobs:
+  research-backtest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Verify backtest rules
+        run: python -m unittest discover -s tests -p test_backtest.py -v
+      - name: Run bounded historical OHLCV research
+        run: python backtest.py
+      - name: Publish historical research report
+        run: python publish_backtest.py
