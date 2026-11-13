@@ -1,0 +1,2594 @@
+{
+  "generated_at_utc": "2026-11-13T17:10:00.398826+00:00",
+  "source_urls": {
+    "markets": "https://api.bitvavo.com/v2/markets",
+    "assets": "https://api.bitvavo.com/v2/assets"
+  },
+  "status": "ok",
+  "reference_only": true,
+  "bitvavo_germany_eligibility_verified": false,
+  "user_account_buyability_verified": false,
+  "mandatory_trade_filter": false,
+  "universe_source": "Public Bitvavo EUR market metadata, not German account entitlements",
+  "counts": {
+    "eur_markets": 419,
+    "public_trading_eur_markets": 419,
+    "core_radar_coins": 50,
+    "core_radar_with_public_trading_eur_market": 47
+  },
+  "core_radar_public_trading_symbols": [
+    "AAVE",
+    "ADA",
+    "APT",
+    "ARB",
+    "ATOM",
+    "AVAX",
+    "BCH",
+    "BONK",
+    "BTC",
+    "CRV",
+    "DOGE",
+    "ENA",
+    "ETH",
+    "FET",
+    "GRT",
+    "HYPE",
+    "IMX",
+    "INIT",
+    "INJ",
+    "JUP",
+    "KAS",
+    "LDO",
+    "LINK",
+    "LSK",
+    "LTC",
+    "MORPHO",
+    "NEAR",
+    "ONDO",
+    "OP",
+    "OSMO",
+    "PENGU",
+    "PEPE",
+    "PUMP",
+    "PYTH",
+    "RENDER",
+    "RUNE",
+    "SEI",
+    "SOL",
+    "SUI",
+    "TAO",
+    "TIA",
+    "TRX",
+    "UNI",
+    "WIF",
+    "XLM",
+    "XRP",
+    "ZORA"
+  ],
+  "core_radar_not_publicly_trading_symbols": [
+    "STORJ",
+    "TON",
+    "ZEC"
+  ],
+  "markets": [
+    {
+      "symbol": "0G",
+      "name": "Zero Gravity",
+      "market": "0G-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "1INCH",
+      "name": "1inch",
+      "market": "1INCH-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "2Z",
+      "name": "DoubleZero",
+      "market": "2Z-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "AAVE",
+      "name": "Aave",
+      "market": "AAVE-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "ACE",
+      "name": "Fusionist",
+      "market": "ACE-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "ACH",
+      "name": "Alchemy Pay",
+      "market": "ACH-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "ACT",
+      "name": "Act I : The AI Prophecy",
+      "market": "ACT-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "ACU",
+      "name": "Acurast",
+      "market": "ACU-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "ADA",
+      "name": "Cardano",
+      "market": "ADA-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "ADX",
+      "name": "heyAura",
+      "market": "ADX-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "AERO",
+      "name": "Aerodrome Finance",
+      "market": "AERO-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "AEVO",
+      "name": "AEVO",
+      "market": "AEVO-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "AGI",
+      "name": "Delysium",
+      "market": "AGI-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "AGLD",
+      "name": "Adventure Gold",
+      "market": "AGLD-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "AI",
+      "name": "Gensyn",
+      "market": "AI-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "AIOZ",
+      "name": "AIOZ Network",
+      "market": "AIOZ-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "AIXBT",
+      "name": "aixbt by Virtuals",
+      "market": "AIXBT-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "AKT",
+      "name": "Akash Network",
+      "market": "AKT-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "ALGO",
+      "name": "Algorand",
+      "market": "ALGO-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "ALICE",
+      "name": "MyNeighborAlice",
+      "market": "ALICE-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "ALIGN",
+      "name": "Aligned",
+      "market": "ALIGN-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "ALLO",
+      "name": "Allora",
+      "market": "ALLO-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "ALT",
+      "name": "Altlayer",
+      "market": "ALT-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "AMP",
+      "name": "Amp",
+      "market": "AMP-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "ANIME",
+      "name": "Animecoin",
+      "market": "ANIME-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "ANKR",
+      "name": "Ankr",
+      "market": "ANKR-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "APE",
+      "name": "ApeCoin",
+      "market": "APE-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "API3",
+      "name": "API3",
+      "market": "API3-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "APT",
+      "name": "Aptos",
+      "market": "APT-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "ARB",
+      "name": "Arbitrum",
+      "market": "ARB-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "ARK",
+      "name": "Ark",
+      "market": "ARK-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "ARKM",
+      "name": "Arkham",
+      "market": "ARKM-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "ARPA",
+      "name": "ARPA",
+      "market": "ARPA-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "ARX",
+      "name": "Arcium",
+      "market": "ARX-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "ASTER",
+      "name": "Aster",
+      "market": "ASTER-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "ASTR",
+      "name": "Astar",
+      "market": "ASTR-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "ATH",
+      "name": "Aethir",
+      "market": "ATH-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "ATOM",
+      "name": "Cosmos",
+      "market": "ATOM-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "AUCTION",
+      "name": "Bounce Token",
+      "market": "AUCTION-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "AUDIO",
+      "name": "Audius",
+      "market": "AUDIO-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "AVA",
+      "name": "AVA (Travala)",
+      "market": "AVA-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "AVAX",
+      "name": "Avalanche",
+      "market": "AVAX-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "AVNT",
+      "name": "Avantis",
+      "market": "AVNT-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "AXIS",
+      "name": "Axis Robotics",
+      "market": "AXIS-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "AXL",
+      "name": "Axelar",
+      "market": "AXL-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "AXS",
+      "name": "Axie Infinity",
+      "market": "AXS-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "AZTEC",
+      "name": "Aztec",
+      "market": "AZTEC-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "BABY",
+      "name": "Babylon",
+      "market": "BABY-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "BANANA",
+      "name": "Banana Gun",
+      "market": "BANANA-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "BAND",
+      "name": "Band Protocol",
+      "market": "BAND-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "BAT",
+      "name": "Basic Attention Token",
+      "market": "BAT-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "BCH",
+      "name": "Bitcoin Cash",
+      "market": "BCH-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "BEAM",
+      "name": "Beam",
+      "market": "BEAM-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "BEL",
+      "name": "Bella Protocol",
+      "market": "BEL-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "BICO",
+      "name": "Biconomy",
+      "market": "BICO-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "BIGTIME",
+      "name": "Big Time",
+      "market": "BIGTIME-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "BILL",
+      "name": "Billions Network",
+      "market": "BILL-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "BIO",
+      "name": "Bio Protocol",
+      "market": "BIO-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "BIRB",
+      "name": "Moonbirds",
+      "market": "BIRB-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "BLEND",
+      "name": "Fluent",
+      "market": "BLEND-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "BLUR",
+      "name": "Blur",
+      "market": "BLUR-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "BNB",
+      "name": "Binance Coin",
+      "market": "BNB-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "BNT",
+      "name": "Bancor",
+      "market": "BNT-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "BOB",
+      "name": "BOB",
+      "market": "BOB-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "BOME",
+      "name": "BOOK OF MEME",
+      "market": "BOME-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "BONK",
+      "name": "Bonk",
+      "market": "BONK-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "BRETT",
+      "name": "Brett (Based)",
+      "market": "BRETT-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "BREV",
+      "name": "Brevis",
+      "market": "BREV-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "BTC",
+      "name": "Bitcoin",
+      "market": "BTC-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "BTT",
+      "name": "BitTorrent",
+      "market": "BTT-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "C98",
+      "name": "Coin98",
+      "market": "C98-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "CAKE",
+      "name": "PancakeSwap",
+      "market": "CAKE-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "CAP",
+      "name": "Cap",
+      "market": "CAP-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "CARV",
+      "name": "CARV",
+      "market": "CARV-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "CAT",
+      "name": "Simon's Cat",
+      "market": "CAT-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "CATI",
+      "name": "Catizen",
+      "market": "CATI-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "CC",
+      "name": "Canton",
+      "market": "CC-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "CELO",
+      "name": "Celo",
+      "market": "CELO-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "CELR",
+      "name": "Celer Network",
+      "market": "CELR-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "CETUS",
+      "name": "Cetus Protocol",
+      "market": "CETUS-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "CFG",
+      "name": "Centrifuge",
+      "market": "CFG-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "CHILLGUY",
+      "name": "Just a chill guy",
+      "market": "CHILLGUY-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "CHIP",
+      "name": "USD.AI",
+      "market": "CHIP-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "CHR",
+      "name": "Chromia",
+      "market": "CHR-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "CHZ",
+      "name": "Chiliz",
+      "market": "CHZ-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "CNPY",
+      "name": "Canopy",
+      "market": "CNPY-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "COMP",
+      "name": "Compound",
+      "market": "COMP-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "COTI",
+      "name": "COTI",
+      "market": "COTI-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "COW",
+      "name": "CoW Protocol",
+      "market": "COW-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "CPOOL",
+      "name": "Clearpool",
+      "market": "CPOOL-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "CRO",
+      "name": "Cronos",
+      "market": "CRO-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "CROSS",
+      "name": "ONEchain",
+      "market": "CROSS-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "CRV",
+      "name": "Curve DAO Token",
+      "market": "CRV-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "CSPR",
+      "name": "Casper",
+      "market": "CSPR-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "CT",
+      "name": "Concrete",
+      "market": "CT-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "CTC",
+      "name": "Creditcoin",
+      "market": "CTC-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "CTK",
+      "name": "Shentu",
+      "market": "CTK-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "CTR",
+      "name": "Citrea",
+      "market": "CTR-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "CTSI",
+      "name": "Cartesi",
+      "market": "CTSI-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "CVC",
+      "name": "Civic",
+      "market": "CVC-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "CVX",
+      "name": "Convex Finance",
+      "market": "CVX-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "CYBER",
+      "name": "CyberConnect",
+      "market": "CYBER-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "DATAIP",
+      "name": "DataIP",
+      "market": "DATAIP-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "DBR",
+      "name": "DeBridge",
+      "market": "DBR-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "DEEP",
+      "name": "DeepBook Protocol",
+      "market": "DEEP-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "DEGEN",
+      "name": "Degen",
+      "market": "DEGEN-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "DGB",
+      "name": "DigiByte",
+      "market": "DGB-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "DIA",
+      "name": "DIA",
+      "market": "DIA-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "DODO",
+      "name": "DODO",
+      "market": "DODO-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "DOGE",
+      "name": "Dogecoin",
+      "market": "DOGE-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "DOGS",
+      "name": "DOGS",
+      "market": "DOGS-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "DOS",
+      "name": "Dappos",
+      "market": "DOS-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "DOT",
+      "name": "Polkadot",
+      "market": "DOT-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "DRIFT",
+      "name": "Drift",
+      "market": "DRIFT-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "DRV",
+      "name": "Derive",
+      "market": "DRV-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "DUSK",
+      "name": "Dusk Network",
+      "market": "DUSK-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "DYDX",
+      "name": "dYdX",
+      "market": "DYDX-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "DYM",
+      "name": "Dymension",
+      "market": "DYM-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "EDEN",
+      "name": "OpenEden",
+      "market": "EDEN-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "EDGE",
+      "name": "Definitive",
+      "market": "EDGE-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "EDU",
+      "name": "Open Campus",
+      "market": "EDU-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "EGLD",
+      "name": "MultiversX",
+      "market": "EGLD-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "EIGEN",
+      "name": "EigenLayer",
+      "market": "EIGEN-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "ELSA",
+      "name": "HeyElsa",
+      "market": "ELSA-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "ENA",
+      "name": "Ethena",
+      "market": "ENA-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "ENJ",
+      "name": "Enjin",
+      "market": "ENJ-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "ENS",
+      "name": "Ethereum Name Service",
+      "market": "ENS-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "ENSO",
+      "name": "Enso",
+      "market": "ENSO-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "EPIC",
+      "name": "Epic Chain",
+      "market": "EPIC-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "ESP",
+      "name": "Espresso",
+      "market": "ESP-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "ETC",
+      "name": "Ethereum Classic",
+      "market": "ETC-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "ETH",
+      "name": "Ethereum",
+      "market": "ETH-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "ETHFI",
+      "name": "ether.fi",
+      "market": "ETHFI-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "EUL",
+      "name": "Euler",
+      "market": "EUL-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "EURC",
+      "name": "EURC",
+      "market": "EURC-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "EURCV",
+      "name": "EUR CoinVertible",
+      "market": "EURCV-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "EUROP",
+      "name": "EUROP",
+      "market": "EUROP-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "FARTCOIN",
+      "name": "Fartcoin",
+      "market": "FARTCOIN-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "FET",
+      "name": "Fetch.ai",
+      "market": "FET-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "FIDA",
+      "name": "Solana Name Service",
+      "market": "FIDA-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "FIL",
+      "name": "Filecoin",
+      "market": "FIL-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "FLOCK",
+      "name": "FLock.io",
+      "market": "FLOCK-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "FLOKI",
+      "name": "FLOKI",
+      "market": "FLOKI-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "FLR",
+      "name": "Flare",
+      "market": "FLR-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "FLUID",
+      "name": "Fluid",
+      "market": "FLUID-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "FLUX",
+      "name": "Flux",
+      "market": "FLUX-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "FOLD",
+      "name": "The Interfold",
+      "market": "FOLD-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "FORM",
+      "name": "Four",
+      "market": "FORM-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "FRAX",
+      "name": "Frax",
+      "market": "FRAX-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "FTT",
+      "name": "FTX Token",
+      "market": "FTT-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "FUEL",
+      "name": "Fuel Network",
+      "market": "FUEL-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "FUN",
+      "name": "Sport.Fun",
+      "market": "FUN-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "GALA",
+      "name": "Gala",
+      "market": "GALA-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "GAS",
+      "name": "Gas",
+      "market": "GAS-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "GIGA",
+      "name": "Gigachad",
+      "market": "GIGA-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "GLM",
+      "name": "Golem",
+      "market": "GLM-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "GLMR",
+      "name": "Glimmer",
+      "market": "GLMR-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "GMT",
+      "name": "STEPN",
+      "market": "GMT-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "GMX",
+      "name": "GMX",
+      "market": "GMX-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "GNO",
+      "name": "Gnosis",
+      "market": "GNO-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "GNS",
+      "name": "Gains Network",
+      "market": "GNS-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "GOAT",
+      "name": "Goatseus Maximus",
+      "market": "GOAT-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "GRAM",
+      "name": "Gram",
+      "market": "GRAM-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "GRASS",
+      "name": "Grass",
+      "market": "GRASS-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "GROVE",
+      "name": "Grove",
+      "market": "GROVE-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "GRT",
+      "name": "The Graph",
+      "market": "GRT-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "GTC",
+      "name": "Gitcoin",
+      "market": "GTC-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "GWEI",
+      "name": "ETHGas",
+      "market": "GWEI-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "HAEDAL",
+      "name": "Haedal Protocol",
+      "market": "HAEDAL-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "HBAR",
+      "name": "Hedera",
+      "market": "HBAR-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "HEI",
+      "name": "Heima",
+      "market": "HEI-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "HFT",
+      "name": "Hashflow",
+      "market": "HFT-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "HMSTR",
+      "name": "Hamster Kombat",
+      "market": "HMSTR-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "HNT",
+      "name": "Helium",
+      "market": "HNT-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "HOME",
+      "name": "Defi App",
+      "market": "HOME-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "HOT",
+      "name": "Holo",
+      "market": "HOT-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "HUMA",
+      "name": "Huma Finance",
+      "market": "HUMA-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "HYPE",
+      "name": "Hyperliquid",
+      "market": "HYPE-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "ICNT",
+      "name": "Impossible Cloud Network",
+      "market": "ICNT-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "ICP",
+      "name": "Internet Computer",
+      "market": "ICP-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "ID",
+      "name": "SPACE ID",
+      "market": "ID-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "IKA",
+      "name": "Ika",
+      "market": "IKA-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "ILV",
+      "name": "Illuvium",
+      "market": "ILV-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "IMU",
+      "name": "Immunefi",
+      "market": "IMU-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "IMX",
+      "name": "Immutable X",
+      "market": "IMX-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "INIT",
+      "name": "Initia",
+      "market": "INIT-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "INJ",
+      "name": "Injective Protocol",
+      "market": "INJ-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "INX",
+      "name": "Infinex",
+      "market": "INX-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "IO",
+      "name": "io.net",
+      "market": "IO-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "IOST",
+      "name": "IOST",
+      "market": "IOST-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "IQ",
+      "name": "IQ",
+      "market": "IQ-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "IRYS",
+      "name": "Irys",
+      "market": "IRYS-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "JASMY",
+      "name": "JasmyCoin",
+      "market": "JASMY-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "JTO",
+      "name": "Jito",
+      "market": "JTO-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "JUP",
+      "name": "Jupiter",
+      "market": "JUP-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "KAIA",
+      "name": "Kaia",
+      "market": "KAIA-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "KAITO",
+      "name": "Kaito",
+      "market": "KAITO-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "KAS",
+      "name": "Kaspa",
+      "market": "KAS-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "KAT",
+      "name": "Katana",
+      "market": "KAT-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "KERNEL",
+      "name": "KernelDAO",
+      "market": "KERNEL-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "KITE",
+      "name": "Kite",
+      "market": "KITE-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "KMNO",
+      "name": "Kamino Finance",
+      "market": "KMNO-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "KNC",
+      "name": "Kyber Network",
+      "market": "KNC-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "KNTQ",
+      "name": "Kinetiq",
+      "market": "KNTQ-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "KSM",
+      "name": "Kusama",
+      "market": "KSM-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "LAPTOP",
+      "name": "Hunter Biden's Laptop",
+      "market": "LAPTOP-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "LAYER",
+      "name": "Solayer",
+      "market": "LAYER-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "LDO",
+      "name": "Lido DAO",
+      "market": "LDO-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "LIGHTER",
+      "name": "Lighter",
+      "market": "LIGHTER-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "LINEA",
+      "name": "Linea",
+      "market": "LINEA-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "LINK",
+      "name": "Chainlink",
+      "market": "LINK-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "LISTA",
+      "name": "Lista DAO",
+      "market": "LISTA-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "LMWR",
+      "name": "LimeWire",
+      "market": "LMWR-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "LPT",
+      "name": "Livepeer",
+      "market": "LPT-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "LQTY",
+      "name": "Liquity",
+      "market": "LQTY-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "LRC",
+      "name": "Loopring",
+      "market": "LRC-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "LSK",
+      "name": "Lisk",
+      "market": "LSK-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "LTC",
+      "name": "Litecoin",
+      "market": "LTC-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "LUMIA",
+      "name": "Lumia",
+      "market": "LUMIA-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "LUNA",
+      "name": "Terra Classic",
+      "market": "LUNA-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "LUNA2",
+      "name": "Terra 2.0",
+      "market": "LUNA2-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "MAGIC",
+      "name": "MAGIC",
+      "market": "MAGIC-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "MANA",
+      "name": "Decentraland",
+      "market": "MANA-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "MANTA",
+      "name": "Manta Network",
+      "market": "MANTA-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "MANTRA",
+      "name": "Mantra",
+      "market": "MANTRA-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "MASK",
+      "name": "Mask Network",
+      "market": "MASK-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "MAV",
+      "name": "Maverick Protocol",
+      "market": "MAV-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "MAVIA",
+      "name": "Heroes of Mavia",
+      "market": "MAVIA-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "ME",
+      "name": "Magic Eden",
+      "market": "ME-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "MEGA",
+      "name": "MegaETH",
+      "market": "MEGA-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "MEME",
+      "name": "Memecoin",
+      "market": "MEME-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "MERL",
+      "name": "Merlin Chain",
+      "market": "MERL-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "MET",
+      "name": "Meteora",
+      "market": "MET-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "METIS",
+      "name": "Metis",
+      "market": "METIS-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "MEW",
+      "name": "cat in a dogs world",
+      "market": "MEW-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "MIOTA",
+      "name": "IOTA",
+      "market": "MIOTA-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "MIRA",
+      "name": "Mira",
+      "market": "MIRA-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "MLN",
+      "name": "Enzyme",
+      "market": "MLN-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "MMT",
+      "name": "Momentum",
+      "market": "MMT-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "MOCA",
+      "name": "Moca Network",
+      "market": "MOCA-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "MOG",
+      "name": "Mog Coin",
+      "market": "MOG-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "MON",
+      "name": "Monad",
+      "market": "MON-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "MOODENG",
+      "name": "Moo Deng",
+      "market": "MOODENG-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "MORPHO",
+      "name": "Morpho",
+      "market": "MORPHO-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "MOVE",
+      "name": "Movement",
+      "market": "MOVE-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "MOVR",
+      "name": "Moonriver",
+      "market": "MOVR-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "MTL",
+      "name": "Metal",
+      "market": "MTL-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "NEAR",
+      "name": "Near Protocol",
+      "market": "NEAR-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "NEIRO",
+      "name": "First Neiro On Ethereum",
+      "market": "NEIRO-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "NEO",
+      "name": "NEO",
+      "market": "NEO-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "NES",
+      "name": "Nesa",
+      "market": "NES-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "NEWT",
+      "name": "Newton Protocol",
+      "market": "NEWT-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "NEX",
+      "name": "Nexus",
+      "market": "NEX-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "NIL",
+      "name": "Nillion",
+      "market": "NIL-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "NMR",
+      "name": "Numeraire",
+      "market": "NMR-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "NOM",
+      "name": "Nomina",
+      "market": "NOM-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "NOS",
+      "name": "Nosana",
+      "market": "NOS-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "NOT",
+      "name": "Notcoin",
+      "market": "NOT-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "NPC",
+      "name": "Non-Playable Coin",
+      "market": "NPC-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "OGN",
+      "name": "Origin Protocol",
+      "market": "OGN-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "ONDO",
+      "name": "Ondo",
+      "market": "ONDO-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "OP",
+      "name": "Optimism",
+      "market": "OP-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "OPEN",
+      "name": "OpenLedger",
+      "market": "OPEN-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "ORCA",
+      "name": "Orca",
+      "market": "ORCA-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "OSMO",
+      "name": "Osmosis",
+      "market": "OSMO-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "PARTI",
+      "name": "Particle Network",
+      "market": "PARTI-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "PEAQ",
+      "name": "peaq",
+      "market": "PEAQ-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "PENDLE",
+      "name": "Pendle",
+      "market": "PENDLE-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "PENGU",
+      "name": "Pengu",
+      "market": "PENGU-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "PEOPLE",
+      "name": "ConstitutionDAO",
+      "market": "PEOPLE-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "PEPE",
+      "name": "Pepe",
+      "market": "PEPE-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "PHA",
+      "name": "Phala Network",
+      "market": "PHA-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "PIXEL",
+      "name": "Pixels",
+      "market": "PIXEL-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "PLUME",
+      "name": "Plume",
+      "market": "PLUME-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "PNT",
+      "name": "Pheasant Network",
+      "market": "PNT-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "PNUT",
+      "name": "Peanut the Squirrel",
+      "market": "PNUT-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "POL",
+      "name": "POL",
+      "market": "POL-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "POND",
+      "name": "Marlin",
+      "market": "POND-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "PONKE",
+      "name": "Ponke",
+      "market": "PONKE-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "POPCAT",
+      "name": "Popcat",
+      "market": "POPCAT-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "PORTAL",
+      "name": "Portal",
+      "market": "PORTAL-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "POWR",
+      "name": "Powerledger",
+      "market": "POWR-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "PROM",
+      "name": "Prom",
+      "market": "PROM-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "PROMPT",
+      "name": "Wayfinder",
+      "market": "PROMPT-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "PROVE",
+      "name": "Succinct",
+      "market": "PROVE-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "PUFFER",
+      "name": "Puffer",
+      "market": "PUFFER-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "PUMP",
+      "name": "Pump.fun",
+      "market": "PUMP-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "PUNDIX",
+      "name": "Pundi X",
+      "market": "PUNDIX-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "PYTH",
+      "name": "Pyth Network",
+      "market": "PYTH-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "QKC",
+      "name": "QuarkChain",
+      "market": "QKC-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "QNT",
+      "name": "Quant",
+      "market": "QNT-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "QUID",
+      "name": "Squidrouter",
+      "market": "QUID-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "RAD",
+      "name": "Radworks",
+      "market": "RAD-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "RARE",
+      "name": "SuperRare",
+      "market": "RARE-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "RAY",
+      "name": "Raydium",
+      "market": "RAY-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "RE",
+      "name": "Re Protocol",
+      "market": "RE-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "RECALL",
+      "name": "Recall",
+      "market": "RECALL-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "RED",
+      "name": "RedStone",
+      "market": "RED-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "RENDER",
+      "name": "Render",
+      "market": "RENDER-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "REQ",
+      "name": "Request Network",
+      "market": "REQ-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "REZ",
+      "name": "Renzo",
+      "market": "REZ-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "RLC",
+      "name": "iExec RLC",
+      "market": "RLC-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "ROBO",
+      "name": "Fabric Protocol",
+      "market": "ROBO-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "RON",
+      "name": "Ronin",
+      "market": "RON-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "ROSE",
+      "name": "Oasis Network",
+      "market": "ROSE-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "RPL",
+      "name": "Rocket Pool",
+      "market": "RPL-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "RSR",
+      "name": "Reserve Rights",
+      "market": "RSR-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "RUNE",
+      "name": "THORChain",
+      "market": "RUNE-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "SAFE",
+      "name": "Safe",
+      "market": "SAFE-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "SAGA",
+      "name": "Saga",
+      "market": "SAGA-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "SAND",
+      "name": "The Sandbox",
+      "market": "SAND-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "SAPIEN",
+      "name": "Sapien",
+      "market": "SAPIEN-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "SCR",
+      "name": "Scroll",
+      "market": "SCR-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "SEI",
+      "name": "Sei",
+      "market": "SEI-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "SENT",
+      "name": "Sentient",
+      "market": "SENT-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "SFP",
+      "name": "SafePal",
+      "market": "SFP-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "SHELL",
+      "name": "MyShell",
+      "market": "SHELL-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "SHIB",
+      "name": "Shiba Inu",
+      "market": "SHIB-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "SIGN",
+      "name": "Sign",
+      "market": "SIGN-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "SKL",
+      "name": "SKALE Network",
+      "market": "SKL-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "SKY",
+      "name": "Sky",
+      "market": "SKY-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "SLP",
+      "name": "Smooth Love Potion",
+      "market": "SLP-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "SLX",
+      "name": "Solstice",
+      "market": "SLX-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "SNX",
+      "name": "Synthetix",
+      "market": "SNX-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "SOL",
+      "name": "Solana",
+      "market": "SOL-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "SOLV",
+      "name": "Solv Protocol",
+      "market": "SOLV-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "SOMI",
+      "name": "Somnia",
+      "market": "SOMI-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "SOON",
+      "name": "SOON",
+      "market": "SOON-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "SOSO",
+      "name": "SoSoValue",
+      "market": "SOSO-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "SPK",
+      "name": "Spark",
+      "market": "SPK-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "SPX",
+      "name": "SPX6900",
+      "market": "SPX-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "SQD",
+      "name": "Subsquid",
+      "market": "SQD-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "SSV",
+      "name": "ssv.network",
+      "market": "SSV-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "STO",
+      "name": "StakeStone",
+      "market": "STO-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "STRAX",
+      "name": "Stratis",
+      "market": "STRAX-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "STRK",
+      "name": "Starknet Token",
+      "market": "STRK-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "STX",
+      "name": "Stacks",
+      "market": "STX-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "SUI",
+      "name": "Sui",
+      "market": "SUI-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "SUPER",
+      "name": "SuperVerse",
+      "market": "SUPER-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "SUSHI",
+      "name": "SushiSwap",
+      "market": "SUSHI-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "SWELL",
+      "name": "Swell Network",
+      "market": "SWELL-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "SXT",
+      "name": "Space and Time",
+      "market": "SXT-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "SYN",
+      "name": "Synapse",
+      "market": "SYN-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "SYRUP",
+      "name": "Maple Finance",
+      "market": "SYRUP-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "TAI",
+      "name": "TARS AI",
+      "market": "TAI-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "TAIKO",
+      "name": "Taiko",
+      "market": "TAIKO-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "TAO",
+      "name": "Bittensor",
+      "market": "TAO-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "THE",
+      "name": "THENA",
+      "market": "THE-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "THQ",
+      "name": "Theoriq",
+      "market": "THQ-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "TIA",
+      "name": "Celestia",
+      "market": "TIA-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "TLM",
+      "name": "Alien Worlds",
+      "market": "TLM-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "TNSR",
+      "name": "Tensor",
+      "market": "TNSR-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "TOSHI",
+      "name": "Toshi",
+      "market": "TOSHI-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "TOWNS",
+      "name": "Towns",
+      "market": "TOWNS-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "TRAC",
+      "name": "OriginTrail",
+      "market": "TRAC-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "TRB",
+      "name": "Tellor",
+      "market": "TRB-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "TREAD",
+      "name": "Tread.fi",
+      "market": "TREAD-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "TREE",
+      "name": "Treehouse",
+      "market": "TREE-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "TRIA",
+      "name": "Tria",
+      "market": "TRIA-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "TRUMP",
+      "name": "OFFICIAL TRUMP",
+      "market": "TRUMP-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "TRUST",
+      "name": "Intuition",
+      "market": "TRUST-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "TRX",
+      "name": "Tron",
+      "market": "TRX-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "TURBO",
+      "name": "Turbo",
+      "market": "TURBO-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "TWT",
+      "name": "Trust Wallet Token",
+      "market": "TWT-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "UMA",
+      "name": "UMA",
+      "market": "UMA-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "UNI",
+      "name": "Uniswap",
+      "market": "UNI-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "UP",
+      "name": "Superform",
+      "market": "UP-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "USDC",
+      "name": "USD Coin",
+      "market": "USDC-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "USDCV",
+      "name": "USD CoinVertible",
+      "market": "USDCV-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "USELESS",
+      "name": "Useless",
+      "market": "USELESS-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "VANA",
+      "name": "Vana",
+      "market": "VANA-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "VELO",
+      "name": "Velo",
+      "market": "VELO-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "VERONA",
+      "name": "Verona",
+      "market": "VERONA-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "VET",
+      "name": "VeChain Thor",
+      "market": "VET-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "VIRTUAL",
+      "name": "Virtuals Protocol",
+      "market": "VIRTUAL-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "VSN",
+      "name": "Vision",
+      "market": "VSN-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "VTHO",
+      "name": "VeThor Token",
+      "market": "VTHO-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "VVV",
+      "name": "Venice Token",
+      "market": "VVV-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "WAL",
+      "name": "Walrus",
+      "market": "WAL-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "WAXP",
+      "name": "WAX",
+      "market": "WAXP-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "WCT",
+      "name": "WalletConnect Token",
+      "market": "WCT-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "WELL",
+      "name": "Moonwell",
+      "market": "WELL-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "WHUF",
+      "name": "Ethos",
+      "market": "WHUF-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "WIF",
+      "name": "dogwifhat",
+      "market": "WIF-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "WIN",
+      "name": "WINkLink",
+      "market": "WIN-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "WLD",
+      "name": "Worldcoin",
+      "market": "WLD-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "WLFI",
+      "name": "World Liberty Financial",
+      "market": "WLFI-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "WMTX",
+      "name": "World Mobile Token",
+      "market": "WMTX-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "WOO",
+      "name": "WOO",
+      "market": "WOO-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "XAI",
+      "name": "Xai",
+      "market": "XAI-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "XAN",
+      "name": "Anoma",
+      "market": "XAN-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "XDC",
+      "name": "XDC Network",
+      "market": "XDC-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "XDP",
+      "name": "Doppler Finance",
+      "market": "XDP-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "XLM",
+      "name": "Stellar",
+      "market": "XLM-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "XMN",
+      "name": "xMoney",
+      "market": "XMN-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "XPL",
+      "name": "Plasma",
+      "market": "XPL-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "XRP",
+      "name": "XRP",
+      "market": "XRP-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "XTZ",
+      "name": "Tezos",
+      "market": "XTZ-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "XVG",
+      "name": "Verge",
+      "market": "XVG-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "XYO",
+      "name": "XYO",
+      "market": "XYO-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "YB",
+      "name": "YieldBasis",
+      "market": "YB-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "YFI",
+      "name": "Yearn Finance",
+      "market": "YFI-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "YGG",
+      "name": "Yield Guild Games",
+      "market": "YGG-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "ZAMA",
+      "name": "ZAMA",
+      "market": "ZAMA-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "ZBCN",
+      "name": "Zebec Network",
+      "market": "ZBCN-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "ZBT",
+      "name": "ZEROBASE",
+      "market": "ZBT-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "ZEN",
+      "name": "Horizen",
+      "market": "ZEN-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "ZETA",
+      "name": "ZetaChain",
+      "market": "ZETA-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "ZEUS",
+      "name": "Zeus Network",
+      "market": "ZEUS-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "ZIG",
+      "name": "ZIG Finance",
+      "market": "ZIG-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "ZIL",
+      "name": "Zilliqa",
+      "market": "ZIL-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "ZK",
+      "name": "zkSync",
+      "market": "ZK-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "ZKC",
+      "name": "Boundless",
+      "market": "ZKC-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "ZKJ",
+      "name": "Polyhedra Network",
+      "market": "ZKJ-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "ZKP",
+      "name": "zkPass",
+      "market": "ZKP-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "ZORA",
+      "name": "ZORA",
+      "market": "ZORA-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "ZRC",
+      "name": "Zircuit",
+      "market": "ZRC-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "ZRO",
+      "name": "LayerZero",
+      "market": "ZRO-EUR",
+      "public_market_status": "trading"
+    },
+    {
+      "symbol": "ZRX",
+      "name": "0x",
+      "market": "ZRX-EUR",
+      "public_market_status": "trading"
+    }
+  ],
+  "notes": [
+    "A public trading EUR market does not prove availability for any particular account in Germany.",
+    "This catalog does NOT gate spot data collection, signals or papertrades.",
+    "Metadata refresh may fail due to regional restrictions; absence is unknown, not a delisting."
+  ]
+}
