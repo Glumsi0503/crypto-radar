@@ -8,6 +8,7 @@ on:
       - 'signal_feed.py'
       - 'derivatives.py'
       - 'five_method_audit.py'
+      - 'radar_inbox.py'
       - 'observed_outcomes.py'
       - 'strategy.py'
       - 'enrichment.py'
@@ -61,6 +62,10 @@ jobs:
         if: always()
         run: |
           if test -f /tmp/crypto_radar_fresh_market; then python five_method_audit.py; else echo 'No fresh OHLCV: skip audit'; fi
+      - name: Build time-checked radar reader inbox
+        if: always()
+        run: |
+          if test -f /tmp/crypto_radar_fresh_market; then python radar_inbox.py; else echo 'No fresh spot: skip reader inbox'; fi
       - name: Evaluate timestamped paper outcomes
         if: always()
         run: |
