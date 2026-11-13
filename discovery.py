@@ -22,7 +22,8 @@ MIN_OKX_QUOTE_24H=1_000_000
 MIN_15M_QUOTE=25_000
 MAX_PRICE_DISAGREEMENT=0.02
 MAX_NEW=10
-MAX_PREFLIGHT=24
+MAX_PREFLIGHT=80
+MAX_CANDLE_PREFLIGHT=24
 CANDLE_MS=900_000
 LEVERAGED=re.compile(r"(?:[2357]L|[2357]S|BULL|BEAR|UP|DOWN)$")
 
@@ -126,7 +127,9 @@ def run(gate_tickers,okx_tickers,current_ms,fetcher=fetch,limit=MAX_NEW):
     available=corroborate(shortlist,parse_okx_tickers(okx_tickers),current_ms)
     confirmed=[]
     rejected=[]
-    for row in available:
+    attempted=0
+    for row in available[:MAX_CANDLE_PREFLIGHT]:
+        attempted+=1
         try:
             confirmed.append(verify_candles(row,current_ms,fetcher))
             if len(confirmed)>=limit:break
@@ -134,7 +137,7 @@ def run(gate_tickers,okx_tickers,current_ms,fetcher=fetch,limit=MAX_NEW):
             rejected.append({"symbol":row["symbol"],
                              "reason":(type(exc).__name__+": "+str(exc))[:150]})
     return confirmed,{"gate_shortlist":len(shortlist),"ticker_correlated":len(available),
-                      "candle_rejected":rejected[:24],"validated":len(confirmed)}
+                      "candle_checked":attempted,"candle_rejected":rejected[:24],"validated":len(confirmed)}
 
 def main():
     OUT.parent.mkdir(exist_ok=True)
