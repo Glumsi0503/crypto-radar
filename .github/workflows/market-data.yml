@@ -4,6 +4,8 @@ on:
   push:
     paths:
       - 'market_data.py'
+      - 'discovery.py'
+      - 'signal_feed.py'
       - 'strategy.py'
       - 'enrichment.py'
       - 'healthcheck.py'
@@ -28,6 +30,8 @@ jobs:
           python-version: "3.11"
       - name: Verify OHLCV calculations
         run: python -m unittest discover -s tests -v
+      - name: Discover additional liquid spot candidates
+        run: python discovery.py
       - name: Collect public spot data
         id: collect
         continue-on-error: true
@@ -42,6 +46,10 @@ jobs:
         if: always()
         run: |
           if test -f /tmp/crypto_radar_fresh_market; then python strategy.py; else echo 'No fresh collection: skip paper evaluation'; fi
+      - name: Build deduplicated research feed
+        if: always()
+        run: |
+          if test -f /tmp/crypto_radar_fresh_market; then python signal_feed.py; else echo 'No fresh OHLCV: skip feed'; fi
       - name: Audit report freshness and quality
         if: always()
         run: python healthcheck.py
