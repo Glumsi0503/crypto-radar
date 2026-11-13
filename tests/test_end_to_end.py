@@ -39,6 +39,16 @@ class BridgeIntegrationTests(unittest.TestCase):
         # Same candle next run is not a fresh event.
         again,_=make_feed(report,history,NOW)
         self.assertEqual(again["new_event_count"],0)
+    def test_offensive_two_venue_momentum_reaches_inbox(self):
+        report=spot([observation("okx",gain=2.7),observation("gate",gain=2.7)])
+        for row in report["sources"]:
+            row["data"]["volume_multiplier"]=2.7
+        feed,_=make_feed(report,{"keys":[]},NOW)
+        assessment=audit(report,now=NOW)
+        inbox=make_inbox(feed,assessment,NOW)
+        self.assertEqual(inbox["candidate_count"],1)
+        self.assertEqual(inbox["candidates"][0]["research_stage"],"MOMENTUM_RESEARCH")
+        self.assertFalse(inbox["candidates"][0]["not_a_buy_signal"] is False)
     def test_one_exchange_never_reaches_inbox(self):
         report=spot([observation("okx")])
         feed,_=make_feed(report,{"keys":[]},NOW)
