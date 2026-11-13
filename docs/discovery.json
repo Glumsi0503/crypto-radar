@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-11-13T23:19:12+00:00",
+  "generated_at_utc": "2026-11-13T23:57:32+00:00",
   "source_urls": {
     "gate": "https://api.gateio.ws/api/v4/spot/tickers",
     "okx": "https://www.okx.com/api/v5/market/tickers?instType=SPOT",
@@ -19,39 +19,10 @@
   },
   "diagnostics": {
     "gate_shortlist": 25,
-    "ticker_correlated": 7,
-    "okx_bitget_pairs": 1,
-    "candle_checked": 7,
-    "candle_rejected": [
-      {
-        "symbol": "BNBUSDT",
-        "reason": "ValueError: bitget:insufficient_closed_15m_quote_volume"
-      },
-      {
-        "symbol": "ARIAUSDT",
-        "reason": "ValueError: bitget:insufficient_closed_15m_quote_volume"
-      },
-      {
-        "symbol": "WLDUSDT",
-        "reason": "ValueError: bitget:insufficient_closed_15m_quote_volume"
-      },
-      {
-        "symbol": "KGENUSDT",
-        "reason": "ValueError: gate:insufficient_closed_15m_quote_volume"
-      },
-      {
-        "symbol": "TRUMPUSDT",
-        "reason": "ValueError: gate:insufficient_closed_15m_quote_volume"
-      },
-      {
-        "symbol": "VVVUSDT",
-        "reason": "ValueError: gate:insufficient_closed_15m_quote_volume"
-      },
-      {
-        "symbol": "DOSUSDT",
-        "reason": "ValueError: okx:insufficient_closed_15m_quote_volume"
-      }
-    ],
+    "ticker_correlated": 0,
+    "okx_bitget_pairs": 0,
+    "candle_checked": 0,
+    "candle_rejected": [],
     "validated": 0
   }
 }
