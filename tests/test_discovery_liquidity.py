@@ -53,6 +53,15 @@ class DiscoveryLiquidityTests(unittest.TestCase):
         chosen,_=run([gate()],{"code":"0","data":[]},NOW_MS,
                      fetcher,bitget_tickers=bitget)
         self.assertEqual(chosen,[])
+    def test_okx_bitget_crosslist_without_gate(self):
+        second={"code":"00000","data":[{"symbol":"XYZUSDT",
+            "category":"SPOT","lastPrice":"10.03","turnover24h":"9000000",
+            "price24hPcnt":"0.08","ts":str(NOW_MS)}]}
+        first={"code":"0","data":[{**okx(),"open24h":"9.7"}]}
+        chosen,diag=run([],first,NOW_MS,fetcher,bitget_tickers=second)
+        self.assertEqual(len(chosen),1)
+        self.assertEqual(chosen[0]["validated_spot_venues"],["okx","bitget"])
+        self.assertEqual(diag["okx_bitget_pairs"],1)
     def test_gate_only_rejected(self):
         chosen,report=run([gate()],{"code":"0","data":[]},NOW_MS,fetcher)
         self.assertEqual(chosen,[])
