@@ -37,7 +37,9 @@ class OutcomeTest(unittest.TestCase):
         far=NOW+dt.timedelta(hours=4)
         market=spot()
         market["generated_at_utc"]=far.isoformat()
-        result=advance(market,events(),{},far)
+        journal={}
+        advance(spot(1),events(),journal,NOW)
+        result=advance(market,{"events":[]},journal,far)
         self.assertEqual(result["checkpoint_summary"]["1h"]["missed"],1)
         self.assertEqual(result["checkpoint_summary"]["1h"]["observed"],0)
     def test_stale_market_fails(self):
