@@ -1,0 +1,87 @@
+{
+  "generated_at_utc": "2026-11-13T15:52:25.951288+00:00",
+  "research_only": true,
+  "squeeze_signal_verified": false,
+  "records": [
+    {
+      "coin": "BTC",
+      "venue": "okx",
+      "funding_url": "https://www.okx.com/api/v5/public/funding-rate?instId=BTC-USDT-SWAP",
+      "open_interest_url": "https://www.okx.com/api/v5/public/open-interest?instType=SWAP&instId=BTC-USDT-SWAP",
+      "checked_at_utc": "2026-11-13T15:52:25.951288+00:00",
+      "status": "ok",
+      "instrument": "BTC-USDT-SWAP",
+      "funding_rate_percent": 0.003318,
+      "oi_contracts": 3419309.8000000147,
+      "funding_timestamp_utc": "2026-11-13T15:52:04.763000+00:00",
+      "oi_timestamp_utc": "2026-11-13T15:52:26.290000+00:00",
+      "funding_interval_unverified": true,
+      "oi_change_4h_percent": null
+    },
+    {
+      "coin": "ETH",
+      "venue": "okx",
+      "funding_url": "https://www.okx.com/api/v5/public/funding-rate?instId=ETH-USDT-SWAP",
+      "open_interest_url": "https://www.okx.com/api/v5/public/open-interest?instType=SWAP&instId=ETH-USDT-SWAP",
+      "checked_at_utc": "2026-11-13T15:52:25.951288+00:00",
+      "status": "ok",
+      "instrument": "ETH-USDT-SWAP",
+      "funding_rate_percent": -0.002792,
+      "oi_contracts": 7001877.5300000105,
+      "funding_timestamp_utc": "2026-11-13T15:52:04.823000+00:00",
+      "oi_timestamp_utc": "2026-11-13T15:52:26.694000+00:00",
+      "funding_interval_unverified": true,
+      "oi_change_4h_percent": null
+    },
+    {
+      "coin": "SOL",
+      "venue": "okx",
+      "funding_url": "https://www.okx.com/api/v5/public/funding-rate?instId=SOL-USDT-SWAP",
+      "open_interest_url": "https://www.okx.com/api/v5/public/open-interest?instType=SWAP&instId=SOL-USDT-SWAP",
+      "checked_at_utc": "2026-11-13T15:52:25.951288+00:00",
+      "status": "ok",
+      "instrument": "SOL-USDT-SWAP",
+      "funding_rate_percent": 0.000982,
+      "oi_contracts": 3602369.230000001,
+      "funding_timestamp_utc": "2026-11-13T15:52:04.916000+00:00",
+      "oi_timestamp_utc": "2026-11-13T15:52:27.084000+00:00",
+      "funding_interval_unverified": true,
+      "oi_change_4h_percent": null
+    },
+    {
+      "coin": "HYPE",
+      "venue": "okx",
+      "funding_url": "https://www.okx.com/api/v5/public/funding-rate?instId=HYPE-USDT-SWAP",
+      "open_interest_url": "https://www.okx.com/api/v5/public/open-interest?instType=SWAP&instId=HYPE-USDT-SWAP",
+      "checked_at_utc": "2026-11-13T15:52:25.951288+00:00",
+      "status": "ok",
+      "instrument": "HYPE-USDT-SWAP",
+      "funding_rate_percent": -0.000772,
+      "oi_contracts": 14286316.0,
+      "funding_timestamp_utc": "2026-11-13T15:52:04.226000+00:00",
+      "oi_timestamp_utc": "2026-11-13T15:52:27.488000+00:00",
+      "funding_interval_unverified": true,
+      "oi_change_4h_percent": null
+    },
+    {
+      "coin": "SUI",
+      "venue": "okx",
+      "funding_url": "https://www.okx.com/api/v5/public/funding-rate?instId=SUI-USDT-SWAP",
+      "open_interest_url": "https://www.okx.com/api/v5/public/open-interest?instType=SWAP&instId=SUI-USDT-SWAP",
+      "checked_at_utc": "2026-11-13T15:52:25.951288+00:00",
+      "status": "ok",
+      "instrument": "SUI-USDT-SWAP",
+      "funding_rate_percent": 0.002404,
+      "oi_contracts": 30791556.0,
+      "funding_timestamp_utc": "2026-11-13T15:52:06.236000+00:00",
+      "oi_timestamp_utc": "2026-11-13T15:52:27.889000+00:00",
+      "funding_interval_unverified": true,
+      "oi_change_4h_percent": null
+    }
+  ],
+  "notes": [
+    "Funding and current open interest alone do NOT establish a squeeze.",
+    "OI changes only comparable within unchanged swap contracts and sampled history.",
+    "Spot confirmation and funding interval assessment still required."
+  ]
+}
