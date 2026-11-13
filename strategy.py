@@ -42,7 +42,7 @@ def consensus(reports):
               "price_reference_usdt":round(mid,8),"venues":[v for v,_ in group],
               "min_quote_volume_usdt":round(min(d["spot_quote_volume_usdt"] for _,d in group),2),
               "min_volume_multiplier":min(d["volume_multiplier"] for _,d in group),
-              "label":"RESEARCH_PAPER_ONLY","bitvavo_de_eligibility_verified":False})
+              "label":"RESEARCH_PAPER_ONLY","exchange_buyability_verified":False})
     return candidates
 
 def update(report, journal, now):
@@ -94,8 +94,8 @@ def update(report, journal, now):
             "min_quote_volume_per_venue_usdt":100000,"max_simultaneous_paper_positions":3,
             "stop_observation_percent":-2.5,"target_observation_percent":5,"max_holding_hours":72,
             "estimated_fee_per_side_percent":0.25},
-            "limits":["Pilot watchlist only, no Germany Bitvavo eligibility or account-level buyability checks",
-                      "Prices from independent USDT venues do not equal Bitvavo EUR execution prices",
+            "limits":["50-symbol research watchlist; no exchange-specific account buyability checks",
+                      "Reference USDT venue prices differ from actual execution prices and fees",
                       "Paper checkpoints are not proof of actual stop or target fills",
                       "No risk-adjusted or statistically validated profitability yet"]}
 
