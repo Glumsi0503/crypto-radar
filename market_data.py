@@ -107,7 +107,7 @@ def dynamic_symbols(path=Path("docs/discovery.json")):
         if obj.get("status")!="ok" or not 0<=age<=2400:return ()
         extras=[r["symbol"] for r in obj.get("candidates",[])[:10]
                 if isinstance(r,dict) and r.get("two_venue_ohlcv_verified") is True
-                and r.get("validated_spot_venues")==["gate","okx"]
+                and r.get("validated_spot_venues") in (["gate","okx"],["gate","bitget"])
                 and isinstance(r.get("symbol"),str) and r["symbol"].endswith("USDT")
                 and r["symbol"] not in SYMBOLS]
         return tuple(dict.fromkeys(extras))
