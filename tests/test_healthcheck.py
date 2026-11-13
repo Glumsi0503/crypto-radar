@@ -29,6 +29,14 @@ class HealthTest(unittest.TestCase):
                 "research_only":True,"new_event_count":1}))
             r=audit(p,NOW)
             self.assertFalse(r["checks"]["signal_feed"]["valid"])
+    def test_empty_but_checked_dynamic_universe_is_healthy(self):
+        with tempfile.TemporaryDirectory() as d:
+            root=Path(d)
+            (root/"discovery.json").write_text(json.dumps({
+                "generated_at_utc":NOW.isoformat(),
+                "status":"no_correlated_candidates","candidates":[]}))
+            result=audit(root,NOW)
+            self.assertTrue(result["checks"]["discovery"]["valid"])
     def test_stale_report_rejected(self):
         with tempfile.TemporaryDirectory() as d:
             p=Path(d)
