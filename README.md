@@ -13,10 +13,11 @@ GitHub Actions erhebt öffentliche Krypto-Marktdaten, führt **nur Forschungsana
 - Fundamentals: gezielte DefiLlama-Zeitreihen, 7 abgeschlossene UTC-Tage gegen die vorigen 7; echte Token-Wertbindung ist nicht automatisch nachgewiesen.
 - Derivate: OKX Funding und Open Interest für wenige ausgewählte Coins; 4h-OI-Änderung erst nach tatsächlich gespeicherten Vergleichssnapshots, kein eigenständiges Squeeze-Signal.
 - Echte Smart-Money-Wallet-Käufe sind nicht automatisch vollständig erfasst. Fehlende Daten sind keine positive Bestätigung.
-- Bitvavo-DE-Handelbarkeit wird nicht geprüft; Nutzer müssen Börsenverfügbarkeit und Ausführbarkeit selbst kontrollieren.
+- **Optionaler Bitvavo-EUR-Katalog:** Ein separater GitHub-Workflow fragt täglich die öffentlichen Bitvavo-Märkte und Asset-Namen ab. Bei der ersten erfolgreichen Abfrage am 13.11.2026 wurden **419** EUR-Märkte mit Status `trading` festgestellt (47 der 50 festen Radar-Coins). Diese öffentliche Liste **beweist keine Kaufbarkeit speziell für ein deutsches Kundenkonto**. Eine fehlgeschlagene Abfrage wird als `unavailable` dokumentiert und **beeinflusst die Kursdatenerfassung, Forschungsstrategien und Signale nicht**. Es gibt keine Bitvavo-Pflichtprüfung und keine Verwendung von API-Schlüsseln.
 
 ## Maschinenlesbare Berichte
 
+- `docs/bitvavo_catalog.json`: die vollständige täglich aktualisierte **optionale** Bitvavo-EUR-Marktliste mit Namen, Kürzeln, öffentlichem Marktstatus und Überschneidung mit den 50 festen Radar-Coins; niemals eine deutsche Kontofreigabe oder ein Handelbarkeitspflichtfilter
 - `docs/latest.json`: Spot-Kerzendaten, Quellenstatus, Abdeckung
 - `docs/discovery.json`: dynamische liquide Forschungs-Ticker
 - `docs/enrichment.json`: 1h/1d und begrenzte fundamentale Zeitreihen
@@ -31,6 +32,10 @@ GitHub Actions erhebt öffentliche Krypto-Marktdaten, führt **nur Forschungsana
 - `docs/health.json`: Datenqualitätskontrolle
 
 Bei jedem Lesen müssen `generated_at_utc`, Quellenzeitstempel und `quality` geprüft werden. Ungültige, fehlende oder alte Daten dürfen kein Kaufsignal ergeben. Die GitHub-Datei `signal_feed.json` enthält keine vollständig bestätigten fünf Strategien und keine belegte Push-Zustellung.
+
+## Optionaler Bitvavo-Katalog
+
+[Workflow für die tägliche Aktualisierung](https://github.com/Glumsi0503/crypto-radar/actions/workflows/bitvavo-catalog.yml) (04:19 UTC, best effort) und [öffentliche JSON-Liste](https://github.com/Glumsi0503/crypto-radar/blob/main/docs/bitvavo_catalog.json). Quelle: `GET https://api.bitvavo.com/v2/markets` sowie optional `GET https://api.bitvavo.com/v2/assets`. Gezählt werden verschiedene Basis-Coins mit `quote=EUR` und `status=trading`, nicht alle Assets, Ein-/Auszahlungsoptionen oder die kontospezifische Verfügbarkeit in Deutschland. Der Status darf für eine **unverbindliche Marktreferenz** verwendet werden, niemals zur Steuerung oder Blockierung der unabhängigen Scan- und Signallogik.
 
 ## Sicherheit und Tests
 
