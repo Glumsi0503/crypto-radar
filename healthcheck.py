@@ -41,7 +41,7 @@ def audit(root=Path("docs"), now=None):
                     item["new_event_count"]=obj.get("new_event_count",0)
                 elif name=="discovery":
                     item["discovered"]=len(obj.get("candidates",[]))
-                    item["valid"]=item["fresh"] and obj.get("status")=="ok"
+                    item["valid"]=item["fresh"] and obj.get("status") in ("ok","no_correlated_candidates")
                 elif name=="derivatives":
                     item["valid_snapshots"]=sum(x.get("status")=="ok" for x in obj.get("records",[]))
                     item["valid"]=item["fresh"] and item["valid_snapshots"]>0
