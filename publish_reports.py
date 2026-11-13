@@ -8,7 +8,8 @@ import time
 from pathlib import Path
 
 REPORTS = ("docs/latest.json", "docs/enrichment.json", "docs/health.json",
-           "docs/strategy_status.json", "docs/paper_journal.json")
+           "docs/strategy_status.json", "docs/paper_journal.json",
+           "docs/discovery.json", "docs/signal_feed.json", "docs/signal_history.json")
 
 def git(*args, check=True):
     return subprocess.run(["git", *args], check=check, text=True,
