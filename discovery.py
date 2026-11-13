@@ -17,8 +17,9 @@ OUT=Path("docs/discovery.json")
 CORE=set(SYMBOLS)
 GATE_URL="https://api.gateio.ws/api/v4/spot/tickers"
 OKX_URL="https://www.okx.com/api/v5/market/tickers?instType=SPOT"
+BITGET_URL="https://api.bitget.com/api/v3/market/tickers?category=SPOT"
 MIN_GATE_QUOTE_24H=2_000_000
-MIN_OKX_QUOTE_24H=1_000_000
+MIN_OKX_QUOTE_24H=1_000_000  # applies to either second SPOT venue
 MIN_15M_QUOTE=25_000
 MAX_PRICE_DISAGREEMENT=0.02
 MAX_NEW=10
@@ -78,28 +79,53 @@ def parse_okx_tickers(obj):
         except (KeyError,ValueError,TypeError,OverflowError):continue
     return result
 
-def corroborate(shortlist,okx,current_ms):
-    """Require independent fresh 24h spot tickers before candle preflight."""
+def parse_bitget_tickers(obj):
+    """Bitget UTA v3 SPOT turnover24h is quote turnover; never use futures."""
+    if not isinstance(obj,dict) or obj.get("code")!="00000":
+        raise ValueError("bad_bitget_ticker_response")
+    data=obj.get("data",[])
+    if not isinstance(data,list):raise ValueError("invalid_bitget_ticker_list")
+    result={}
+    for row in data:
+        try:
+            symbol=row["symbol"]
+            if row.get("category")!="SPOT" or not isinstance(symbol,str):
+                continue
+            if not re.fullmatch(r"[A-Z0-9]{2,18}USDT",symbol):continue
+            price=finite_positive(row.get("lastPrice"))
+            volume=finite_positive(row.get("turnover24h"))
+            ts=int(row["ts"])
+            if price is None or volume is None or ts<=0:continue
+            result[symbol]={"price":price,"quote_volume":volume,"ts":ts}
+        except (KeyError,ValueError,TypeError,OverflowError):continue
+    return result
+
+def corroborate(shortlist,okx,current_ms,bitget=None):
+    """Require fresh independent 24h spot tickers; prefer OKX, else Bitget."""
     out=[]
+    options=(("okx",okx),("bitget",bitget or {}))
     for entry in shortlist:
-        second=okx.get(entry["symbol"])
-        if not second:continue
-        age=current_ms-second["ts"]
-        if not 0<=age<=10*60_000:continue
-        if second["quote_volume"]<MIN_OKX_QUOTE_24H:continue
         a=entry["gate_last_usdt"]
-        b=second["price"]
-        if max(a,b)/min(a,b)-1>MAX_PRICE_DISAGREEMENT:continue
-        out.append({**entry,"second_venue":"okx",
-            "okx_quote_volume_24h_usdt":round(second["quote_volume"],2),
-            "okx_last_usdt":b,"ticker_price_disagreement_percent":round(
-                100*(max(a,b)/min(a,b)-1),3)})
+        for venue,index in options:
+            second=index.get(entry["symbol"])
+            if not second:continue
+            age=current_ms-second["ts"]
+            if not 0<=age<=10*60_000:continue
+            if second["quote_volume"]<MIN_OKX_QUOTE_24H:continue
+            b=second["price"]
+            if max(a,b)/min(a,b)-1>MAX_PRICE_DISAGREEMENT:continue
+            out.append({**entry,"second_venue":venue,
+                "second_venue_quote_volume_24h_usdt":round(second["quote_volume"],2),
+                "second_venue_last_usdt":b,
+                "ticker_price_disagreement_percent":round(
+                    100*(max(a,b)/min(a,b)-1),3)})
+            break
     return out
 
 def verify_candles(candidate,now_ms,fetcher=fetch):
     """A candidate enters the added universe only after both 15m feeds validate."""
     observations=[]
-    for venue in ("gate","okx"):
+    for venue in ("gate",candidate["second_venue"]):
         url,bars=fetcher(venue,candidate["symbol"])
         check=evaluate(bars,now_ms)
         if not check.get("valid"):raise ValueError(venue+":"+check.get("reason","invalid_candles"))
@@ -113,18 +139,19 @@ def verify_candles(candidate,now_ms,fetcher=fetch):
     a,b=c1["spot_close_usdt"],c2["spot_close_usdt"]
     if max(a,b)/min(a,b)-1>MAX_PRICE_DISAGREEMENT:
         raise ValueError("closed_candle_price_disagreement")
-    return {**candidate,"validated_spot_venues":["gate","okx"],
+    return {**candidate,"validated_spot_venues":["gate",candidate["second_venue"]],
         "verified_same_closed_15m_candle_utc":c1["candle_start_utc"],
         "closed_15m_quote_volume_usdt":{"gate":c1["spot_quote_volume_usdt"],
-                                         "okx":c2["spot_quote_volume_usdt"]},
+                                         candidate["second_venue"]:c2["spot_quote_volume_usdt"]},
         "closed_15m_price_disagreement_percent":round(
             100*(max(a,b)/min(a,b)-1),3),
         "source_urls":{venue:url for venue,url,_ in observations},
         "two_venue_ohlcv_verified":True}
 
-def run(gate_tickers,okx_tickers,current_ms,fetcher=fetch,limit=MAX_NEW):
+def run(gate_tickers,okx_tickers,current_ms,fetcher=fetch,limit=MAX_NEW,bitget_tickers=None):
     shortlist=select(gate_tickers,limit=MAX_PREFLIGHT)
-    available=corroborate(shortlist,parse_okx_tickers(okx_tickers),current_ms)
+    available=corroborate(shortlist,parse_okx_tickers(okx_tickers),current_ms,
+                          parse_bitget_tickers(bitget_tickers) if bitget_tickers is not None else None)
     confirmed=[]
     rejected=[]
     attempted=0
@@ -141,7 +168,7 @@ def run(gate_tickers,okx_tickers,current_ms,fetcher=fetch,limit=MAX_NEW):
 
 def main():
     OUT.parent.mkdir(exist_ok=True)
-    report={"generated_at_utc":utc_now(),"source_urls":{"gate":GATE_URL,"okx":OKX_URL},
+    report={"generated_at_utc":utc_now(),"source_urls":{"gate":GATE_URL,"okx":OKX_URL,"bitget":BITGET_URL},
             "status":"unavailable","research_only":True,"candidates":[],
             "selection_rules":{"independent_venues":2,"min_gate_quote_24h_usdt":MIN_GATE_QUOTE_24H,
                 "min_okx_quote_24h_usdt":MIN_OKX_QUOTE_24H,
@@ -153,7 +180,12 @@ def main():
         now_ms=int(time.time()*1000)
         gate=get_json(GATE_URL)
         okx=get_json(OKX_URL)
-        chosen,diagnostics=run(gate,okx,now_ms)
+        try:
+            bitget=get_json(BITGET_URL)
+        except Exception as exc:
+            bitget=None
+            report["bitget_fallback_error"]=(type(exc).__name__+": "+str(exc))[:180]
+        chosen,diagnostics=run(gate,okx,now_ms,bitget_tickers=bitget)
         report.update({"candidates":chosen,"diagnostics":diagnostics,
                        "status":"ok" if chosen else "no_correlated_candidates"})
     except Exception as exc:
