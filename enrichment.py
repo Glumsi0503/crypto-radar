@@ -59,6 +59,36 @@ def validate(bars, interval, now_ms):
             "last_bar_quote_volume_usdt":round(last["quote_volume"],2),
             "observed_period_change_percent":round(100*(last["close"]/closed[0]["open"]-1),5)}
 
+def verified_weekly_growth(obj, queried_at):
+    """Seven complete UTC days versus the seven days before that."""
+    if not isinstance(obj, dict):
+        return {"growth_verified": False, "reason": "non_object_payload"}
+    series=obj.get("totalDataChart")
+    if not isinstance(series, list):
+        return {"growth_verified": False, "reason": "missing_daily_chart"}
+    today=int(queried_at.timestamp())//86400
+    daily={}
+    for p in series:
+        if not isinstance(p, (tuple,list)) or len(p)<2: continue
+        try:
+            ts=int(p[0])
+            value=float(p[1])
+            day=ts//86400
+            if ts%86400 != 0 or not (0<=value<float("inf")): continue
+            if day < today: daily[day]=value
+        except (ValueError,TypeError,OverflowError): continue
+    days=list(range(today-14,today))
+    if any(day not in daily for day in days):
+        return {"growth_verified": False, "reason": "missing_14_complete_utc_days"}
+    previous=sum(daily[d] for d in days[:7])
+    latest=sum(daily[d] for d in days[7:])
+    if previous<=0:
+        return {"growth_verified": False, "reason": "zero_previous_week"}
+    return {"growth_verified": True, "previous_7d": round(previous,2),
+            "latest_7d": round(latest,2),
+            "growth_percent": round(100*(latest/previous-1),3),
+            "window_end_utc": dt.datetime.fromtimestamp(today*86400,UTC).isoformat()}
+
 def collect():
     records=[]
     now_ms=int(time.time()*1000)
@@ -85,9 +115,10 @@ def collect():
             item={"coin":coin,"protocol_slug":slug,"kind":kind,"url":url,"queried_at_utc":now_utc()}
             try:
                 obj=request_json(url,1500000)
-                # Avoid copying huge raw arrays; summary is diagnostic, NOT verified growth.
+                # Endpoint reachability alone is not proof of growth or value capture.
+                growth=verified_weekly_growth(obj,dt.datetime.now(UTC)) if kind in ("fees","dex") else {"growth_verified":False,"reason":"not_a_daily_metric"}
                 item.update({"status":"reachable","data_keys":list(obj)[:20] if isinstance(obj,dict) else [],
-                             "growth_verified":False,"token_value_capture_verified":False})
+                             **growth,"token_value_capture_verified":False})
             except Exception as e:
                 item.update({"status":"error","error":(type(e).__name__+": "+str(e))[:180]})
             fundamentals.append(item)
@@ -101,7 +132,7 @@ def collect():
                        "fundamental_reachable":sum(x["status"]=="reachable" for x in fundamentals),
                        "fundamental_attempts":len(fundamentals)},
             "limits":["No exchange-specific buyability verification","No independent wallet-purchase verification",
-                      "No funding/OI verification","Fundamental endpoint reachability does not establish growth or token value capture",
+                      "No funding/OI verification","Growth needs 14 complete UTC days; token value capture still requires independent evidence",
                       "No trade alerts or orders"]}
 
 if __name__=="__main__":
