@@ -22,6 +22,7 @@ GitHub Actions erhebt öffentliche Krypto-Marktdaten, führt **nur Forschungsana
 - `docs/enrichment.json`: 1h/1d und begrenzte fundamentale Zeitreihen
 - `docs/derivatives.json`: zeitgestempelte Derivate-Snapshots, keine Handelsentscheidung
 - `docs/signal_feed.json`: deduplizierte **Research**-Stufen, nicht per Push zugestellt. `recent_events_3h` hilft stündlichen Lesern.
+- `docs/radar_inbox.json`: zeitlich und anhand der Fünf-Methoden-Daten geprüfte Forschungs-Kandidaten für die stündlichen ChatGPT-Radare; keine Kaufsignal- oder Push-Freigabe.
 - `docs/signal_history.json`, `docs/derivatives_history.json`: Ereignis-/Snapshot-Historie
 - `docs/paper_journal.json`, `docs/strategy_status.json`: unverbindliche hypothetische Papertrades, vereinfachte Gebührenannahmen und statistische Auswertung
 - `docs/five_method_audit.json`: Fünf-Strategien-Evidenzprüfung mit supported/not_confirmed/not_evaluable je Coin; fehlende Wallet-/Event-Rohdaten verhindern eine Scheinbestätigung
@@ -46,4 +47,4 @@ python healthcheck.py
 
 `publish_reports.py` publiziert ausschließlich in GitHub Actions und schützt vor veralteten Berichten und konkurrierenden Pushes. Keine API-Schlüssel oder Kontodaten ins öffentliche Repo schreiben.
 
-**Wichtig:** Der separate [historische Backtest-Workflow](https://github.com/Glumsi0503/crypto-radar/actions/workflows/backtest.yml) läuft nach Zeitplan täglich um 03:13 UTC (Best-Effort) und lässt sich manuell auslösen. Er verifiziert nur eine eng definierte Momentum-Heuristik auf begrenzten historischen Daten, nicht alle fünf Methoden. Ein erfolgreicher GitHub-Workflow bestätigt den Datenfluss, nicht die Wirksamkeit einer Strategie. Die Papertrade-Checkpoints sind keine nachgewiesenen echten Fills, und die langfristige Profitabilität ist nicht belegt.
+**Wichtig:** Der separate [historische Backtest-Workflow](https://github.com/Glumsi0503/crypto-radar/actions/workflows/backtest.yml) läuft nach Zeitplan täglich um 03:13 UTC (Best-Effort) und lässt sich manuell auslösen. Er verifiziert nur eine eng definierte Momentum-Heuristik auf begrenzten historischen Daten, nicht alle fünf Methoden. Ein erfolgreicher GitHub-Workflow bestätigt den Datenfluss, nicht die Wirksamkeit einer Strategie. Ein synthetischer Ende-zu-Ende-Test prüft die Dateiverarbeitung bis zum Radar-Postfach, nicht die tatsächliche Zustellung einer ChatGPT-Mitteilung. Die Papertrade-Checkpoints sind keine nachgewiesenen echten Fills, und die langfristige Profitabilität ist nicht belegt.
