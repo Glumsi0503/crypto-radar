@@ -24,6 +24,17 @@ class AuditTests(unittest.TestCase):
         self.assertEqual(item["methods"]["momentum"]["status"],"supported")
         self.assertFalse(item["trade_ready"])
         self.assertFalse(result["auto_push_connected"])
+    def test_offensive_threshold_2_7_and_2_7x_is_supported(self):
+        r=report([source("okx",gain=2.7,multiple=2.7),
+                  source("gate",gain=2.7,multiple=2.7)])
+        result=evaluate(r,now=NOW)
+        self.assertEqual(result["coins"][0]["methods"]["momentum"]["status"],"supported")
+        self.assertFalse(result["trade_alert_authorized"])
+    def test_below_offensive_threshold_is_not_confirmed(self):
+        r=report([source("okx",gain=2.4,multiple=2.7),
+                  source("gate",gain=2.4,multiple=2.7)])
+        result=evaluate(r,now=NOW)
+        self.assertEqual(result["coins"][0]["methods"]["momentum"]["status"],"not_confirmed")
     def test_single_venue_not_confirmed(self):
         item=evaluate(report([source("okx")]),now=NOW)["coins"][0]
         self.assertEqual(item["methods"]["momentum"]["status"],"not_confirmed")
