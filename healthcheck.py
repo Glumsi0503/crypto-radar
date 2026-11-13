@@ -13,7 +13,7 @@ def parse(s):
 def audit(root=Path("docs"), now=None):
     now=now or dt.datetime.now(UTC)
     details={}
-    for name in ("latest","enrichment","strategy_status","signal_feed","discovery","derivatives"):
+    for name in ("latest","enrichment","strategy_status","signal_feed","discovery","derivatives","five_method_audit","observed_outcomes"):
         path=root/(name+".json")
         item={"exists":path.exists(),"fresh":False,"valid":False}
         if path.exists():
@@ -45,6 +45,12 @@ def audit(root=Path("docs"), now=None):
                 elif name=="derivatives":
                     item["valid_snapshots"]=sum(x.get("status")=="ok" for x in obj.get("records",[]))
                     item["valid"]=item["fresh"] and item["valid_snapshots"]>0
+                elif name=="five_method_audit":
+                    item["evaluated"]=obj.get("symbols_evaluated",0)
+                    item["valid"]=item["fresh"] and obj.get("research_only") is True and obj.get("trade_alert_authorized") is False
+                elif name=="observed_outcomes":
+                    item["observations"]=obj.get("observation_count",0)
+                    item["valid"]=item["fresh"] and obj.get("no_actual_orders_or_fills") is True
             except (OSError,ValueError,KeyError,TypeError) as e:
                 item["error"]=type(e).__name__+": "+str(e)[:120]
         details[name]=item
