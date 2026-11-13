@@ -8,6 +8,8 @@ UTC=dt.timezone.utc
 MAX_AGE=dt.timedelta(minutes=40)
 STRATEGIES=("momentum","smart_money","short_squeeze","fundamental_divergence","catalyst")
 MAX_SPOT_SPREAD=.01
+MOMENTUM_GAIN_MIN=2.5
+MOMENTUM_VOLUME_MIN=2.5
 
 def moment(value):
     x=dt.datetime.fromisoformat(value.replace("Z","+00:00"))
@@ -48,7 +50,7 @@ def momentum(report):
     for coin, entries in by_coin.items():
         confirmed=[]
         for candle, rows in entries:
-            q=[x for x in rows if 3<=x[2]<=8 and x[3]>=3 and x[4]>=100000]
+            q=[x for x in rows if MOMENTUM_GAIN_MIN<=x[2]<=8 and x[3]>=MOMENTUM_VOLUME_MIN and x[4]>=100000]
             if len(set(x[0] for x in q))<2:continue
             prices=[x[1] for x in q]
             if min(prices)<=0 or max(prices)/min(prices)-1>MAX_SPOT_SPREAD:continue
