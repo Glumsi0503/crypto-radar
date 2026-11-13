@@ -34,6 +34,14 @@ class DiscoveryAndFeedTests(unittest.TestCase):
         feed,_=build(report(3.4),{"keys":[]},NOW)
         self.assertEqual(feed["current_candidates"][0]["stage"],"MOMENTUM_RESEARCH")
         self.assertFalse(feed["auto_push_connected"])
+    def test_recent_events_survive_next_schedule(self):
+        feed,hist=build(report(),{"keys":[]},NOW)
+        subsequent=report()
+        subsequent["generated_at_utc"]=(NOW+dt.timedelta(minutes=15)).isoformat()
+        subsequent["sources"]=[]
+        feed2,_=build(subsequent,hist,NOW+dt.timedelta(minutes=15))
+        self.assertEqual(feed2["new_event_count"],0)
+        self.assertEqual(len(feed2["recent_events_3h"]),1)
     def test_stale_input_rejected(self):
         old=report()
         old["generated_at_utc"]=(NOW-dt.timedelta(hours=1)).isoformat()
