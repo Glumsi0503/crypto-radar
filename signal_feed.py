@@ -48,10 +48,15 @@ def build(report, history, now):
     if created.tzinfo is None or not dt.timedelta(0)<=now-created<=dt.timedelta(minutes=40):
         raise ValueError("stale_source")
     markets=market(report)
+    # Paper strategy uses a deliberately wider 2%/2x research heuristic.
+    # The higher-stage momentum event needs >=3% AND >=3x on two venues.
     confirmed=[{"symbol":x["symbol"],"candle_start_utc":x["candle_start_utc"],
                 "reference_price_usdt":x["price_reference_usdt"],
                 "venues":x["venues"],"stage":"MOMENTUM_RESEARCH",
-                "not_a_buy_signal":True} for x in consensus(markets)]
+                "not_a_buy_signal":True} for x in consensus(markets)
+               if sum(1 for venue,d in markets.get(x["symbol"],[])
+                      if venue in x["venues"] and d["candle_start_utc"]==x["candle_start_utc"]
+                      and d["change_percent"]>=3 and d["volume_multiplier"]>=3)>=2]
     research=prewatch(markets)+confirmed
     seen=set(history.get("keys",[]))
     new=[]
