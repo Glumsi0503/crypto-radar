@@ -99,8 +99,22 @@ def collect(symbols=SYMBOLS, venues=EXCHANGES, fetcher=fetch, current_ms=None):
             "exchange_availability_status":"NOT_CHECKED","alerts_permitted":False,
             "disclaimer":"Research only: no venue-specific buying checks, five-method cross-check or direct notification integration."}
 
+def dynamic_symbols(path=Path("docs/discovery.json")):
+    """Only recent discovery results enter the research sample."""
+    try:
+        obj=json.loads(path.read_text(encoding="utf-8"))
+        age=(dt.datetime.now(dt.timezone.utc)-dt.datetime.fromisoformat(obj["generated_at_utc"])).total_seconds()
+        if obj.get("status")!="ok" or not 0<=age<=2400:return ()
+        extras=[r["symbol"] for r in obj.get("candidates",[])[:10]
+                if isinstance(r.get("symbol"),str) and r["symbol"].endswith("USDT")]
+        return tuple(dict.fromkeys(extras))
+    except (OSError,ValueError,KeyError,TypeError):return ()
+
 if __name__=="__main__":
-    report=collect()
+    symbols=tuple(dict.fromkeys(SYMBOLS+dynamic_symbols()))
+    report=collect(symbols=symbols)
+    report["quality"]["universe_size"]=len(symbols)
+    report["quality"]["dynamic_symbols"]=max(0,len(symbols)-len(SYMBOLS))
     path=Path("docs/latest.json")
     path.parent.mkdir(parents=True,exist_ok=True)
     path.write_text(json.dumps(report,ensure_ascii=False,indent=2,allow_nan=False)+"\n",encoding="utf-8")
