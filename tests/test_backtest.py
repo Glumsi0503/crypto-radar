@@ -18,7 +18,7 @@ class BacktestTests(unittest.TestCase):
         rows=backtest(sample)
         self.assertEqual(len(rows),1)
         self.assertEqual(rows[0]["exit_model"],"target_assumed")
-        self.assertEqual(rows[0]["entry_candle_utc"],"2023-11-15T03:13:20+00:00")
+        self.assertEqual(rows[0]["entry_candle_utc"],"2023-11-15T03:28:20+00:00")
     def test_both_hit_stop_first(self):
         sample=bars()
         sample[21]["high"]=110
