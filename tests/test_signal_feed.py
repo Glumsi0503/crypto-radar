@@ -6,12 +6,12 @@ UTC=dt.timezone.utc
 NOW=dt.datetime(2026,11,13,15,0,tzinfo=UTC)
 CANDLE=(NOW-dt.timedelta(minutes=15)).isoformat()
 
-def record(symbol="SOLUSDT",stage=2.5):
+def record(symbol="SOLUSDT",stage=2.0):
     return {"symbol":symbol,"venue":"okx","status":"ok","data":{
         "valid":True,"candle_start_utc":CANDLE,"change_percent":stage,
         "volume_multiplier":3,"spot_quote_volume_usdt":300000,
         "spot_close_usdt":100}}
-def report(gain=2.5):
+def report(gain=2.0):
     one=record(stage=gain)
     two=record(stage=gain)
     two["venue"]="gate"
@@ -36,6 +36,20 @@ class DiscoveryAndFeedTests(unittest.TestCase):
         feed,_=build(report(3.4),{"keys":[]},NOW)
         self.assertEqual(feed["current_candidates"][0]["stage"],"MOMENTUM_RESEARCH")
         self.assertFalse(feed["auto_push_connected"])
+    def test_offensive_75_confirmed_at_2_7_percent(self):
+        feed,_=build(report(2.7),{"keys":[]},NOW)
+        self.assertEqual(feed["new_event_count"],1)
+        self.assertEqual(feed["new_events"][0]["stage"],"MOMENTUM_RESEARCH")
+        self.assertEqual(feed["signal_profile"]["subjective_strictness_0_100"],75)
+        self.assertEqual(feed["signal_profile"]["confirmed_gain_min_percent"],2.5)
+    def test_offensive_early_at_1_6_percent(self):
+        feed,_=build(report(1.6),{"keys":[]},NOW)
+        self.assertEqual(feed["new_event_count"],1)
+        self.assertEqual(feed["new_events"][0]["stage"],"EARLY_RESEARCH")
+    def test_confirmed_does_not_double_emit_early(self):
+        feed,_=build(report(3.4),{"keys":[]},NOW)
+        self.assertEqual(feed["new_event_count"],1)
+        self.assertEqual(feed["new_events"][0]["stage"],"MOMENTUM_RESEARCH")
     def test_recent_events_survive_next_schedule(self):
         feed,hist=build(report(),{"keys":[]},NOW)
         subsequent=report()
