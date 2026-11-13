@@ -1,14 +1,14 @@
 {
-  "generated_at_utc": "2026-11-13T17:01:39.488686+00:00",
+  "generated_at_utc": "2026-11-13T17:04:05.311402+00:00",
   "data_quality": "USABLE_RESEARCH_ONLY",
   "checks": {
     "latest": {
       "exists": true,
       "fresh": true,
       "valid": true,
-      "age_minutes": 1.04,
-      "checks": 150,
-      "valid_checks": 137
+      "age_minutes": 0.96,
+      "checks": 153,
+      "valid_checks": 139
     },
     "enrichment": {
       "exists": true,
@@ -29,21 +29,21 @@
       "fresh": true,
       "valid": true,
       "age_minutes": 0.0,
-      "source_age_minutes": 1.04,
+      "source_age_minutes": 0.96,
       "new_event_count": 0
     },
     "discovery": {
       "exists": true,
       "fresh": true,
       "valid": true,
-      "age_minutes": 2.41,
-      "discovered": 0
+      "age_minutes": 2.12,
+      "discovered": 1
     },
     "derivatives": {
       "exists": true,
       "fresh": true,
       "valid": true,
-      "age_minutes": 0.04,
+      "age_minutes": 0.03,
       "valid_snapshots": 5
     },
     "five_method_audit": {
@@ -51,7 +51,7 @@
       "fresh": true,
       "valid": true,
       "age_minutes": 0.0,
-      "evaluated": 50
+      "evaluated": 51
     },
     "observed_outcomes": {
       "exists": true,

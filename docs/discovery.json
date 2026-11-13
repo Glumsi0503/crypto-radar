@@ -1,13 +1,39 @@
 {
-  "generated_at_utc": "2026-11-13T16:59:15+00:00",
+  "generated_at_utc": "2026-11-13T17:01:58+00:00",
   "source_urls": {
     "gate": "https://api.gateio.ws/api/v4/spot/tickers",
     "okx": "https://www.okx.com/api/v5/market/tickers?instType=SPOT",
     "bitget": "https://api.bitget.com/api/v3/market/tickers?category=SPOT"
   },
-  "status": "no_correlated_candidates",
+  "status": "ok",
   "research_only": true,
-  "candidates": [],
+  "candidates": [
+    {
+      "symbol": "ARIAUSDT",
+      "quote_volume_24h_usdt": 14489401.14,
+      "abs_change_24h_percent": 45.73,
+      "gate_last_usdt": 0.22054,
+      "second_venue": "bitget",
+      "second_venue_quote_volume_24h_usdt": 3874841.8,
+      "second_venue_last_usdt": 0.22046,
+      "ticker_price_disagreement_percent": 0.036,
+      "validated_spot_venues": [
+        "gate",
+        "bitget"
+      ],
+      "verified_same_closed_15m_candle_utc": "2026-11-13T16:45:00+00:00",
+      "closed_15m_quote_volume_usdt": {
+        "gate": 211975.79,
+        "bitget": 35205.27
+      },
+      "closed_15m_price_disagreement_percent": 0.141,
+      "source_urls": {
+        "gate": "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=ARIA_USDT&interval=15m&limit=30",
+        "bitget": "https://api.bitget.com/api/v3/market/candles?category=SPOT&symbol=ARIAUSDT&interval=15m&limit=30"
+      },
+      "two_venue_ohlcv_verified": true
+    }
+  ],
   "selection_rules": {
     "independent_venues": 2,
     "min_gate_quote_24h_usdt": 2000000,
@@ -18,10 +44,16 @@
     "exclude_leveraged_tokens": true
   },
   "diagnostics": {
-    "gate_shortlist": 23,
-    "ticker_correlated": 0,
-    "candle_checked": 0,
-    "candle_rejected": [],
-    "validated": 0
+    "gate_shortlist": 22,
+    "ticker_correlated": 2,
+    "okx_bitget_pairs": 0,
+    "candle_checked": 2,
+    "candle_rejected": [
+      {
+        "symbol": "BTWUSDT",
+        "reason": "ValueError: gate:insufficient_closed_15m_quote_volume"
+      }
+    ],
+    "validated": 1
   }
 }
