@@ -55,9 +55,15 @@ class AuditTests(unittest.TestCase):
             "window_end_utc":STAMP}]}
         item=evaluate(report(),enrichment=e,now=NOW)["coins"][0]
         self.assertEqual(item["methods"]["fundamental_divergence"]["status"],"not_confirmed")
-    def test_stale_input_rejected(self):
+    def test_one_hour_old_input_is_historical_research(self):
         doc=report()
         doc["generated_at_utc"]=(NOW-dt.timedelta(hours=1)).isoformat()
+        result=evaluate(doc,now=NOW)
+        self.assertEqual(result["spot_source_classification"],"historical_only")
+        self.assertFalse(result["trade_alert_authorized"])
+    def test_older_than_one_day_rejected(self):
+        doc=report()
+        doc["generated_at_utc"]=(NOW-dt.timedelta(hours=25)).isoformat()
         with self.assertRaises(ValueError):evaluate(doc,now=NOW)
 
 if __name__=="__main__":unittest.main()
