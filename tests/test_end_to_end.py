@@ -54,11 +54,13 @@ class BridgeIntegrationTests(unittest.TestCase):
         feed,_=make_feed(report,{"keys":[]},NOW)
         inbox=make_inbox(feed,audit(report,now=NOW),NOW)
         self.assertEqual(inbox["candidate_count"],0)
-    def test_old_market_source_never_reaches_inbox(self):
+    def test_old_market_source_reaches_only_history(self):
         report=spot()
+        report["generated_at_utc"]=(NOW-dt.timedelta(hours=2)).isoformat()
         feed,_=make_feed(report,{"keys":[]},NOW)
-        feed["source_generated_at_utc"]=(NOW-dt.timedelta(hours=1)).isoformat()
-        with self.assertRaises(ValueError):
-            make_inbox(feed,audit(report,now=NOW),NOW)
+        inbox=make_inbox(feed,audit(report,now=NOW),NOW)
+        self.assertEqual(inbox["candidate_count"],0)
+        self.assertEqual(inbox["historical_candidate_count"],1)
+        self.assertEqual(feed["new_event_count"],0)
 
 if __name__=="__main__":unittest.main()
