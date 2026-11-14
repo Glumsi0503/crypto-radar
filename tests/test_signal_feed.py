@@ -58,9 +58,17 @@ class DiscoveryAndFeedTests(unittest.TestCase):
         feed2,_=build(subsequent,hist,NOW+dt.timedelta(minutes=15))
         self.assertEqual(feed2["new_event_count"],0)
         self.assertEqual(len(feed2["recent_events_3h"]),1)
-    def test_stale_input_rejected(self):
+    def test_old_input_usable_for_history_only(self):
+        old=report(3.4)
+        old["generated_at_utc"]=(NOW-dt.timedelta(hours=2)).isoformat()
+        feed,_=build(old,{"keys":[]},NOW)
+        self.assertEqual(feed["source_data_classification"],"historical_only")
+        self.assertEqual(feed["new_event_count"],0)
+        self.assertEqual(len(feed["current_candidates"]),0)
+        self.assertEqual(len(feed["historical_candidates"]),1)
+    def test_older_than_a_day_rejected(self):
         old=report()
-        old["generated_at_utc"]=(NOW-dt.timedelta(hours=1)).isoformat()
+        old["generated_at_utc"]=(NOW-dt.timedelta(hours=25)).isoformat()
         with self.assertRaises(ValueError):build(old,{"keys":[]},NOW)
     def test_single_venue_does_not_emit(self):
         single=report()
