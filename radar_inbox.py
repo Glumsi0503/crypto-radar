@@ -64,6 +64,21 @@ def build(feed, audit, now):
                              "candle_start_utc":entry.get("candle_start_utc"),
                              "classification":"historical_only",
                              "not_a_buy_signal":True})
+    # Keep previously discovered 3-24h events available for retrospective reading,
+    # even when the newest source is fresh. Never promote them to current candidates.
+    earlier=[]
+    for event in feed.get("historical_events_24h",[]):
+        if not isinstance(event,dict):continue
+        try:
+            age=(now-moment(event["first_seen_utc"])).total_seconds()/60
+            if not 180<age<=RESEARCH_MAX_AGE_MIN:continue
+            symbol=event["symbol"]
+            if symbol not in by_symbol:continue
+            earlier.append({"symbol":symbol,"research_stage":event.get("stage"),
+                            "first_seen_utc":event["first_seen_utc"],
+                            "classification":"historical_only",
+                            "not_a_buy_signal":True})
+        except (ValueError,KeyError,TypeError):continue
     return {"generated_at_utc":now.isoformat(),
         "feed_generated_at_utc":feed["generated_at_utc"],
         "audit_generated_at_utc":audit["generated_at_utc"],
@@ -71,8 +86,9 @@ def build(feed, audit, now):
         "reliable_user_delivery_tested":False,
         "requires_independent_live_check":True,
         "candidate_count":len(rows),"candidates":rows,
-        "historical_candidate_count":len(archived),
-        "historical_candidates":archived,
+        "historical_candidate_count":len(archived)+len(earlier),
+        "historical_candidates":archived+earlier,
+        "historical_event_count":len(earlier),
         "underlying_source_classification":source_mode,
         "historical_research_max_age_minutes":RESEARCH_MAX_AGE_MIN,
         "status":"RESEARCH_CANDIDATES" if rows else "NO_CURRENT_VALIDATED_CANDIDATES",
