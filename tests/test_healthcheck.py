@@ -10,7 +10,7 @@ class HealthTest(unittest.TestCase):
     def test_missing_reports_fail_closed(self):
         with tempfile.TemporaryDirectory() as d:
             r=audit(Path(d),NOW)
-            self.assertEqual(r["data_quality"],"NO_VERIFIED_FRESH_MARKET_DATA")
+            self.assertEqual(r["data_quality"],"NO_VERIFIED_RESEARCH_DATA")
             self.assertFalse(r["trade_alerts_permitted"])
     def test_fresh_report_usable_research_only(self):
         with tempfile.TemporaryDirectory() as d:
@@ -37,10 +37,18 @@ class HealthTest(unittest.TestCase):
                 "status":"no_correlated_candidates","candidates":[]}))
             result=audit(root,NOW)
             self.assertTrue(result["checks"]["discovery"]["valid"])
-    def test_stale_report_rejected(self):
+    def test_old_report_is_historical_not_fresh(self):
         with tempfile.TemporaryDirectory() as d:
             p=Path(d)
-            (p/"latest.json").write_text(json.dumps({"generated_at_utc":(NOW-dt.timedelta(minutes=41)).isoformat(),"quality":{"valid_checks":2}}))
+            (p/"latest.json").write_text(json.dumps({"generated_at_utc":(NOW-dt.timedelta(minutes=70)).isoformat(),"quality":{"valid_checks":2}}))
+            output=audit(p,NOW)
+            self.assertTrue(output["checks"]["latest"]["valid"])
+            self.assertFalse(output["checks"]["latest"]["fresh"])
+            self.assertEqual(output["data_quality"],"HISTORICAL_RESEARCH_ONLY")
+    def test_older_than_day_is_rejected(self):
+        with tempfile.TemporaryDirectory() as d:
+            p=Path(d)
+            (p/"latest.json").write_text(json.dumps({"generated_at_utc":(NOW-dt.timedelta(hours=25)).isoformat(),"quality":{"valid_checks":2}}))
             self.assertFalse(audit(p,NOW)["checks"]["latest"]["valid"])
 if __name__=="__main__":
     unittest.main()
