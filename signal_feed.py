@@ -86,10 +86,14 @@ def build(report, history, now):
     event_log={row["event_id"]:row for row in previously if isinstance(row,dict) and "event_id" in row}
     for item in new:
         event_log[item["event_id"]]={**item,"first_seen_utc":now.isoformat()}
-    recent=[row for row in event_log.values()
-            if "first_seen_utc" in row and
-            0 <= (now-parse_time(row["first_seen_utc"])).total_seconds() <= 3*3600]
-    history["events"]=sorted(recent,key=lambda x:x["first_seen_utc"])[-300:]
+    archived_window=[row for row in event_log.values()
+                     if "first_seen_utc" in row and
+                     0 <= (now-parse_time(row["first_seen_utc"])).total_seconds() <= 24*3600]
+    history["events"]=sorted(archived_window,key=lambda x:x["first_seen_utc"])[-1200:]
+    recent=[row for row in history["events"]
+            if (now-parse_time(row["first_seen_utc"])).total_seconds() <= 3*3600]
+    older=[row for row in history["events"]
+           if (now-parse_time(row["first_seen_utc"])).total_seconds() > 3*3600]
     history["updated_at_utc"]=now.isoformat()
     feed={"generated_at_utc":now.isoformat(),"source_generated_at_utc":created.isoformat(),
           "research_only":True,"auto_push_connected":False,"venue_buyability_checked":False,
@@ -112,7 +116,8 @@ def build(report, history, now):
           "current_candidates":research if source_mode=="current" else [],
           "historical_candidates":research if source_mode=="historical_only" else [],
           "new_events":new,
-          "recent_events_3h":history["events"],
+          "recent_events_3h":recent,
+          "historical_events_24h":older,
           "new_event_count":len(new),"notice":"Research observations only. No automatic external push, no order, no verified exchange availability."}
     return feed,history
 
