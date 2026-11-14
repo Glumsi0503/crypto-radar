@@ -58,6 +58,17 @@ class DiscoveryAndFeedTests(unittest.TestCase):
         feed2,_=build(subsequent,hist,NOW+dt.timedelta(minutes=15))
         self.assertEqual(feed2["new_event_count"],0)
         self.assertEqual(len(feed2["recent_events_3h"]),1)
+    def test_five_hour_old_event_is_historical_not_new(self):
+        _,history=build(report(),{"keys":[]},NOW)
+        later=NOW+dt.timedelta(hours=5)
+        subsequent=report()
+        subsequent["generated_at_utc"]=later.isoformat()
+        subsequent["sources"]=[]
+        feed,hist=build(subsequent,history,later)
+        self.assertEqual(feed["new_event_count"],0)
+        self.assertEqual(len(feed["recent_events_3h"]),0)
+        self.assertEqual(len(feed["historical_events_24h"]),1)
+        self.assertEqual(len(hist["events"]),1)
     def test_old_input_usable_for_history_only(self):
         old=report(3.4)
         old["generated_at_utc"]=(NOW-dt.timedelta(hours=2)).isoformat()
