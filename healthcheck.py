@@ -3,6 +3,7 @@
 import datetime as dt
 import json
 from pathlib import Path
+from data_freshness import RESEARCH_MAX_AGE_MIN, classification
 
 UTC=dt.timezone.utc
 MAX_AGE_MIN=40
@@ -22,11 +23,12 @@ def audit(root=Path("docs"), now=None):
                 age=(now-parse(obj["generated_at_utc"])).total_seconds()/60
                 item["age_minutes"]=round(age,2)
                 item["fresh"]=0<=age<=MAX_AGE_MIN
+                item["historical_usable"]=0<=age<=RESEARCH_MAX_AGE_MIN
                 if name=="latest":
                     q=obj.get("quality",{})
                     item["checks"]=q.get("checks",0)
                     item["valid_checks"]=q.get("valid_checks",0)
-                    item["valid"]=isinstance(q.get("valid_checks"),int) and q["valid_checks"]>0 and item["fresh"]
+                    item["valid"]=isinstance(q.get("valid_checks"),int) and q["valid_checks"]>0 and item["historical_usable"]
                 elif name=="enrichment":
                     q=obj.get("quality",{})
                     item["market_valid"]=q.get("market_valid",0)
@@ -37,7 +39,10 @@ def audit(root=Path("docs"), now=None):
                 elif name=="signal_feed":
                     source_age=(now-parse(obj["source_generated_at_utc"])).total_seconds()/60
                     item["source_age_minutes"]=round(source_age,2)
-                    item["valid"]=item["fresh"] and 0<=source_age<=MAX_AGE_MIN and obj.get("research_only") is True
+                    item["source_classification"]=classification(obj["source_generated_at_utc"],now)
+                    item["valid"]=item["historical_usable"] and 0<=source_age<=RESEARCH_MAX_AGE_MIN and obj.get("research_only") is True
+                    if source_age>MAX_AGE_MIN and (obj.get("new_event_count")!=0 or obj.get("current_candidates")):
+                        item["valid"]=False
                     item["new_event_count"]=obj.get("new_event_count",0)
                 elif name=="discovery":
                     item["discovered"]=len(obj.get("candidates",[]))
@@ -47,7 +52,7 @@ def audit(root=Path("docs"), now=None):
                     item["valid"]=item["fresh"] and item["valid_snapshots"]>0
                 elif name=="five_method_audit":
                     item["evaluated"]=obj.get("symbols_evaluated",0)
-                    item["valid"]=item["fresh"] and obj.get("research_only") is True and obj.get("trade_alert_authorized") is False
+                    item["valid"]=item["historical_usable"] and obj.get("research_only") is True and obj.get("trade_alert_authorized") is False
                 elif name=="observed_outcomes":
                     item["observations"]=obj.get("observation_count",0)
                     item["valid"]=item["fresh"] and obj.get("no_actual_orders_or_fills") is True
@@ -55,13 +60,16 @@ def audit(root=Path("docs"), now=None):
                     source_age=(now-parse(obj["feed_generated_at_utc"])).total_seconds()/60
                     audit_age=(now-parse(obj["audit_generated_at_utc"])).total_seconds()/60
                     item["candidate_count"]=obj.get("candidate_count",0)
-                    item["valid"]=item["fresh"] and 0<=source_age<=MAX_AGE_MIN and 0<=audit_age<=MAX_AGE_MIN and obj.get("research_only") is True and obj.get("push_service_configured") is False
+                    item["valid"]=item["historical_usable"] and 0<=source_age<=RESEARCH_MAX_AGE_MIN and 0<=audit_age<=RESEARCH_MAX_AGE_MIN and obj.get("research_only") is True and obj.get("push_service_configured") is False
+                    if obj.get("underlying_source_classification")=="historical_only" and obj.get("candidate_count")!=0:
+                        item["valid"]=False
             except (OSError,ValueError,KeyError,TypeError) as e:
                 item["error"]=type(e).__name__+": "+str(e)[:120]
         details[name]=item
-    return {"generated_at_utc":now.isoformat(),"data_quality":"USABLE_RESEARCH_ONLY" if details["latest"]["valid"] else "NO_VERIFIED_FRESH_MARKET_DATA",
+    return {"generated_at_utc":now.isoformat(),"data_quality":("USABLE_RESEARCH_ONLY" if details["latest"]["valid"] and details["latest"]["fresh"] else
+                            "HISTORICAL_RESEARCH_ONLY" if details["latest"]["valid"] else "NO_VERIFIED_RESEARCH_DATA"),
             "checks":details,"trade_alerts_permitted":False,
-            "automated_remediation":"fail-closed; never reuse stale reports; continue independent sources next run",
+            "automated_remediation":"permit bounded historical research; never reuse stale inputs as live alerts; continue next scan",
             "notes":["Enrichment fundamental_reachable does not establish fundamental growth.",
                      "No account-level exchange buying checks or automatic trade execution; research-only diagnostics."]}
 if __name__=="__main__":
