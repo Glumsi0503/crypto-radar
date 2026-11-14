@@ -32,6 +32,14 @@ GitHub Actions erhebt öffentliche Krypto-Marktdaten, führt **nur Forschungsana
 - `docs/backtest.json`: nächtlicher begrenzter, historischer 15m-Einzelbörsen-Momentum-Test; Annahmen zu Gebühren, Slippage, Next-Open und konservativer Stop-Reihenfolge
 - `docs/health.json`: Datenqualitätskontrolle
 
+## Datenalter: Live-Auswertung vs. historische Analyse
+
+- **Bis 40 Minuten:** verifizierte Daten sind grundsätzlich für zeitnahe Research-Kandidaten nutzbar, nur mit unabhängiger Prüfung und allen weiteren Kriterien. Sie sind ausdrücklich keine Freigabe zu Echtgeldkäufen.
+- **Mehr als 40 Minuten bis 24 Stunden:** Daten dürfen **für historische Trend-, Fundamental-, Squeeze-, Wallet- und Ereignisanalysen** herangezogen werden, soweit ihre Quellen und Datenpunkte verifizierbar sind. In `docs/signal_feed.json` stehen entsprechende Signalmuster ausschließlich unter `historical_candidates`, in `docs/radar_inbox.json` separat ebenfalls als `historical_candidates`. Das System setzt `new_event_count=0` und gibt keine alten Ereignisse als neue Einstiegsmeldungen aus.
+- **Über 24 Stunden:** nicht mehr als aktueller Quellensnapshot auswerten; archivierte Ereignisse, Paperjournale und historische Backtests dürfen für ausdrücklich **rückblickende** Untersuchungen mit klarer Zeitangabe weiter verwendet werden.
+- Papertrading-Einstiege und ihre Kursbeobachtung bleiben bewusst auf **maximal 40 Minuten alte aktuelle Preisdaten** begrenzt, damit keine veralteten Einstiege oder falschen Performance-Werte entstehen. Die natürliche Messperiode von Fundamentaldaten ist separat zu beachten.
+- `docs/health.json` trennt `fresh` (bis 40 Minuten) von `historical_usable` (bis 24 Stunden), mit Kennzeichen `HISTORICAL_RESEARCH_ONLY`, sobald die neueste Marktdatenquelle nur noch für historische Zwecke brauchbar ist.
+
 Bei jedem Lesen müssen `generated_at_utc`, Quellenzeitstempel und `quality` geprüft werden. Ungültige, fehlende oder alte Daten dürfen kein Kaufsignal ergeben. Die GitHub-Datei `signal_feed.json` enthält keine vollständig bestätigten fünf Strategien und keine belegte Push-Zustellung.
 
 ## Optionaler Bitvavo-Katalog
