@@ -1,64 +1,13 @@
 {
-  "generated_at_utc": "2026-11-14T13:41:35+00:00",
+  "generated_at_utc": "2026-11-14T14:29:13+00:00",
   "source_urls": {
     "gate": "https://api.gateio.ws/api/v4/spot/tickers",
     "okx": "https://www.okx.com/api/v5/market/tickers?instType=SPOT",
     "bitget": "https://api.bitget.com/api/v3/market/tickers?category=SPOT"
   },
-  "status": "ok",
+  "status": "no_correlated_candidates",
   "research_only": true,
-  "candidates": [
-    {
-      "symbol": "TRUMPUSDT",
-      "quote_volume_24h_usdt": 3399295.78,
-      "abs_change_24h_percent": 7.84,
-      "gate_last_usdt": 1.0293,
-      "second_venue": "okx",
-      "second_venue_quote_volume_24h_usdt": 3550052.63,
-      "second_venue_last_usdt": 1.03,
-      "ticker_price_disagreement_percent": 0.068,
-      "validated_spot_venues": [
-        "gate",
-        "okx"
-      ],
-      "verified_same_closed_15m_candle_utc": "2026-11-14T13:15:00+00:00",
-      "closed_15m_quote_volume_usdt": {
-        "gate": 37275.92,
-        "okx": 45145.68
-      },
-      "closed_15m_price_disagreement_percent": 0.049,
-      "source_urls": {
-        "gate": "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=TRUMP_USDT&interval=15m&limit=30",
-        "okx": "https://www.okx.com/api/v5/market/candles?instId=TRUMP-USDT&bar=15m&limit=30"
-      },
-      "two_venue_ohlcv_verified": true
-    },
-    {
-      "symbol": "GRAMUSDT",
-      "quote_volume_24h_usdt": 5773554.88,
-      "abs_change_24h_percent": 4.37,
-      "gate_last_usdt": 1.0882,
-      "second_venue": "okx",
-      "second_venue_quote_volume_24h_usdt": 4443265.76,
-      "second_venue_last_usdt": 1.088,
-      "ticker_price_disagreement_percent": 0.018,
-      "validated_spot_venues": [
-        "gate",
-        "okx"
-      ],
-      "verified_same_closed_15m_candle_utc": "2026-11-14T13:15:00+00:00",
-      "closed_15m_quote_volume_usdt": {
-        "gate": 69604.66,
-        "okx": 56344.91
-      },
-      "closed_15m_price_disagreement_percent": 0.065,
-      "source_urls": {
-        "gate": "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=GRAM_USDT&interval=15m&limit=30",
-        "okx": "https://www.okx.com/api/v5/market/candles?instId=GRAM-USDT&bar=15m&limit=30"
-      },
-      "two_venue_ohlcv_verified": true
-    }
-  ],
+  "candidates": [],
   "selection_rules": {
     "independent_venues": 2,
     "min_gate_quote_24h_usdt": 2000000,
@@ -69,32 +18,11 @@
     "exclude_leveraged_tokens": true
   },
   "diagnostics": {
-    "gate_shortlist": 25,
-    "ticker_correlated": 7,
-    "okx_bitget_pairs": 1,
-    "candle_checked": 7,
-    "candle_rejected": [
-      {
-        "symbol": "LITUSDT",
-        "reason": "ValueError: bitget:insufficient_closed_15m_quote_volume"
-      },
-      {
-        "symbol": "ARIAUSDT",
-        "reason": "ValueError: bitget:insufficient_closed_15m_quote_volume"
-      },
-      {
-        "symbol": "IDOLUSDT",
-        "reason": "ValueError: gate:insufficient_closed_15m_quote_volume"
-      },
-      {
-        "symbol": "ASTERUSDT",
-        "reason": "ValueError: gate:insufficient_closed_15m_quote_volume"
-      },
-      {
-        "symbol": "WLFIUSDT",
-        "reason": "ValueError: gate:insufficient_closed_15m_quote_volume"
-      }
-    ],
-    "validated": 2
+    "gate_shortlist": 26,
+    "ticker_correlated": 0,
+    "okx_bitget_pairs": 0,
+    "candle_checked": 0,
+    "candle_rejected": [],
+    "validated": 0
   }
 }
