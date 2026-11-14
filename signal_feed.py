@@ -4,6 +4,7 @@ import datetime as dt
 import json
 from pathlib import Path
 from strategy import market, consensus, parse_time
+from data_freshness import classification, RESEARCH_MAX_AGE_MIN, ACTIONABLE_MAX_AGE_MIN
 
 SOURCE=Path("docs/latest.json")
 OUT=Path("docs/signal_feed.json")
@@ -50,8 +51,9 @@ def prewatch(markets):
 
 def build(report, history, now):
     created=parse_time(report["generated_at_utc"])
-    if created.tzinfo is None or not dt.timedelta(0)<=now-created<=dt.timedelta(minutes=40):
-        raise ValueError("stale_source")
+    source_mode=classification(report["generated_at_utc"],now)
+    if source_mode=="expired":
+        raise ValueError("source_older_than_research_window")
     markets=market(report)
     # Paper strategy uses a deliberately wider 2%/2x research heuristic.
     # The higher-stage momentum event needs >=2.5% AND >=2.5x on two venues.
@@ -77,6 +79,9 @@ def build(report, history, now):
             new.append(item)
     # Persist deduplication so repeated scheduled scans cannot manufacture fresh events.
     history["keys"]=sorted(seen)[-3000:]
+    # Backfilled data is historical research, not a newly discovered time-sensitive event.
+    if source_mode!="current":
+        new=[]
     previously=history.get("events",[])
     event_log={row["event_id"]:row for row in previously if isinstance(row,dict) and "event_id" in row}
     for item in new:
@@ -89,6 +94,10 @@ def build(report, history, now):
     feed={"generated_at_utc":now.isoformat(),"source_generated_at_utc":created.isoformat(),
           "research_only":True,"auto_push_connected":False,"venue_buyability_checked":False,
           "market_regime_15m":market_regime(markets),
+          "source_data_classification":source_mode,
+          "historical_research_max_age_minutes":RESEARCH_MAX_AGE_MIN,
+          "actionable_research_max_age_minutes":ACTIONABLE_MAX_AGE_MIN,
+          "new_alerts_permitted_from_source":source_mode=="current",
           "signal_profile":{"name":"offensive_research_v75",
               "subjective_strictness_0_100":75,
               "early_gain_min_percent":EARLY_GAIN_MIN,
@@ -100,7 +109,9 @@ def build(report, history, now):
               "min_quote_volume_per_venue_usdt":100000,
               "max_spot_price_disagreement_percent":1.0,
               "classification":"subjective_not_statistically_calibrated"},
-          "current_candidates":research,"new_events":new,
+          "current_candidates":research if source_mode=="current" else [],
+          "historical_candidates":research if source_mode=="historical_only" else [],
+          "new_events":new,
           "recent_events_3h":history["events"],
           "new_event_count":len(new),"notice":"Research observations only. No automatic external push, no order, no verified exchange availability."}
     return feed,history
