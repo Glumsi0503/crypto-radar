@@ -32,9 +32,18 @@ class ReaderInboxTests(unittest.TestCase):
         x=feed()
         x["recent_events_3h"][0]["candle_start_utc"]=(NOW-dt.timedelta(minutes=70)).isoformat()
         self.assertEqual(build(x,audit(),NOW)["candidate_count"],0)
-    def test_stale_feed_is_rejected(self):
+    def test_old_feed_is_historical_only(self):
         x=feed()
         x["source_generated_at_utc"]=(NOW-dt.timedelta(hours=2)).isoformat()
+        x["historical_candidates"]=[{"symbol":"SOLUSDT","stage":"MOMENTUM_RESEARCH",
+             "candle_start_utc":(NOW-dt.timedelta(hours=2)).isoformat()}]
+        result=build(x,audit(),NOW)
+        self.assertEqual(result["candidate_count"],0)
+        self.assertEqual(result["historical_candidate_count"],1)
+        self.assertEqual(result["historical_candidates"][0]["classification"],"historical_only")
+    def test_older_than_one_day_rejected(self):
+        x=feed()
+        x["source_generated_at_utc"]=(NOW-dt.timedelta(hours=25)).isoformat()
         with self.assertRaises(ValueError):build(x,audit(),NOW)
     def test_deduplicated(self):
         x=feed()
