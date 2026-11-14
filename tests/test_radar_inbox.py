@@ -45,6 +45,16 @@ class ReaderInboxTests(unittest.TestCase):
         x=feed()
         x["source_generated_at_utc"]=(NOW-dt.timedelta(hours=25)).isoformat()
         with self.assertRaises(ValueError):build(x,audit(),NOW)
+    def test_archived_events_are_exposed_only_as_history(self):
+        x=feed()
+        five_hours_ago=(NOW-dt.timedelta(hours=5)).isoformat()
+        x["historical_events_24h"]=[{"symbol":"SOLUSDT","stage":"MOMENTUM_RESEARCH",
+            "first_seen_utc":five_hours_ago}]
+        result=build(x,audit(),NOW)
+        self.assertEqual(result["candidate_count"],1)
+        self.assertEqual(result["historical_event_count"],1)
+        self.assertTrue(result["historical_candidates"][0]["not_a_buy_signal"])
+        self.assertEqual(result["historical_candidates"][0]["classification"],"historical_only")
     def test_deduplicated(self):
         x=feed()
         x["recent_events_3h"]*=2
