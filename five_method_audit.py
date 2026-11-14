@@ -3,9 +3,10 @@
 import datetime as dt
 import json
 from pathlib import Path
+from data_freshness import classification, RESEARCH_MAX_AGE_MIN
 
 UTC=dt.timezone.utc
-MAX_AGE=dt.timedelta(minutes=40)
+MAX_AGE=dt.timedelta(minutes=RESEARCH_MAX_AGE_MIN)
 STRATEGIES=("momentum","smart_money","short_squeeze","fundamental_divergence","catalyst")
 MAX_SPOT_SPREAD=.01
 MOMENTUM_GAIN_MIN=2.5
@@ -67,7 +68,8 @@ def momentum(report):
 
 def evaluate(spot, enrichment=None, derivatives=None, now=None):
     now=now or dt.datetime.now(UTC)
-    if not fresh(spot,now):raise ValueError("Spot source absent or stale")
+    source_mode=classification(spot.get("generated_at_utc") if isinstance(spot,dict) else None,now)
+    if source_mode=="expired":raise ValueError("Spot source absent or outside research window")
     if not isinstance(spot.get("sources"),list):raise ValueError("Missing spot source rows")
     coins=sorted({row.get("symbol","")[:-4] for row in spot["sources"]
                   if str(row.get("symbol","")).endswith("USDT")})
@@ -112,6 +114,8 @@ def evaluate(spot, enrichment=None, derivatives=None, now=None):
     return {"generated_at_utc":now.isoformat(),"spot_source_at_utc":spot["generated_at_utc"],
             "enrichment_fresh":fundamental_ok,"derivatives_fresh":derivative_ok,
             "research_only":True,"auto_push_connected":False,"trade_alert_authorized":False,
+            "spot_source_classification":source_mode,
+            "historical_research_max_age_minutes":RESEARCH_MAX_AGE_MIN,
             "method_names":STRATEGIES,"symbols_evaluated":len(results),"coins":results,
             "interpretation":"Each strategy needs its own evidence; absence is never a confirming signal."}
 
