@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-11-15T15:27:22.308390+00:00",
-  "spot_source_at_utc": "2026-11-15T15:26:21+00:00",
+  "generated_at_utc": "2026-11-15T16:18:01.522548+00:00",
+  "spot_source_at_utc": "2026-11-15T16:17:03+00:00",
   "enrichment_fresh": true,
   "derivatives_fresh": true,
   "research_only": true,
@@ -15,7 +15,7 @@
     "fundamental_divergence",
     "catalyst"
   ],
-  "symbols_evaluated": 53,
+  "symbols_evaluated": 50,
   "coins": [
     {
       "symbol": "AAVEUSDT",
@@ -263,39 +263,6 @@
       "exchange_buyability_checked": false
     },
     {
-      "symbol": "BNBUSDT",
-      "methods": {
-        "momentum": {
-          "status": "not_confirmed",
-          "reason": "No matching two-venue momentum pattern",
-          "evidence": []
-        },
-        "smart_money": {
-          "status": "not_evaluable",
-          "reason": "No independently verified wallet purchases",
-          "evidence": []
-        },
-        "short_squeeze": {
-          "status": "not_evaluable",
-          "reason": "No fresh and verified funding/OI pair",
-          "evidence": []
-        },
-        "fundamental_divergence": {
-          "status": "not_evaluable",
-          "reason": "No verified comparable 7-day fundamental metrics",
-          "evidence": []
-        },
-        "catalyst": {
-          "status": "not_evaluable",
-          "reason": "No dated official catalyst events ingested",
-          "evidence": []
-        }
-      },
-      "supported_methods": [],
-      "trade_ready": false,
-      "exchange_buyability_checked": false
-    },
-    {
       "symbol": "BONKUSDT",
       "methods": {
         "momentum": {
@@ -346,8 +313,8 @@
           "reason": "Funding interval and 4h OI plus spot confirmation not yet complete",
           "evidence": [
             {
-              "funding_percent": 0.001436,
-              "oi_change_4h_percent": -0.837,
+              "funding_percent": 0.00107,
+              "oi_change_4h_percent": -1.011,
               "funding_interval_unverified": true,
               "funding_url": "https://www.okx.com/api/v5/public/funding-rate?instId=BTC-USDT-SWAP",
               "oi_url": "https://www.okx.com/api/v5/public/open-interest?instType=SWAP&instId=BTC-USDT-SWAP"
@@ -486,8 +453,8 @@
           "reason": "Funding interval and 4h OI plus spot confirmation not yet complete",
           "evidence": [
             {
-              "funding_percent": -0.006451,
-              "oi_change_4h_percent": 0.385,
+              "funding_percent": -0.006593,
+              "oi_change_4h_percent": 1.042,
               "funding_interval_unverified": true,
               "funding_url": "https://www.okx.com/api/v5/public/funding-rate?instId=ETH-USDT-SWAP",
               "oi_url": "https://www.okx.com/api/v5/public/open-interest?instType=SWAP&instId=ETH-USDT-SWAP"
@@ -510,73 +477,7 @@
       "exchange_buyability_checked": false
     },
     {
-      "symbol": "EVAAUSDT",
-      "methods": {
-        "momentum": {
-          "status": "not_confirmed",
-          "reason": "No matching two-venue momentum pattern",
-          "evidence": []
-        },
-        "smart_money": {
-          "status": "not_evaluable",
-          "reason": "No independently verified wallet purchases",
-          "evidence": []
-        },
-        "short_squeeze": {
-          "status": "not_evaluable",
-          "reason": "No fresh and verified funding/OI pair",
-          "evidence": []
-        },
-        "fundamental_divergence": {
-          "status": "not_evaluable",
-          "reason": "No verified comparable 7-day fundamental metrics",
-          "evidence": []
-        },
-        "catalyst": {
-          "status": "not_evaluable",
-          "reason": "No dated official catalyst events ingested",
-          "evidence": []
-        }
-      },
-      "supported_methods": [],
-      "trade_ready": false,
-      "exchange_buyability_checked": false
-    },
-    {
       "symbol": "FETUSDT",
-      "methods": {
-        "momentum": {
-          "status": "not_confirmed",
-          "reason": "No matching two-venue momentum pattern",
-          "evidence": []
-        },
-        "smart_money": {
-          "status": "not_evaluable",
-          "reason": "No independently verified wallet purchases",
-          "evidence": []
-        },
-        "short_squeeze": {
-          "status": "not_evaluable",
-          "reason": "No fresh and verified funding/OI pair",
-          "evidence": []
-        },
-        "fundamental_divergence": {
-          "status": "not_evaluable",
-          "reason": "No verified comparable 7-day fundamental metrics",
-          "evidence": []
-        },
-        "catalyst": {
-          "status": "not_evaluable",
-          "reason": "No dated official catalyst events ingested",
-          "evidence": []
-        }
-      },
-      "supported_methods": [],
-      "trade_ready": false,
-      "exchange_buyability_checked": false
-    },
-    {
-      "symbol": "GRAMUSDT",
       "methods": {
         "momentum": {
           "status": "not_confirmed",
@@ -659,8 +560,8 @@
           "reason": "Funding interval and 4h OI plus spot confirmation not yet complete",
           "evidence": [
             {
-              "funding_percent": 0.008478,
-              "oi_change_4h_percent": 0.362,
+              "funding_percent": 0.006412,
+              "oi_change_4h_percent": 0.457,
               "funding_interval_unverified": true,
               "funding_url": "https://www.okx.com/api/v5/public/funding-rate?instId=HYPE-USDT-SWAP",
               "oi_url": "https://www.okx.com/api/v5/public/open-interest?instType=SWAP&instId=HYPE-USDT-SWAP"
@@ -1400,8 +1301,8 @@
           "reason": "Funding interval and 4h OI plus spot confirmation not yet complete",
           "evidence": [
             {
-              "funding_percent": -0.01757,
-              "oi_change_4h_percent": 0.009,
+              "funding_percent": -0.014379,
+              "oi_change_4h_percent": -0.508,
               "funding_interval_unverified": true,
               "funding_url": "https://www.okx.com/api/v5/public/funding-rate?instId=SOL-USDT-SWAP",
               "oi_url": "https://www.okx.com/api/v5/public/open-interest?instType=SWAP&instId=SOL-USDT-SWAP"
@@ -1474,8 +1375,8 @@
           "reason": "Funding interval and 4h OI plus spot confirmation not yet complete",
           "evidence": [
             {
-              "funding_percent": -0.005507,
-              "oi_change_4h_percent": -1.255,
+              "funding_percent": -0.001927,
+              "oi_change_4h_percent": -1.264,
               "funding_interval_unverified": true,
               "funding_url": "https://www.okx.com/api/v5/public/funding-rate?instId=SUI-USDT-SWAP",
               "oi_url": "https://www.okx.com/api/v5/public/open-interest?instType=SWAP&instId=SUI-USDT-SWAP"
