@@ -1,9 +1,51 @@
 {
-  "generated_at_utc": "2026-11-15T08:37:30.779699+00:00",
+  "generated_at_utc": "2026-11-15T09:27:38.897170+00:00",
   "status": "RESEARCH_ONLY",
   "eligible_for_real_trading": false,
-  "candidates": [],
-  "paper_open": 0,
+  "candidates": [
+    {
+      "symbol": "SUIUSDT",
+      "candle_start_utc": "2026-11-15T09:00:00+00:00",
+      "price_reference_usdt": 0.7325,
+      "venues": [
+        "okx",
+        "gate"
+      ],
+      "min_quote_volume_usdt": 406004.55,
+      "min_volume_multiplier": 3.5423,
+      "label": "RESEARCH_PAPER_ONLY",
+      "exchange_buyability_verified": false
+    },
+    {
+      "symbol": "PEPEUSDT",
+      "candle_start_utc": "2026-11-15T09:00:00+00:00",
+      "price_reference_usdt": 4.03e-06,
+      "venues": [
+        "okx",
+        "gate",
+        "bitget"
+      ],
+      "min_quote_volume_usdt": 123338.76,
+      "min_volume_multiplier": 3.6017,
+      "label": "RESEARCH_PAPER_ONLY",
+      "exchange_buyability_verified": false
+    },
+    {
+      "symbol": "HYPEUSDT",
+      "candle_start_utc": "2026-11-15T09:00:00+00:00",
+      "price_reference_usdt": 67.33866667,
+      "venues": [
+        "okx",
+        "gate",
+        "bitget"
+      ],
+      "min_quote_volume_usdt": 178555.02,
+      "min_volume_multiplier": 2.3953,
+      "label": "RESEARCH_PAPER_ONLY",
+      "exchange_buyability_verified": false
+    }
+  ],
+  "paper_open": 3,
   "paper_performance": {
     "closed": 0,
     "winners": 0,
