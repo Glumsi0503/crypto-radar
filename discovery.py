@@ -24,7 +24,7 @@ MIN_15M_QUOTE=25_000
 MAX_PRICE_DISAGREEMENT=0.02
 MAX_NEW=10
 MAX_PREFLIGHT=150
-MAX_CANDLE_PREFLIGHT=24
+MAX_CANDLE_PREFLIGHT=60
 CANDLE_MS=900_000
 LEVERAGED=re.compile(r"(?:[2357]L|[2357]S|BULL|BEAR|UP|DOWN)$")
 
@@ -176,8 +176,8 @@ def verify_candles(candidate,now_ms,fetcher=fetch):
         "two_venue_ohlcv_verified":True}
 
 def run(gate_tickers,okx_tickers,current_ms,fetcher=fetch,limit=MAX_NEW,bitget_tickers=None):
-    shortlist=select(gate_tickers,limit=MAX_PREFLIGHT)
-    okx=parse_okx_tickers(okx_tickers)
+    shortlist=select(gate_tickers,limit=MAX_PREFLIGHT) if gate_tickers is not None else []
+    okx=parse_okx_tickers(okx_tickers) if okx_tickers is not None else {}
     bitget=parse_bitget_tickers(bitget_tickers) if bitget_tickers is not None else {}
     gate_available=corroborate(shortlist,okx,current_ms,bitget)
     secondary_available=cross_second_venues(okx,bitget,current_ms)
@@ -212,14 +212,19 @@ def main():
                 "exclude_leveraged_tokens":True}}
     try:
         now_ms=int(time.time()*1000)
-        gate=get_json(GATE_URL)
-        okx=get_json(OKX_URL)
-        try:
-            bitget=get_json(BITGET_URL)
-        except Exception as exc:
-            bitget=None
-            report["bitget_fallback_error"]=(type(exc).__name__+": "+str(exc))[:180]
-        chosen,diagnostics=run(gate,okx,now_ms,bitget_tickers=bitget)
+        venues={}
+        errors={}
+        for name,url in (("gate",GATE_URL),("okx",OKX_URL),("bitget",BITGET_URL)):
+            try:
+                venues[name]=get_json(url)
+            except Exception as exc:
+                errors[name]=(type(exc).__name__+": "+str(exc))[:180]
+        report["venue_fetch_errors"]=errors
+        report["venues_reached"]=sorted(venues)
+        if len(venues)<2:
+            raise ValueError("fewer_than_two_independent_ticker_sources")
+        chosen,diagnostics=run(venues.get("gate"),venues.get("okx"),now_ms,
+                               bitget_tickers=venues.get("bitget"))
         report.update({"candidates":chosen,"diagnostics":diagnostics,
                        "status":"ok" if chosen else "no_correlated_candidates"})
     except Exception as exc:

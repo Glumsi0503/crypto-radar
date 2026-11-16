@@ -11,7 +11,7 @@ REPORTS = ("docs/latest.json", "docs/enrichment.json", "docs/health.json",
            "docs/strategy_status.json", "docs/paper_journal.json",
            "docs/discovery.json", "docs/signal_feed.json", "docs/signal_history.json",
            "docs/derivatives.json", "docs/derivatives_history.json",
-           "docs/five_method_audit.json", "docs/observed_outcomes.json",
+           "docs/five_method_audit.json", "docs/radar_diagnostics.json", "docs/observed_outcomes.json",
            "docs/observed_outcomes_journal.json", "docs/radar_inbox.json")
 
 def git(*args, check=True):
