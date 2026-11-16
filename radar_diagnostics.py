@@ -50,6 +50,31 @@ def build(latest, discovery, feed, now=None):
                    min(d["spot_close_usdt"] for _, d in group) <= 1.01
                    for group in grouped.values()):
                 counts["two_venue_" + label] += 1
+    # Expose ranked single-venue observations even without two-venue consensus.
+    # These are research leads only, never independently confirmed entries.
+    watchlist = []
+    for symbol, observations in by_symbol.items():
+        for venue, d in observations:
+            gain = d.get("change_percent")
+            volume = d.get("volume_multiplier")
+            quote = d.get("spot_quote_volume_usdt")
+            if not all(isinstance(v, (int, float)) for v in (gain, volume, quote)):
+                continue
+            if not (gain >= 1.0 and volume >= 1.5 and quote >= 25000):
+                continue
+            watchlist.append({
+                "symbol": symbol,
+                "venue": venue,
+                "candle_start_utc": d.get("candle_start_utc"),
+                "gain_percent": gain,
+                "volume_multiplier": volume,
+                "quote_volume_usdt": quote,
+                "reference_price_usdt": d.get("spot_close_usdt"),
+                "two_venue_confirmed": False,
+                "classification": "UNCONFIRMED_SINGLE_VENUE_RESEARCH",
+                "not_a_buy_signal": True,
+            })
+    watchlist.sort(key=lambda x: (x["gain_percent"] * x["volume_multiplier"], x["quote_volume_usdt"]), reverse=True)
     stamp = latest.get("generated_at_utc")
     age = None
     try:
@@ -63,6 +88,8 @@ def build(latest, discovery, feed, now=None):
         "source_classification": "CURRENT_RESEARCH" if age is not None and 0 <= age <= 40 else "HISTORICAL_RESEARCH_ONLY",
         "research_only": True,
         "counts": dict(counts),
+        "single_venue_watchlist": watchlist[:12],
+        "single_venue_watchlist_total": len(watchlist),
         "discovery_status": discovery.get("status", "missing"),
         "discovery_diagnostics": discovery.get("diagnostics", {}),
         "discovery_venue_fetch_errors": discovery.get("venue_fetch_errors", {}),
