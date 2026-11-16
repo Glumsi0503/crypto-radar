@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-11-15T23:19:11.515548+00:00",
-  "spot_source_at_utc": "2026-11-15T23:18:23+00:00",
+  "generated_at_utc": "2026-11-16T00:03:09.227390+00:00",
+  "spot_source_at_utc": "2026-11-16T00:02:06+00:00",
   "enrichment_fresh": true,
   "derivatives_fresh": true,
   "research_only": true,
@@ -15,7 +15,7 @@
     "fundamental_divergence",
     "catalyst"
   ],
-  "symbols_evaluated": 52,
+  "symbols_evaluated": 50,
   "coins": [
     {
       "symbol": "AAVEUSDT",
@@ -41,8 +41,8 @@
           "evidence": [
             {
               "metric": "fees",
-              "growth_7d_percent": 16.825,
-              "window_end_utc": "2026-11-15T00:00:00+00:00",
+              "growth_7d_percent": 11.084,
+              "window_end_utc": "2026-11-16T00:00:00+00:00",
               "source": "https://api.llama.fi/summary/fees/aave?dataType=dailyFees"
             }
           ]
@@ -142,16 +142,9 @@
           "evidence": []
         },
         "fundamental_divergence": {
-          "status": "not_confirmed",
-          "reason": "Growth or token value capture criteria not established",
-          "evidence": [
-            {
-              "metric": "fees",
-              "growth_7d_percent": 5.058,
-              "window_end_utc": "2026-11-15T00:00:00+00:00",
-              "source": "https://api.llama.fi/summary/fees/arbitrum?dataType=dailyFees"
-            }
-          ]
+          "status": "not_evaluable",
+          "reason": "No verified comparable 7-day fundamental metrics",
+          "evidence": []
         },
         "catalyst": {
           "status": "not_evaluable",
@@ -263,39 +256,6 @@
       "exchange_buyability_checked": false
     },
     {
-      "symbol": "BNBUSDT",
-      "methods": {
-        "momentum": {
-          "status": "not_confirmed",
-          "reason": "No matching two-venue momentum pattern",
-          "evidence": []
-        },
-        "smart_money": {
-          "status": "not_evaluable",
-          "reason": "No independently verified wallet purchases",
-          "evidence": []
-        },
-        "short_squeeze": {
-          "status": "not_evaluable",
-          "reason": "No fresh and verified funding/OI pair",
-          "evidence": []
-        },
-        "fundamental_divergence": {
-          "status": "not_evaluable",
-          "reason": "No verified comparable 7-day fundamental metrics",
-          "evidence": []
-        },
-        "catalyst": {
-          "status": "not_evaluable",
-          "reason": "No dated official catalyst events ingested",
-          "evidence": []
-        }
-      },
-      "supported_methods": [],
-      "trade_ready": false,
-      "exchange_buyability_checked": false
-    },
-    {
       "symbol": "BONKUSDT",
       "methods": {
         "momentum": {
@@ -346,8 +306,8 @@
           "reason": "Funding interval and 4h OI plus spot confirmation not yet complete",
           "evidence": [
             {
-              "funding_percent": -0.000327,
-              "oi_change_4h_percent": 0.448,
+              "funding_percent": -0.001303,
+              "oi_change_4h_percent": 1.121,
               "funding_interval_unverified": true,
               "funding_url": "https://www.okx.com/api/v5/public/funding-rate?instId=BTC-USDT-SWAP",
               "oi_url": "https://www.okx.com/api/v5/public/open-interest?instType=SWAP&instId=BTC-USDT-SWAP"
@@ -486,8 +446,8 @@
           "reason": "Funding interval and 4h OI plus spot confirmation not yet complete",
           "evidence": [
             {
-              "funding_percent": 0.001042,
-              "oi_change_4h_percent": -0.622,
+              "funding_percent": 0.000477,
+              "oi_change_4h_percent": -0.947,
               "funding_interval_unverified": true,
               "funding_url": "https://www.okx.com/api/v5/public/funding-rate?instId=ETH-USDT-SWAP",
               "oi_url": "https://www.okx.com/api/v5/public/open-interest?instType=SWAP&instId=ETH-USDT-SWAP"
@@ -593,8 +553,8 @@
           "reason": "Funding interval and 4h OI plus spot confirmation not yet complete",
           "evidence": [
             {
-              "funding_percent": 0.006298,
-              "oi_change_4h_percent": -1.783,
+              "funding_percent": 0.00571,
+              "oi_change_4h_percent": -1.364,
               "funding_interval_unverified": true,
               "funding_url": "https://www.okx.com/api/v5/public/funding-rate?instId=HYPE-USDT-SWAP",
               "oi_url": "https://www.okx.com/api/v5/public/open-interest?instType=SWAP&instId=HYPE-USDT-SWAP"
@@ -838,8 +798,8 @@
           "evidence": [
             {
               "metric": "fees",
-              "growth_7d_percent": -3.045,
-              "window_end_utc": "2026-11-15T00:00:00+00:00",
+              "growth_7d_percent": -3.394,
+              "window_end_utc": "2026-11-16T00:00:00+00:00",
               "source": "https://api.llama.fi/summary/fees/chainlink?dataType=dailyFees"
             }
           ]
@@ -1334,8 +1294,8 @@
           "reason": "Funding interval and 4h OI plus spot confirmation not yet complete",
           "evidence": [
             {
-              "funding_percent": -0.001887,
-              "oi_change_4h_percent": -1.036,
+              "funding_percent": -0.003793,
+              "oi_change_4h_percent": -1.151,
               "funding_interval_unverified": true,
               "funding_url": "https://www.okx.com/api/v5/public/funding-rate?instId=SOL-USDT-SWAP",
               "oi_url": "https://www.okx.com/api/v5/public/open-interest?instType=SWAP&instId=SOL-USDT-SWAP"
@@ -1408,8 +1368,8 @@
           "reason": "Funding interval and 4h OI plus spot confirmation not yet complete",
           "evidence": [
             {
-              "funding_percent": -0.001554,
-              "oi_change_4h_percent": -0.052,
+              "funding_percent": -0.002469,
+              "oi_change_4h_percent": 0.188,
               "funding_interval_unverified": true,
               "funding_url": "https://www.okx.com/api/v5/public/funding-rate?instId=SUI-USDT-SWAP",
               "oi_url": "https://www.okx.com/api/v5/public/open-interest?instType=SWAP&instId=SUI-USDT-SWAP"
@@ -1587,8 +1547,8 @@
           "evidence": [
             {
               "metric": "fees",
-              "growth_7d_percent": 1.334,
-              "window_end_utc": "2026-11-15T00:00:00+00:00",
+              "growth_7d_percent": 1.013,
+              "window_end_utc": "2026-11-16T00:00:00+00:00",
               "source": "https://api.llama.fi/summary/fees/uniswap?dataType=dailyFees"
             }
           ]
@@ -1605,39 +1565,6 @@
     },
     {
       "symbol": "WIFUSDT",
-      "methods": {
-        "momentum": {
-          "status": "not_confirmed",
-          "reason": "No matching two-venue momentum pattern",
-          "evidence": []
-        },
-        "smart_money": {
-          "status": "not_evaluable",
-          "reason": "No independently verified wallet purchases",
-          "evidence": []
-        },
-        "short_squeeze": {
-          "status": "not_evaluable",
-          "reason": "No fresh and verified funding/OI pair",
-          "evidence": []
-        },
-        "fundamental_divergence": {
-          "status": "not_evaluable",
-          "reason": "No verified comparable 7-day fundamental metrics",
-          "evidence": []
-        },
-        "catalyst": {
-          "status": "not_evaluable",
-          "reason": "No dated official catalyst events ingested",
-          "evidence": []
-        }
-      },
-      "supported_methods": [],
-      "trade_ready": false,
-      "exchange_buyability_checked": false
-    },
-    {
-      "symbol": "XAUTUSDT",
       "methods": {
         "momentum": {
           "status": "not_confirmed",

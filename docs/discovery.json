@@ -1,64 +1,13 @@
 {
-  "generated_at_utc": "2026-11-15T23:17:16+00:00",
+  "generated_at_utc": "2026-11-16T00:00:40+00:00",
   "source_urls": {
     "gate": "https://api.gateio.ws/api/v4/spot/tickers",
     "okx": "https://www.okx.com/api/v5/market/tickers?instType=SPOT",
     "bitget": "https://api.bitget.com/api/v3/market/tickers?category=SPOT"
   },
-  "status": "ok",
+  "status": "no_correlated_candidates",
   "research_only": true,
-  "candidates": [
-    {
-      "symbol": "BNBUSDT",
-      "quote_volume_24h_usdt": 13582588.4,
-      "abs_change_24h_percent": 3.26,
-      "gate_last_usdt": 594.2,
-      "second_venue": "bitget",
-      "second_venue_quote_volume_24h_usdt": 2230352.36,
-      "second_venue_last_usdt": 594.34,
-      "ticker_price_disagreement_percent": 0.024,
-      "validated_spot_venues": [
-        "gate",
-        "bitget"
-      ],
-      "verified_same_closed_15m_candle_utc": "2026-11-15T23:00:00+00:00",
-      "closed_15m_quote_volume_usdt": {
-        "gate": 136734.46,
-        "bitget": 54312.28
-      },
-      "closed_15m_price_disagreement_percent": 0.02,
-      "source_urls": {
-        "gate": "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=BNB_USDT&interval=15m&limit=30",
-        "bitget": "https://api.bitget.com/api/v3/market/candles?category=SPOT&symbol=BNBUSDT&interval=15m&limit=30"
-      },
-      "two_venue_ohlcv_verified": true
-    },
-    {
-      "symbol": "XAUTUSDT",
-      "quote_volume_24h_usdt": 9417187.41,
-      "abs_change_24h_percent": 1.53,
-      "gate_last_usdt": 3862.5,
-      "second_venue": "bitget",
-      "second_venue_quote_volume_24h_usdt": 2406748.96,
-      "second_venue_last_usdt": 3862.12,
-      "ticker_price_disagreement_percent": 0.01,
-      "validated_spot_venues": [
-        "gate",
-        "bitget"
-      ],
-      "verified_same_closed_15m_candle_utc": "2026-11-15T23:00:00+00:00",
-      "closed_15m_quote_volume_usdt": {
-        "gate": 2640215.04,
-        "bitget": 216242.47
-      },
-      "closed_15m_price_disagreement_percent": 0.018,
-      "source_urls": {
-        "gate": "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=XAUT_USDT&interval=15m&limit=30",
-        "bitget": "https://api.bitget.com/api/v3/market/candles?category=SPOT&symbol=XAUTUSDT&interval=15m&limit=30"
-      },
-      "two_venue_ohlcv_verified": true
-    }
-  ],
+  "candidates": [],
   "selection_rules": {
     "independent_venues": 2,
     "min_gate_quote_24h_usdt": 2000000,
@@ -69,11 +18,11 @@
     "exclude_leveraged_tokens": true
   },
   "diagnostics": {
-    "gate_shortlist": 28,
-    "ticker_correlated": 2,
+    "gate_shortlist": 27,
+    "ticker_correlated": 0,
     "okx_bitget_pairs": 0,
-    "candle_checked": 2,
+    "candle_checked": 0,
     "candle_rejected": [],
-    "validated": 2
+    "validated": 0
   }
 }
