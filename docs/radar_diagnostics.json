@@ -1,58 +1,27 @@
 {
-  "generated_at_utc": "2026-11-16T21:53:12.539854+00:00",
-  "latest_generated_at_utc": "2026-11-16T21:52:18+00:00",
-  "latest_age_minutes": 0.91,
+  "generated_at_utc": "2026-11-16T22:39:17.929545+00:00",
+  "latest_generated_at_utc": "2026-11-16T22:38:08+00:00",
+  "latest_age_minutes": 1.17,
   "source_classification": "CURRENT_RESEARCH",
   "research_only": true,
   "counts": {
-    "checks": 153,
-    "valid": 139,
-    "volume_1_8x": 9,
-    "invalid": 14,
-    "invalid_ValueError": 7,
-    "invalid_HTTPError": 7,
-    "gain_1_5": 1
+    "checks": 150,
+    "valid": 137,
+    "volume_1_8x": 13,
+    "invalid": 13,
+    "invalid_ValueError": 6,
+    "invalid_HTTPError": 7
   },
-  "single_venue_watchlist": [
-    {
-      "symbol": "HYPEUSDT",
-      "venue": "okx",
-      "candle_start_utc": "2026-11-16T21:30:00+00:00",
-      "gain_percent": 1.42778,
-      "volume_multiplier": 1.7854,
-      "quote_volume_usdt": 531421.93,
-      "reference_price_usdt": 69.902,
-      "two_venue_confirmed": false,
-      "classification": "UNCONFIRMED_SINGLE_VENUE_RESEARCH",
-      "not_a_buy_signal": true
-    },
-    {
-      "symbol": "HYPEUSDT",
-      "venue": "bitget",
-      "candle_start_utc": "2026-11-16T21:30:00+00:00",
-      "gain_percent": 1.40091,
-      "volume_multiplier": 1.5883,
-      "quote_volume_usdt": 147003.07,
-      "reference_price_usdt": 69.921,
-      "two_venue_confirmed": false,
-      "classification": "UNCONFIRMED_SINGLE_VENUE_RESEARCH",
-      "not_a_buy_signal": true
-    }
-  ],
-  "single_venue_watchlist_total": 2,
-  "discovery_status": "ok",
+  "single_venue_watchlist": [],
+  "single_venue_watchlist_total": 0,
+  "discovery_status": "no_correlated_candidates",
   "discovery_diagnostics": {
-    "gate_shortlist": 22,
-    "ticker_correlated": 2,
+    "gate_shortlist": 21,
+    "ticker_correlated": 0,
     "okx_bitget_pairs": 0,
-    "candle_checked": 2,
-    "candle_rejected": [
-      {
-        "symbol": "EVAAUSDT",
-        "reason": "ValueError: bitget:insufficient_closed_15m_quote_volume"
-      }
-    ],
-    "validated": 1
+    "candle_checked": 0,
+    "candle_rejected": [],
+    "validated": 0
   },
   "discovery_venue_fetch_errors": {},
   "discovery_venues_reached": [
