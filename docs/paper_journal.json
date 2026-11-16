@@ -11,11 +11,11 @@
         "gate"
       ],
       "state": "open",
-      "last_price_usdt": 0.7238,
+      "last_price_usdt": 0.7146,
       "best_return_percent": 0.6825938566553003,
-      "worst_return_percent": -2.0068259385665588,
+      "worst_return_percent": -2.4436860068259403,
       "eligible_for_real_trade": false,
-      "last_seen_utc": "2026-11-16T11:07:12.220090+00:00"
+      "last_seen_utc": "2026-11-16T12:17:00.388756+00:00"
     },
     {
       "symbol": "PEPEUSDT",
@@ -49,12 +49,17 @@
         "gate",
         "bitget"
       ],
-      "state": "open",
-      "last_price_usdt": 67.537,
+      "state": "closed",
+      "last_price_usdt": 65.295,
       "best_return_percent": 1.669669724097611,
-      "worst_return_percent": -1.735506103391038,
+      "worst_return_percent": -3.0349081308888803,
       "eligible_for_real_trade": false,
-      "last_seen_utc": "2026-11-16T11:07:12.220090+00:00"
+      "last_seen_utc": "2026-11-16T12:17:00.388756+00:00",
+      "closed_at_utc": "2026-11-16T12:17:00.388756+00:00",
+      "close_reference_usdt": 65.295,
+      "exit_reason": "stop_observed",
+      "net_pnl_percent": -3.53491,
+      "note": "Observed checkpoint price, not true intrabar stop/target execution; may overstate realizable fills."
     }
   ]
 }
