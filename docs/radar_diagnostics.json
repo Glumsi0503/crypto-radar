@@ -1,54 +1,29 @@
 {
-  "generated_at_utc": "2026-11-17T05:25:33.526962+00:00",
-  "latest_generated_at_utc": "2026-11-17T05:24:43+00:00",
-  "latest_age_minutes": 0.84,
+  "generated_at_utc": "2026-11-17T05:28:17.026023+00:00",
+  "latest_generated_at_utc": "2026-11-17T05:27:05+00:00",
+  "latest_age_minutes": 1.2,
   "source_classification": "CURRENT_RESEARCH",
   "research_only": true,
   "counts": {
-    "checks": 162,
-    "valid": 146,
+    "checks": 150,
+    "valid": 137,
     "volume_1_8x": 20,
-    "invalid": 16,
-    "invalid_ValueError": 9,
+    "invalid": 13,
+    "invalid_ValueError": 6,
     "gain_1_5": 1,
     "single_venue_early": 1,
     "invalid_HTTPError": 7
   },
   "single_venue_watchlist": [],
   "single_venue_watchlist_total": 0,
-  "discovery_status": "ok",
+  "discovery_status": "no_correlated_candidates",
   "discovery_diagnostics": {
     "gate_shortlist": 22,
-    "ticker_correlated": 10,
-    "okx_bitget_pairs": 2,
-    "candle_checked": 10,
-    "candle_rejected": [
-      {
-        "symbol": "ASTERUSDT",
-        "reason": "ValueError: bitget:insufficient_closed_15m_quote_volume"
-      },
-      {
-        "symbol": "ARIAUSDT",
-        "reason": "ValueError: bitget:insufficient_closed_15m_quote_volume"
-      },
-      {
-        "symbol": "NIGHTUSDT",
-        "reason": "ValueError: gate:insufficient_closed_15m_quote_volume"
-      },
-      {
-        "symbol": "BNBUSDT",
-        "reason": "ValueError: bitget:insufficient_closed_15m_quote_volume"
-      },
-      {
-        "symbol": "SPACEUSDT",
-        "reason": "ValueError: okx:insufficient_closed_15m_quote_volume"
-      },
-      {
-        "symbol": "XPLUSDT",
-        "reason": "ValueError: okx:insufficient_closed_15m_quote_volume"
-      }
-    ],
-    "validated": 4
+    "ticker_correlated": 0,
+    "okx_bitget_pairs": 0,
+    "candle_checked": 0,
+    "candle_rejected": [],
+    "validated": 0
   },
   "discovery_venue_fetch_errors": {},
   "discovery_venues_reached": [
