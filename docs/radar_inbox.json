@@ -1,42 +1,18 @@
 {
-  "generated_at_utc": "2026-11-17T19:53:24.554681+00:00",
-  "feed_generated_at_utc": "2026-11-17T19:53:24.492208+00:00",
-  "audit_generated_at_utc": "2026-11-17T19:53:24.522466+00:00",
+  "generated_at_utc": "2026-11-17T20:43:38.366087+00:00",
+  "feed_generated_at_utc": "2026-11-17T20:43:38.289358+00:00",
+  "audit_generated_at_utc": "2026-11-17T20:43:38.327884+00:00",
   "research_only": true,
   "push_service_configured": false,
   "reliable_user_delivery_tested": false,
   "requires_independent_live_check": true,
-  "candidate_count": 1,
-  "candidates": [
-    {
-      "event_id": "PENGUUSDT|2026-11-17T19:30:00+00:00|MOMENTUM_RESEARCH",
-      "symbol": "PENGUUSDT",
-      "research_stage": "MOMENTUM_RESEARCH",
-      "first_seen_utc": "2026-11-17T19:53:24.492208+00:00",
-      "candle_start_utc": "2026-11-17T19:30:00+00:00",
-      "reference_price_usdt": 0.005024,
-      "venues": [
-        "gate",
-        "okx"
-      ],
-      "methods": {
-        "momentum": "supported",
-        "smart_money": "not_evaluable",
-        "short_squeeze": "not_evaluable",
-        "fundamental_divergence": "not_evaluable",
-        "catalyst": "not_evaluable"
-      },
-      "coin_exchange_buyability_checked": false,
-      "must_recheck_live_price": true,
-      "not_a_buy_signal": true,
-      "priority": "higher"
-    }
-  ],
+  "candidate_count": 0,
+  "candidates": [],
   "historical_candidate_count": 0,
   "historical_candidates": [],
   "historical_event_count": 0,
   "underlying_source_classification": "current",
   "historical_research_max_age_minutes": 1440,
-  "status": "RESEARCH_CANDIDATES",
+  "status": "NO_CURRENT_VALIDATED_CANDIDATES",
   "notice": "Reader inbox only; ChatGPT tasks must fetch and independently validate. No direct push or trading permission."
 }

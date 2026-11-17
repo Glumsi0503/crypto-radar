@@ -1,29 +1,15 @@
 {
-  "generated_at_utc": "2026-11-17T19:53:24.458893+00:00",
+  "generated_at_utc": "2026-11-17T20:43:38.247862+00:00",
   "status": "RESEARCH_ONLY",
   "eligible_for_real_trading": false,
-  "candidates": [
-    {
-      "symbol": "PENGUUSDT",
-      "candle_start_utc": "2026-11-17T19:30:00+00:00",
-      "price_reference_usdt": 0.005024,
-      "venues": [
-        "okx",
-        "gate"
-      ],
-      "min_quote_volume_usdt": 136587.22,
-      "min_volume_multiplier": 3.53,
-      "label": "RESEARCH_PAPER_ONLY",
-      "exchange_buyability_verified": false
-    }
-  ],
-  "paper_open": 1,
+  "candidates": [],
+  "paper_open": 0,
   "paper_performance": {
-    "closed": 3,
+    "closed": 4,
     "winners": 0,
     "win_rate_percent": 0.0,
-    "avg_net_return_percent": -3.286,
-    "median_net_return_percent": -3.242,
+    "avg_net_return_percent": -4.286,
+    "median_net_return_percent": -3.388,
     "sample_sufficient_for_review": false,
     "notes": "Observation-only simulation; fees approximated at 0.25% per side; excludes slippage, intrabar execution, tax and survivorship effects."
   },

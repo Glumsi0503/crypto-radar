@@ -75,11 +75,17 @@
         "okx",
         "gate"
       ],
-      "state": "open",
-      "last_price_usdt": 0.005024,
+      "state": "closed",
+      "last_price_usdt": 0.004683,
       "best_return_percent": 0,
-      "worst_return_percent": 0,
-      "eligible_for_real_trade": false
+      "worst_return_percent": -6.78742038216561,
+      "eligible_for_real_trade": false,
+      "last_seen_utc": "2026-11-17T20:43:38.247862+00:00",
+      "closed_at_utc": "2026-11-17T20:43:38.247862+00:00",
+      "close_reference_usdt": 0.004683,
+      "exit_reason": "stop_observed",
+      "net_pnl_percent": -7.28742,
+      "note": "Observed checkpoint price, not true intrabar stop/target execution; may overstate realizable fills."
     }
   ]
 }

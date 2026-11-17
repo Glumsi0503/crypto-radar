@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-11-17T19:53:24.522466+00:00",
-  "spot_source_at_utc": "2026-11-17T19:52:26+00:00",
+  "generated_at_utc": "2026-11-17T20:43:38.327884+00:00",
+  "spot_source_at_utc": "2026-11-17T20:42:49+00:00",
   "enrichment_fresh": true,
   "derivatives_fresh": true,
   "research_only": true,
@@ -15,7 +15,7 @@
     "fundamental_divergence",
     "catalyst"
   ],
-  "symbols_evaluated": 51,
+  "symbols_evaluated": 50,
   "coins": [
     {
       "symbol": "AAVEUSDT",
@@ -313,8 +313,8 @@
           "reason": "Funding interval and 4h OI plus spot confirmation not yet complete",
           "evidence": [
             {
-              "funding_percent": 0.002795,
-              "oi_change_4h_percent": -1.219,
+              "funding_percent": 0.001863,
+              "oi_change_4h_percent": -1.195,
               "funding_interval_unverified": true,
               "funding_url": "https://www.okx.com/api/v5/public/funding-rate?instId=BTC-USDT-SWAP",
               "oi_url": "https://www.okx.com/api/v5/public/open-interest?instType=SWAP&instId=BTC-USDT-SWAP"
@@ -453,8 +453,8 @@
           "reason": "Funding interval and 4h OI plus spot confirmation not yet complete",
           "evidence": [
             {
-              "funding_percent": -0.007046,
-              "oi_change_4h_percent": -1.56,
+              "funding_percent": -0.006286,
+              "oi_change_4h_percent": -0.884,
               "funding_interval_unverified": true,
               "funding_url": "https://www.okx.com/api/v5/public/funding-rate?instId=ETH-USDT-SWAP",
               "oi_url": "https://www.okx.com/api/v5/public/open-interest?instType=SWAP&instId=ETH-USDT-SWAP"
@@ -478,39 +478,6 @@
     },
     {
       "symbol": "FETUSDT",
-      "methods": {
-        "momentum": {
-          "status": "not_confirmed",
-          "reason": "No matching two-venue momentum pattern",
-          "evidence": []
-        },
-        "smart_money": {
-          "status": "not_evaluable",
-          "reason": "No independently verified wallet purchases",
-          "evidence": []
-        },
-        "short_squeeze": {
-          "status": "not_evaluable",
-          "reason": "No fresh and verified funding/OI pair",
-          "evidence": []
-        },
-        "fundamental_divergence": {
-          "status": "not_evaluable",
-          "reason": "No verified comparable 7-day fundamental metrics",
-          "evidence": []
-        },
-        "catalyst": {
-          "status": "not_evaluable",
-          "reason": "No dated official catalyst events ingested",
-          "evidence": []
-        }
-      },
-      "supported_methods": [],
-      "trade_ready": false,
-      "exchange_buyability_checked": false
-    },
-    {
-      "symbol": "GRAMUSDT",
       "methods": {
         "momentum": {
           "status": "not_confirmed",
@@ -593,8 +560,8 @@
           "reason": "Funding interval and 4h OI plus spot confirmation not yet complete",
           "evidence": [
             {
-              "funding_percent": 0.005855,
-              "oi_change_4h_percent": -3.791,
+              "funding_percent": 0.006339,
+              "oi_change_4h_percent": -2.783,
               "funding_interval_unverified": true,
               "funding_url": "https://www.okx.com/api/v5/public/funding-rate?instId=HYPE-USDT-SWAP",
               "oi_url": "https://www.okx.com/api/v5/public/open-interest?instType=SWAP&instId=HYPE-USDT-SWAP"
@@ -1089,24 +1056,9 @@
       "symbol": "PENGUUSDT",
       "methods": {
         "momentum": {
-          "status": "supported",
-          "reason": "Two independent spot venues confirmed momentum",
-          "evidence": [
-            {
-              "candle_start_utc": "2026-11-17T19:30:00+00:00",
-              "venues": [
-                "gate",
-                "okx"
-              ],
-              "spot_usdt_reference": 0.005024,
-              "gain_percent_min": 2.825,
-              "volume_multiple_min": 3.53,
-              "source_urls": [
-                "https://www.okx.com/api/v5/market/candles?instId=PENGU-USDT&bar=15m&limit=30",
-                "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=PENGU_USDT&interval=15m&limit=30"
-              ]
-            }
-          ]
+          "status": "not_confirmed",
+          "reason": "No matching two-venue momentum pattern",
+          "evidence": []
         },
         "smart_money": {
           "status": "not_evaluable",
@@ -1129,9 +1081,7 @@
           "evidence": []
         }
       },
-      "supported_methods": [
-        "momentum"
-      ],
+      "supported_methods": [],
       "trade_ready": false,
       "exchange_buyability_checked": false
     },
@@ -1351,8 +1301,8 @@
           "reason": "Funding interval and 4h OI plus spot confirmation not yet complete",
           "evidence": [
             {
-              "funding_percent": -0.009365,
-              "oi_change_4h_percent": -2.791,
+              "funding_percent": -0.00854,
+              "oi_change_4h_percent": -1.779,
               "funding_interval_unverified": true,
               "funding_url": "https://www.okx.com/api/v5/public/funding-rate?instId=SOL-USDT-SWAP",
               "oi_url": "https://www.okx.com/api/v5/public/open-interest?instType=SWAP&instId=SOL-USDT-SWAP"
@@ -1425,8 +1375,8 @@
           "reason": "Funding interval and 4h OI plus spot confirmation not yet complete",
           "evidence": [
             {
-              "funding_percent": -0.001765,
-              "oi_change_4h_percent": 1.253,
+              "funding_percent": 0.001322,
+              "oi_change_4h_percent": -0.046,
               "funding_interval_unverified": true,
               "funding_url": "https://www.okx.com/api/v5/public/funding-rate?instId=SUI-USDT-SWAP",
               "oi_url": "https://www.okx.com/api/v5/public/open-interest?instType=SWAP&instId=SUI-USDT-SWAP"
