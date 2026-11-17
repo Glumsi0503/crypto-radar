@@ -508,7 +508,12 @@
       "stage": "MOMENTUM_RESEARCH",
       "first_seen_utc": "2026-11-17T19:53:24.492208+00:00",
       "reference_price_usdt": 0.005024,
-      "checkpoints": {},
+      "checkpoints": {
+        "1h": {
+          "status": "missed_window",
+          "reason": "no_verifiable_checkpoint_in_window"
+        }
+      },
       "research_only": true
     },
     {
@@ -517,7 +522,22 @@
       "stage": "EARLY_RESEARCH",
       "first_seen_utc": "2026-11-17T21:40:06.491107+00:00",
       "reference_price_usdt": 0.002773,
-      "checkpoints": {},
+      "checkpoints": {
+        "1h": {
+          "status": "observed",
+          "observed_at_utc": "2026-11-17T22:41:46.278845+00:00",
+          "price_reference_usdt": 0.002782,
+          "candle_start_utc": "2026-11-17T22:15:00+00:00",
+          "checkpoint_offset_minutes": -10.11,
+          "venues": [
+            "bitget",
+            "gate",
+            "okx"
+          ],
+          "gross_change_percent": 0.3246,
+          "net_after_assumed_fees_percent": -0.1754
+        }
+      },
       "research_only": true
     }
   ]
