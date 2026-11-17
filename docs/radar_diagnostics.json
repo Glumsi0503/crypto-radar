@@ -1,47 +1,54 @@
 {
-  "generated_at_utc": "2026-11-17T04:45:11.154830+00:00",
-  "latest_generated_at_utc": "2026-11-17T04:44:23+00:00",
-  "latest_age_minutes": 0.8,
+  "generated_at_utc": "2026-11-17T05:25:33.526962+00:00",
+  "latest_generated_at_utc": "2026-11-17T05:24:43+00:00",
+  "latest_age_minutes": 0.84,
   "source_classification": "CURRENT_RESEARCH",
   "research_only": true,
   "counts": {
-    "checks": 153,
-    "valid": 139,
-    "invalid": 14,
-    "invalid_ValueError": 7,
-    "invalid_HTTPError": 7,
-    "volume_1_8x": 7,
-    "gain_1_5": 2,
-    "single_venue_early": 1
+    "checks": 162,
+    "valid": 146,
+    "volume_1_8x": 20,
+    "invalid": 16,
+    "invalid_ValueError": 9,
+    "gain_1_5": 1,
+    "single_venue_early": 1,
+    "invalid_HTTPError": 7
   },
-  "single_venue_watchlist": [
-    {
-      "symbol": "EVAAUSDT",
-      "venue": "gate",
-      "candle_start_utc": "2026-11-17T04:15:00+00:00",
-      "gain_percent": 1.56869,
-      "volume_multiplier": 1.8597,
-      "quote_volume_usdt": 356575.87,
-      "reference_price_usdt": 3.6129,
-      "two_venue_confirmed": false,
-      "classification": "UNCONFIRMED_SINGLE_VENUE_RESEARCH",
-      "not_a_buy_signal": true
-    }
-  ],
-  "single_venue_watchlist_total": 1,
+  "single_venue_watchlist": [],
+  "single_venue_watchlist_total": 0,
   "discovery_status": "ok",
   "discovery_diagnostics": {
-    "gate_shortlist": 23,
-    "ticker_correlated": 2,
-    "okx_bitget_pairs": 0,
-    "candle_checked": 2,
+    "gate_shortlist": 22,
+    "ticker_correlated": 10,
+    "okx_bitget_pairs": 2,
+    "candle_checked": 10,
     "candle_rejected": [
+      {
+        "symbol": "ASTERUSDT",
+        "reason": "ValueError: bitget:insufficient_closed_15m_quote_volume"
+      },
       {
         "symbol": "ARIAUSDT",
         "reason": "ValueError: bitget:insufficient_closed_15m_quote_volume"
+      },
+      {
+        "symbol": "NIGHTUSDT",
+        "reason": "ValueError: gate:insufficient_closed_15m_quote_volume"
+      },
+      {
+        "symbol": "BNBUSDT",
+        "reason": "ValueError: bitget:insufficient_closed_15m_quote_volume"
+      },
+      {
+        "symbol": "SPACEUSDT",
+        "reason": "ValueError: okx:insufficient_closed_15m_quote_volume"
+      },
+      {
+        "symbol": "XPLUSDT",
+        "reason": "ValueError: okx:insufficient_closed_15m_quote_volume"
       }
     ],
-    "validated": 1
+    "validated": 4
   },
   "discovery_venue_fetch_errors": {},
   "discovery_venues_reached": [
