@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-11-17T18:44:11.921647+00:00",
-  "source_generated_at_utc": "2026-11-17T18:43:12+00:00",
+  "generated_at_utc": "2026-11-17T19:53:24.492208+00:00",
+  "source_generated_at_utc": "2026-11-17T19:52:26+00:00",
   "research_only": true,
   "auto_push_connected": false,
   "venue_buyability_checked": false,
@@ -22,11 +22,51 @@
     "max_spot_price_disagreement_percent": 1.0,
     "classification": "subjective_not_statistically_calibrated"
   },
-  "current_candidates": [],
+  "current_candidates": [
+    {
+      "symbol": "PENGUUSDT",
+      "candle_start_utc": "2026-11-17T19:30:00+00:00",
+      "reference_price_usdt": 0.005024,
+      "venues": [
+        "okx",
+        "gate"
+      ],
+      "stage": "MOMENTUM_RESEARCH",
+      "not_a_buy_signal": true,
+      "event_id": "PENGUUSDT|2026-11-17T19:30:00+00:00|MOMENTUM_RESEARCH"
+    }
+  ],
   "historical_candidates": [],
-  "new_events": [],
-  "recent_events_3h": [],
+  "new_events": [
+    {
+      "symbol": "PENGUUSDT",
+      "candle_start_utc": "2026-11-17T19:30:00+00:00",
+      "reference_price_usdt": 0.005024,
+      "venues": [
+        "okx",
+        "gate"
+      ],
+      "stage": "MOMENTUM_RESEARCH",
+      "not_a_buy_signal": true,
+      "event_id": "PENGUUSDT|2026-11-17T19:30:00+00:00|MOMENTUM_RESEARCH"
+    }
+  ],
+  "recent_events_3h": [
+    {
+      "symbol": "PENGUUSDT",
+      "candle_start_utc": "2026-11-17T19:30:00+00:00",
+      "reference_price_usdt": 0.005024,
+      "venues": [
+        "okx",
+        "gate"
+      ],
+      "stage": "MOMENTUM_RESEARCH",
+      "not_a_buy_signal": true,
+      "event_id": "PENGUUSDT|2026-11-17T19:30:00+00:00|MOMENTUM_RESEARCH",
+      "first_seen_utc": "2026-11-17T19:53:24.492208+00:00"
+    }
+  ],
   "historical_events_24h": [],
-  "new_event_count": 0,
+  "new_event_count": 1,
   "notice": "Research observations only. No automatic external push, no order, no verified exchange availability."
 }

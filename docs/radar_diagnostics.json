@@ -1,42 +1,57 @@
 {
-  "generated_at_utc": "2026-11-17T18:44:12.043821+00:00",
-  "latest_generated_at_utc": "2026-11-17T18:43:12+00:00",
-  "latest_age_minutes": 1.0,
+  "generated_at_utc": "2026-11-17T19:53:24.618038+00:00",
+  "latest_generated_at_utc": "2026-11-17T19:52:26+00:00",
+  "latest_age_minutes": 0.98,
   "source_classification": "CURRENT_RESEARCH",
   "research_only": true,
   "counts": {
-    "checks": 150,
-    "valid": 137,
+    "checks": 153,
+    "valid": 140,
+    "volume_1_8x": 8,
     "invalid": 13,
     "invalid_ValueError": 6,
     "invalid_HTTPError": 7,
-    "volume_1_8x": 9,
-    "gain_1_5": 4,
-    "single_venue_early": 3
+    "gain_1_5": 3,
+    "single_venue_early": 3,
+    "single_venue_momentum": 2,
+    "two_venue_early": 1,
+    "two_venue_momentum": 1
   },
   "single_venue_watchlist": [
     {
       "symbol": "PENGUUSDT",
+      "venue": "gate",
+      "candle_start_utc": "2026-11-17T19:30:00+00:00",
+      "gain_percent": 2.95022,
+      "volume_multiplier": 7.7406,
+      "quote_volume_usdt": 136587.22,
+      "reference_price_usdt": 0.005025,
+      "two_venue_confirmed": false,
+      "classification": "UNCONFIRMED_SINGLE_VENUE_RESEARCH",
+      "not_a_buy_signal": true
+    },
+    {
+      "symbol": "PENGUUSDT",
       "venue": "okx",
-      "candle_start_utc": "2026-11-17T18:15:00+00:00",
-      "gain_percent": 2.10711,
-      "volume_multiplier": 2.5385,
-      "quote_volume_usdt": 109872.74,
-      "reference_price_usdt": 0.004652,
+      "candle_start_utc": "2026-11-17T19:30:00+00:00",
+      "gain_percent": 2.82497,
+      "volume_multiplier": 3.53,
+      "quote_volume_usdt": 244799.81,
+      "reference_price_usdt": 0.005023,
       "two_venue_confirmed": false,
       "classification": "UNCONFIRMED_SINGLE_VENUE_RESEARCH",
       "not_a_buy_signal": true
     }
   ],
-  "single_venue_watchlist_total": 1,
-  "discovery_status": "no_correlated_candidates",
+  "single_venue_watchlist_total": 2,
+  "discovery_status": "ok",
   "discovery_diagnostics": {
-    "gate_shortlist": 22,
-    "ticker_correlated": 0,
+    "gate_shortlist": 24,
+    "ticker_correlated": 1,
     "okx_bitget_pairs": 0,
-    "candle_checked": 0,
+    "candle_checked": 1,
     "candle_rejected": [],
-    "validated": 0
+    "validated": 1
   },
   "discovery_venue_fetch_errors": {},
   "discovery_venues_reached": [
@@ -44,8 +59,8 @@
     "gate",
     "okx"
   ],
-  "feed_current_candidates": 0,
-  "feed_recent_events_3h": 0,
+  "feed_current_candidates": 1,
+  "feed_recent_events_3h": 1,
   "trade_ready": false,
   "auto_push_connected": false,
   "note": "Diagnostic counts only. No independent live validation, fills or trading signals."
