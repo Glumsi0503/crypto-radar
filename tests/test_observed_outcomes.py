@@ -42,6 +42,25 @@ class OutcomeTest(unittest.TestCase):
         result=advance(market,{"events":[]},journal,far)
         self.assertEqual(result["checkpoint_summary"]["1h"]["missed"],1)
         self.assertEqual(result["checkpoint_summary"]["1h"]["observed"],0)
+    def test_delayed_scan_uses_near_target_candle(self):
+        later=FIRST+dt.timedelta(hours=1,minutes=55)
+        market=spot()
+        market["generated_at_utc"]=later.isoformat()
+        # Candle closes 10 minutes after the one-hour target.
+        near=(FIRST+dt.timedelta(hours=1,minutes=10)-dt.timedelta(minutes=15)).isoformat()
+        for source in market["sources"]:
+            source["data"]["candle_start_utc"]=near
+        result=advance(market,events(),{},later)
+        self.assertEqual(result["checkpoint_summary"]["1h"]["observed"],1)
+    def test_delayed_scan_does_not_use_late_price(self):
+        later=FIRST+dt.timedelta(hours=1,minutes=55)
+        market=spot()
+        market["generated_at_utc"]=later.isoformat()
+        late=(FIRST+dt.timedelta(hours=1,minutes=50)-dt.timedelta(minutes=15)).isoformat()
+        for source in market["sources"]:
+            source["data"]["candle_start_utc"]=late
+        result=advance(market,events(),{},later)
+        self.assertEqual(result["checkpoint_summary"]["1h"]["observed"],0)
     def test_stale_market_fails(self):
         market=spot()
         market["generated_at_utc"]=(NOW-dt.timedelta(hours=2)).isoformat()
