@@ -1,32 +1,19 @@
 {
-  "generated_at_utc": "2026-11-17T22:41:46.348308+00:00",
-  "latest_generated_at_utc": "2026-11-17T22:40:46+00:00",
-  "latest_age_minutes": 1.01,
+  "generated_at_utc": "2026-11-17T23:38:25.832318+00:00",
+  "latest_generated_at_utc": "2026-11-17T23:37:27+00:00",
+  "latest_age_minutes": 0.98,
   "source_classification": "CURRENT_RESEARCH",
   "research_only": true,
   "counts": {
     "checks": 150,
     "valid": 137,
-    "volume_1_8x": 8,
+    "volume_1_8x": 31,
     "invalid": 13,
     "invalid_ValueError": 6,
     "invalid_HTTPError": 7
   },
-  "single_venue_watchlist": [
-    {
-      "symbol": "UNIUSDT",
-      "venue": "okx",
-      "candle_start_utc": "2026-11-17T22:15:00+00:00",
-      "gain_percent": 1.00309,
-      "volume_multiplier": 1.8543,
-      "quote_volume_usdt": 232242.81,
-      "reference_price_usdt": 5.236,
-      "two_venue_confirmed": false,
-      "classification": "UNCONFIRMED_SINGLE_VENUE_RESEARCH",
-      "not_a_buy_signal": true
-    }
-  ],
-  "single_venue_watchlist_total": 1,
+  "single_venue_watchlist": [],
+  "single_venue_watchlist_total": 0,
   "discovery_status": "no_correlated_candidates",
   "discovery_diagnostics": {
     "gate_shortlist": 28,
@@ -43,7 +30,7 @@
     "okx"
   ],
   "feed_current_candidates": 0,
-  "feed_recent_events_3h": 2,
+  "feed_recent_events_3h": 1,
   "trade_ready": false,
   "auto_push_connected": false,
   "note": "Diagnostic counts only. No independent live validation, fills or trading signals."

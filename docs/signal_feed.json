@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-11-17T22:41:46.104233+00:00",
-  "source_generated_at_utc": "2026-11-17T22:40:46+00:00",
+  "generated_at_utc": "2026-11-17T23:38:25.641357+00:00",
+  "source_generated_at_utc": "2026-11-17T23:37:27+00:00",
   "research_only": true,
   "auto_push_connected": false,
   "venue_buyability_checked": false,
@@ -27,19 +27,6 @@
   "new_events": [],
   "recent_events_3h": [
     {
-      "symbol": "PENGUUSDT",
-      "candle_start_utc": "2026-11-17T19:30:00+00:00",
-      "reference_price_usdt": 0.005024,
-      "venues": [
-        "okx",
-        "gate"
-      ],
-      "stage": "MOMENTUM_RESEARCH",
-      "not_a_buy_signal": true,
-      "event_id": "PENGUUSDT|2026-11-17T19:30:00+00:00|MOMENTUM_RESEARCH",
-      "first_seen_utc": "2026-11-17T19:53:24.492208+00:00"
-    },
-    {
       "symbol": "PUMPUSDT",
       "candle_start_utc": "2026-11-17T21:15:00+00:00",
       "reference_price_usdt": 0.002773,
@@ -53,7 +40,21 @@
       "first_seen_utc": "2026-11-17T21:40:06.491107+00:00"
     }
   ],
-  "historical_events_24h": [],
+  "historical_events_24h": [
+    {
+      "symbol": "PENGUUSDT",
+      "candle_start_utc": "2026-11-17T19:30:00+00:00",
+      "reference_price_usdt": 0.005024,
+      "venues": [
+        "okx",
+        "gate"
+      ],
+      "stage": "MOMENTUM_RESEARCH",
+      "not_a_buy_signal": true,
+      "event_id": "PENGUUSDT|2026-11-17T19:30:00+00:00|MOMENTUM_RESEARCH",
+      "first_seen_utc": "2026-11-17T19:53:24.492208+00:00"
+    }
+  ],
   "new_event_count": 0,
   "notice": "Research observations only. No automatic external push, no order, no verified exchange availability."
 }
