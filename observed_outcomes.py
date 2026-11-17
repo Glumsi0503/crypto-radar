@@ -8,7 +8,8 @@ from strategy import market,parse_time
 
 UTC=dt.timezone.utc
 CHECKPOINT_HOURS=(1,4,24,72)
-OBSERVATION_WINDOW=dt.timedelta(minutes=35)
+OBSERVATION_WINDOW=dt.timedelta(minutes=90)
+MAX_CHECKPOINT_PRICE_OFFSET=dt.timedelta(minutes=20)
 MAX_SOURCE_AGE=dt.timedelta(minutes=40)
 ASSUMED_FEES_ROUNDTRIP_PERCENT=0.50
 SOURCE=Path("docs/latest.json")
@@ -70,9 +71,13 @@ def advance(spot, events, journal, now):
             # Price only if candle closed after first seen and before this checkpoint run.
             candle_at=parse_time(obs["candle"])+dt.timedelta(minutes=15)
             if candle_at<=first or candle_at>now:continue
+            # Never substitute a much later scan price for the scheduled checkpoint.
+            target_at=first+dt.timedelta(hours=hours)
+            if abs(candle_at-target_at)>MAX_CHECKPOINT_PRICE_OFFSET:continue
             gross=100*(obs["price"]/row["reference_price_usdt"]-1)
             row["checkpoints"][k]={"status":"observed","observed_at_utc":now.isoformat(),
                  "price_reference_usdt":round(obs["price"],9),"candle_start_utc":obs["candle"],
+                 "checkpoint_offset_minutes":round((candle_at-target_at).total_seconds()/60,2),
                  "venues":obs["venues"],"gross_change_percent":round(gross,4),
                  "net_after_assumed_fees_percent":round(gross-ASSUMED_FEES_ROUNDTRIP_PERCENT,4)}
     # Only observed checkpoints; small samples never used for optimisation.
