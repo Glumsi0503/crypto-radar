@@ -1,27 +1,32 @@
 {
-  "generated_at_utc": "2026-11-18T04:00:12.015865+00:00",
-  "latest_generated_at_utc": "2026-11-18T03:59:09+00:00",
-  "latest_age_minutes": 1.05,
+  "generated_at_utc": "2026-11-18T05:05:25.680411+00:00",
+  "latest_generated_at_utc": "2026-11-18T05:04:30+00:00",
+  "latest_age_minutes": 0.93,
   "source_classification": "CURRENT_RESEARCH",
   "research_only": true,
   "counts": {
-    "checks": 150,
-    "valid": 137,
-    "volume_1_8x": 9,
+    "checks": 153,
+    "valid": 140,
+    "volume_1_8x": 15,
     "invalid": 13,
     "invalid_ValueError": 6,
     "invalid_HTTPError": 7
   },
   "single_venue_watchlist": [],
   "single_venue_watchlist_total": 0,
-  "discovery_status": "no_correlated_candidates",
+  "discovery_status": "ok",
   "discovery_diagnostics": {
-    "gate_shortlist": 27,
-    "ticker_correlated": 0,
+    "gate_shortlist": 28,
+    "ticker_correlated": 2,
     "okx_bitget_pairs": 0,
-    "candle_checked": 0,
-    "candle_rejected": [],
-    "validated": 0
+    "candle_checked": 2,
+    "candle_rejected": [
+      {
+        "symbol": "FILUSDT",
+        "reason": "ValueError: gate:insufficient_closed_15m_quote_volume"
+      }
+    ],
+    "validated": 1
   },
   "discovery_venue_fetch_errors": {},
   "discovery_venues_reached": [
