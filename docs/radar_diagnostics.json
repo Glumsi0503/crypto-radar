@@ -1,27 +1,67 @@
 {
-  "generated_at_utc": "2026-11-18T00:33:22.155904+00:00",
-  "latest_generated_at_utc": "2026-11-18T00:32:22+00:00",
-  "latest_age_minutes": 1.0,
+  "generated_at_utc": "2026-11-18T01:57:45.409079+00:00",
+  "latest_generated_at_utc": "2026-11-18T01:56:53+00:00",
+  "latest_age_minutes": 0.87,
   "source_classification": "CURRENT_RESEARCH",
   "research_only": true,
   "counts": {
-    "checks": 150,
-    "valid": 137,
-    "invalid": 13,
-    "invalid_ValueError": 6,
+    "checks": 156,
+    "valid": 142,
+    "volume_1_8x": 21,
+    "invalid": 14,
+    "invalid_ValueError": 7,
     "invalid_HTTPError": 7,
-    "volume_1_8x": 4
+    "gain_1_5": 2,
+    "single_venue_early": 1
   },
-  "single_venue_watchlist": [],
-  "single_venue_watchlist_total": 0,
-  "discovery_status": "no_correlated_candidates",
+  "single_venue_watchlist": [
+    {
+      "symbol": "BTWUSDT",
+      "venue": "bitget",
+      "candle_start_utc": "2026-11-18T01:30:00+00:00",
+      "gain_percent": 3.51396,
+      "volume_multiplier": 2.0635,
+      "quote_volume_usdt": 44161.96,
+      "reference_price_usdt": 0.474538,
+      "two_venue_confirmed": false,
+      "classification": "UNCONFIRMED_SINGLE_VENUE_RESEARCH",
+      "not_a_buy_signal": true
+    },
+    {
+      "symbol": "BTWUSDT",
+      "venue": "gate",
+      "candle_start_utc": "2026-11-18T01:30:00+00:00",
+      "gain_percent": 3.27225,
+      "volume_multiplier": 1.6567,
+      "quote_volume_usdt": 30710.45,
+      "reference_price_usdt": 0.4734,
+      "two_venue_confirmed": false,
+      "classification": "UNCONFIRMED_SINGLE_VENUE_RESEARCH",
+      "not_a_buy_signal": true
+    }
+  ],
+  "single_venue_watchlist_total": 2,
+  "discovery_status": "ok",
   "discovery_diagnostics": {
-    "gate_shortlist": 29,
-    "ticker_correlated": 0,
+    "gate_shortlist": 26,
+    "ticker_correlated": 5,
     "okx_bitget_pairs": 0,
-    "candle_checked": 0,
-    "candle_rejected": [],
-    "validated": 0
+    "candle_checked": 5,
+    "candle_rejected": [
+      {
+        "symbol": "BLESSUSDT",
+        "reason": "ValueError: gate:insufficient_closed_15m_quote_volume"
+      },
+      {
+        "symbol": "ARIAUSDT",
+        "reason": "ValueError: bitget:insufficient_closed_15m_quote_volume"
+      },
+      {
+        "symbol": "ASTERUSDT",
+        "reason": "ValueError: gate:insufficient_closed_15m_quote_volume"
+      }
+    ],
+    "validated": 2
   },
   "discovery_venue_fetch_errors": {},
   "discovery_venues_reached": [
@@ -30,7 +70,7 @@
     "okx"
   ],
   "feed_current_candidates": 0,
-  "feed_recent_events_3h": 1,
+  "feed_recent_events_3h": 0,
   "trade_ready": false,
   "auto_push_connected": false,
   "note": "Diagnostic counts only. No independent live validation, fills or trading signals."

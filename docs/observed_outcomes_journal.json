@@ -512,6 +512,10 @@
         "1h": {
           "status": "missed_window",
           "reason": "no_verifiable_checkpoint_in_window"
+        },
+        "4h": {
+          "status": "missed_window",
+          "reason": "no_verifiable_checkpoint_in_window"
         }
       },
       "research_only": true
@@ -536,6 +540,20 @@
           ],
           "gross_change_percent": 0.3246,
           "net_after_assumed_fees_percent": -0.1754
+        },
+        "4h": {
+          "status": "observed",
+          "observed_at_utc": "2026-11-18T01:57:45.356065+00:00",
+          "price_reference_usdt": 0.002716,
+          "candle_start_utc": "2026-11-18T01:30:00+00:00",
+          "checkpoint_offset_minutes": 4.89,
+          "venues": [
+            "bitget",
+            "gate",
+            "okx"
+          ],
+          "gross_change_percent": -2.0555,
+          "net_after_assumed_fees_percent": -2.5555
         }
       },
       "research_only": true
