@@ -1,38 +1,22 @@
 {
-  "generated_at_utc": "2026-11-18T06:10:23.983803+00:00",
-  "latest_generated_at_utc": "2026-11-18T06:09:25+00:00",
-  "latest_age_minutes": 0.98,
+  "generated_at_utc": "2026-11-18T07:45:28.951235+00:00",
+  "latest_generated_at_utc": "2026-11-18T07:44:28+00:00",
+  "latest_age_minutes": 1.02,
   "source_classification": "CURRENT_RESEARCH",
   "research_only": true,
   "counts": {
     "checks": 150,
     "valid": 137,
-    "volume_1_8x": 15,
+    "volume_1_8x": 23,
     "invalid": 13,
     "invalid_ValueError": 6,
-    "invalid_HTTPError": 7,
-    "gain_1_5": 3,
-    "single_venue_early": 3,
-    "single_venue_momentum": 3
+    "invalid_HTTPError": 7
   },
-  "single_venue_watchlist": [
-    {
-      "symbol": "ZORAUSDT",
-      "venue": "gate",
-      "candle_start_utc": "2026-11-18T05:45:00+00:00",
-      "gain_percent": 4.48652,
-      "volume_multiplier": 14.6126,
-      "quote_volume_usdt": 30890.54,
-      "reference_price_usdt": 0.005077,
-      "two_venue_confirmed": false,
-      "classification": "UNCONFIRMED_SINGLE_VENUE_RESEARCH",
-      "not_a_buy_signal": true
-    }
-  ],
-  "single_venue_watchlist_total": 1,
+  "single_venue_watchlist": [],
+  "single_venue_watchlist_total": 0,
   "discovery_status": "no_correlated_candidates",
   "discovery_diagnostics": {
-    "gate_shortlist": 25,
+    "gate_shortlist": 27,
     "ticker_correlated": 0,
     "okx_bitget_pairs": 0,
     "candle_checked": 0,
