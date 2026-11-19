@@ -754,7 +754,22 @@
       "stage": "EARLY_RESEARCH",
       "first_seen_utc": "2026-11-19T12:51:42.879262+00:00",
       "reference_price_usdt": 4.01e-06,
-      "checkpoints": {},
+      "checkpoints": {
+        "1h": {
+          "status": "observed",
+          "observed_at_utc": "2026-11-19T14:08:51.448610+00:00",
+          "price_reference_usdt": 3.974e-06,
+          "candle_start_utc": "2026-11-19T13:45:00+00:00",
+          "checkpoint_offset_minutes": 8.29,
+          "venues": [
+            "bitget",
+            "gate",
+            "okx"
+          ],
+          "gross_change_percent": -0.8978,
+          "net_after_assumed_fees_percent": -1.3978
+        }
+      },
       "research_only": true
     }
   ]
