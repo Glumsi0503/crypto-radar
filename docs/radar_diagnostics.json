@@ -1,13 +1,13 @@
 {
-  "generated_at_utc": "2026-11-19T04:01:04.704014+00:00",
-  "latest_generated_at_utc": "2026-11-19T04:00:11+00:00",
-  "latest_age_minutes": 0.9,
+  "generated_at_utc": "2026-11-19T05:10:23.394167+00:00",
+  "latest_generated_at_utc": "2026-11-19T05:09:32+00:00",
+  "latest_age_minutes": 0.86,
   "source_classification": "CURRENT_RESEARCH",
   "research_only": true,
   "counts": {
     "checks": 150,
     "valid": 137,
-    "volume_1_8x": 16,
+    "volume_1_8x": 15,
     "invalid": 13,
     "invalid_ValueError": 6,
     "invalid_HTTPError": 7
@@ -16,11 +16,28 @@
   "single_venue_watchlist_total": 0,
   "discovery_status": "no_correlated_candidates",
   "discovery_diagnostics": {
-    "gate_shortlist": 29,
-    "ticker_correlated": 0,
+    "gate_shortlist": 27,
+    "ticker_correlated": 4,
     "okx_bitget_pairs": 0,
-    "candle_checked": 0,
-    "candle_rejected": [],
+    "candle_checked": 4,
+    "candle_rejected": [
+      {
+        "symbol": "VVVUSDT",
+        "reason": "ValueError: okx:insufficient_closed_15m_quote_volume"
+      },
+      {
+        "symbol": "GRAMUSDT",
+        "reason": "ValueError: okx:insufficient_closed_15m_quote_volume"
+      },
+      {
+        "symbol": "FILUSDT",
+        "reason": "ValueError: gate:insufficient_closed_15m_quote_volume"
+      },
+      {
+        "symbol": "BNBUSDT",
+        "reason": "ValueError: okx:insufficient_closed_15m_quote_volume"
+      }
+    ],
     "validated": 0
   },
   "discovery_venue_fetch_errors": {},
