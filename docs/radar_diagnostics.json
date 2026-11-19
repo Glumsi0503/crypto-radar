@@ -1,49 +1,25 @@
 {
-  "generated_at_utc": "2026-11-19T06:24:49.021280+00:00",
-  "latest_generated_at_utc": "2026-11-19T06:23:13+00:00",
-  "latest_age_minutes": 1.6,
+  "generated_at_utc": "2026-11-19T07:50:23.226149+00:00",
+  "latest_generated_at_utc": "2026-11-19T07:49:22+00:00",
+  "latest_age_minutes": 1.02,
   "source_classification": "CURRENT_RESEARCH",
   "research_only": true,
   "counts": {
     "checks": 150,
     "valid": 137,
-    "volume_1_8x": 19,
-    "gain_1_5": 2,
-    "single_venue_early": 2,
+    "volume_1_8x": 16,
     "invalid": 13,
     "invalid_ValueError": 6,
-    "invalid_HTTPError": 7
+    "invalid_HTTPError": 7,
+    "gain_1_5": 2,
+    "single_venue_early": 2,
+    "single_venue_momentum": 2
   },
-  "single_venue_watchlist": [
-    {
-      "symbol": "INJUSDT",
-      "venue": "gate",
-      "candle_start_utc": "2026-11-19T06:00:00+00:00",
-      "gain_percent": 1.56762,
-      "volume_multiplier": 2.1423,
-      "quote_volume_usdt": 45448.59,
-      "reference_price_usdt": 7.127,
-      "two_venue_confirmed": false,
-      "classification": "UNCONFIRMED_SINGLE_VENUE_RESEARCH",
-      "not_a_buy_signal": true
-    },
-    {
-      "symbol": "INJUSDT",
-      "venue": "okx",
-      "candle_start_utc": "2026-11-19T06:00:00+00:00",
-      "gain_percent": 1.51019,
-      "volume_multiplier": 1.9527,
-      "quote_volume_usdt": 28783.87,
-      "reference_price_usdt": 7.125,
-      "two_venue_confirmed": false,
-      "classification": "UNCONFIRMED_SINGLE_VENUE_RESEARCH",
-      "not_a_buy_signal": true
-    }
-  ],
-  "single_venue_watchlist_total": 2,
+  "single_venue_watchlist": [],
+  "single_venue_watchlist_total": 0,
   "discovery_status": "no_correlated_candidates",
   "discovery_diagnostics": {
-    "gate_shortlist": 30,
+    "gate_shortlist": 27,
     "ticker_correlated": 0,
     "okx_bitget_pairs": 0,
     "candle_checked": 0,
