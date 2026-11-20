@@ -702,6 +702,20 @@
         "24h": {
           "status": "missed_window",
           "reason": "no_verifiable_checkpoint_in_window"
+        },
+        "72h": {
+          "status": "observed",
+          "observed_at_utc": "2026-11-20T20:04:38.069851+00:00",
+          "price_reference_usdt": 0.004238,
+          "candle_start_utc": "2026-11-20T19:45:00+00:00",
+          "checkpoint_offset_minutes": 6.59,
+          "venues": [
+            "bitget",
+            "gate",
+            "okx"
+          ],
+          "gross_change_percent": -15.6449,
+          "net_after_assumed_fees_percent": -16.1449
         }
       },
       "research_only": true
