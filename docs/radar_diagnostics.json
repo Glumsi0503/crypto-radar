@@ -1,21 +1,32 @@
 {
-  "generated_at_utc": "2026-11-20T16:01:02.970578+00:00",
-  "latest_generated_at_utc": "2026-11-20T15:59:59+00:00",
-  "latest_age_minutes": 1.07,
+  "generated_at_utc": "2026-11-20T17:02:13.225568+00:00",
+  "latest_generated_at_utc": "2026-11-20T17:01:11+00:00",
+  "latest_age_minutes": 1.04,
   "source_classification": "CURRENT_RESEARCH",
   "research_only": true,
   "counts": {
     "checks": 150,
     "valid": 137,
-    "volume_1_8x": 71,
+    "volume_1_8x": 13,
     "invalid": 13,
     "invalid_ValueError": 6,
-    "gain_1_5": 1,
-    "single_venue_early": 1,
     "invalid_HTTPError": 7
   },
-  "single_venue_watchlist": [],
-  "single_venue_watchlist_total": 0,
+  "single_venue_watchlist": [
+    {
+      "symbol": "PUMPUSDT",
+      "venue": "bitget",
+      "candle_start_utc": "2026-11-20T16:30:00+00:00",
+      "gain_percent": 1.43581,
+      "volume_multiplier": 2.3266,
+      "quote_volume_usdt": 93393.65,
+      "reference_price_usdt": 0.002402,
+      "two_venue_confirmed": false,
+      "classification": "UNCONFIRMED_SINGLE_VENUE_RESEARCH",
+      "not_a_buy_signal": true
+    }
+  ],
+  "single_venue_watchlist_total": 1,
   "discovery_status": "no_correlated_candidates",
   "discovery_diagnostics": {
     "gate_shortlist": 33,
