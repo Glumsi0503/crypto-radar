@@ -1,15 +1,15 @@
 {
-  "generated_at_utc": "2026-11-21T08:56:02.771833+00:00",
-  "latest_generated_at_utc": "2026-11-21T08:55:03+00:00",
-  "latest_age_minutes": 1.0,
+  "generated_at_utc": "2026-11-21T09:53:43.188952+00:00",
+  "latest_generated_at_utc": "2026-11-21T09:52:46+00:00",
+  "latest_age_minutes": 0.95,
   "source_classification": "CURRENT_RESEARCH",
   "research_only": true,
   "counts": {
-    "checks": 153,
-    "valid": 140,
-    "volume_1_8x": 3,
-    "invalid": 13,
-    "invalid_ValueError": 6,
+    "checks": 156,
+    "valid": 141,
+    "volume_1_8x": 1,
+    "invalid": 15,
+    "invalid_ValueError": 8,
     "invalid_HTTPError": 7
   },
   "single_venue_watchlist": [],
@@ -17,11 +17,11 @@
   "discovery_status": "ok",
   "discovery_diagnostics": {
     "gate_shortlist": 29,
-    "ticker_correlated": 1,
+    "ticker_correlated": 2,
     "okx_bitget_pairs": 0,
-    "candle_checked": 1,
+    "candle_checked": 2,
     "candle_rejected": [],
-    "validated": 1
+    "validated": 2
   },
   "discovery_venue_fetch_errors": {},
   "discovery_venues_reached": [
@@ -30,7 +30,7 @@
     "okx"
   ],
   "feed_current_candidates": 0,
-  "feed_recent_events_3h": 1,
+  "feed_recent_events_3h": 0,
   "trade_ready": false,
   "auto_push_connected": false,
   "note": "Diagnostic counts only. No independent live validation, fills or trading signals."
