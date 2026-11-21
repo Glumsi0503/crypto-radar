@@ -1,31 +1,175 @@
 {
-  "generated_at_utc": "2026-11-21T05:44:18.972250+00:00",
-  "latest_generated_at_utc": "2026-11-21T05:43:18+00:00",
-  "latest_age_minutes": 1.02,
+  "generated_at_utc": "2026-11-21T06:48:52.117562+00:00",
+  "latest_generated_at_utc": "2026-11-21T06:47:52+00:00",
+  "latest_age_minutes": 1.0,
   "source_classification": "CURRENT_RESEARCH",
   "research_only": true,
   "counts": {
     "checks": 150,
     "valid": 137,
-    "volume_1_8x": 6,
+    "gain_1_5": 124,
+    "volume_1_8x": 15,
+    "single_venue_early": 13,
+    "single_venue_momentum": 3,
     "invalid": 13,
     "invalid_ValueError": 6,
-    "invalid_HTTPError": 7
+    "invalid_HTTPError": 7,
+    "two_venue_early": 1
   },
-  "single_venue_watchlist": [],
-  "single_venue_watchlist_total": 0,
+  "single_venue_watchlist": [
+    {
+      "symbol": "TAOUSDT",
+      "venue": "bitget",
+      "candle_start_utc": "2026-11-21T06:30:00+00:00",
+      "gain_percent": 2.78107,
+      "volume_multiplier": 9.6072,
+      "quote_volume_usdt": 456263.4,
+      "reference_price_usdt": 173.7,
+      "two_venue_confirmed": false,
+      "classification": "UNCONFIRMED_SINGLE_VENUE_RESEARCH",
+      "not_a_buy_signal": true
+    },
+    {
+      "symbol": "INJUSDT",
+      "venue": "okx",
+      "candle_start_utc": "2026-11-21T06:30:00+00:00",
+      "gain_percent": 2.72051,
+      "volume_multiplier": 3.4004,
+      "quote_volume_usdt": 102683.37,
+      "reference_price_usdt": 6.079,
+      "two_venue_confirmed": false,
+      "classification": "UNCONFIRMED_SINGLE_VENUE_RESEARCH",
+      "not_a_buy_signal": true
+    },
+    {
+      "symbol": "ETHUSDT",
+      "venue": "bitget",
+      "candle_start_utc": "2026-11-21T06:30:00+00:00",
+      "gain_percent": 2.79848,
+      "volume_multiplier": 2.5227,
+      "quote_volume_usdt": 14506877.87,
+      "reference_price_usdt": 1614.08,
+      "two_venue_confirmed": false,
+      "classification": "UNCONFIRMED_SINGLE_VENUE_RESEARCH",
+      "not_a_buy_signal": true
+    },
+    {
+      "symbol": "LINKUSDT",
+      "venue": "gate",
+      "candle_start_utc": "2026-11-21T06:30:00+00:00",
+      "gain_percent": 2.58599,
+      "volume_multiplier": 2.1488,
+      "quote_volume_usdt": 547018.84,
+      "reference_price_usdt": 8.291,
+      "two_venue_confirmed": false,
+      "classification": "UNCONFIRMED_SINGLE_VENUE_RESEARCH",
+      "not_a_buy_signal": true
+    },
+    {
+      "symbol": "INJUSDT",
+      "venue": "bitget",
+      "candle_start_utc": "2026-11-21T06:30:00+00:00",
+      "gain_percent": 2.805,
+      "volume_multiplier": 1.9802,
+      "quote_volume_usdt": 31213.32,
+      "reference_price_usdt": 6.084,
+      "two_venue_confirmed": false,
+      "classification": "UNCONFIRMED_SINGLE_VENUE_RESEARCH",
+      "not_a_buy_signal": true
+    },
+    {
+      "symbol": "LINKUSDT",
+      "venue": "bitget",
+      "candle_start_utc": "2026-11-21T06:30:00+00:00",
+      "gain_percent": 2.63744,
+      "volume_multiplier": 2.0882,
+      "quote_volume_usdt": 79842.95,
+      "reference_price_usdt": 8.289,
+      "two_venue_confirmed": false,
+      "classification": "UNCONFIRMED_SINGLE_VENUE_RESEARCH",
+      "not_a_buy_signal": true
+    },
+    {
+      "symbol": "ETHUSDT",
+      "venue": "okx",
+      "candle_start_utc": "2026-11-21T06:30:00+00:00",
+      "gain_percent": 2.77134,
+      "volume_multiplier": 1.9227,
+      "quote_volume_usdt": 16717453.3,
+      "reference_price_usdt": 1613.88,
+      "two_venue_confirmed": false,
+      "classification": "UNCONFIRMED_SINGLE_VENUE_RESEARCH",
+      "not_a_buy_signal": true
+    },
+    {
+      "symbol": "UNIUSDT",
+      "venue": "okx",
+      "candle_start_utc": "2026-11-21T06:30:00+00:00",
+      "gain_percent": 2.8,
+      "volume_multiplier": 1.8826,
+      "quote_volume_usdt": 423747.58,
+      "reference_price_usdt": 4.369,
+      "two_venue_confirmed": false,
+      "classification": "UNCONFIRMED_SINGLE_VENUE_RESEARCH",
+      "not_a_buy_signal": true
+    },
+    {
+      "symbol": "HYPEUSDT",
+      "venue": "bitget",
+      "candle_start_utc": "2026-11-21T06:30:00+00:00",
+      "gain_percent": 2.80587,
+      "volume_multiplier": 1.7752,
+      "quote_volume_usdt": 452032.51,
+      "reference_price_usdt": 58.257,
+      "two_venue_confirmed": false,
+      "classification": "UNCONFIRMED_SINGLE_VENUE_RESEARCH",
+      "not_a_buy_signal": true
+    },
+    {
+      "symbol": "INJUSDT",
+      "venue": "gate",
+      "candle_start_utc": "2026-11-21T06:30:00+00:00",
+      "gain_percent": 2.61913,
+      "volume_multiplier": 1.878,
+      "quote_volume_usdt": 63738.96,
+      "reference_price_usdt": 6.073,
+      "two_venue_confirmed": false,
+      "classification": "UNCONFIRMED_SINGLE_VENUE_RESEARCH",
+      "not_a_buy_signal": true
+    },
+    {
+      "symbol": "ZECUSDT",
+      "venue": "okx",
+      "candle_start_utc": "2026-11-21T06:30:00+00:00",
+      "gain_percent": 2.73779,
+      "volume_multiplier": 1.6642,
+      "quote_volume_usdt": 1256316.9,
+      "reference_price_usdt": 719.37,
+      "two_venue_confirmed": false,
+      "classification": "UNCONFIRMED_SINGLE_VENUE_RESEARCH",
+      "not_a_buy_signal": true
+    },
+    {
+      "symbol": "AVAXUSDT",
+      "venue": "bitget",
+      "candle_start_utc": "2026-11-21T06:30:00+00:00",
+      "gain_percent": 2.37588,
+      "volume_multiplier": 1.8858,
+      "quote_volume_usdt": 48051.6,
+      "reference_price_usdt": 6.248,
+      "two_venue_confirmed": false,
+      "classification": "UNCONFIRMED_SINGLE_VENUE_RESEARCH",
+      "not_a_buy_signal": true
+    }
+  ],
+  "single_venue_watchlist_total": 17,
   "discovery_status": "no_correlated_candidates",
   "discovery_diagnostics": {
-    "gate_shortlist": 26,
-    "ticker_correlated": 1,
+    "gate_shortlist": 27,
+    "ticker_correlated": 0,
     "okx_bitget_pairs": 0,
-    "candle_checked": 1,
-    "candle_rejected": [
-      {
-        "symbol": "MMTUSDT",
-        "reason": "ValueError: gate:insufficient_closed_15m_quote_volume"
-      }
-    ],
+    "candle_checked": 0,
+    "candle_rejected": [],
     "validated": 0
   },
   "discovery_venue_fetch_errors": {},
@@ -34,8 +178,8 @@
     "gate",
     "okx"
   ],
-  "feed_current_candidates": 0,
-  "feed_recent_events_3h": 0,
+  "feed_current_candidates": 1,
+  "feed_recent_events_3h": 1,
   "trade_ready": false,
   "auto_push_connected": false,
   "note": "Diagnostic counts only. No independent live validation, fills or trading signals."
