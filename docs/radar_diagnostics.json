@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-11-21T11:33:22.572935+00:00",
-  "latest_generated_at_utc": "2026-11-21T11:32:12+00:00",
+  "generated_at_utc": "2026-11-21T12:25:06.930635+00:00",
+  "latest_generated_at_utc": "2026-11-21T12:23:56+00:00",
   "latest_age_minutes": 1.18,
   "source_classification": "CURRENT_RESEARCH",
   "research_only": true,
@@ -12,8 +12,21 @@
     "invalid_HTTPError": 7,
     "volume_1_8x": 5
   },
-  "single_venue_watchlist": [],
-  "single_venue_watchlist_total": 0,
+  "single_venue_watchlist": [
+    {
+      "symbol": "PUMPUSDT",
+      "venue": "gate",
+      "candle_start_utc": "2026-11-21T12:00:00+00:00",
+      "gain_percent": 1.16924,
+      "volume_multiplier": 1.5831,
+      "quote_volume_usdt": 85466.63,
+      "reference_price_usdt": 0.0023535,
+      "two_venue_confirmed": false,
+      "classification": "UNCONFIRMED_SINGLE_VENUE_RESEARCH",
+      "not_a_buy_signal": true
+    }
+  ],
+  "single_venue_watchlist_total": 1,
   "discovery_status": "no_correlated_candidates",
   "discovery_diagnostics": {
     "gate_shortlist": 27,
