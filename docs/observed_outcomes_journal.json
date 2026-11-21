@@ -852,7 +852,12 @@
       "stage": "EARLY_RESEARCH",
       "first_seen_utc": "2026-11-21T13:40:08.310110+00:00",
       "reference_price_usdt": 4.621,
-      "checkpoints": {},
+      "checkpoints": {
+        "1h": {
+          "status": "missed_window",
+          "reason": "no_verifiable_checkpoint_in_window"
+        }
+      },
       "research_only": true
     }
   ]
