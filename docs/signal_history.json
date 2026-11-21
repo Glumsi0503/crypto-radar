@@ -15,10 +15,11 @@
     "PUMPUSDT|2026-11-17T21:15:00+00:00|EARLY_RESEARCH",
     "SOLUSDT|2026-11-15T09:00:00+00:00|EARLY_RESEARCH",
     "SUIUSDT|2026-11-15T09:00:00+00:00|EARLY_RESEARCH",
+    "UNIUSDT|2026-11-21T13:15:00+00:00|EARLY_RESEARCH",
     "ZECUSDT|2026-11-15T02:15:00+00:00|EARLY_RESEARCH",
     "ZECUSDT|2026-11-15T09:00:00+00:00|EARLY_RESEARCH"
   ],
-  "updated_at_utc": "2026-11-21T12:25:06.815727+00:00",
+  "updated_at_utc": "2026-11-21T13:40:08.310110+00:00",
   "events": [
     {
       "symbol": "ETHUSDT",
@@ -32,6 +33,20 @@
       "not_a_buy_signal": true,
       "event_id": "ETHUSDT|2026-11-21T06:30:00+00:00|EARLY_RESEARCH",
       "first_seen_utc": "2026-11-21T06:48:52.013537+00:00"
+    },
+    {
+      "symbol": "UNIUSDT",
+      "candle_start_utc": "2026-11-21T13:15:00+00:00",
+      "reference_price_usdt": 4.621,
+      "venues": [
+        "bitget",
+        "gate",
+        "okx"
+      ],
+      "stage": "EARLY_RESEARCH",
+      "not_a_buy_signal": true,
+      "event_id": "UNIUSDT|2026-11-21T13:15:00+00:00|EARLY_RESEARCH",
+      "first_seen_utc": "2026-11-21T13:40:08.310110+00:00"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-11-21T12:25:06.815727+00:00",
-  "source_generated_at_utc": "2026-11-21T12:23:56+00:00",
+  "generated_at_utc": "2026-11-21T13:40:08.310110+00:00",
+  "source_generated_at_utc": "2026-11-21T13:39:10+00:00",
   "research_only": true,
   "auto_push_connected": false,
   "venue_buyability_checked": false,
@@ -22,10 +22,53 @@
     "max_spot_price_disagreement_percent": 1.0,
     "classification": "subjective_not_statistically_calibrated"
   },
-  "current_candidates": [],
+  "current_candidates": [
+    {
+      "symbol": "UNIUSDT",
+      "candle_start_utc": "2026-11-21T13:15:00+00:00",
+      "reference_price_usdt": 4.621,
+      "venues": [
+        "bitget",
+        "gate",
+        "okx"
+      ],
+      "stage": "EARLY_RESEARCH",
+      "not_a_buy_signal": true,
+      "event_id": "UNIUSDT|2026-11-21T13:15:00+00:00|EARLY_RESEARCH"
+    }
+  ],
   "historical_candidates": [],
-  "new_events": [],
-  "recent_events_3h": [],
+  "new_events": [
+    {
+      "symbol": "UNIUSDT",
+      "candle_start_utc": "2026-11-21T13:15:00+00:00",
+      "reference_price_usdt": 4.621,
+      "venues": [
+        "bitget",
+        "gate",
+        "okx"
+      ],
+      "stage": "EARLY_RESEARCH",
+      "not_a_buy_signal": true,
+      "event_id": "UNIUSDT|2026-11-21T13:15:00+00:00|EARLY_RESEARCH"
+    }
+  ],
+  "recent_events_3h": [
+    {
+      "symbol": "UNIUSDT",
+      "candle_start_utc": "2026-11-21T13:15:00+00:00",
+      "reference_price_usdt": 4.621,
+      "venues": [
+        "bitget",
+        "gate",
+        "okx"
+      ],
+      "stage": "EARLY_RESEARCH",
+      "not_a_buy_signal": true,
+      "event_id": "UNIUSDT|2026-11-21T13:15:00+00:00|EARLY_RESEARCH",
+      "first_seen_utc": "2026-11-21T13:40:08.310110+00:00"
+    }
+  ],
   "historical_events_24h": [
     {
       "symbol": "ETHUSDT",
@@ -41,6 +84,6 @@
       "first_seen_utc": "2026-11-21T06:48:52.013537+00:00"
     }
   ],
-  "new_event_count": 0,
+  "new_event_count": 1,
   "notice": "Research observations only. No automatic external push, no order, no verified exchange availability."
 }
