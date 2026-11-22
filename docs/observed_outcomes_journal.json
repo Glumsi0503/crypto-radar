@@ -878,6 +878,10 @@
           ],
           "gross_change_percent": 2.164,
           "net_after_assumed_fees_percent": 1.664
+        },
+        "24h": {
+          "status": "missed_window",
+          "reason": "no_verifiable_checkpoint_in_window"
         }
       },
       "research_only": true
@@ -890,6 +894,10 @@
       "reference_price_usdt": 0.037265,
       "checkpoints": {
         "1h": {
+          "status": "missed_window",
+          "reason": "no_verifiable_checkpoint_in_window"
+        },
+        "4h": {
           "status": "missed_window",
           "reason": "no_verifiable_checkpoint_in_window"
         }
