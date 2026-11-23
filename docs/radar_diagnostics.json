@@ -1,177 +1,32 @@
 {
-  "generated_at_utc": "2026-11-23T14:17:01.112043+00:00",
-  "latest_generated_at_utc": "2026-11-23T14:16:04+00:00",
-  "latest_age_minutes": 0.95,
+  "generated_at_utc": "2026-11-23T15:31:04.832414+00:00",
+  "latest_generated_at_utc": "2026-11-23T15:30:15+00:00",
+  "latest_age_minutes": 0.83,
   "source_classification": "CURRENT_RESEARCH",
   "research_only": true,
   "counts": {
-    "checks": 150,
-    "valid": 137,
-    "gain_1_5": 130,
-    "volume_1_8x": 126,
-    "single_venue_early": 123,
-    "single_venue_momentum": 118,
-    "invalid": 13,
-    "invalid_ValueError": 6,
-    "invalid_HTTPError": 7,
-    "two_venue_early": 23,
-    "two_venue_momentum": 22
+    "checks": 165,
+    "valid": 151,
+    "volume_1_8x": 26,
+    "invalid": 14,
+    "invalid_ValueError": 7,
+    "invalid_HTTPError": 7
   },
-  "single_venue_watchlist": [
-    {
-      "symbol": "PENGUUSDT",
-      "venue": "bitget",
-      "candle_start_utc": "2026-11-23T13:45:00+00:00",
-      "gain_percent": 7.39638,
-      "volume_multiplier": 131.7771,
-      "quote_volume_usdt": 185593.19,
-      "reference_price_usdt": 0.00469,
-      "two_venue_confirmed": false,
-      "classification": "UNCONFIRMED_SINGLE_VENUE_RESEARCH",
-      "not_a_buy_signal": true
-    },
-    {
-      "symbol": "PYTHUSDT",
-      "venue": "bitget",
-      "candle_start_utc": "2026-11-23T13:45:00+00:00",
-      "gain_percent": 4.79452,
-      "volume_multiplier": 89.44,
-      "quote_volume_usdt": 31229.64,
-      "reference_price_usdt": 0.05355,
-      "two_venue_confirmed": false,
-      "classification": "UNCONFIRMED_SINGLE_VENUE_RESEARCH",
-      "not_a_buy_signal": true
-    },
-    {
-      "symbol": "UNIUSDT",
-      "venue": "bitget",
-      "candle_start_utc": "2026-11-23T13:45:00+00:00",
-      "gain_percent": 5.10226,
-      "volume_multiplier": 69.2239,
-      "quote_volume_usdt": 258378.53,
-      "reference_price_usdt": 4.985,
-      "two_venue_confirmed": false,
-      "classification": "UNCONFIRMED_SINGLE_VENUE_RESEARCH",
-      "not_a_buy_signal": true
-    },
-    {
-      "symbol": "SUIUSDT",
-      "venue": "bitget",
-      "candle_start_utc": "2026-11-23T13:45:00+00:00",
-      "gain_percent": 5.98776,
-      "volume_multiplier": 52.6776,
-      "quote_volume_usdt": 2040668.9,
-      "reference_price_usdt": 0.7098,
-      "two_venue_confirmed": false,
-      "classification": "UNCONFIRMED_SINGLE_VENUE_RESEARCH",
-      "not_a_buy_signal": true
-    },
-    {
-      "symbol": "BCHUSDT",
-      "venue": "okx",
-      "candle_start_utc": "2026-11-23T13:45:00+00:00",
-      "gain_percent": 4.36939,
-      "volume_multiplier": 65.6401,
-      "quote_volume_usdt": 960526.45,
-      "reference_price_usdt": 208.29,
-      "two_venue_confirmed": false,
-      "classification": "UNCONFIRMED_SINGLE_VENUE_RESEARCH",
-      "not_a_buy_signal": true
-    },
-    {
-      "symbol": "BCHUSDT",
-      "venue": "bitget",
-      "candle_start_utc": "2026-11-23T13:45:00+00:00",
-      "gain_percent": 4.30862,
-      "volume_multiplier": 66.2165,
-      "quote_volume_usdt": 260727.45,
-      "reference_price_usdt": 208.2,
-      "two_venue_confirmed": false,
-      "classification": "UNCONFIRMED_SINGLE_VENUE_RESEARCH",
-      "not_a_buy_signal": true
-    },
-    {
-      "symbol": "PENGUUSDT",
-      "venue": "okx",
-      "candle_start_utc": "2026-11-23T13:45:00+00:00",
-      "gain_percent": 7.42438,
-      "volume_multiplier": 34.3272,
-      "quote_volume_usdt": 329836.26,
-      "reference_price_usdt": 0.004688,
-      "two_venue_confirmed": false,
-      "classification": "UNCONFIRMED_SINGLE_VENUE_RESEARCH",
-      "not_a_buy_signal": true
-    },
-    {
-      "symbol": "LINKUSDT",
-      "venue": "bitget",
-      "candle_start_utc": "2026-11-23T13:45:00+00:00",
-      "gain_percent": 4.46959,
-      "volume_multiplier": 54.6252,
-      "quote_volume_usdt": 242581.5,
-      "reference_price_usdt": 9.326,
-      "two_venue_confirmed": false,
-      "classification": "UNCONFIRMED_SINGLE_VENUE_RESEARCH",
-      "not_a_buy_signal": true
-    },
-    {
-      "symbol": "PEPEUSDT",
-      "venue": "bitget",
-      "candle_start_utc": "2026-11-23T13:45:00+00:00",
-      "gain_percent": 5.60093,
-      "volume_multiplier": 43.5018,
-      "quote_volume_usdt": 660834.2,
-      "reference_price_usdt": 3.62e-06,
-      "two_venue_confirmed": false,
-      "classification": "UNCONFIRMED_SINGLE_VENUE_RESEARCH",
-      "not_a_buy_signal": true
-    },
-    {
-      "symbol": "DOGEUSDT",
-      "venue": "bitget",
-      "candle_start_utc": "2026-11-23T13:45:00+00:00",
-      "gain_percent": 4.99641,
-      "volume_multiplier": 48.7402,
-      "quote_volume_usdt": 1372142.48,
-      "reference_price_usdt": 0.05842,
-      "two_venue_confirmed": false,
-      "classification": "UNCONFIRMED_SINGLE_VENUE_RESEARCH",
-      "not_a_buy_signal": true
-    },
-    {
-      "symbol": "OPUSDT",
-      "venue": "bitget",
-      "candle_start_utc": "2026-11-23T13:45:00+00:00",
-      "gain_percent": 4.09975,
-      "volume_multiplier": 59.3239,
-      "quote_volume_usdt": 31895.99,
-      "reference_price_usdt": 0.07389,
-      "two_venue_confirmed": false,
-      "classification": "UNCONFIRMED_SINGLE_VENUE_RESEARCH",
-      "not_a_buy_signal": true
-    },
-    {
-      "symbol": "NEARUSDT",
-      "venue": "bitget",
-      "candle_start_utc": "2026-11-23T13:45:00+00:00",
-      "gain_percent": 4.89837,
-      "volume_multiplier": 47.9958,
-      "quote_volume_usdt": 963570.72,
-      "reference_price_usdt": 3.148,
-      "two_venue_confirmed": false,
-      "classification": "UNCONFIRMED_SINGLE_VENUE_RESEARCH",
-      "not_a_buy_signal": true
-    }
-  ],
-  "single_venue_watchlist_total": 101,
-  "discovery_status": "no_correlated_candidates",
+  "single_venue_watchlist": [],
+  "single_venue_watchlist_total": 0,
+  "discovery_status": "ok",
   "discovery_diagnostics": {
-    "gate_shortlist": 20,
-    "ticker_correlated": 0,
+    "gate_shortlist": 25,
+    "ticker_correlated": 6,
     "okx_bitget_pairs": 0,
-    "candle_checked": 0,
-    "candle_rejected": [],
-    "validated": 0
+    "candle_checked": 6,
+    "candle_rejected": [
+      {
+        "symbol": "GRAMUSDT",
+        "reason": "ValueError: bitget:insufficient_closed_15m_quote_volume"
+      }
+    ],
+    "validated": 5
   },
   "discovery_venue_fetch_errors": {},
   "discovery_venues_reached": [
@@ -179,7 +34,7 @@
     "gate",
     "okx"
   ],
-  "feed_current_candidates": 23,
+  "feed_current_candidates": 0,
   "feed_recent_events_3h": 23,
   "trade_ready": false,
   "auto_push_connected": false,
