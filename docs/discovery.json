@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-11-23T22:28:05+00:00",
+  "generated_at_utc": "2026-11-23T23:28:21+00:00",
   "source_urls": {
     "gate": "https://api.gateio.ws/api/v4/spot/tickers",
     "okx": "https://www.okx.com/api/v5/market/tickers?instType=SPOT",
@@ -9,77 +9,52 @@
   "research_only": true,
   "candidates": [
     {
-      "symbol": "CYSUSDT",
-      "quote_volume_24h_usdt": 2289566.0,
-      "abs_change_24h_percent": 46.91,
-      "gate_last_usdt": 0.05984,
+      "symbol": "XAUTUSDT",
+      "quote_volume_24h_usdt": 11675478.9,
+      "abs_change_24h_percent": 1.67,
+      "gate_last_usdt": 3625.8,
       "second_venue": "bitget",
-      "second_venue_quote_volume_24h_usdt": 1514542.9,
-      "second_venue_last_usdt": 0.05981,
-      "ticker_price_disagreement_percent": 0.05,
+      "second_venue_quote_volume_24h_usdt": 19645906.26,
+      "second_venue_last_usdt": 3624.77,
+      "ticker_price_disagreement_percent": 0.028,
       "validated_spot_venues": [
         "gate",
         "bitget"
       ],
-      "verified_same_closed_15m_candle_utc": "2026-11-23T22:00:00+00:00",
+      "verified_same_closed_15m_candle_utc": "2026-11-23T23:00:00+00:00",
       "closed_15m_quote_volume_usdt": {
-        "gate": 95140.17,
-        "bitget": 43030.98
+        "gate": 66526.24,
+        "bitget": 101829.99
       },
-      "closed_15m_price_disagreement_percent": 0.083,
-      "source_urls": {
-        "gate": "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=CYS_USDT&interval=15m&limit=30",
-        "bitget": "https://api.bitget.com/api/v3/market/candles?category=SPOT&symbol=CYSUSDT&interval=15m&limit=30"
-      },
-      "two_venue_ohlcv_verified": true
-    },
-    {
-      "symbol": "XAUTUSDT",
-      "quote_volume_24h_usdt": 12197601.27,
-      "abs_change_24h_percent": 2.43,
-      "gate_last_usdt": 3629.3,
-      "second_venue": "okx",
-      "second_venue_quote_volume_24h_usdt": 14307218.02,
-      "second_venue_last_usdt": 3629.2,
-      "ticker_price_disagreement_percent": 0.003,
-      "validated_spot_venues": [
-        "gate",
-        "okx"
-      ],
-      "verified_same_closed_15m_candle_utc": "2026-11-23T22:00:00+00:00",
-      "closed_15m_quote_volume_usdt": {
-        "gate": 171101.58,
-        "okx": 322707.98
-      },
-      "closed_15m_price_disagreement_percent": 0.003,
+      "closed_15m_price_disagreement_percent": 0.007,
       "source_urls": {
         "gate": "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=XAUT_USDT&interval=15m&limit=30",
-        "okx": "https://www.okx.com/api/v5/market/candles?instId=XAUT-USDT&bar=15m&limit=30"
+        "bitget": "https://api.bitget.com/api/v3/market/candles?category=SPOT&symbol=XAUTUSDT&interval=15m&limit=30"
       },
       "two_venue_ohlcv_verified": true
     },
     {
-      "symbol": "ZROUSDT",
-      "quote_volume_24h_usdt": 2754695.48,
-      "abs_change_24h_percent": 1.43,
-      "gate_last_usdt": 1.1529,
-      "second_venue": "okx",
-      "second_venue_quote_volume_24h_usdt": 2762896.07,
-      "second_venue_last_usdt": 1.1539,
-      "ticker_price_disagreement_percent": 0.087,
+      "symbol": "WLDUSDT",
+      "quote_volume_24h_usdt": 8480309.97,
+      "abs_change_24h_percent": 0.63,
+      "gate_last_usdt": 0.2377,
+      "second_venue": "bitget",
+      "second_venue_quote_volume_24h_usdt": 3189699.52,
+      "second_venue_last_usdt": 0.2378,
+      "ticker_price_disagreement_percent": 0.042,
       "validated_spot_venues": [
         "gate",
-        "okx"
+        "bitget"
       ],
-      "verified_same_closed_15m_candle_utc": "2026-11-23T22:00:00+00:00",
+      "verified_same_closed_15m_candle_utc": "2026-11-23T23:00:00+00:00",
       "closed_15m_quote_volume_usdt": {
-        "gate": 30955.29,
-        "okx": 33749.7
+        "gate": 110656.16,
+        "bitget": 52750.72
       },
-      "closed_15m_price_disagreement_percent": 0.155,
+      "closed_15m_price_disagreement_percent": 0.0,
       "source_urls": {
-        "gate": "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=ZRO_USDT&interval=15m&limit=30",
-        "okx": "https://www.okx.com/api/v5/market/candles?instId=ZRO-USDT&bar=15m&limit=30"
+        "gate": "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=WLD_USDT&interval=15m&limit=30",
+        "bitget": "https://api.bitget.com/api/v3/market/candles?category=SPOT&symbol=WLDUSDT&interval=15m&limit=30"
       },
       "two_venue_ohlcv_verified": true
     }
@@ -101,21 +76,17 @@
   ],
   "diagnostics": {
     "gate_shortlist": 27,
-    "ticker_correlated": 9,
+    "ticker_correlated": 7,
     "okx_bitget_pairs": 0,
-    "candle_checked": 9,
+    "candle_checked": 7,
     "candle_rejected": [
       {
-        "symbol": "BLESSUSDT",
+        "symbol": "ARIAUSDT",
+        "reason": "ValueError: gate:insufficient_closed_15m_quote_volume"
+      },
+      {
+        "symbol": "CYSUSDT",
         "reason": "ValueError: bitget:insufficient_closed_15m_quote_volume"
-      },
-      {
-        "symbol": "VVVUSDT",
-        "reason": "ValueError: okx:insufficient_closed_15m_quote_volume"
-      },
-      {
-        "symbol": "ASTERUSDT",
-        "reason": "ValueError: okx:insufficient_closed_15m_quote_volume"
       },
       {
         "symbol": "PAXGUSDT",
@@ -126,10 +97,10 @@
         "reason": "ValueError: gate:insufficient_closed_15m_quote_volume"
       },
       {
-        "symbol": "PONSUSDT",
-        "reason": "ValueError: gate:insufficient_closed_15m_quote_volume"
+        "symbol": "ASTERUSDT",
+        "reason": "ValueError: bitget:insufficient_closed_15m_quote_volume"
       }
     ],
-    "validated": 3
+    "validated": 2
   }
 }
