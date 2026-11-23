@@ -1,19 +1,82 @@
 {
-  "generated_at_utc": "2026-11-23T02:45:42.259978+00:00",
-  "latest_generated_at_utc": "2026-11-23T02:44:43+00:00",
-  "latest_age_minutes": 0.99,
+  "generated_at_utc": "2026-11-23T03:47:18.527534+00:00",
+  "latest_generated_at_utc": "2026-11-23T03:46:00+00:00",
+  "latest_age_minutes": 1.31,
   "source_classification": "CURRENT_RESEARCH",
   "research_only": true,
   "counts": {
     "checks": 150,
     "valid": 137,
-    "volume_1_8x": 21,
+    "volume_1_8x": 95,
     "invalid": 13,
     "invalid_ValueError": 6,
-    "invalid_HTTPError": 7
+    "invalid_HTTPError": 7,
+    "gain_1_5": 3,
+    "single_venue_early": 2
   },
-  "single_venue_watchlist": [],
-  "single_venue_watchlist_total": 0,
+  "single_venue_watchlist": [
+    {
+      "symbol": "NEARUSDT",
+      "venue": "okx",
+      "candle_start_utc": "2026-11-23T03:15:00+00:00",
+      "gain_percent": 1.10553,
+      "volume_multiplier": 5.501,
+      "quote_volume_usdt": 627821.3,
+      "reference_price_usdt": 3.018,
+      "two_venue_confirmed": false,
+      "classification": "UNCONFIRMED_SINGLE_VENUE_RESEARCH",
+      "not_a_buy_signal": true
+    },
+    {
+      "symbol": "JUPUSDT",
+      "venue": "okx",
+      "candle_start_utc": "2026-11-23T03:15:00+00:00",
+      "gain_percent": 2.51545,
+      "volume_multiplier": 2.1687,
+      "quote_volume_usdt": 39481.81,
+      "reference_price_usdt": 0.2323,
+      "two_venue_confirmed": false,
+      "classification": "UNCONFIRMED_SINGLE_VENUE_RESEARCH",
+      "not_a_buy_signal": true
+    },
+    {
+      "symbol": "ONDOUSDT",
+      "venue": "gate",
+      "candle_start_utc": "2026-11-23T03:15:00+00:00",
+      "gain_percent": 1.06686,
+      "volume_multiplier": 5.0835,
+      "quote_volume_usdt": 60549.72,
+      "reference_price_usdt": 0.2842,
+      "two_venue_confirmed": false,
+      "classification": "UNCONFIRMED_SINGLE_VENUE_RESEARCH",
+      "not_a_buy_signal": true
+    },
+    {
+      "symbol": "NEARUSDT",
+      "venue": "gate",
+      "candle_start_utc": "2026-11-23T03:15:00+00:00",
+      "gain_percent": 1.20643,
+      "volume_multiplier": 3.8106,
+      "quote_volume_usdt": 492150.6,
+      "reference_price_usdt": 3.02,
+      "two_venue_confirmed": false,
+      "classification": "UNCONFIRMED_SINGLE_VENUE_RESEARCH",
+      "not_a_buy_signal": true
+    },
+    {
+      "symbol": "NEARUSDT",
+      "venue": "bitget",
+      "candle_start_utc": "2026-11-23T03:15:00+00:00",
+      "gain_percent": 1.07167,
+      "volume_multiplier": 3.4616,
+      "quote_volume_usdt": 155566.88,
+      "reference_price_usdt": 3.018,
+      "two_venue_confirmed": false,
+      "classification": "UNCONFIRMED_SINGLE_VENUE_RESEARCH",
+      "not_a_buy_signal": true
+    }
+  ],
+  "single_venue_watchlist_total": 5,
   "discovery_status": "no_correlated_candidates",
   "discovery_diagnostics": {
     "gate_shortlist": 22,
