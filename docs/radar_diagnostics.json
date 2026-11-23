@@ -1,19 +1,47 @@
 {
-  "generated_at_utc": "2026-11-23T11:41:44.160959+00:00",
-  "latest_generated_at_utc": "2026-11-23T11:40:50+00:00",
-  "latest_age_minutes": 0.9,
+  "generated_at_utc": "2026-11-23T12:52:49.464612+00:00",
+  "latest_generated_at_utc": "2026-11-23T12:51:52+00:00",
+  "latest_age_minutes": 0.96,
   "source_classification": "CURRENT_RESEARCH",
   "research_only": true,
   "counts": {
     "checks": 150,
     "valid": 137,
-    "volume_1_8x": 31,
+    "volume_1_8x": 27,
     "invalid": 13,
     "invalid_ValueError": 6,
-    "invalid_HTTPError": 7
+    "invalid_HTTPError": 7,
+    "gain_1_5": 3,
+    "single_venue_early": 3,
+    "single_venue_momentum": 2
   },
-  "single_venue_watchlist": [],
-  "single_venue_watchlist_total": 0,
+  "single_venue_watchlist": [
+    {
+      "symbol": "LSKUSDT",
+      "venue": "gate",
+      "candle_start_utc": "2026-11-23T12:30:00+00:00",
+      "gain_percent": 5.71557,
+      "volume_multiplier": 9.6692,
+      "quote_volume_usdt": 31661.51,
+      "reference_price_usdt": 0.16406,
+      "two_venue_confirmed": false,
+      "classification": "UNCONFIRMED_SINGLE_VENUE_RESEARCH",
+      "not_a_buy_signal": true
+    },
+    {
+      "symbol": "LSKUSDT",
+      "venue": "okx",
+      "candle_start_utc": "2026-11-23T12:30:00+00:00",
+      "gain_percent": 4.09583,
+      "volume_multiplier": 7.5838,
+      "quote_volume_usdt": 74063.91,
+      "reference_price_usdt": 0.16164,
+      "two_venue_confirmed": false,
+      "classification": "UNCONFIRMED_SINGLE_VENUE_RESEARCH",
+      "not_a_buy_signal": true
+    }
+  ],
+  "single_venue_watchlist_total": 2,
   "discovery_status": "no_correlated_candidates",
   "discovery_diagnostics": {
     "gate_shortlist": 18,
