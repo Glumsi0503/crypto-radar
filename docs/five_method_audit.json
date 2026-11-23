@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-11-23T12:52:49.375924+00:00",
-  "spot_source_at_utc": "2026-11-23T12:51:52+00:00",
+  "generated_at_utc": "2026-11-23T14:17:01.018037+00:00",
+  "spot_source_at_utc": "2026-11-23T14:16:04+00:00",
   "enrichment_fresh": true,
   "derivatives_fresh": true,
   "research_only": true,
@@ -61,9 +61,26 @@
       "symbol": "ADAUSDT",
       "methods": {
         "momentum": {
-          "status": "not_confirmed",
-          "reason": "No matching two-venue momentum pattern",
-          "evidence": []
+          "status": "supported",
+          "reason": "Two independent spot venues confirmed momentum",
+          "evidence": [
+            {
+              "candle_start_utc": "2026-11-23T13:45:00+00:00",
+              "venues": [
+                "bitget",
+                "gate",
+                "okx"
+              ],
+              "spot_usdt_reference": 0.15175667,
+              "gain_percent_min": 4.138,
+              "volume_multiple_min": 3.247,
+              "source_urls": [
+                "https://www.okx.com/api/v5/market/candles?instId=ADA-USDT&bar=15m&limit=30",
+                "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=ADA_USDT&interval=15m&limit=30",
+                "https://api.bitget.com/api/v3/market/candles?category=SPOT&symbol=ADAUSDT&interval=15m&limit=30"
+              ]
+            }
+          ]
         },
         "smart_money": {
           "status": "not_evaluable",
@@ -86,7 +103,9 @@
           "evidence": []
         }
       },
-      "supported_methods": [],
+      "supported_methods": [
+        "momentum"
+      ],
       "trade_ready": false,
       "exchange_buyability_checked": false
     },
@@ -127,9 +146,26 @@
       "symbol": "ARBUSDT",
       "methods": {
         "momentum": {
-          "status": "not_confirmed",
-          "reason": "No matching two-venue momentum pattern",
-          "evidence": []
+          "status": "supported",
+          "reason": "Two independent spot venues confirmed momentum",
+          "evidence": [
+            {
+              "candle_start_utc": "2026-11-23T13:45:00+00:00",
+              "venues": [
+                "bitget",
+                "gate",
+                "okx"
+              ],
+              "spot_usdt_reference": 0.11747,
+              "gain_percent_min": 4.6,
+              "volume_multiple_min": 5.164,
+              "source_urls": [
+                "https://www.okx.com/api/v5/market/candles?instId=ARB-USDT&bar=15m&limit=30",
+                "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=ARB_USDT&interval=15m&limit=30",
+                "https://api.bitget.com/api/v3/market/candles?category=SPOT&symbol=ARBUSDT&interval=15m&limit=30"
+              ]
+            }
+          ]
         },
         "smart_money": {
           "status": "not_evaluable",
@@ -159,7 +195,9 @@
           "evidence": []
         }
       },
-      "supported_methods": [],
+      "supported_methods": [
+        "momentum"
+      ],
       "trade_ready": false,
       "exchange_buyability_checked": false
     },
@@ -200,9 +238,24 @@
       "symbol": "AVAXUSDT",
       "methods": {
         "momentum": {
-          "status": "not_confirmed",
-          "reason": "No matching two-venue momentum pattern",
-          "evidence": []
+          "status": "supported",
+          "reason": "Two independent spot venues confirmed momentum",
+          "evidence": [
+            {
+              "candle_start_utc": "2026-11-23T13:45:00+00:00",
+              "venues": [
+                "gate",
+                "okx"
+              ],
+              "spot_usdt_reference": 7.018,
+              "gain_percent_min": 4.188,
+              "volume_multiple_min": 33.924,
+              "source_urls": [
+                "https://www.okx.com/api/v5/market/candles?instId=AVAX-USDT&bar=15m&limit=30",
+                "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=AVAX_USDT&interval=15m&limit=30"
+              ]
+            }
+          ]
         },
         "smart_money": {
           "status": "not_evaluable",
@@ -225,7 +278,9 @@
           "evidence": []
         }
       },
-      "supported_methods": [],
+      "supported_methods": [
+        "momentum"
+      ],
       "trade_ready": false,
       "exchange_buyability_checked": false
     },
@@ -233,9 +288,24 @@
       "symbol": "BCHUSDT",
       "methods": {
         "momentum": {
-          "status": "not_confirmed",
-          "reason": "No matching two-venue momentum pattern",
-          "evidence": []
+          "status": "supported",
+          "reason": "Two independent spot venues confirmed momentum",
+          "evidence": [
+            {
+              "candle_start_utc": "2026-11-23T13:45:00+00:00",
+              "venues": [
+                "bitget",
+                "okx"
+              ],
+              "spot_usdt_reference": 208.245,
+              "gain_percent_min": 4.309,
+              "volume_multiple_min": 65.64,
+              "source_urls": [
+                "https://www.okx.com/api/v5/market/candles?instId=BCH-USDT&bar=15m&limit=30",
+                "https://api.bitget.com/api/v3/market/candles?category=SPOT&symbol=BCHUSDT&interval=15m&limit=30"
+              ]
+            }
+          ]
         },
         "smart_money": {
           "status": "not_evaluable",
@@ -258,7 +328,9 @@
           "evidence": []
         }
       },
-      "supported_methods": [],
+      "supported_methods": [
+        "momentum"
+      ],
       "trade_ready": false,
       "exchange_buyability_checked": false
     },
@@ -299,9 +371,24 @@
       "symbol": "BTCUSDT",
       "methods": {
         "momentum": {
-          "status": "not_confirmed",
-          "reason": "No matching two-venue momentum pattern",
-          "evidence": []
+          "status": "supported",
+          "reason": "Two independent spot venues confirmed momentum",
+          "evidence": [
+            {
+              "candle_start_utc": "2026-11-23T13:45:00+00:00",
+              "venues": [
+                "bitget",
+                "okx"
+              ],
+              "spot_usdt_reference": 63863.755,
+              "gain_percent_min": 4.175,
+              "volume_multiple_min": 8.88,
+              "source_urls": [
+                "https://www.okx.com/api/v5/market/candles?instId=BTC-USDT&bar=15m&limit=30",
+                "https://api.bitget.com/api/v3/market/candles?category=SPOT&symbol=BTCUSDT&interval=15m&limit=30"
+              ]
+            }
+          ]
         },
         "smart_money": {
           "status": "not_evaluable",
@@ -313,8 +400,8 @@
           "reason": "Funding interval and 4h OI plus spot confirmation not yet complete",
           "evidence": [
             {
-              "funding_percent": 0.000195,
-              "oi_change_4h_percent": null,
+              "funding_percent": 0.002752,
+              "oi_change_4h_percent": -4.057,
               "funding_interval_unverified": true,
               "funding_url": "https://www.okx.com/api/v5/public/funding-rate?instId=BTC-USDT-SWAP",
               "oi_url": "https://www.okx.com/api/v5/public/open-interest?instType=SWAP&instId=BTC-USDT-SWAP"
@@ -332,7 +419,9 @@
           "evidence": []
         }
       },
-      "supported_methods": [],
+      "supported_methods": [
+        "momentum"
+      ],
       "trade_ready": false,
       "exchange_buyability_checked": false
     },
@@ -373,9 +462,26 @@
       "symbol": "DOGEUSDT",
       "methods": {
         "momentum": {
-          "status": "not_confirmed",
-          "reason": "No matching two-venue momentum pattern",
-          "evidence": []
+          "status": "supported",
+          "reason": "Two independent spot venues confirmed momentum",
+          "evidence": [
+            {
+              "candle_start_utc": "2026-11-23T13:45:00+00:00",
+              "venues": [
+                "bitget",
+                "gate",
+                "okx"
+              ],
+              "spot_usdt_reference": 0.05841667,
+              "gain_percent_min": 4.978,
+              "volume_multiple_min": 5.733,
+              "source_urls": [
+                "https://www.okx.com/api/v5/market/candles?instId=DOGE-USDT&bar=15m&limit=30",
+                "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=DOGE_USDT&interval=15m&limit=30",
+                "https://api.bitget.com/api/v3/market/candles?category=SPOT&symbol=DOGEUSDT&interval=15m&limit=30"
+              ]
+            }
+          ]
         },
         "smart_money": {
           "status": "not_evaluable",
@@ -398,7 +504,9 @@
           "evidence": []
         }
       },
-      "supported_methods": [],
+      "supported_methods": [
+        "momentum"
+      ],
       "trade_ready": false,
       "exchange_buyability_checked": false
     },
@@ -406,9 +514,26 @@
       "symbol": "ENAUSDT",
       "methods": {
         "momentum": {
-          "status": "not_confirmed",
-          "reason": "No matching two-venue momentum pattern",
-          "evidence": []
+          "status": "supported",
+          "reason": "Two independent spot venues confirmed momentum",
+          "evidence": [
+            {
+              "candle_start_utc": "2026-11-23T13:45:00+00:00",
+              "venues": [
+                "bitget",
+                "gate",
+                "okx"
+              ],
+              "spot_usdt_reference": 0.10985333,
+              "gain_percent_min": 6.426,
+              "volume_multiple_min": 7.296,
+              "source_urls": [
+                "https://www.okx.com/api/v5/market/candles?instId=ENA-USDT&bar=15m&limit=30",
+                "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=ENA_USDT&interval=15m&limit=30",
+                "https://api.bitget.com/api/v3/market/candles?category=SPOT&symbol=ENAUSDT&interval=15m&limit=30"
+              ]
+            }
+          ]
         },
         "smart_money": {
           "status": "not_evaluable",
@@ -431,7 +556,9 @@
           "evidence": []
         }
       },
-      "supported_methods": [],
+      "supported_methods": [
+        "momentum"
+      ],
       "trade_ready": false,
       "exchange_buyability_checked": false
     },
@@ -439,9 +566,26 @@
       "symbol": "ETHUSDT",
       "methods": {
         "momentum": {
-          "status": "not_confirmed",
-          "reason": "No matching two-venue momentum pattern",
-          "evidence": []
+          "status": "supported",
+          "reason": "Two independent spot venues confirmed momentum",
+          "evidence": [
+            {
+              "candle_start_utc": "2026-11-23T13:45:00+00:00",
+              "venues": [
+                "bitget",
+                "gate",
+                "okx"
+              ],
+              "spot_usdt_reference": 1810.67333333,
+              "gain_percent_min": 4.93,
+              "volume_multiple_min": 3.452,
+              "source_urls": [
+                "https://www.okx.com/api/v5/market/candles?instId=ETH-USDT&bar=15m&limit=30",
+                "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=ETH_USDT&interval=15m&limit=30",
+                "https://api.bitget.com/api/v3/market/candles?category=SPOT&symbol=ETHUSDT&interval=15m&limit=30"
+              ]
+            }
+          ]
         },
         "smart_money": {
           "status": "not_evaluable",
@@ -453,8 +597,8 @@
           "reason": "Funding interval and 4h OI plus spot confirmation not yet complete",
           "evidence": [
             {
-              "funding_percent": -0.005732,
-              "oi_change_4h_percent": null,
+              "funding_percent": -0.003096,
+              "oi_change_4h_percent": -4.133,
               "funding_interval_unverified": true,
               "funding_url": "https://www.okx.com/api/v5/public/funding-rate?instId=ETH-USDT-SWAP",
               "oi_url": "https://www.okx.com/api/v5/public/open-interest?instType=SWAP&instId=ETH-USDT-SWAP"
@@ -472,7 +616,9 @@
           "evidence": []
         }
       },
-      "supported_methods": [],
+      "supported_methods": [
+        "momentum"
+      ],
       "trade_ready": false,
       "exchange_buyability_checked": false
     },
@@ -546,9 +692,24 @@
       "symbol": "HYPEUSDT",
       "methods": {
         "momentum": {
-          "status": "not_confirmed",
-          "reason": "No matching two-venue momentum pattern",
-          "evidence": []
+          "status": "supported",
+          "reason": "Two independent spot venues confirmed momentum",
+          "evidence": [
+            {
+              "candle_start_utc": "2026-11-23T13:45:00+00:00",
+              "venues": [
+                "bitget",
+                "okx"
+              ],
+              "spot_usdt_reference": 66.956,
+              "gain_percent_min": 4.534,
+              "volume_multiple_min": 6.062,
+              "source_urls": [
+                "https://www.okx.com/api/v5/market/candles?instId=HYPE-USDT&bar=15m&limit=30",
+                "https://api.bitget.com/api/v3/market/candles?category=SPOT&symbol=HYPEUSDT&interval=15m&limit=30"
+              ]
+            }
+          ]
         },
         "smart_money": {
           "status": "not_evaluable",
@@ -560,8 +721,8 @@
           "reason": "Funding interval and 4h OI plus spot confirmation not yet complete",
           "evidence": [
             {
-              "funding_percent": -0.002031,
-              "oi_change_4h_percent": null,
+              "funding_percent": 0.005134,
+              "oi_change_4h_percent": 2.035,
               "funding_interval_unverified": true,
               "funding_url": "https://www.okx.com/api/v5/public/funding-rate?instId=HYPE-USDT-SWAP",
               "oi_url": "https://www.okx.com/api/v5/public/open-interest?instType=SWAP&instId=HYPE-USDT-SWAP"
@@ -579,7 +740,9 @@
           "evidence": []
         }
       },
-      "supported_methods": [],
+      "supported_methods": [
+        "momentum"
+      ],
       "trade_ready": false,
       "exchange_buyability_checked": false
     },
@@ -653,9 +816,26 @@
       "symbol": "INJUSDT",
       "methods": {
         "momentum": {
-          "status": "not_confirmed",
-          "reason": "No matching two-venue momentum pattern",
-          "evidence": []
+          "status": "supported",
+          "reason": "Two independent spot venues confirmed momentum",
+          "evidence": [
+            {
+              "candle_start_utc": "2026-11-23T13:45:00+00:00",
+              "venues": [
+                "bitget",
+                "gate",
+                "okx"
+              ],
+              "spot_usdt_reference": 6.709,
+              "gain_percent_min": 5.013,
+              "volume_multiple_min": 5.052,
+              "source_urls": [
+                "https://www.okx.com/api/v5/market/candles?instId=INJ-USDT&bar=15m&limit=30",
+                "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=INJ_USDT&interval=15m&limit=30",
+                "https://api.bitget.com/api/v3/market/candles?category=SPOT&symbol=INJUSDT&interval=15m&limit=30"
+              ]
+            }
+          ]
         },
         "smart_money": {
           "status": "not_evaluable",
@@ -678,7 +858,9 @@
           "evidence": []
         }
       },
-      "supported_methods": [],
+      "supported_methods": [
+        "momentum"
+      ],
       "trade_ready": false,
       "exchange_buyability_checked": false
     },
@@ -785,9 +967,24 @@
       "symbol": "LINKUSDT",
       "methods": {
         "momentum": {
-          "status": "not_confirmed",
-          "reason": "No matching two-venue momentum pattern",
-          "evidence": []
+          "status": "supported",
+          "reason": "Two independent spot venues confirmed momentum",
+          "evidence": [
+            {
+              "candle_start_utc": "2026-11-23T13:45:00+00:00",
+              "venues": [
+                "bitget",
+                "okx"
+              ],
+              "spot_usdt_reference": 9.3285,
+              "gain_percent_min": 4.47,
+              "volume_multiple_min": 20.538,
+              "source_urls": [
+                "https://www.okx.com/api/v5/market/candles?instId=LINK-USDT&bar=15m&limit=30",
+                "https://api.bitget.com/api/v3/market/candles?category=SPOT&symbol=LINKUSDT&interval=15m&limit=30"
+              ]
+            }
+          ]
         },
         "smart_money": {
           "status": "not_evaluable",
@@ -817,7 +1014,9 @@
           "evidence": []
         }
       },
-      "supported_methods": [],
+      "supported_methods": [
+        "momentum"
+      ],
       "trade_ready": false,
       "exchange_buyability_checked": false
     },
@@ -858,9 +1057,26 @@
       "symbol": "LTCUSDT",
       "methods": {
         "momentum": {
-          "status": "not_confirmed",
-          "reason": "No matching two-venue momentum pattern",
-          "evidence": []
+          "status": "supported",
+          "reason": "Two independent spot venues confirmed momentum",
+          "evidence": [
+            {
+              "candle_start_utc": "2026-11-23T13:45:00+00:00",
+              "venues": [
+                "bitget",
+                "gate",
+                "okx"
+              ],
+              "spot_usdt_reference": 42.41666667,
+              "gain_percent_min": 3.871,
+              "volume_multiple_min": 3.364,
+              "source_urls": [
+                "https://www.okx.com/api/v5/market/candles?instId=LTC-USDT&bar=15m&limit=30",
+                "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=LTC_USDT&interval=15m&limit=30",
+                "https://api.bitget.com/api/v3/market/candles?category=SPOT&symbol=LTCUSDT&interval=15m&limit=30"
+              ]
+            }
+          ]
         },
         "smart_money": {
           "status": "not_evaluable",
@@ -883,7 +1099,9 @@
           "evidence": []
         }
       },
-      "supported_methods": [],
+      "supported_methods": [
+        "momentum"
+      ],
       "trade_ready": false,
       "exchange_buyability_checked": false
     },
@@ -924,9 +1142,26 @@
       "symbol": "NEARUSDT",
       "methods": {
         "momentum": {
-          "status": "not_confirmed",
-          "reason": "No matching two-venue momentum pattern",
-          "evidence": []
+          "status": "supported",
+          "reason": "Two independent spot venues confirmed momentum",
+          "evidence": [
+            {
+              "candle_start_utc": "2026-11-23T13:45:00+00:00",
+              "venues": [
+                "bitget",
+                "gate",
+                "okx"
+              ],
+              "spot_usdt_reference": 3.14833333,
+              "gain_percent_min": 4.865,
+              "volume_multiple_min": 3.045,
+              "source_urls": [
+                "https://www.okx.com/api/v5/market/candles?instId=NEAR-USDT&bar=15m&limit=30",
+                "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=NEAR_USDT&interval=15m&limit=30",
+                "https://api.bitget.com/api/v3/market/candles?category=SPOT&symbol=NEARUSDT&interval=15m&limit=30"
+              ]
+            }
+          ]
         },
         "smart_money": {
           "status": "not_evaluable",
@@ -949,7 +1184,9 @@
           "evidence": []
         }
       },
-      "supported_methods": [],
+      "supported_methods": [
+        "momentum"
+      ],
       "trade_ready": false,
       "exchange_buyability_checked": false
     },
@@ -957,9 +1194,24 @@
       "symbol": "ONDOUSDT",
       "methods": {
         "momentum": {
-          "status": "not_confirmed",
-          "reason": "No matching two-venue momentum pattern",
-          "evidence": []
+          "status": "supported",
+          "reason": "Two independent spot venues confirmed momentum",
+          "evidence": [
+            {
+              "candle_start_utc": "2026-11-23T13:45:00+00:00",
+              "venues": [
+                "bitget",
+                "okx"
+              ],
+              "spot_usdt_reference": 0.3053,
+              "gain_percent_min": 4.844,
+              "volume_multiple_min": 11.662,
+              "source_urls": [
+                "https://www.okx.com/api/v5/market/candles?instId=ONDO-USDT&bar=15m&limit=30",
+                "https://api.bitget.com/api/v3/market/candles?category=SPOT&symbol=ONDOUSDT&interval=15m&limit=30"
+              ]
+            }
+          ]
         },
         "smart_money": {
           "status": "not_evaluable",
@@ -982,7 +1234,9 @@
           "evidence": []
         }
       },
-      "supported_methods": [],
+      "supported_methods": [
+        "momentum"
+      ],
       "trade_ready": false,
       "exchange_buyability_checked": false
     },
@@ -1056,9 +1310,24 @@
       "symbol": "PENGUUSDT",
       "methods": {
         "momentum": {
-          "status": "not_confirmed",
-          "reason": "No matching two-venue momentum pattern",
-          "evidence": []
+          "status": "supported",
+          "reason": "Two independent spot venues confirmed momentum",
+          "evidence": [
+            {
+              "candle_start_utc": "2026-11-23T13:45:00+00:00",
+              "venues": [
+                "bitget",
+                "okx"
+              ],
+              "spot_usdt_reference": 0.004689,
+              "gain_percent_min": 7.396,
+              "volume_multiple_min": 34.327,
+              "source_urls": [
+                "https://www.okx.com/api/v5/market/candles?instId=PENGU-USDT&bar=15m&limit=30",
+                "https://api.bitget.com/api/v3/market/candles?category=SPOT&symbol=PENGUUSDT&interval=15m&limit=30"
+              ]
+            }
+          ]
         },
         "smart_money": {
           "status": "not_evaluable",
@@ -1081,7 +1350,9 @@
           "evidence": []
         }
       },
-      "supported_methods": [],
+      "supported_methods": [
+        "momentum"
+      ],
       "trade_ready": false,
       "exchange_buyability_checked": false
     },
@@ -1089,9 +1360,26 @@
       "symbol": "PEPEUSDT",
       "methods": {
         "momentum": {
-          "status": "not_confirmed",
-          "reason": "No matching two-venue momentum pattern",
-          "evidence": []
+          "status": "supported",
+          "reason": "Two independent spot venues confirmed momentum",
+          "evidence": [
+            {
+              "candle_start_utc": "2026-11-23T13:45:00+00:00",
+              "venues": [
+                "bitget",
+                "gate",
+                "okx"
+              ],
+              "spot_usdt_reference": 3.62e-06,
+              "gain_percent_min": 5.601,
+              "volume_multiple_min": 3.452,
+              "source_urls": [
+                "https://www.okx.com/api/v5/market/candles?instId=PEPE-USDT&bar=15m&limit=30",
+                "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=PEPE_USDT&interval=15m&limit=30",
+                "https://api.bitget.com/api/v3/market/candles?category=SPOT&symbol=PEPEUSDT&interval=15m&limit=30"
+              ]
+            }
+          ]
         },
         "smart_money": {
           "status": "not_evaluable",
@@ -1114,7 +1402,9 @@
           "evidence": []
         }
       },
-      "supported_methods": [],
+      "supported_methods": [
+        "momentum"
+      ],
       "trade_ready": false,
       "exchange_buyability_checked": false
     },
@@ -1122,9 +1412,26 @@
       "symbol": "PUMPUSDT",
       "methods": {
         "momentum": {
-          "status": "not_confirmed",
-          "reason": "No matching two-venue momentum pattern",
-          "evidence": []
+          "status": "supported",
+          "reason": "Two independent spot venues confirmed momentum",
+          "evidence": [
+            {
+              "candle_start_utc": "2026-11-23T13:45:00+00:00",
+              "venues": [
+                "bitget",
+                "gate",
+                "okx"
+              ],
+              "spot_usdt_reference": 0.00267573,
+              "gain_percent_min": 4.782,
+              "volume_multiple_min": 5.821,
+              "source_urls": [
+                "https://www.okx.com/api/v5/market/candles?instId=PUMP-USDT&bar=15m&limit=30",
+                "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=PUMP_USDT&interval=15m&limit=30",
+                "https://api.bitget.com/api/v3/market/candles?category=SPOT&symbol=PUMPUSDT&interval=15m&limit=30"
+              ]
+            }
+          ]
         },
         "smart_money": {
           "status": "not_evaluable",
@@ -1147,7 +1454,9 @@
           "evidence": []
         }
       },
-      "supported_methods": [],
+      "supported_methods": [
+        "momentum"
+      ],
       "trade_ready": false,
       "exchange_buyability_checked": false
     },
@@ -1287,9 +1596,26 @@
       "symbol": "SOLUSDT",
       "methods": {
         "momentum": {
-          "status": "not_confirmed",
-          "reason": "No matching two-venue momentum pattern",
-          "evidence": []
+          "status": "supported",
+          "reason": "Two independent spot venues confirmed momentum",
+          "evidence": [
+            {
+              "candle_start_utc": "2026-11-23T13:45:00+00:00",
+              "venues": [
+                "bitget",
+                "gate",
+                "okx"
+              ],
+              "spot_usdt_reference": 76.61666667,
+              "gain_percent_min": 5.508,
+              "volume_multiple_min": 2.723,
+              "source_urls": [
+                "https://www.okx.com/api/v5/market/candles?instId=SOL-USDT&bar=15m&limit=30",
+                "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=SOL_USDT&interval=15m&limit=30",
+                "https://api.bitget.com/api/v3/market/candles?category=SPOT&symbol=SOLUSDT&interval=15m&limit=30"
+              ]
+            }
+          ]
         },
         "smart_money": {
           "status": "not_evaluable",
@@ -1301,8 +1627,8 @@
           "reason": "Funding interval and 4h OI plus spot confirmation not yet complete",
           "evidence": [
             {
-              "funding_percent": -0.009884,
-              "oi_change_4h_percent": null,
+              "funding_percent": -0.007082,
+              "oi_change_4h_percent": -4.008,
               "funding_interval_unverified": true,
               "funding_url": "https://www.okx.com/api/v5/public/funding-rate?instId=SOL-USDT-SWAP",
               "oi_url": "https://www.okx.com/api/v5/public/open-interest?instType=SWAP&instId=SOL-USDT-SWAP"
@@ -1320,7 +1646,9 @@
           "evidence": []
         }
       },
-      "supported_methods": [],
+      "supported_methods": [
+        "momentum"
+      ],
       "trade_ready": false,
       "exchange_buyability_checked": false
     },
@@ -1361,9 +1689,26 @@
       "symbol": "SUIUSDT",
       "methods": {
         "momentum": {
-          "status": "not_confirmed",
-          "reason": "No matching two-venue momentum pattern",
-          "evidence": []
+          "status": "supported",
+          "reason": "Two independent spot venues confirmed momentum",
+          "evidence": [
+            {
+              "candle_start_utc": "2026-11-23T13:45:00+00:00",
+              "venues": [
+                "bitget",
+                "gate",
+                "okx"
+              ],
+              "spot_usdt_reference": 0.71003333,
+              "gain_percent_min": 5.985,
+              "volume_multiple_min": 4.797,
+              "source_urls": [
+                "https://www.okx.com/api/v5/market/candles?instId=SUI-USDT&bar=15m&limit=30",
+                "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=SUI_USDT&interval=15m&limit=30",
+                "https://api.bitget.com/api/v3/market/candles?category=SPOT&symbol=SUIUSDT&interval=15m&limit=30"
+              ]
+            }
+          ]
         },
         "smart_money": {
           "status": "not_evaluable",
@@ -1375,8 +1720,8 @@
           "reason": "Funding interval and 4h OI plus spot confirmation not yet complete",
           "evidence": [
             {
-              "funding_percent": -0.003242,
-              "oi_change_4h_percent": null,
+              "funding_percent": 0.000466,
+              "oi_change_4h_percent": -1.224,
               "funding_interval_unverified": true,
               "funding_url": "https://www.okx.com/api/v5/public/funding-rate?instId=SUI-USDT-SWAP",
               "oi_url": "https://www.okx.com/api/v5/public/open-interest?instType=SWAP&instId=SUI-USDT-SWAP"
@@ -1394,7 +1739,9 @@
           "evidence": []
         }
       },
-      "supported_methods": [],
+      "supported_methods": [
+        "momentum"
+      ],
       "trade_ready": false,
       "exchange_buyability_checked": false
     },
@@ -1402,9 +1749,26 @@
       "symbol": "TAOUSDT",
       "methods": {
         "momentum": {
-          "status": "not_confirmed",
-          "reason": "No matching two-venue momentum pattern",
-          "evidence": []
+          "status": "supported",
+          "reason": "Two independent spot venues confirmed momentum",
+          "evidence": [
+            {
+              "candle_start_utc": "2026-11-23T13:45:00+00:00",
+              "venues": [
+                "bitget",
+                "gate",
+                "okx"
+              ],
+              "spot_usdt_reference": 198.83666667,
+              "gain_percent_min": 3.923,
+              "volume_multiple_min": 12.576,
+              "source_urls": [
+                "https://www.okx.com/api/v5/market/candles?instId=TAO-USDT&bar=15m&limit=30",
+                "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=TAO_USDT&interval=15m&limit=30",
+                "https://api.bitget.com/api/v3/market/candles?category=SPOT&symbol=TAOUSDT&interval=15m&limit=30"
+              ]
+            }
+          ]
         },
         "smart_money": {
           "status": "not_evaluable",
@@ -1427,7 +1791,9 @@
           "evidence": []
         }
       },
-      "supported_methods": [],
+      "supported_methods": [
+        "momentum"
+      ],
       "trade_ready": false,
       "exchange_buyability_checked": false
     },
@@ -1534,9 +1900,26 @@
       "symbol": "UNIUSDT",
       "methods": {
         "momentum": {
-          "status": "not_confirmed",
-          "reason": "No matching two-venue momentum pattern",
-          "evidence": []
+          "status": "supported",
+          "reason": "Two independent spot venues confirmed momentum",
+          "evidence": [
+            {
+              "candle_start_utc": "2026-11-23T13:45:00+00:00",
+              "venues": [
+                "bitget",
+                "gate",
+                "okx"
+              ],
+              "spot_usdt_reference": 4.98366667,
+              "gain_percent_min": 4.995,
+              "volume_multiple_min": 8.831,
+              "source_urls": [
+                "https://www.okx.com/api/v5/market/candles?instId=UNI-USDT&bar=15m&limit=30",
+                "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=UNI_USDT&interval=15m&limit=30",
+                "https://api.bitget.com/api/v3/market/candles?category=SPOT&symbol=UNIUSDT&interval=15m&limit=30"
+              ]
+            }
+          ]
         },
         "smart_money": {
           "status": "not_evaluable",
@@ -1559,7 +1942,9 @@
           "evidence": []
         }
       },
-      "supported_methods": [],
+      "supported_methods": [
+        "momentum"
+      ],
       "trade_ready": false,
       "exchange_buyability_checked": false
     },
@@ -1633,9 +2018,26 @@
       "symbol": "XRPUSDT",
       "methods": {
         "momentum": {
-          "status": "not_confirmed",
-          "reason": "No matching two-venue momentum pattern",
-          "evidence": []
+          "status": "supported",
+          "reason": "Two independent spot venues confirmed momentum",
+          "evidence": [
+            {
+              "candle_start_utc": "2026-11-23T13:45:00+00:00",
+              "venues": [
+                "bitget",
+                "gate",
+                "okx"
+              ],
+              "spot_usdt_reference": 0.98863333,
+              "gain_percent_min": 4.959,
+              "volume_multiple_min": 2.929,
+              "source_urls": [
+                "https://www.okx.com/api/v5/market/candles?instId=XRP-USDT&bar=15m&limit=30",
+                "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=XRP_USDT&interval=15m&limit=30",
+                "https://api.bitget.com/api/v3/market/candles?category=SPOT&symbol=XRPUSDT&interval=15m&limit=30"
+              ]
+            }
+          ]
         },
         "smart_money": {
           "status": "not_evaluable",
@@ -1658,7 +2060,9 @@
           "evidence": []
         }
       },
-      "supported_methods": [],
+      "supported_methods": [
+        "momentum"
+      ],
       "trade_ready": false,
       "exchange_buyability_checked": false
     },
