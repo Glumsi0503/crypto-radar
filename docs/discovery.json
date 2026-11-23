@@ -1,88 +1,13 @@
 {
-  "generated_at_utc": "2026-11-23T09:26:47+00:00",
+  "generated_at_utc": "2026-11-23T10:40:30+00:00",
   "source_urls": {
     "gate": "https://api.gateio.ws/api/v4/spot/tickers",
     "okx": "https://www.okx.com/api/v5/market/tickers?instType=SPOT",
     "bitget": "https://api.bitget.com/api/v3/market/tickers?category=SPOT"
   },
-  "status": "ok",
+  "status": "no_correlated_candidates",
   "research_only": true,
-  "candidates": [
-    {
-      "symbol": "EVAAUSDT",
-      "quote_volume_24h_usdt": 29227232.52,
-      "abs_change_24h_percent": 4.51,
-      "gate_last_usdt": 3.2229,
-      "second_venue": "bitget",
-      "second_venue_quote_volume_24h_usdt": 13029932.27,
-      "second_venue_last_usdt": 3.2186,
-      "ticker_price_disagreement_percent": 0.134,
-      "validated_spot_venues": [
-        "gate",
-        "bitget"
-      ],
-      "verified_same_closed_15m_candle_utc": "2026-11-23T09:00:00+00:00",
-      "closed_15m_quote_volume_usdt": {
-        "gate": 181606.41,
-        "bitget": 56710.84
-      },
-      "closed_15m_price_disagreement_percent": 0.183,
-      "source_urls": {
-        "gate": "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=EVAA_USDT&interval=15m&limit=30",
-        "bitget": "https://api.bitget.com/api/v3/market/candles?category=SPOT&symbol=EVAAUSDT&interval=15m&limit=30"
-      },
-      "two_venue_ohlcv_verified": true
-    },
-    {
-      "symbol": "GRAMUSDT",
-      "quote_volume_24h_usdt": 4564651.99,
-      "abs_change_24h_percent": 3.9,
-      "gate_last_usdt": 0.9953,
-      "second_venue": "okx",
-      "second_venue_quote_volume_24h_usdt": 3842900.44,
-      "second_venue_last_usdt": 0.996,
-      "ticker_price_disagreement_percent": 0.07,
-      "validated_spot_venues": [
-        "gate",
-        "okx"
-      ],
-      "verified_same_closed_15m_candle_utc": "2026-11-23T09:00:00+00:00",
-      "closed_15m_quote_volume_usdt": {
-        "gate": 104598.65,
-        "okx": 149539.34
-      },
-      "closed_15m_price_disagreement_percent": 0.05,
-      "source_urls": {
-        "gate": "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=GRAM_USDT&interval=15m&limit=30",
-        "okx": "https://www.okx.com/api/v5/market/candles?instId=GRAM-USDT&bar=15m&limit=30"
-      },
-      "two_venue_ohlcv_verified": true
-    },
-    {
-      "symbol": "DOSUSDT",
-      "primary_venue": "okx",
-      "second_venue": "bitget",
-      "quote_volume_24h_usdt": 3370765.22,
-      "second_venue_quote_volume_24h_usdt": 2327403.73,
-      "abs_change_24h_percent": 2.326,
-      "ticker_price_disagreement_percent": 0.072,
-      "validated_spot_venues": [
-        "okx",
-        "bitget"
-      ],
-      "verified_same_closed_15m_candle_utc": "2026-11-23T09:00:00+00:00",
-      "closed_15m_quote_volume_usdt": {
-        "okx": 36622.16,
-        "bitget": 47537.6
-      },
-      "closed_15m_price_disagreement_percent": 0.144,
-      "source_urls": {
-        "okx": "https://www.okx.com/api/v5/market/candles?instId=DOS-USDT&bar=15m&limit=30",
-        "bitget": "https://api.bitget.com/api/v3/market/candles?category=SPOT&symbol=DOSUSDT&interval=15m&limit=30"
-      },
-      "two_venue_ohlcv_verified": true
-    }
-  ],
+  "candidates": [],
   "selection_rules": {
     "independent_venues": 2,
     "min_gate_quote_24h_usdt": 2000000,
@@ -99,24 +24,16 @@
     "okx"
   ],
   "diagnostics": {
-    "gate_shortlist": 21,
-    "ticker_correlated": 6,
-    "okx_bitget_pairs": 2,
-    "candle_checked": 6,
+    "gate_shortlist": 19,
+    "ticker_correlated": 1,
+    "okx_bitget_pairs": 0,
+    "candle_checked": 1,
     "candle_rejected": [
       {
-        "symbol": "DGAIUSDT",
-        "reason": "ValueError: gate:insufficient_closed_15m_quote_volume"
-      },
-      {
-        "symbol": "VVVUSDT",
-        "reason": "ValueError: gate:insufficient_closed_15m_quote_volume"
-      },
-      {
-        "symbol": "NESUSDT",
+        "symbol": "GRAMUSDT",
         "reason": "ValueError: okx:insufficient_closed_15m_quote_volume"
       }
     ],
-    "validated": 3
+    "validated": 0
   }
 }

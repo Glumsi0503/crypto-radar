@@ -1,41 +1,32 @@
 {
-  "generated_at_utc": "2026-11-23T09:28:54.263169+00:00",
-  "latest_generated_at_utc": "2026-11-23T09:27:56+00:00",
-  "latest_age_minutes": 0.97,
+  "generated_at_utc": "2026-11-23T10:43:04.785595+00:00",
+  "latest_generated_at_utc": "2026-11-23T10:41:48+00:00",
+  "latest_age_minutes": 1.28,
   "source_classification": "CURRENT_RESEARCH",
   "research_only": true,
   "counts": {
-    "checks": 159,
-    "valid": 145,
-    "volume_1_8x": 19,
-    "invalid": 14,
-    "invalid_ValueError": 7,
-    "invalid_HTTPError": 7,
-    "gain_1_5": 2
+    "checks": 150,
+    "valid": 137,
+    "volume_1_8x": 11,
+    "invalid": 13,
+    "invalid_ValueError": 6,
+    "invalid_HTTPError": 7
   },
   "single_venue_watchlist": [],
   "single_venue_watchlist_total": 0,
-  "discovery_status": "ok",
+  "discovery_status": "no_correlated_candidates",
   "discovery_diagnostics": {
-    "gate_shortlist": 21,
-    "ticker_correlated": 6,
-    "okx_bitget_pairs": 2,
-    "candle_checked": 6,
+    "gate_shortlist": 19,
+    "ticker_correlated": 1,
+    "okx_bitget_pairs": 0,
+    "candle_checked": 1,
     "candle_rejected": [
       {
-        "symbol": "DGAIUSDT",
-        "reason": "ValueError: gate:insufficient_closed_15m_quote_volume"
-      },
-      {
-        "symbol": "VVVUSDT",
-        "reason": "ValueError: gate:insufficient_closed_15m_quote_volume"
-      },
-      {
-        "symbol": "NESUSDT",
+        "symbol": "GRAMUSDT",
         "reason": "ValueError: okx:insufficient_closed_15m_quote_volume"
       }
     ],
-    "validated": 3
+    "validated": 0
   },
   "discovery_venue_fetch_errors": {},
   "discovery_venues_reached": [
