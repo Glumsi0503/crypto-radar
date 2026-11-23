@@ -1,40 +1,41 @@
 {
-  "generated_at_utc": "2026-11-23T08:01:20.480769+00:00",
-  "latest_generated_at_utc": "2026-11-23T08:00:18+00:00",
-  "latest_age_minutes": 1.04,
+  "generated_at_utc": "2026-11-23T09:28:54.263169+00:00",
+  "latest_generated_at_utc": "2026-11-23T09:27:56+00:00",
+  "latest_age_minutes": 0.97,
   "source_classification": "CURRENT_RESEARCH",
   "research_only": true,
   "counts": {
-    "checks": 150,
-    "valid": 137,
-    "volume_1_8x": 23,
-    "invalid": 13,
-    "invalid_ValueError": 6,
-    "invalid_HTTPError": 7
+    "checks": 159,
+    "valid": 145,
+    "volume_1_8x": 19,
+    "invalid": 14,
+    "invalid_ValueError": 7,
+    "invalid_HTTPError": 7,
+    "gain_1_5": 2
   },
-  "single_venue_watchlist": [
-    {
-      "symbol": "INJUSDT",
-      "venue": "bitget",
-      "candle_start_utc": "2026-11-23T07:30:00+00:00",
-      "gain_percent": 1.28267,
-      "volume_multiplier": 7.1132,
-      "quote_volume_usdt": 46221.95,
-      "reference_price_usdt": 6.317,
-      "two_venue_confirmed": false,
-      "classification": "UNCONFIRMED_SINGLE_VENUE_RESEARCH",
-      "not_a_buy_signal": true
-    }
-  ],
-  "single_venue_watchlist_total": 1,
-  "discovery_status": "no_correlated_candidates",
+  "single_venue_watchlist": [],
+  "single_venue_watchlist_total": 0,
+  "discovery_status": "ok",
   "discovery_diagnostics": {
-    "gate_shortlist": 23,
-    "ticker_correlated": 0,
-    "okx_bitget_pairs": 0,
-    "candle_checked": 0,
-    "candle_rejected": [],
-    "validated": 0
+    "gate_shortlist": 21,
+    "ticker_correlated": 6,
+    "okx_bitget_pairs": 2,
+    "candle_checked": 6,
+    "candle_rejected": [
+      {
+        "symbol": "DGAIUSDT",
+        "reason": "ValueError: gate:insufficient_closed_15m_quote_volume"
+      },
+      {
+        "symbol": "VVVUSDT",
+        "reason": "ValueError: gate:insufficient_closed_15m_quote_volume"
+      },
+      {
+        "symbol": "NESUSDT",
+        "reason": "ValueError: okx:insufficient_closed_15m_quote_volume"
+      }
+    ],
+    "validated": 3
   },
   "discovery_venue_fetch_errors": {},
   "discovery_venues_reached": [

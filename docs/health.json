@@ -1,21 +1,21 @@
 {
-  "generated_at_utc": "2026-11-23T08:01:20.519434+00:00",
+  "generated_at_utc": "2026-11-23T09:28:54.289694+00:00",
   "data_quality": "USABLE_RESEARCH_ONLY",
   "checks": {
     "latest": {
       "exists": true,
       "fresh": true,
       "valid": true,
-      "age_minutes": 1.04,
+      "age_minutes": 0.97,
       "historical_usable": true,
-      "checks": 150,
-      "valid_checks": 137
+      "checks": 159,
+      "valid_checks": 145
     },
     "enrichment": {
       "exists": true,
       "fresh": true,
       "valid": true,
-      "age_minutes": 0.06,
+      "age_minutes": 0.04,
       "historical_usable": true,
       "market_valid": 96,
       "fundamental_reachable": 3
@@ -33,7 +33,7 @@
       "valid": true,
       "age_minutes": 0.0,
       "historical_usable": true,
-      "source_age_minutes": 1.04,
+      "source_age_minutes": 0.97,
       "source_classification": "current",
       "new_event_count": 0
     },
@@ -41,15 +41,15 @@
       "exists": true,
       "fresh": true,
       "valid": true,
-      "age_minutes": 2.41,
+      "age_minutes": 2.12,
       "historical_usable": true,
-      "discovered": 0
+      "discovered": 3
     },
     "derivatives": {
       "exists": true,
       "fresh": true,
       "valid": true,
-      "age_minutes": 0.04,
+      "age_minutes": 0.03,
       "historical_usable": true,
       "valid_snapshots": 5
     },
@@ -59,7 +59,7 @@
       "valid": true,
       "age_minutes": 0.0,
       "historical_usable": true,
-      "evaluated": 50
+      "evaluated": 53
     },
     "observed_outcomes": {
       "exists": true,
