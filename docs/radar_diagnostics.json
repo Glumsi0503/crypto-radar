@@ -1,22 +1,35 @@
 {
-  "generated_at_utc": "2026-11-24T02:58:47.914994+00:00",
-  "latest_generated_at_utc": "2026-11-24T02:57:47+00:00",
-  "latest_age_minutes": 1.02,
+  "generated_at_utc": "2026-11-24T04:03:46.942814+00:00",
+  "latest_generated_at_utc": "2026-11-24T04:02:49+00:00",
+  "latest_age_minutes": 0.97,
   "source_classification": "CURRENT_RESEARCH",
   "research_only": true,
   "counts": {
     "checks": 150,
     "valid": 137,
-    "volume_1_8x": 40,
+    "volume_1_8x": 8,
     "invalid": 13,
     "invalid_ValueError": 6,
     "invalid_HTTPError": 7
   },
-  "single_venue_watchlist": [],
-  "single_venue_watchlist_total": 0,
+  "single_venue_watchlist": [
+    {
+      "symbol": "NEARUSDT",
+      "venue": "bitget",
+      "candle_start_utc": "2026-11-24T03:45:00+00:00",
+      "gain_percent": 1.22658,
+      "volume_multiplier": 4.4356,
+      "quote_volume_usdt": 277138.84,
+      "reference_price_usdt": 2.971,
+      "two_venue_confirmed": false,
+      "classification": "UNCONFIRMED_SINGLE_VENUE_RESEARCH",
+      "not_a_buy_signal": true
+    }
+  ],
+  "single_venue_watchlist_total": 1,
   "discovery_status": "no_correlated_candidates",
   "discovery_diagnostics": {
-    "gate_shortlist": 31,
+    "gate_shortlist": 29,
     "ticker_correlated": 0,
     "okx_bitget_pairs": 0,
     "candle_checked": 0,
