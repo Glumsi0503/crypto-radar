@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-11-24T00:28:48.484036+00:00",
-  "spot_source_at_utc": "2026-11-24T00:27:48+00:00",
+  "generated_at_utc": "2026-11-24T01:57:02.659832+00:00",
+  "spot_source_at_utc": "2026-11-24T01:56:03+00:00",
   "enrichment_fresh": true,
   "derivatives_fresh": true,
   "research_only": true,
@@ -41,7 +41,7 @@
           "evidence": [
             {
               "metric": "fees",
-              "growth_7d_percent": 2.002,
+              "growth_7d_percent": 2.015,
               "window_end_utc": "2026-11-24T00:00:00+00:00",
               "source": "https://api.llama.fi/summary/fees/aave?dataType=dailyFees"
             }
@@ -142,9 +142,16 @@
           "evidence": []
         },
         "fundamental_divergence": {
-          "status": "not_evaluable",
-          "reason": "No verified comparable 7-day fundamental metrics",
-          "evidence": []
+          "status": "not_confirmed",
+          "reason": "Growth or token value capture criteria not established",
+          "evidence": [
+            {
+              "metric": "fees",
+              "growth_7d_percent": 10.037,
+              "window_end_utc": "2026-11-24T00:00:00+00:00",
+              "source": "https://api.llama.fi/summary/fees/arbitrum?dataType=dailyFees"
+            }
+          ]
         },
         "catalyst": {
           "status": "not_evaluable",
@@ -306,8 +313,8 @@
           "reason": "Funding interval and 4h OI plus spot confirmation not yet complete",
           "evidence": [
             {
-              "funding_percent": 0.00573,
-              "oi_change_4h_percent": 0.806,
+              "funding_percent": 0.005366,
+              "oi_change_4h_percent": 1.515,
               "funding_interval_unverified": true,
               "funding_url": "https://www.okx.com/api/v5/public/funding-rate?instId=BTC-USDT-SWAP",
               "oi_url": "https://www.okx.com/api/v5/public/open-interest?instType=SWAP&instId=BTC-USDT-SWAP"
@@ -446,8 +453,8 @@
           "reason": "Funding interval and 4h OI plus spot confirmation not yet complete",
           "evidence": [
             {
-              "funding_percent": -0.006144,
-              "oi_change_4h_percent": 2.236,
+              "funding_percent": -0.003552,
+              "oi_change_4h_percent": 2.402,
               "funding_interval_unverified": true,
               "funding_url": "https://www.okx.com/api/v5/public/funding-rate?instId=ETH-USDT-SWAP",
               "oi_url": "https://www.okx.com/api/v5/public/open-interest?instType=SWAP&instId=ETH-USDT-SWAP"
@@ -553,8 +560,8 @@
           "reason": "Funding interval and 4h OI plus spot confirmation not yet complete",
           "evidence": [
             {
-              "funding_percent": 0.005864,
-              "oi_change_4h_percent": -0.069,
+              "funding_percent": 0.006726,
+              "oi_change_4h_percent": 0.166,
               "funding_interval_unverified": true,
               "funding_url": "https://www.okx.com/api/v5/public/funding-rate?instId=HYPE-USDT-SWAP",
               "oi_url": "https://www.okx.com/api/v5/public/open-interest?instType=SWAP&instId=HYPE-USDT-SWAP"
@@ -798,7 +805,7 @@
           "evidence": [
             {
               "metric": "fees",
-              "growth_7d_percent": 12.13,
+              "growth_7d_percent": 12.121,
               "window_end_utc": "2026-11-24T00:00:00+00:00",
               "source": "https://api.llama.fi/summary/fees/chainlink?dataType=dailyFees"
             }
@@ -1294,8 +1301,8 @@
           "reason": "Funding interval and 4h OI plus spot confirmation not yet complete",
           "evidence": [
             {
-              "funding_percent": -0.008119,
-              "oi_change_4h_percent": 1.993,
+              "funding_percent": -0.009339,
+              "oi_change_4h_percent": 1.366,
               "funding_interval_unverified": true,
               "funding_url": "https://www.okx.com/api/v5/public/funding-rate?instId=SOL-USDT-SWAP",
               "oi_url": "https://www.okx.com/api/v5/public/open-interest?instType=SWAP&instId=SOL-USDT-SWAP"
@@ -1368,8 +1375,8 @@
           "reason": "Funding interval and 4h OI plus spot confirmation not yet complete",
           "evidence": [
             {
-              "funding_percent": -0.002775,
-              "oi_change_4h_percent": -0.91,
+              "funding_percent": -0.005312,
+              "oi_change_4h_percent": -0.307,
               "funding_interval_unverified": true,
               "funding_url": "https://www.okx.com/api/v5/public/funding-rate?instId=SUI-USDT-SWAP",
               "oi_url": "https://www.okx.com/api/v5/public/open-interest?instType=SWAP&instId=SUI-USDT-SWAP"
