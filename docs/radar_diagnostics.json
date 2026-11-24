@@ -1,58 +1,32 @@
 {
-  "generated_at_utc": "2026-11-24T07:51:33.706986+00:00",
-  "latest_generated_at_utc": "2026-11-24T07:50:34+00:00",
-  "latest_age_minutes": 1.0,
+  "generated_at_utc": "2026-11-24T08:53:05.928640+00:00",
+  "latest_generated_at_utc": "2026-11-24T08:51:53+00:00",
+  "latest_age_minutes": 1.22,
   "source_classification": "CURRENT_RESEARCH",
   "research_only": true,
   "counts": {
     "checks": 150,
     "valid": 137,
-    "volume_1_8x": 19,
+    "volume_1_8x": 44,
     "invalid": 13,
     "invalid_ValueError": 6,
-    "invalid_HTTPError": 7,
-    "gain_1_5": 1,
-    "single_venue_early": 1
+    "invalid_HTTPError": 7
   },
   "single_venue_watchlist": [
     {
-      "symbol": "RENDERUSDT",
+      "symbol": "ZECUSDT",
       "venue": "bitget",
-      "candle_start_utc": "2026-11-24T07:30:00+00:00",
-      "gain_percent": 1.47516,
-      "volume_multiplier": 22.7286,
-      "quote_volume_usdt": 68027.42,
-      "reference_price_usdt": 1.307,
-      "two_venue_confirmed": false,
-      "classification": "UNCONFIRMED_SINGLE_VENUE_RESEARCH",
-      "not_a_buy_signal": true
-    },
-    {
-      "symbol": "RENDERUSDT",
-      "venue": "gate",
-      "candle_start_utc": "2026-11-24T07:30:00+00:00",
-      "gain_percent": 1.46065,
-      "volume_multiplier": 22.2104,
-      "quote_volume_usdt": 85490.45,
-      "reference_price_usdt": 1.3059,
-      "two_venue_confirmed": false,
-      "classification": "UNCONFIRMED_SINGLE_VENUE_RESEARCH",
-      "not_a_buy_signal": true
-    },
-    {
-      "symbol": "RENDERUSDT",
-      "venue": "okx",
-      "candle_start_utc": "2026-11-24T07:30:00+00:00",
-      "gain_percent": 1.554,
-      "volume_multiplier": 16.1787,
-      "quote_volume_usdt": 203030.75,
-      "reference_price_usdt": 1.307,
+      "candle_start_utc": "2026-11-24T08:30:00+00:00",
+      "gain_percent": 1.34004,
+      "volume_multiplier": 2.8628,
+      "quote_volume_usdt": 197385.47,
+      "reference_price_usdt": 759.27,
       "two_venue_confirmed": false,
       "classification": "UNCONFIRMED_SINGLE_VENUE_RESEARCH",
       "not_a_buy_signal": true
     }
   ],
-  "single_venue_watchlist_total": 3,
+  "single_venue_watchlist_total": 1,
   "discovery_status": "no_correlated_candidates",
   "discovery_diagnostics": {
     "gate_shortlist": 31,
