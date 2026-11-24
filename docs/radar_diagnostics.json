@@ -1,36 +1,66 @@
 {
-  "generated_at_utc": "2026-11-24T22:45:14.670825+00:00",
-  "latest_generated_at_utc": "2026-11-24T22:44:22+00:00",
-  "latest_age_minutes": 0.88,
+  "generated_at_utc": "2026-11-24T23:38:34.791550+00:00",
+  "latest_generated_at_utc": "2026-11-24T23:37:44+00:00",
+  "latest_age_minutes": 0.85,
   "source_classification": "CURRENT_RESEARCH",
   "research_only": true,
   "counts": {
-    "checks": 150,
-    "valid": 137,
-    "volume_1_8x": 10,
-    "invalid": 13,
-    "invalid_ValueError": 6,
-    "invalid_HTTPError": 7
+    "checks": 159,
+    "valid": 144,
+    "volume_1_8x": 11,
+    "invalid": 15,
+    "invalid_ValueError": 8,
+    "invalid_HTTPError": 7,
+    "gain_1_5": 1
   },
-  "single_venue_watchlist": [],
-  "single_venue_watchlist_total": 0,
-  "discovery_status": "no_correlated_candidates",
+  "single_venue_watchlist": [
+    {
+      "symbol": "BLESSUSDT",
+      "venue": "bitget",
+      "candle_start_utc": "2026-11-24T23:15:00+00:00",
+      "gain_percent": 1.34359,
+      "volume_multiplier": 3.9386,
+      "quote_volume_usdt": 29947.64,
+      "reference_price_usdt": 0.0177104,
+      "two_venue_confirmed": false,
+      "classification": "UNCONFIRMED_SINGLE_VENUE_RESEARCH",
+      "not_a_buy_signal": true
+    }
+  ],
+  "single_venue_watchlist_total": 1,
+  "discovery_status": "ok",
   "discovery_diagnostics": {
-    "gate_shortlist": 27,
-    "ticker_correlated": 2,
+    "gate_shortlist": 28,
+    "ticker_correlated": 9,
     "okx_bitget_pairs": 0,
-    "candle_checked": 2,
+    "candle_checked": 9,
     "candle_rejected": [
       {
-        "symbol": "DOSUSDT",
+        "symbol": "MONUSDT",
+        "reason": "ValueError: bitget:insufficient_closed_15m_quote_volume"
+      },
+      {
+        "symbol": "BGSCUSDT",
         "reason": "ValueError: gate:insufficient_closed_15m_quote_volume"
       },
       {
-        "symbol": "GRAMUSDT",
+        "symbol": "ARIAUSDT",
+        "reason": "ValueError: gate:insufficient_closed_15m_quote_volume"
+      },
+      {
+        "symbol": "DGAIUSDT",
+        "reason": "ValueError: gate:insufficient_closed_15m_quote_volume"
+      },
+      {
+        "symbol": "BNBUSDT",
+        "reason": "ValueError: gate:insufficient_closed_15m_quote_volume"
+      },
+      {
+        "symbol": "XAUTUSDT",
         "reason": "ValueError: gate:insufficient_closed_15m_quote_volume"
       }
     ],
-    "validated": 0
+    "validated": 3
   },
   "discovery_venue_fetch_errors": {},
   "discovery_venues_reached": [
