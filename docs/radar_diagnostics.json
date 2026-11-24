@@ -1,36 +1,36 @@
 {
-  "generated_at_utc": "2026-11-24T21:43:18.557991+00:00",
-  "latest_generated_at_utc": "2026-11-24T21:42:23+00:00",
-  "latest_age_minutes": 0.93,
+  "generated_at_utc": "2026-11-24T22:45:14.670825+00:00",
+  "latest_generated_at_utc": "2026-11-24T22:44:22+00:00",
+  "latest_age_minutes": 0.88,
   "source_classification": "CURRENT_RESEARCH",
   "research_only": true,
   "counts": {
-    "checks": 153,
-    "valid": 140,
-    "volume_1_8x": 9,
+    "checks": 150,
+    "valid": 137,
+    "volume_1_8x": 10,
     "invalid": 13,
     "invalid_ValueError": 6,
     "invalid_HTTPError": 7
   },
   "single_venue_watchlist": [],
   "single_venue_watchlist_total": 0,
-  "discovery_status": "ok",
+  "discovery_status": "no_correlated_candidates",
   "discovery_diagnostics": {
-    "gate_shortlist": 28,
-    "ticker_correlated": 3,
+    "gate_shortlist": 27,
+    "ticker_correlated": 2,
     "okx_bitget_pairs": 0,
-    "candle_checked": 3,
+    "candle_checked": 2,
     "candle_rejected": [
       {
-        "symbol": "MONUSDT",
-        "reason": "ValueError: bitget:insufficient_closed_15m_quote_volume"
+        "symbol": "DOSUSDT",
+        "reason": "ValueError: gate:insufficient_closed_15m_quote_volume"
       },
       {
-        "symbol": "DGAIUSDT",
+        "symbol": "GRAMUSDT",
         "reason": "ValueError: gate:insufficient_closed_15m_quote_volume"
       }
     ],
-    "validated": 1
+    "validated": 0
   },
   "discovery_venue_fetch_errors": {},
   "discovery_venues_reached": [
