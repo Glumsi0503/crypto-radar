@@ -1,19 +1,81 @@
 {
-  "generated_at_utc": "2026-11-25T18:24:31.188810+00:00",
-  "latest_generated_at_utc": "2026-11-25T18:23:24+00:00",
-  "latest_age_minutes": 1.12,
+  "generated_at_utc": "2026-11-25T19:36:25.227696+00:00",
+  "latest_generated_at_utc": "2026-11-25T19:35:26+00:00",
+  "latest_age_minutes": 0.99,
   "source_classification": "CURRENT_RESEARCH",
   "research_only": true,
   "counts": {
     "checks": 150,
     "valid": 137,
-    "volume_1_8x": 4,
     "invalid": 13,
     "invalid_ValueError": 6,
-    "invalid_HTTPError": 7
+    "invalid_HTTPError": 7,
+    "volume_1_8x": 19,
+    "gain_1_5": 1
   },
-  "single_venue_watchlist": [],
-  "single_venue_watchlist_total": 0,
+  "single_venue_watchlist": [
+    {
+      "symbol": "ADAUSDT",
+      "venue": "bitget",
+      "candle_start_utc": "2026-11-25T19:15:00+00:00",
+      "gain_percent": 1.02951,
+      "volume_multiplier": 4.4162,
+      "quote_volume_usdt": 169122.15,
+      "reference_price_usdt": 0.1472,
+      "two_venue_confirmed": false,
+      "classification": "UNCONFIRMED_SINGLE_VENUE_RESEARCH",
+      "not_a_buy_signal": true
+    },
+    {
+      "symbol": "ENAUSDT",
+      "venue": "okx",
+      "candle_start_utc": "2026-11-25T19:15:00+00:00",
+      "gain_percent": 1.32403,
+      "volume_multiplier": 1.8901,
+      "quote_volume_usdt": 61992.22,
+      "reference_price_usdt": 0.10025,
+      "two_venue_confirmed": false,
+      "classification": "UNCONFIRMED_SINGLE_VENUE_RESEARCH",
+      "not_a_buy_signal": true
+    },
+    {
+      "symbol": "ENAUSDT",
+      "venue": "gate",
+      "candle_start_utc": "2026-11-25T19:15:00+00:00",
+      "gain_percent": 1.42626,
+      "volume_multiplier": 1.617,
+      "quote_volume_usdt": 100040.2,
+      "reference_price_usdt": 0.10027,
+      "two_venue_confirmed": false,
+      "classification": "UNCONFIRMED_SINGLE_VENUE_RESEARCH",
+      "not_a_buy_signal": true
+    },
+    {
+      "symbol": "UNIUSDT",
+      "venue": "okx",
+      "candle_start_utc": "2026-11-25T19:15:00+00:00",
+      "gain_percent": 1.08626,
+      "volume_multiplier": 1.7997,
+      "quote_volume_usdt": 264924.37,
+      "reference_price_usdt": 4.746,
+      "two_venue_confirmed": false,
+      "classification": "UNCONFIRMED_SINGLE_VENUE_RESEARCH",
+      "not_a_buy_signal": true
+    },
+    {
+      "symbol": "SUIUSDT",
+      "venue": "bitget",
+      "candle_start_utc": "2026-11-25T19:15:00+00:00",
+      "gain_percent": 1.00045,
+      "volume_multiplier": 1.9177,
+      "quote_volume_usdt": 200629.37,
+      "reference_price_usdt": 0.6663,
+      "two_venue_confirmed": false,
+      "classification": "UNCONFIRMED_SINGLE_VENUE_RESEARCH",
+      "not_a_buy_signal": true
+    }
+  ],
+  "single_venue_watchlist_total": 5,
   "discovery_status": "no_correlated_candidates",
   "discovery_diagnostics": {
     "gate_shortlist": 22,
