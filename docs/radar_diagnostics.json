@@ -1,59 +1,22 @@
 {
-  "generated_at_utc": "2026-11-25T20:32:55.759498+00:00",
-  "latest_generated_at_utc": "2026-11-25T20:31:53+00:00",
-  "latest_age_minutes": 1.05,
+  "generated_at_utc": "2026-11-25T21:38:01.826397+00:00",
+  "latest_generated_at_utc": "2026-11-25T21:37:04+00:00",
+  "latest_age_minutes": 0.96,
   "source_classification": "CURRENT_RESEARCH",
   "research_only": true,
   "counts": {
     "checks": 150,
     "valid": 137,
-    "volume_1_8x": 11,
+    "volume_1_8x": 16,
     "invalid": 13,
     "invalid_ValueError": 6,
     "invalid_HTTPError": 7
   },
-  "single_venue_watchlist": [
-    {
-      "symbol": "NEARUSDT",
-      "venue": "bitget",
-      "candle_start_utc": "2026-11-25T20:15:00+00:00",
-      "gain_percent": 1.489,
-      "volume_multiplier": 2.5748,
-      "quote_volume_usdt": 172454.63,
-      "reference_price_usdt": 2.999,
-      "two_venue_confirmed": false,
-      "classification": "UNCONFIRMED_SINGLE_VENUE_RESEARCH",
-      "not_a_buy_signal": true
-    },
-    {
-      "symbol": "NEARUSDT",
-      "venue": "gate",
-      "candle_start_utc": "2026-11-25T20:15:00+00:00",
-      "gain_percent": 1.45516,
-      "volume_multiplier": 2.375,
-      "quote_volume_usdt": 1009507.39,
-      "reference_price_usdt": 2.998,
-      "two_venue_confirmed": false,
-      "classification": "UNCONFIRMED_SINGLE_VENUE_RESEARCH",
-      "not_a_buy_signal": true
-    },
-    {
-      "symbol": "NEARUSDT",
-      "venue": "okx",
-      "candle_start_utc": "2026-11-25T20:15:00+00:00",
-      "gain_percent": 1.45565,
-      "volume_multiplier": 2.3416,
-      "quote_volume_usdt": 779232.39,
-      "reference_price_usdt": 2.997,
-      "two_venue_confirmed": false,
-      "classification": "UNCONFIRMED_SINGLE_VENUE_RESEARCH",
-      "not_a_buy_signal": true
-    }
-  ],
-  "single_venue_watchlist_total": 3,
+  "single_venue_watchlist": [],
+  "single_venue_watchlist_total": 0,
   "discovery_status": "no_correlated_candidates",
   "discovery_diagnostics": {
-    "gate_shortlist": 25,
+    "gate_shortlist": 23,
     "ticker_correlated": 0,
     "okx_bitget_pairs": 0,
     "candle_checked": 0,
