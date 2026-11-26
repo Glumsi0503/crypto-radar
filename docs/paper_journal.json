@@ -185,11 +185,11 @@
         "bitget"
       ],
       "state": "open",
-      "last_price_usdt": 1689.96,
-      "best_return_percent": 2.852248428483506,
+      "last_price_usdt": 1705.52,
+      "best_return_percent": 3.6042895092828653,
       "worst_return_percent": 0,
       "eligible_for_real_trade": false,
-      "last_seen_utc": "2026-11-25T23:29:50.270766+00:00"
+      "last_seen_utc": "2026-11-26T00:31:28.418184+00:00"
     },
     {
       "symbol": "SOLUSDT",
@@ -201,12 +201,17 @@
         "gate",
         "bitget"
       ],
-      "state": "open",
-      "last_price_usdt": 70.58,
-      "best_return_percent": 4.974779937445617,
+      "state": "closed",
+      "last_price_usdt": 71.14,
+      "best_return_percent": 5.538522396126067,
       "worst_return_percent": 0,
       "eligible_for_real_trade": false,
-      "last_seen_utc": "2026-11-25T23:29:50.270766+00:00"
+      "last_seen_utc": "2026-11-26T00:31:28.418184+00:00",
+      "closed_at_utc": "2026-11-26T00:31:28.418184+00:00",
+      "close_reference_usdt": 71.14,
+      "exit_reason": "target_observed",
+      "net_pnl_percent": 5.03852,
+      "note": "Observed checkpoint price, not true intrabar stop/target execution; may overstate realizable fills."
     },
     {
       "symbol": "NEARUSDT",
