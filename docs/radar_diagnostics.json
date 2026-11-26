@@ -1,22 +1,37 @@
 {
-  "generated_at_utc": "2026-11-26T17:29:10.926498+00:00",
-  "latest_generated_at_utc": "2026-11-26T17:27:59+00:00",
-  "latest_age_minutes": 1.2,
+  "generated_at_utc": "2026-11-26T18:26:38.863604+00:00",
+  "latest_generated_at_utc": "2026-11-26T18:25:38+00:00",
+  "latest_age_minutes": 1.01,
   "source_classification": "CURRENT_RESEARCH",
   "research_only": true,
   "counts": {
     "checks": 150,
     "valid": 137,
-    "volume_1_8x": 5,
     "invalid": 13,
     "invalid_ValueError": 6,
-    "invalid_HTTPError": 7
+    "invalid_HTTPError": 7,
+    "gain_1_5": 3,
+    "volume_1_8x": 5,
+    "single_venue_early": 1
   },
-  "single_venue_watchlist": [],
-  "single_venue_watchlist_total": 0,
+  "single_venue_watchlist": [
+    {
+      "symbol": "SEIUSDT",
+      "venue": "okx",
+      "candle_start_utc": "2026-11-26T18:00:00+00:00",
+      "gain_percent": 2.48018,
+      "volume_multiplier": 2.1641,
+      "quote_volume_usdt": 116352.71,
+      "reference_price_usdt": 0.04008,
+      "two_venue_confirmed": false,
+      "classification": "UNCONFIRMED_SINGLE_VENUE_RESEARCH",
+      "not_a_buy_signal": true
+    }
+  ],
+  "single_venue_watchlist_total": 1,
   "discovery_status": "no_correlated_candidates",
   "discovery_diagnostics": {
-    "gate_shortlist": 21,
+    "gate_shortlist": 19,
     "ticker_correlated": 0,
     "okx_bitget_pairs": 0,
     "candle_checked": 0,
