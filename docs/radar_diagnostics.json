@@ -1,19 +1,57 @@
 {
-  "generated_at_utc": "2026-11-26T15:07:28.386266+00:00",
-  "latest_generated_at_utc": "2026-11-26T15:06:30+00:00",
-  "latest_age_minutes": 0.97,
+  "generated_at_utc": "2026-11-26T16:13:12.668260+00:00",
+  "latest_generated_at_utc": "2026-11-26T16:11:59+00:00",
+  "latest_age_minutes": 1.23,
   "source_classification": "CURRENT_RESEARCH",
   "research_only": true,
   "counts": {
     "checks": 150,
     "valid": 137,
-    "volume_1_8x": 39,
+    "volume_1_8x": 14,
     "invalid": 13,
     "invalid_ValueError": 6,
-    "invalid_HTTPError": 7
+    "invalid_HTTPError": 7,
+    "gain_1_5": 1
   },
-  "single_venue_watchlist": [],
-  "single_venue_watchlist_total": 0,
+  "single_venue_watchlist": [
+    {
+      "symbol": "ZECUSDT",
+      "venue": "gate",
+      "candle_start_utc": "2026-11-26T15:45:00+00:00",
+      "gain_percent": 1.41165,
+      "volume_multiplier": 2.0136,
+      "quote_volume_usdt": 586968.43,
+      "reference_price_usdt": 701.87,
+      "two_venue_confirmed": false,
+      "classification": "UNCONFIRMED_SINGLE_VENUE_RESEARCH",
+      "not_a_buy_signal": true
+    },
+    {
+      "symbol": "ZECUSDT",
+      "venue": "bitget",
+      "candle_start_utc": "2026-11-26T15:45:00+00:00",
+      "gain_percent": 1.59074,
+      "volume_multiplier": 1.6164,
+      "quote_volume_usdt": 366994.78,
+      "reference_price_usdt": 702.5,
+      "two_venue_confirmed": false,
+      "classification": "UNCONFIRMED_SINGLE_VENUE_RESEARCH",
+      "not_a_buy_signal": true
+    },
+    {
+      "symbol": "NEARUSDT",
+      "venue": "okx",
+      "candle_start_utc": "2026-11-26T15:45:00+00:00",
+      "gain_percent": 1.02243,
+      "volume_multiplier": 2.0794,
+      "quote_volume_usdt": 466985.14,
+      "reference_price_usdt": 3.063,
+      "two_venue_confirmed": false,
+      "classification": "UNCONFIRMED_SINGLE_VENUE_RESEARCH",
+      "not_a_buy_signal": true
+    }
+  ],
+  "single_venue_watchlist_total": 3,
   "discovery_status": "no_correlated_candidates",
   "discovery_diagnostics": {
     "gate_shortlist": 24,
