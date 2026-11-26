@@ -1,13 +1,13 @@
 {
-  "generated_at_utc": "2026-11-26T04:06:14.230454+00:00",
-  "latest_generated_at_utc": "2026-11-26T04:05:08+00:00",
-  "latest_age_minutes": 1.1,
+  "generated_at_utc": "2026-11-26T05:17:03.815213+00:00",
+  "latest_generated_at_utc": "2026-11-26T05:16:03+00:00",
+  "latest_age_minutes": 1.01,
   "source_classification": "CURRENT_RESEARCH",
   "research_only": true,
   "counts": {
     "checks": 150,
     "valid": 137,
-    "volume_1_8x": 19,
+    "volume_1_8x": 6,
     "invalid": 13,
     "invalid_ValueError": 6,
     "invalid_HTTPError": 7
@@ -17,10 +17,19 @@
   "discovery_status": "no_correlated_candidates",
   "discovery_diagnostics": {
     "gate_shortlist": 28,
-    "ticker_correlated": 0,
+    "ticker_correlated": 2,
     "okx_bitget_pairs": 0,
-    "candle_checked": 0,
-    "candle_rejected": [],
+    "candle_checked": 2,
+    "candle_rejected": [
+      {
+        "symbol": "GRAMUSDT",
+        "reason": "ValueError: bitget:insufficient_closed_15m_quote_volume"
+      },
+      {
+        "symbol": "BNBUSDT",
+        "reason": "ValueError: bitget:insufficient_closed_15m_quote_volume"
+      }
+    ],
     "validated": 0
   },
   "discovery_venue_fetch_errors": {},
