@@ -1,19 +1,70 @@
 {
-  "generated_at_utc": "2026-11-26T01:59:32.859490+00:00",
-  "latest_generated_at_utc": "2026-11-26T01:58:34+00:00",
-  "latest_age_minutes": 0.98,
+  "generated_at_utc": "2026-11-26T03:00:39.415176+00:00",
+  "latest_generated_at_utc": "2026-11-26T02:59:29+00:00",
+  "latest_age_minutes": 1.17,
   "source_classification": "CURRENT_RESEARCH",
   "research_only": true,
   "counts": {
     "checks": 150,
     "valid": 137,
-    "volume_1_8x": 10,
+    "volume_1_8x": 25,
     "invalid": 13,
     "invalid_ValueError": 6,
-    "invalid_HTTPError": 7
+    "invalid_HTTPError": 7,
+    "gain_1_5": 1,
+    "single_venue_early": 1
   },
-  "single_venue_watchlist": [],
-  "single_venue_watchlist_total": 0,
+  "single_venue_watchlist": [
+    {
+      "symbol": "TIAUSDT",
+      "venue": "okx",
+      "candle_start_utc": "2026-11-26T02:30:00+00:00",
+      "gain_percent": 1.46893,
+      "volume_multiplier": 4.0655,
+      "quote_volume_usdt": 30400.88,
+      "reference_price_usdt": 0.3592,
+      "two_venue_confirmed": false,
+      "classification": "UNCONFIRMED_SINGLE_VENUE_RESEARCH",
+      "not_a_buy_signal": true
+    },
+    {
+      "symbol": "INJUSDT",
+      "venue": "okx",
+      "candle_start_utc": "2026-11-26T02:30:00+00:00",
+      "gain_percent": 1.02256,
+      "volume_multiplier": 3.5635,
+      "quote_volume_usdt": 57157.09,
+      "reference_price_usdt": 6.224,
+      "two_venue_confirmed": false,
+      "classification": "UNCONFIRMED_SINGLE_VENUE_RESEARCH",
+      "not_a_buy_signal": true
+    },
+    {
+      "symbol": "INJUSDT",
+      "venue": "gate",
+      "candle_start_utc": "2026-11-26T02:30:00+00:00",
+      "gain_percent": 1.05519,
+      "volume_multiplier": 1.9055,
+      "quote_volume_usdt": 59792.97,
+      "reference_price_usdt": 6.225,
+      "two_venue_confirmed": false,
+      "classification": "UNCONFIRMED_SINGLE_VENUE_RESEARCH",
+      "not_a_buy_signal": true
+    },
+    {
+      "symbol": "ENAUSDT",
+      "venue": "gate",
+      "candle_start_utc": "2026-11-26T02:30:00+00:00",
+      "gain_percent": 1.03043,
+      "volume_multiplier": 1.548,
+      "quote_volume_usdt": 79510.67,
+      "reference_price_usdt": 0.10393,
+      "two_venue_confirmed": false,
+      "classification": "UNCONFIRMED_SINGLE_VENUE_RESEARCH",
+      "not_a_buy_signal": true
+    }
+  ],
+  "single_venue_watchlist_total": 4,
   "discovery_status": "no_correlated_candidates",
   "discovery_diagnostics": {
     "gate_shortlist": 29,
