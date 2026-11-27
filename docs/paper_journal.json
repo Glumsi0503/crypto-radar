@@ -184,12 +184,17 @@
         "gate",
         "bitget"
       ],
-      "state": "open",
-      "last_price_usdt": 1701.89,
-      "best_return_percent": 3.61400894166799,
+      "state": "closed",
+      "last_price_usdt": 1729.63,
+      "best_return_percent": 5.068886476817003,
       "worst_return_percent": 0,
       "eligible_for_real_trade": false,
-      "last_seen_utc": "2026-11-27T02:12:34.834093+00:00"
+      "last_seen_utc": "2026-11-27T03:25:39.211541+00:00",
+      "closed_at_utc": "2026-11-27T03:25:39.211541+00:00",
+      "close_reference_usdt": 1729.63,
+      "exit_reason": "target_observed",
+      "net_pnl_percent": 4.56889,
+      "note": "Observed checkpoint price, not true intrabar stop/target execution; may overstate realizable fills."
     },
     {
       "symbol": "SOLUSDT",
