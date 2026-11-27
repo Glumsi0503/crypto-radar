@@ -1,28 +1,31 @@
 {
-  "generated_at_utc": "2026-11-27T04:43:03.590327+00:00",
-  "latest_generated_at_utc": "2026-11-27T04:42:15+00:00",
-  "latest_age_minutes": 0.81,
+  "generated_at_utc": "2026-11-27T05:48:11.793819+00:00",
+  "latest_generated_at_utc": "2026-11-27T05:47:22+00:00",
+  "latest_age_minutes": 0.83,
   "source_classification": "CURRENT_RESEARCH",
   "research_only": true,
   "counts": {
     "checks": 150,
     "valid": 137,
+    "volume_1_8x": 25,
     "invalid": 13,
     "invalid_ValueError": 6,
-    "invalid_HTTPError": 7,
-    "volume_1_8x": 9,
-    "gain_1_5": 1,
-    "single_venue_early": 1
+    "invalid_HTTPError": 7
   },
   "single_venue_watchlist": [],
   "single_venue_watchlist_total": 0,
   "discovery_status": "no_correlated_candidates",
   "discovery_diagnostics": {
     "gate_shortlist": 19,
-    "ticker_correlated": 0,
+    "ticker_correlated": 1,
     "okx_bitget_pairs": 0,
-    "candle_checked": 0,
-    "candle_rejected": [],
+    "candle_checked": 1,
+    "candle_rejected": [
+      {
+        "symbol": "BNBUSDT",
+        "reason": "ValueError: bitget:insufficient_closed_15m_quote_volume"
+      }
+    ],
     "validated": 0
   },
   "discovery_venue_fetch_errors": {},
