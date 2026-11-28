@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-11-28T17:27:15.200961+00:00",
-  "source_generated_at_utc": "2026-11-28T17:26:14+00:00",
+  "generated_at_utc": "2026-11-28T18:23:43.955517+00:00",
+  "source_generated_at_utc": "2026-11-28T18:22:28+00:00",
   "research_only": true,
   "auto_push_connected": false,
   "venue_buyability_checked": false,
@@ -25,7 +25,21 @@
   "current_candidates": [],
   "historical_candidates": [],
   "new_events": [],
-  "recent_events_3h": [
+  "recent_events_3h": [],
+  "historical_events_24h": [
+    {
+      "symbol": "EVAAUSDT",
+      "candle_start_utc": "2026-11-28T09:00:00+00:00",
+      "reference_price_usdt": 2.03255,
+      "venues": [
+        "bitget",
+        "gate"
+      ],
+      "stage": "EARLY_RESEARCH",
+      "not_a_buy_signal": true,
+      "event_id": "EVAAUSDT|2026-11-28T09:00:00+00:00|EARLY_RESEARCH",
+      "first_seen_utc": "2026-11-28T09:29:54.642264+00:00"
+    },
     {
       "symbol": "ZECUSDT",
       "candle_start_utc": "2026-11-28T14:15:00+00:00",
@@ -2505,21 +2519,6 @@
       },
       "event_id": "ZECUSDT|2026-11-28T14:15:00+00:00|UNCONFIRMED_RESEARCH",
       "first_seen_utc": "2026-11-28T14:34:37.641430+00:00"
-    }
-  ],
-  "historical_events_24h": [
-    {
-      "symbol": "EVAAUSDT",
-      "candle_start_utc": "2026-11-28T09:00:00+00:00",
-      "reference_price_usdt": 2.03255,
-      "venues": [
-        "bitget",
-        "gate"
-      ],
-      "stage": "EARLY_RESEARCH",
-      "not_a_buy_signal": true,
-      "event_id": "EVAAUSDT|2026-11-28T09:00:00+00:00|EARLY_RESEARCH",
-      "first_seen_utc": "2026-11-28T09:29:54.642264+00:00"
     }
   ],
   "new_event_count": 0,
