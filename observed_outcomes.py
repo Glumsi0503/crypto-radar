@@ -53,7 +53,7 @@ def advance(spot, events, journal, now):
         except (ValueError,KeyError,TypeError):continue
         row={"event_id":key,"symbol":incoming["symbol"],"stage":incoming["stage"],
              "first_seen_utc":first.isoformat(),"reference_price_usdt":entry,
-             "checkpoints":{},"research_only":True,"detection_context":incoming.get("detection_context"),"venues":incoming.get("venues",[])}
+             "checkpoints":{},"research_only":True,"detection_context":incoming.get("detection_context"),"research_features":incoming.get("research_features"),"venues":incoming.get("venues",[])}
         items.append(row)
         indexed[key]=row
     for row in items:
@@ -154,7 +154,15 @@ def research_audit(spot, journal, now):
         summary.append({"first_seen_minute_utc":stamp,"simultaneous_events":len(rows),
             "observed_4h":len(vals),"positive_4h":sum(x>0 for x in vals),
             "mean_net_4h":round(sum(vals)/len(vals),4) if vals else None})
-    return {"cohorts":summary,"research_only":True,"live_rules_changed":False,
+    strategies={}
+    for tag in ("control","early","trend","relative_strength","reversal_research"):
+        eligible=[r for r in items if tag in (r.get("research_features") or {}).get("strategy_tags",[])]
+        strategies[tag]={}
+        for h in CHECKPOINT_HOURS:
+            k=f"{h:g}h"
+            vals=[r["checkpoints"][k]["net_after_assumed_fees_percent"] for r in eligible if r["checkpoints"].get(k,{}).get("status")=="observed"]
+            strategies[tag][k]={"n":len(vals),"mean_net":round(sum(vals)/len(vals),4) if vals else None,"wins":sum(v>0 for v in vals)}
+    return {"strategy_cohorts":strategies,"cohorts":summary,"research_only":True,"live_rules_changed":False,
         "limitations":["Historical intrabar prices and detection context not reconstructed.",
         "Sampled exits are not actual fills; missing intervals may hide stop or target hits.",
         "Reference entry is retrospective and may not be executable.",
