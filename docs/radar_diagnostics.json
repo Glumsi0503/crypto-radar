@@ -1,27 +1,30 @@
 {
-  "generated_at_utc": "2026-11-28T11:28:22.959562+00:00",
-  "latest_generated_at_utc": "2026-11-28T11:27:18+00:00",
-  "latest_age_minutes": 1.08,
+  "generated_at_utc": "2026-11-28T12:30:37.439464+00:00",
+  "latest_generated_at_utc": "2026-11-28T12:29:10+00:00",
+  "latest_age_minutes": 1.46,
   "source_classification": "CURRENT_RESEARCH",
   "research_only": true,
   "counts": {
-    "checks": 156,
-    "valid": 142,
-    "volume_1_8x": 11,
-    "invalid": 14,
-    "invalid_ValueError": 7,
-    "invalid_HTTPError": 7,
-    "gain_1_5": 1
+    "checks": 159,
+    "valid": 144,
+    "volume_1_8x": 28,
+    "invalid": 15,
+    "invalid_ValueError": 8,
+    "invalid_HTTPError": 7
   },
   "single_venue_watchlist": [],
   "single_venue_watchlist_total": 0,
   "discovery_status": "ok",
   "discovery_diagnostics": {
     "gate_shortlist": 24,
-    "ticker_correlated": 5,
+    "ticker_correlated": 8,
     "okx_bitget_pairs": 0,
-    "candle_checked": 5,
+    "candle_checked": 8,
     "candle_rejected": [
+      {
+        "symbol": "WLFIUSDT",
+        "reason": "ValueError: bitget:insufficient_closed_15m_quote_volume"
+      },
       {
         "symbol": "PORTALUSDT",
         "reason": "ValueError: gate:insufficient_closed_15m_quote_volume"
@@ -31,11 +34,15 @@
         "reason": "ValueError: bitget:insufficient_closed_15m_quote_volume"
       },
       {
-        "symbol": "XAUTUSDT",
+        "symbol": "WLDUSDT",
         "reason": "ValueError: bitget:insufficient_closed_15m_quote_volume"
+      },
+      {
+        "symbol": "XAUTUSDT",
+        "reason": "ValueError: gate:insufficient_closed_15m_quote_volume"
       }
     ],
-    "validated": 2
+    "validated": 3
   },
   "discovery_venue_fetch_errors": {},
   "discovery_venues_reached": [
@@ -44,7 +51,7 @@
     "okx"
   ],
   "feed_current_candidates": 0,
-  "feed_recent_events_3h": 1,
+  "feed_recent_events_3h": 0,
   "trade_ready": false,
   "auto_push_connected": false,
   "note": "Diagnostic counts only. No independent live validation, fills or trading signals."

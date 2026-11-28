@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at_utc": "2026-11-28T11:28:21+00:00",
+  "generated_at_utc": "2026-11-28T12:30:35+00:00",
   "research_only": true,
   "exchange_availability_status": "NOT_CHECKED",
   "alerts_permitted": false,
@@ -11,16 +11,16 @@
       "interval": "1h",
       "venue": "okx",
       "url": "https://www.okx.com/api/v5/market/history-candles?instId=BTC-USDT&bar=1H&limit=40",
-      "queried_at_utc": "2026-11-28T11:27:18+00:00",
+      "queried_at_utc": "2026-11-28T12:29:10+00:00",
       "status": "ok",
       "data": {
         "valid": true,
-        "latest_closed_start_utc": "2026-11-28T10:00:00+00:00",
+        "latest_closed_start_utc": "2026-11-28T11:00:00+00:00",
         "closed_bars": 39,
-        "latest_close_usdt": 59252.0,
-        "last_bar_change_percent": -0.56504,
-        "last_bar_quote_volume_usdt": 8431488.85,
-        "observed_period_change_percent": -2.42215
+        "latest_close_usdt": 59234.0,
+        "last_bar_change_percent": -0.03038,
+        "last_bar_quote_volume_usdt": 6720892.81,
+        "observed_period_change_percent": -2.51858
       }
     },
     {
@@ -28,16 +28,16 @@
       "interval": "1h",
       "venue": "gate",
       "url": "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=BTC_USDT&interval=1h&limit=40",
-      "queried_at_utc": "2026-11-28T11:27:19+00:00",
+      "queried_at_utc": "2026-11-28T12:29:11+00:00",
       "status": "ok",
       "data": {
         "valid": true,
-        "latest_closed_start_utc": "2026-11-28T10:00:00+00:00",
+        "latest_closed_start_utc": "2026-11-28T11:00:00+00:00",
         "closed_bars": 39,
-        "latest_close_usdt": 59248.4,
-        "last_bar_change_percent": -0.56975,
-        "last_bar_quote_volume_usdt": 31942131.37,
-        "observed_period_change_percent": -2.42166
+        "latest_close_usdt": 59236.0,
+        "last_bar_change_percent": -0.02093,
+        "last_bar_quote_volume_usdt": 20465063.5,
+        "observed_period_change_percent": -2.51224
       }
     },
     {
@@ -45,7 +45,7 @@
       "interval": "1d",
       "venue": "okx",
       "url": "https://www.okx.com/api/v5/market/history-candles?instId=BTC-USDT&bar=1Dutc&limit=40",
-      "queried_at_utc": "2026-11-28T11:27:19+00:00",
+      "queried_at_utc": "2026-11-28T12:29:11+00:00",
       "status": "ok",
       "data": {
         "valid": true,
@@ -62,7 +62,7 @@
       "interval": "1d",
       "venue": "gate",
       "url": "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=BTC_USDT&interval=1d&limit=40",
-      "queried_at_utc": "2026-11-28T11:27:19+00:00",
+      "queried_at_utc": "2026-11-28T12:29:12+00:00",
       "status": "ok",
       "data": {
         "valid": true,
@@ -79,16 +79,16 @@
       "interval": "1h",
       "venue": "okx",
       "url": "https://www.okx.com/api/v5/market/history-candles?instId=ETH-USDT&bar=1H&limit=40",
-      "queried_at_utc": "2026-11-28T11:27:20+00:00",
+      "queried_at_utc": "2026-11-28T12:29:12+00:00",
       "status": "ok",
       "data": {
         "valid": true,
-        "latest_closed_start_utc": "2026-11-28T10:00:00+00:00",
+        "latest_closed_start_utc": "2026-11-28T11:00:00+00:00",
         "closed_bars": 39,
-        "latest_close_usdt": 1646.67,
-        "last_bar_change_percent": -0.38234,
-        "last_bar_quote_volume_usdt": 28503585.41,
-        "observed_period_change_percent": -3.39108
+        "latest_close_usdt": 1648.27,
+        "last_bar_change_percent": 0.09777,
+        "last_bar_quote_volume_usdt": 14764531.34,
+        "observed_period_change_percent": -3.30459
       }
     },
     {
@@ -96,16 +96,16 @@
       "interval": "1h",
       "venue": "gate",
       "url": "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=ETH_USDT&interval=1h&limit=40",
-      "queried_at_utc": "2026-11-28T11:27:20+00:00",
+      "queried_at_utc": "2026-11-28T12:29:12+00:00",
       "status": "ok",
       "data": {
         "valid": true,
-        "latest_closed_start_utc": "2026-11-28T10:00:00+00:00",
+        "latest_closed_start_utc": "2026-11-28T11:00:00+00:00",
         "closed_bars": 39,
-        "latest_close_usdt": 1646.7,
-        "last_bar_change_percent": -0.38595,
-        "last_bar_quote_volume_usdt": 19880509.92,
-        "observed_period_change_percent": -3.37685
+        "latest_close_usdt": 1648.4,
+        "last_bar_change_percent": 0.10324,
+        "last_bar_quote_volume_usdt": 11064182.64,
+        "observed_period_change_percent": -3.29242
       }
     },
     {
@@ -113,7 +113,7 @@
       "interval": "1d",
       "venue": "okx",
       "url": "https://www.okx.com/api/v5/market/history-candles?instId=ETH-USDT&bar=1Dutc&limit=40",
-      "queried_at_utc": "2026-11-28T11:27:21+00:00",
+      "queried_at_utc": "2026-11-28T12:29:13+00:00",
       "status": "ok",
       "data": {
         "valid": true,
@@ -130,7 +130,7 @@
       "interval": "1d",
       "venue": "gate",
       "url": "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=ETH_USDT&interval=1d&limit=40",
-      "queried_at_utc": "2026-11-28T11:27:21+00:00",
+      "queried_at_utc": "2026-11-28T12:29:13+00:00",
       "status": "ok",
       "data": {
         "valid": true,
@@ -147,16 +147,16 @@
       "interval": "1h",
       "venue": "okx",
       "url": "https://www.okx.com/api/v5/market/history-candles?instId=SOL-USDT&bar=1H&limit=40",
-      "queried_at_utc": "2026-11-28T11:27:21+00:00",
+      "queried_at_utc": "2026-11-28T12:29:14+00:00",
       "status": "ok",
       "data": {
         "valid": true,
-        "latest_closed_start_utc": "2026-11-28T10:00:00+00:00",
+        "latest_closed_start_utc": "2026-11-28T11:00:00+00:00",
         "closed_bars": 39,
-        "latest_close_usdt": 70.75,
-        "last_bar_change_percent": -0.46427,
-        "last_bar_quote_volume_usdt": 1847916.78,
-        "observed_period_change_percent": -0.75747
+        "latest_close_usdt": 70.96,
+        "last_bar_change_percent": 0.311,
+        "last_bar_quote_volume_usdt": 419810.75,
+        "observed_period_change_percent": -0.47686
       }
     },
     {
@@ -164,16 +164,16 @@
       "interval": "1h",
       "venue": "gate",
       "url": "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=SOL_USDT&interval=1h&limit=40",
-      "queried_at_utc": "2026-11-28T11:27:22+00:00",
+      "queried_at_utc": "2026-11-28T12:29:14+00:00",
       "status": "ok",
       "data": {
         "valid": true,
-        "latest_closed_start_utc": "2026-11-28T10:00:00+00:00",
+        "latest_closed_start_utc": "2026-11-28T11:00:00+00:00",
         "closed_bars": 39,
-        "latest_close_usdt": 70.74,
-        "last_bar_change_percent": -0.47833,
-        "last_bar_quote_volume_usdt": 2820585.62,
-        "observed_period_change_percent": -0.75758
+        "latest_close_usdt": 70.95,
+        "last_bar_change_percent": 0.29686,
+        "last_bar_quote_volume_usdt": 966220.07,
+        "observed_period_change_percent": -0.49088
       }
     },
     {
@@ -181,7 +181,7 @@
       "interval": "1d",
       "venue": "okx",
       "url": "https://www.okx.com/api/v5/market/history-candles?instId=SOL-USDT&bar=1Dutc&limit=40",
-      "queried_at_utc": "2026-11-28T11:27:22+00:00",
+      "queried_at_utc": "2026-11-28T12:29:15+00:00",
       "status": "ok",
       "data": {
         "valid": true,
@@ -198,7 +198,7 @@
       "interval": "1d",
       "venue": "gate",
       "url": "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=SOL_USDT&interval=1d&limit=40",
-      "queried_at_utc": "2026-11-28T11:27:22+00:00",
+      "queried_at_utc": "2026-11-28T12:29:15+00:00",
       "status": "ok",
       "data": {
         "valid": true,
@@ -215,16 +215,16 @@
       "interval": "1h",
       "venue": "okx",
       "url": "https://www.okx.com/api/v5/market/history-candles?instId=LINK-USDT&bar=1H&limit=40",
-      "queried_at_utc": "2026-11-28T11:27:23+00:00",
+      "queried_at_utc": "2026-11-28T12:29:16+00:00",
       "status": "ok",
       "data": {
         "valid": true,
-        "latest_closed_start_utc": "2026-11-28T10:00:00+00:00",
+        "latest_closed_start_utc": "2026-11-28T11:00:00+00:00",
         "closed_bars": 39,
-        "latest_close_usdt": 9.16,
-        "last_bar_change_percent": -0.15261,
-        "last_bar_quote_volume_usdt": 88486.13,
-        "observed_period_change_percent": -1.17596
+        "latest_close_usdt": 9.147,
+        "last_bar_change_percent": -0.0983,
+        "last_bar_quote_volume_usdt": 27373.47,
+        "observed_period_change_percent": -1.76136
       }
     },
     {
@@ -232,16 +232,16 @@
       "interval": "1h",
       "venue": "gate",
       "url": "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=LINK_USDT&interval=1h&limit=40",
-      "queried_at_utc": "2026-11-28T11:27:23+00:00",
+      "queried_at_utc": "2026-11-28T12:29:16+00:00",
       "status": "ok",
       "data": {
         "valid": true,
-        "latest_closed_start_utc": "2026-11-28T10:00:00+00:00",
+        "latest_closed_start_utc": "2026-11-28T11:00:00+00:00",
         "closed_bars": 39,
-        "latest_close_usdt": 9.156,
-        "last_bar_change_percent": -0.19621,
-        "last_bar_quote_volume_usdt": 417502.36,
-        "observed_period_change_percent": -1.20846
+        "latest_close_usdt": 9.145,
+        "last_bar_change_percent": -0.12014,
+        "last_bar_quote_volume_usdt": 183624.21,
+        "observed_period_change_percent": -1.74063
       }
     },
     {
@@ -249,7 +249,7 @@
       "interval": "1d",
       "venue": "okx",
       "url": "https://www.okx.com/api/v5/market/history-candles?instId=LINK-USDT&bar=1Dutc&limit=40",
-      "queried_at_utc": "2026-11-28T11:27:24+00:00",
+      "queried_at_utc": "2026-11-28T12:29:17+00:00",
       "status": "ok",
       "data": {
         "valid": true,
@@ -266,7 +266,7 @@
       "interval": "1d",
       "venue": "gate",
       "url": "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=LINK_USDT&interval=1d&limit=40",
-      "queried_at_utc": "2026-11-28T11:27:24+00:00",
+      "queried_at_utc": "2026-11-28T12:29:17+00:00",
       "status": "ok",
       "data": {
         "valid": true,
@@ -283,16 +283,16 @@
       "interval": "1h",
       "venue": "okx",
       "url": "https://www.okx.com/api/v5/market/history-candles?instId=AAVE-USDT&bar=1H&limit=40",
-      "queried_at_utc": "2026-11-28T11:27:25+00:00",
+      "queried_at_utc": "2026-11-28T12:29:18+00:00",
       "status": "ok",
       "data": {
         "valid": true,
-        "latest_closed_start_utc": "2026-11-28T10:00:00+00:00",
+        "latest_closed_start_utc": "2026-11-28T11:00:00+00:00",
         "closed_bars": 39,
         "latest_close_usdt": 93.32,
-        "last_bar_change_percent": 0.19326,
-        "last_bar_quote_volume_usdt": 16649.93,
-        "observed_period_change_percent": -1.37392
+        "last_bar_change_percent": -0.04284,
+        "last_bar_quote_volume_usdt": 11068.36,
+        "observed_period_change_percent": -2.26225
       }
     },
     {
@@ -300,16 +300,16 @@
       "interval": "1h",
       "venue": "gate",
       "url": "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=AAVE_USDT&interval=1h&limit=40",
-      "queried_at_utc": "2026-11-28T11:27:25+00:00",
+      "queried_at_utc": "2026-11-28T12:29:18+00:00",
       "status": "ok",
       "data": {
         "valid": true,
-        "latest_closed_start_utc": "2026-11-28T10:00:00+00:00",
+        "latest_closed_start_utc": "2026-11-28T11:00:00+00:00",
         "closed_bars": 39,
         "latest_close_usdt": 93.32,
-        "last_bar_change_percent": 0.161,
-        "last_bar_quote_volume_usdt": 381320.85,
-        "observed_period_change_percent": -1.36349
+        "last_bar_change_percent": -0.03214,
+        "last_bar_quote_volume_usdt": 315559.26,
+        "observed_period_change_percent": -2.23153
       }
     },
     {
@@ -317,7 +317,7 @@
       "interval": "1d",
       "venue": "okx",
       "url": "https://www.okx.com/api/v5/market/history-candles?instId=AAVE-USDT&bar=1Dutc&limit=40",
-      "queried_at_utc": "2026-11-28T11:27:25+00:00",
+      "queried_at_utc": "2026-11-28T12:29:19+00:00",
       "status": "ok",
       "data": {
         "valid": true,
@@ -334,7 +334,7 @@
       "interval": "1d",
       "venue": "gate",
       "url": "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=AAVE_USDT&interval=1d&limit=40",
-      "queried_at_utc": "2026-11-28T11:27:26+00:00",
+      "queried_at_utc": "2026-11-28T12:29:19+00:00",
       "status": "ok",
       "data": {
         "valid": true,
@@ -351,16 +351,16 @@
       "interval": "1h",
       "venue": "okx",
       "url": "https://www.okx.com/api/v5/market/history-candles?instId=UNI-USDT&bar=1H&limit=40",
-      "queried_at_utc": "2026-11-28T11:27:26+00:00",
+      "queried_at_utc": "2026-11-28T12:29:20+00:00",
       "status": "ok",
       "data": {
         "valid": true,
-        "latest_closed_start_utc": "2026-11-28T10:00:00+00:00",
+        "latest_closed_start_utc": "2026-11-28T11:00:00+00:00",
         "closed_bars": 39,
-        "latest_close_usdt": 4.697,
-        "last_bar_change_percent": 0.19198,
-        "last_bar_quote_volume_usdt": 131044.82,
-        "observed_period_change_percent": 0.32038
+        "latest_close_usdt": 4.713,
+        "last_bar_change_percent": 0.36201,
+        "last_bar_quote_volume_usdt": 50136.81,
+        "observed_period_change_percent": 0.0
       }
     },
     {
@@ -368,16 +368,16 @@
       "interval": "1h",
       "venue": "gate",
       "url": "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=UNI_USDT&interval=1h&limit=40",
-      "queried_at_utc": "2026-11-28T11:27:26+00:00",
+      "queried_at_utc": "2026-11-28T12:29:20+00:00",
       "status": "ok",
       "data": {
         "valid": true,
-        "latest_closed_start_utc": "2026-11-28T10:00:00+00:00",
+        "latest_closed_start_utc": "2026-11-28T11:00:00+00:00",
         "closed_bars": 39,
-        "latest_close_usdt": 4.697,
-        "last_bar_change_percent": 0.19198,
-        "last_bar_quote_volume_usdt": 143177.57,
-        "observed_period_change_percent": 0.32038
+        "latest_close_usdt": 4.713,
+        "last_bar_change_percent": 0.36201,
+        "last_bar_quote_volume_usdt": 53064.51,
+        "observed_period_change_percent": 0.0
       }
     },
     {
@@ -385,7 +385,7 @@
       "interval": "1d",
       "venue": "okx",
       "url": "https://www.okx.com/api/v5/market/history-candles?instId=UNI-USDT&bar=1Dutc&limit=40",
-      "queried_at_utc": "2026-11-28T11:27:27+00:00",
+      "queried_at_utc": "2026-11-28T12:29:21+00:00",
       "status": "ok",
       "data": {
         "valid": true,
@@ -402,7 +402,7 @@
       "interval": "1d",
       "venue": "gate",
       "url": "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=UNI_USDT&interval=1d&limit=40",
-      "queried_at_utc": "2026-11-28T11:27:27+00:00",
+      "queried_at_utc": "2026-11-28T12:29:21+00:00",
       "status": "ok",
       "data": {
         "valid": true,
@@ -419,16 +419,16 @@
       "interval": "1h",
       "venue": "okx",
       "url": "https://www.okx.com/api/v5/market/history-candles?instId=AVAX-USDT&bar=1H&limit=40",
-      "queried_at_utc": "2026-11-28T11:27:28+00:00",
+      "queried_at_utc": "2026-11-28T12:29:22+00:00",
       "status": "ok",
       "data": {
         "valid": true,
-        "latest_closed_start_utc": "2026-11-28T10:00:00+00:00",
+        "latest_closed_start_utc": "2026-11-28T11:00:00+00:00",
         "closed_bars": 39,
-        "latest_close_usdt": 6.492,
-        "last_bar_change_percent": -0.53623,
-        "last_bar_quote_volume_usdt": 54699.55,
-        "observed_period_change_percent": -2.66867
+        "latest_close_usdt": 6.495,
+        "last_bar_change_percent": 0.06162,
+        "last_bar_quote_volume_usdt": 23290.9,
+        "observed_period_change_percent": -2.36019
       }
     },
     {
@@ -436,16 +436,16 @@
       "interval": "1h",
       "venue": "gate",
       "url": "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=AVAX_USDT&interval=1h&limit=40",
-      "queried_at_utc": "2026-11-28T11:27:28+00:00",
+      "queried_at_utc": "2026-11-28T12:29:22+00:00",
       "status": "ok",
       "data": {
         "valid": true,
-        "latest_closed_start_utc": "2026-11-28T10:00:00+00:00",
+        "latest_closed_start_utc": "2026-11-28T11:00:00+00:00",
         "closed_bars": 39,
-        "latest_close_usdt": 6.492,
-        "last_bar_change_percent": -0.53623,
-        "last_bar_quote_volume_usdt": 4007.64,
-        "observed_period_change_percent": -2.58103
+        "latest_close_usdt": 6.495,
+        "last_bar_change_percent": 0.0154,
+        "last_bar_quote_volume_usdt": 6321.24,
+        "observed_period_change_percent": -2.41887
       }
     },
     {
@@ -453,7 +453,7 @@
       "interval": "1d",
       "venue": "okx",
       "url": "https://www.okx.com/api/v5/market/history-candles?instId=AVAX-USDT&bar=1Dutc&limit=40",
-      "queried_at_utc": "2026-11-28T11:27:29+00:00",
+      "queried_at_utc": "2026-11-28T12:29:23+00:00",
       "status": "ok",
       "data": {
         "valid": true,
@@ -470,7 +470,7 @@
       "interval": "1d",
       "venue": "gate",
       "url": "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=AVAX_USDT&interval=1d&limit=40",
-      "queried_at_utc": "2026-11-28T11:27:29+00:00",
+      "queried_at_utc": "2026-11-28T12:29:23+00:00",
       "status": "ok",
       "data": {
         "valid": true,
@@ -487,16 +487,16 @@
       "interval": "1h",
       "venue": "okx",
       "url": "https://www.okx.com/api/v5/market/history-candles?instId=NEAR-USDT&bar=1H&limit=40",
-      "queried_at_utc": "2026-11-28T11:27:29+00:00",
+      "queried_at_utc": "2026-11-28T12:29:24+00:00",
       "status": "ok",
       "data": {
         "valid": true,
-        "latest_closed_start_utc": "2026-11-28T10:00:00+00:00",
+        "latest_closed_start_utc": "2026-11-28T11:00:00+00:00",
         "closed_bars": 39,
-        "latest_close_usdt": 2.991,
-        "last_bar_change_percent": -0.3996,
-        "last_bar_quote_volume_usdt": 402162.38,
-        "observed_period_change_percent": -2.88961
+        "latest_close_usdt": 2.989,
+        "last_bar_change_percent": -0.03344,
+        "last_bar_quote_volume_usdt": 434757.14,
+        "observed_period_change_percent": -3.48725
       }
     },
     {
@@ -504,16 +504,16 @@
       "interval": "1h",
       "venue": "gate",
       "url": "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=NEAR_USDT&interval=1h&limit=40",
-      "queried_at_utc": "2026-11-28T11:27:30+00:00",
+      "queried_at_utc": "2026-11-28T12:29:24+00:00",
       "status": "ok",
       "data": {
         "valid": true,
-        "latest_closed_start_utc": "2026-11-28T10:00:00+00:00",
+        "latest_closed_start_utc": "2026-11-28T11:00:00+00:00",
         "closed_bars": 39,
-        "latest_close_usdt": 2.992,
-        "last_bar_change_percent": -0.3663,
-        "last_bar_quote_volume_usdt": 519372.63,
-        "observed_period_change_percent": -2.79402
+        "latest_close_usdt": 2.987,
+        "last_bar_change_percent": -0.13373,
+        "last_bar_quote_volume_usdt": 394098.21,
+        "observed_period_change_percent": -3.61407
       }
     },
     {
@@ -521,7 +521,7 @@
       "interval": "1d",
       "venue": "okx",
       "url": "https://www.okx.com/api/v5/market/history-candles?instId=NEAR-USDT&bar=1Dutc&limit=40",
-      "queried_at_utc": "2026-11-28T11:27:30+00:00",
+      "queried_at_utc": "2026-11-28T12:29:25+00:00",
       "status": "ok",
       "data": {
         "valid": true,
@@ -538,7 +538,7 @@
       "interval": "1d",
       "venue": "gate",
       "url": "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=NEAR_USDT&interval=1d&limit=40",
-      "queried_at_utc": "2026-11-28T11:27:30+00:00",
+      "queried_at_utc": "2026-11-28T12:29:25+00:00",
       "status": "ok",
       "data": {
         "valid": true,
@@ -555,16 +555,16 @@
       "interval": "1h",
       "venue": "okx",
       "url": "https://www.okx.com/api/v5/market/history-candles?instId=ATOM-USDT&bar=1H&limit=40",
-      "queried_at_utc": "2026-11-28T11:27:31+00:00",
+      "queried_at_utc": "2026-11-28T12:29:26+00:00",
       "status": "ok",
       "data": {
         "valid": true,
-        "latest_closed_start_utc": "2026-11-28T10:00:00+00:00",
+        "latest_closed_start_utc": "2026-11-28T11:00:00+00:00",
         "closed_bars": 39,
-        "latest_close_usdt": 1.205,
-        "last_bar_change_percent": 0.50042,
-        "last_bar_quote_volume_usdt": 13395.37,
-        "observed_period_change_percent": -1.22951
+        "latest_close_usdt": 1.203,
+        "last_bar_change_percent": -0.24876,
+        "last_bar_quote_volume_usdt": 13740.21,
+        "observed_period_change_percent": -1.71569
       }
     },
     {
@@ -572,16 +572,16 @@
       "interval": "1h",
       "venue": "gate",
       "url": "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=ATOM_USDT&interval=1h&limit=40",
-      "queried_at_utc": "2026-11-28T11:27:31+00:00",
+      "queried_at_utc": "2026-11-28T12:29:26+00:00",
       "status": "ok",
       "data": {
         "valid": true,
-        "latest_closed_start_utc": "2026-11-28T10:00:00+00:00",
+        "latest_closed_start_utc": "2026-11-28T11:00:00+00:00",
         "closed_bars": 39,
-        "latest_close_usdt": 1.204,
-        "last_bar_change_percent": 0.41701,
-        "last_bar_quote_volume_usdt": 5876.62,
-        "observed_period_change_percent": -1.23052
+        "latest_close_usdt": 1.206,
+        "last_bar_change_percent": 0.16611,
+        "last_bar_quote_volume_usdt": 1910.8,
+        "observed_period_change_percent": -1.30933
       }
     },
     {
@@ -589,7 +589,7 @@
       "interval": "1d",
       "venue": "okx",
       "url": "https://www.okx.com/api/v5/market/history-candles?instId=ATOM-USDT&bar=1Dutc&limit=40",
-      "queried_at_utc": "2026-11-28T11:27:32+00:00",
+      "queried_at_utc": "2026-11-28T12:29:27+00:00",
       "status": "ok",
       "data": {
         "valid": true,
@@ -606,7 +606,7 @@
       "interval": "1d",
       "venue": "gate",
       "url": "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=ATOM_USDT&interval=1d&limit=40",
-      "queried_at_utc": "2026-11-28T11:27:32+00:00",
+      "queried_at_utc": "2026-11-28T12:29:27+00:00",
       "status": "ok",
       "data": {
         "valid": true,
@@ -623,16 +623,16 @@
       "interval": "1h",
       "venue": "okx",
       "url": "https://www.okx.com/api/v5/market/history-candles?instId=INJ-USDT&bar=1H&limit=40",
-      "queried_at_utc": "2026-11-28T11:27:33+00:00",
+      "queried_at_utc": "2026-11-28T12:29:28+00:00",
       "status": "ok",
       "data": {
         "valid": true,
-        "latest_closed_start_utc": "2026-11-28T10:00:00+00:00",
+        "latest_closed_start_utc": "2026-11-28T11:00:00+00:00",
         "closed_bars": 39,
-        "latest_close_usdt": 6.191,
-        "last_bar_change_percent": -0.99152,
-        "last_bar_quote_volume_usdt": 22781.85,
-        "observed_period_change_percent": -0.89643
+        "latest_close_usdt": 6.18,
+        "last_bar_change_percent": -0.17768,
+        "last_bar_quote_volume_usdt": 56410.03,
+        "observed_period_change_percent": -1.98255
       }
     },
     {
@@ -640,16 +640,16 @@
       "interval": "1h",
       "venue": "gate",
       "url": "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=INJ_USDT&interval=1h&limit=40",
-      "queried_at_utc": "2026-11-28T11:27:33+00:00",
+      "queried_at_utc": "2026-11-28T12:29:28+00:00",
       "status": "ok",
       "data": {
         "valid": true,
-        "latest_closed_start_utc": "2026-11-28T10:00:00+00:00",
+        "latest_closed_start_utc": "2026-11-28T11:00:00+00:00",
         "closed_bars": 39,
-        "latest_close_usdt": 6.188,
-        "last_bar_change_percent": -1.02367,
-        "last_bar_quote_volume_usdt": 197779.38,
-        "observed_period_change_percent": -0.88099
+        "latest_close_usdt": 6.177,
+        "last_bar_change_percent": -0.16163,
+        "last_bar_quote_volume_usdt": 200171.27,
+        "observed_period_change_percent": -1.82772
       }
     },
     {
@@ -657,7 +657,7 @@
       "interval": "1d",
       "venue": "okx",
       "url": "https://www.okx.com/api/v5/market/history-candles?instId=INJ-USDT&bar=1Dutc&limit=40",
-      "queried_at_utc": "2026-11-28T11:27:33+00:00",
+      "queried_at_utc": "2026-11-28T12:29:29+00:00",
       "status": "ok",
       "data": {
         "valid": true,
@@ -674,7 +674,7 @@
       "interval": "1d",
       "venue": "gate",
       "url": "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=INJ_USDT&interval=1d&limit=40",
-      "queried_at_utc": "2026-11-28T11:27:33+00:00",
+      "queried_at_utc": "2026-11-28T12:29:29+00:00",
       "status": "ok",
       "data": {
         "valid": true,
@@ -691,16 +691,16 @@
       "interval": "1h",
       "venue": "okx",
       "url": "https://www.okx.com/api/v5/market/history-candles?instId=ARB-USDT&bar=1H&limit=40",
-      "queried_at_utc": "2026-11-28T11:27:34+00:00",
+      "queried_at_utc": "2026-11-28T12:29:30+00:00",
       "status": "ok",
       "data": {
         "valid": true,
-        "latest_closed_start_utc": "2026-11-28T10:00:00+00:00",
+        "latest_closed_start_utc": "2026-11-28T11:00:00+00:00",
         "closed_bars": 39,
-        "latest_close_usdt": 0.1118,
-        "last_bar_change_percent": -0.37426,
-        "last_bar_quote_volume_usdt": 66951.73,
-        "observed_period_change_percent": -1.48912
+        "latest_close_usdt": 0.11222,
+        "last_bar_change_percent": 0.35772,
+        "last_bar_quote_volume_usdt": 45659.42,
+        "observed_period_change_percent": -1.51821
       }
     },
     {
@@ -708,16 +708,16 @@
       "interval": "1h",
       "venue": "gate",
       "url": "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=ARB_USDT&interval=1h&limit=40",
-      "queried_at_utc": "2026-11-28T11:27:34+00:00",
+      "queried_at_utc": "2026-11-28T12:29:30+00:00",
       "status": "ok",
       "data": {
         "valid": true,
-        "latest_closed_start_utc": "2026-11-28T10:00:00+00:00",
+        "latest_closed_start_utc": "2026-11-28T11:00:00+00:00",
         "closed_bars": 39,
-        "latest_close_usdt": 0.11174,
-        "last_bar_change_percent": -0.52524,
-        "last_bar_quote_volume_usdt": 21553.08,
-        "observed_period_change_percent": -1.59401
+        "latest_close_usdt": 0.11228,
+        "last_bar_change_percent": 0.41138,
+        "last_bar_quote_volume_usdt": 38627.81,
+        "observed_period_change_percent": -1.48285
       }
     },
     {
@@ -725,7 +725,7 @@
       "interval": "1d",
       "venue": "okx",
       "url": "https://www.okx.com/api/v5/market/history-candles?instId=ARB-USDT&bar=1Dutc&limit=40",
-      "queried_at_utc": "2026-11-28T11:27:35+00:00",
+      "queried_at_utc": "2026-11-28T12:29:31+00:00",
       "status": "ok",
       "data": {
         "valid": true,
@@ -742,7 +742,7 @@
       "interval": "1d",
       "venue": "gate",
       "url": "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=ARB_USDT&interval=1d&limit=40",
-      "queried_at_utc": "2026-11-28T11:27:35+00:00",
+      "queried_at_utc": "2026-11-28T12:29:31+00:00",
       "status": "ok",
       "data": {
         "valid": true,
@@ -759,16 +759,16 @@
       "interval": "1h",
       "venue": "okx",
       "url": "https://www.okx.com/api/v5/market/history-candles?instId=OP-USDT&bar=1H&limit=40",
-      "queried_at_utc": "2026-11-28T11:27:35+00:00",
+      "queried_at_utc": "2026-11-28T12:29:32+00:00",
       "status": "ok",
       "data": {
         "valid": true,
-        "latest_closed_start_utc": "2026-11-28T10:00:00+00:00",
+        "latest_closed_start_utc": "2026-11-28T11:00:00+00:00",
         "closed_bars": 39,
-        "latest_close_usdt": 0.06896,
-        "last_bar_change_percent": -0.05797,
-        "last_bar_quote_volume_usdt": 18327.24,
-        "observed_period_change_percent": -1.68235
+        "latest_close_usdt": 0.06888,
+        "last_bar_change_percent": 0.0,
+        "last_bar_quote_volume_usdt": 13912.12,
+        "observed_period_change_percent": -2.06171
       }
     },
     {
@@ -776,16 +776,16 @@
       "interval": "1h",
       "venue": "gate",
       "url": "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=OP_USDT&interval=1h&limit=40",
-      "queried_at_utc": "2026-11-28T11:27:36+00:00",
+      "queried_at_utc": "2026-11-28T12:29:32+00:00",
       "status": "ok",
       "data": {
         "valid": true,
-        "latest_closed_start_utc": "2026-11-28T10:00:00+00:00",
+        "latest_closed_start_utc": "2026-11-28T11:00:00+00:00",
         "closed_bars": 39,
-        "latest_close_usdt": 0.0689,
-        "last_bar_change_percent": -0.18832,
-        "last_bar_quote_volume_usdt": 3111.83,
-        "observed_period_change_percent": -1.7959
+        "latest_close_usdt": 0.06893,
+        "last_bar_change_percent": 0.0,
+        "last_bar_quote_volume_usdt": 3971.25,
+        "observed_period_change_percent": -1.99062
       }
     },
     {
@@ -793,7 +793,7 @@
       "interval": "1d",
       "venue": "okx",
       "url": "https://www.okx.com/api/v5/market/history-candles?instId=OP-USDT&bar=1Dutc&limit=40",
-      "queried_at_utc": "2026-11-28T11:27:36+00:00",
+      "queried_at_utc": "2026-11-28T12:29:33+00:00",
       "status": "ok",
       "data": {
         "valid": true,
@@ -810,7 +810,7 @@
       "interval": "1d",
       "venue": "gate",
       "url": "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=OP_USDT&interval=1d&limit=40",
-      "queried_at_utc": "2026-11-28T11:27:36+00:00",
+      "queried_at_utc": "2026-11-28T12:29:33+00:00",
       "status": "ok",
       "data": {
         "valid": true,
@@ -827,16 +827,16 @@
       "interval": "1h",
       "venue": "okx",
       "url": "https://www.okx.com/api/v5/market/history-candles?instId=SUI-USDT&bar=1H&limit=40",
-      "queried_at_utc": "2026-11-28T11:27:37+00:00",
+      "queried_at_utc": "2026-11-28T12:29:33+00:00",
       "status": "ok",
       "data": {
         "valid": true,
-        "latest_closed_start_utc": "2026-11-28T10:00:00+00:00",
+        "latest_closed_start_utc": "2026-11-28T11:00:00+00:00",
         "closed_bars": 39,
-        "latest_close_usdt": 0.6631,
-        "last_bar_change_percent": -0.5698,
-        "last_bar_quote_volume_usdt": 368318.64,
-        "observed_period_change_percent": -1.61721
+        "latest_close_usdt": 0.6637,
+        "last_bar_change_percent": 0.09048,
+        "last_bar_quote_volume_usdt": 94003.44,
+        "observed_period_change_percent": -1.67407
       }
     },
     {
@@ -844,16 +844,16 @@
       "interval": "1h",
       "venue": "gate",
       "url": "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=SUI_USDT&interval=1h&limit=40",
-      "queried_at_utc": "2026-11-28T11:27:37+00:00",
+      "queried_at_utc": "2026-11-28T12:29:34+00:00",
       "status": "ok",
       "data": {
         "valid": true,
-        "latest_closed_start_utc": "2026-11-28T10:00:00+00:00",
+        "latest_closed_start_utc": "2026-11-28T11:00:00+00:00",
         "closed_bars": 39,
-        "latest_close_usdt": 0.663,
-        "last_bar_change_percent": -0.56989,
-        "last_bar_quote_volume_usdt": 296309.72,
-        "observed_period_change_percent": -1.69039
+        "latest_close_usdt": 0.6637,
+        "last_bar_change_percent": 0.10558,
+        "last_bar_quote_volume_usdt": 145829.93,
+        "observed_period_change_percent": -1.67407
       }
     },
     {
@@ -861,7 +861,7 @@
       "interval": "1d",
       "venue": "okx",
       "url": "https://www.okx.com/api/v5/market/history-candles?instId=SUI-USDT&bar=1Dutc&limit=40",
-      "queried_at_utc": "2026-11-28T11:27:38+00:00",
+      "queried_at_utc": "2026-11-28T12:29:34+00:00",
       "status": "ok",
       "data": {
         "valid": true,
@@ -878,7 +878,7 @@
       "interval": "1d",
       "venue": "gate",
       "url": "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=SUI_USDT&interval=1d&limit=40",
-      "queried_at_utc": "2026-11-28T11:27:38+00:00",
+      "queried_at_utc": "2026-11-28T12:29:35+00:00",
       "status": "ok",
       "data": {
         "valid": true,
@@ -895,16 +895,16 @@
       "interval": "1h",
       "venue": "okx",
       "url": "https://www.okx.com/api/v5/market/history-candles?instId=SEI-USDT&bar=1H&limit=40",
-      "queried_at_utc": "2026-11-28T11:27:38+00:00",
+      "queried_at_utc": "2026-11-28T12:29:35+00:00",
       "status": "ok",
       "data": {
         "valid": true,
-        "latest_closed_start_utc": "2026-11-28T10:00:00+00:00",
+        "latest_closed_start_utc": "2026-11-28T11:00:00+00:00",
         "closed_bars": 39,
-        "latest_close_usdt": 0.03808,
-        "last_bar_change_percent": 0.60766,
-        "last_bar_quote_volume_usdt": 82908.31,
-        "observed_period_change_percent": -4.72855
+        "latest_close_usdt": 0.03807,
+        "last_bar_change_percent": 0.0,
+        "last_bar_quote_volume_usdt": 26126.43,
+        "observed_period_change_percent": -4.41878
       }
     },
     {
@@ -912,16 +912,16 @@
       "interval": "1h",
       "venue": "gate",
       "url": "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=SEI_USDT&interval=1h&limit=40",
-      "queried_at_utc": "2026-11-28T11:27:39+00:00",
+      "queried_at_utc": "2026-11-28T12:29:36+00:00",
       "status": "ok",
       "data": {
         "valid": true,
-        "latest_closed_start_utc": "2026-11-28T10:00:00+00:00",
+        "latest_closed_start_utc": "2026-11-28T11:00:00+00:00",
         "closed_bars": 39,
-        "latest_close_usdt": 0.0381,
-        "last_bar_change_percent": 0.74035,
-        "last_bar_quote_volume_usdt": 27589.05,
-        "observed_period_change_percent": -4.63079
+        "latest_close_usdt": 0.03806,
+        "last_bar_change_percent": 0.0,
+        "last_bar_quote_volume_usdt": 11289.4,
+        "observed_period_change_percent": -4.49184
       }
     },
     {
@@ -929,7 +929,7 @@
       "interval": "1d",
       "venue": "okx",
       "url": "https://www.okx.com/api/v5/market/history-candles?instId=SEI-USDT&bar=1Dutc&limit=40",
-      "queried_at_utc": "2026-11-28T11:27:39+00:00",
+      "queried_at_utc": "2026-11-28T12:29:36+00:00",
       "status": "ok",
       "data": {
         "valid": true,
@@ -946,7 +946,7 @@
       "interval": "1d",
       "venue": "gate",
       "url": "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=SEI_USDT&interval=1d&limit=40",
-      "queried_at_utc": "2026-11-28T11:27:39+00:00",
+      "queried_at_utc": "2026-11-28T12:29:37+00:00",
       "status": "ok",
       "data": {
         "valid": true,
@@ -963,16 +963,16 @@
       "interval": "1h",
       "venue": "okx",
       "url": "https://www.okx.com/api/v5/market/history-candles?instId=APT-USDT&bar=1H&limit=40",
-      "queried_at_utc": "2026-11-28T11:27:40+00:00",
+      "queried_at_utc": "2026-11-28T12:29:37+00:00",
       "status": "ok",
       "data": {
         "valid": true,
-        "latest_closed_start_utc": "2026-11-28T10:00:00+00:00",
+        "latest_closed_start_utc": "2026-11-28T11:00:00+00:00",
         "closed_bars": 39,
-        "latest_close_usdt": 0.3769,
-        "last_bar_change_percent": -0.13249,
-        "last_bar_quote_volume_usdt": 17507.07,
-        "observed_period_change_percent": -2.83578
+        "latest_close_usdt": 0.3773,
+        "last_bar_change_percent": 0.23911,
+        "last_bar_quote_volume_usdt": 12781.95,
+        "observed_period_change_percent": -2.58198
       }
     },
     {
@@ -980,16 +980,16 @@
       "interval": "1h",
       "venue": "gate",
       "url": "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=APT_USDT&interval=1h&limit=40",
-      "queried_at_utc": "2026-11-28T11:27:40+00:00",
+      "queried_at_utc": "2026-11-28T12:29:38+00:00",
       "status": "ok",
       "data": {
         "valid": true,
-        "latest_closed_start_utc": "2026-11-28T10:00:00+00:00",
+        "latest_closed_start_utc": "2026-11-28T11:00:00+00:00",
         "closed_bars": 39,
-        "latest_close_usdt": 0.3765,
-        "last_bar_change_percent": -0.21203,
-        "last_bar_quote_volume_usdt": 1974.17,
-        "observed_period_change_percent": -3.03889
+        "latest_close_usdt": 0.3778,
+        "last_bar_change_percent": 0.37194,
+        "last_bar_quote_volume_usdt": 429.96,
+        "observed_period_change_percent": -2.37726
       }
     },
     {
@@ -997,7 +997,7 @@
       "interval": "1d",
       "venue": "okx",
       "url": "https://www.okx.com/api/v5/market/history-candles?instId=APT-USDT&bar=1Dutc&limit=40",
-      "queried_at_utc": "2026-11-28T11:27:41+00:00",
+      "queried_at_utc": "2026-11-28T12:29:38+00:00",
       "status": "ok",
       "data": {
         "valid": true,
@@ -1014,7 +1014,7 @@
       "interval": "1d",
       "venue": "gate",
       "url": "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=APT_USDT&interval=1d&limit=40",
-      "queried_at_utc": "2026-11-28T11:27:41+00:00",
+      "queried_at_utc": "2026-11-28T12:29:39+00:00",
       "status": "ok",
       "data": {
         "valid": true,
@@ -1031,16 +1031,16 @@
       "interval": "1h",
       "venue": "okx",
       "url": "https://www.okx.com/api/v5/market/history-candles?instId=TIA-USDT&bar=1H&limit=40",
-      "queried_at_utc": "2026-11-28T11:27:41+00:00",
+      "queried_at_utc": "2026-11-28T12:29:39+00:00",
       "status": "ok",
       "data": {
         "valid": true,
-        "latest_closed_start_utc": "2026-11-28T10:00:00+00:00",
+        "latest_closed_start_utc": "2026-11-28T11:00:00+00:00",
         "closed_bars": 39,
-        "latest_close_usdt": 0.3326,
-        "last_bar_change_percent": -0.53828,
-        "last_bar_quote_volume_usdt": 8492.98,
-        "observed_period_change_percent": -2.83377
+        "latest_close_usdt": 0.3322,
+        "last_bar_change_percent": -0.15029,
+        "last_bar_quote_volume_usdt": 4407.23,
+        "observed_period_change_percent": -2.46624
       }
     },
     {
@@ -1048,16 +1048,16 @@
       "interval": "1h",
       "venue": "gate",
       "url": "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=TIA_USDT&interval=1h&limit=40",
-      "queried_at_utc": "2026-11-28T11:27:42+00:00",
+      "queried_at_utc": "2026-11-28T12:29:40+00:00",
       "status": "ok",
       "data": {
         "valid": true,
-        "latest_closed_start_utc": "2026-11-28T10:00:00+00:00",
+        "latest_closed_start_utc": "2026-11-28T11:00:00+00:00",
         "closed_bars": 39,
-        "latest_close_usdt": 0.3325,
-        "last_bar_change_percent": -0.4491,
-        "last_bar_quote_volume_usdt": 2802.72,
-        "observed_period_change_percent": -2.69242
+        "latest_close_usdt": 0.3323,
+        "last_bar_change_percent": 0.09036,
+        "last_bar_quote_volume_usdt": 1571.5,
+        "observed_period_change_percent": -2.52273
       }
     },
     {
@@ -1065,7 +1065,7 @@
       "interval": "1d",
       "venue": "okx",
       "url": "https://www.okx.com/api/v5/market/history-candles?instId=TIA-USDT&bar=1Dutc&limit=40",
-      "queried_at_utc": "2026-11-28T11:27:42+00:00",
+      "queried_at_utc": "2026-11-28T12:29:41+00:00",
       "status": "ok",
       "data": {
         "valid": true,
@@ -1082,7 +1082,7 @@
       "interval": "1d",
       "venue": "gate",
       "url": "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=TIA_USDT&interval=1d&limit=40",
-      "queried_at_utc": "2026-11-28T11:27:42+00:00",
+      "queried_at_utc": "2026-11-28T12:29:41+00:00",
       "status": "ok",
       "data": {
         "valid": true,
@@ -1099,16 +1099,16 @@
       "interval": "1h",
       "venue": "okx",
       "url": "https://www.okx.com/api/v5/market/history-candles?instId=FET-USDT&bar=1H&limit=40",
-      "queried_at_utc": "2026-11-28T11:27:43+00:00",
+      "queried_at_utc": "2026-11-28T12:29:42+00:00",
       "status": "ok",
       "data": {
         "valid": true,
-        "latest_closed_start_utc": "2026-11-28T10:00:00+00:00",
+        "latest_closed_start_utc": "2026-11-28T11:00:00+00:00",
         "closed_bars": 39,
-        "latest_close_usdt": 0.1216,
-        "last_bar_change_percent": 0.0,
-        "last_bar_quote_volume_usdt": 42395.42,
-        "observed_period_change_percent": 0.82919
+        "latest_close_usdt": 0.1229,
+        "last_bar_change_percent": 1.06908,
+        "last_bar_quote_volume_usdt": 104934.25,
+        "observed_period_change_percent": 2.07641
       }
     },
     {
@@ -1116,16 +1116,16 @@
       "interval": "1h",
       "venue": "gate",
       "url": "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=FET_USDT&interval=1h&limit=40",
-      "queried_at_utc": "2026-11-28T11:27:43+00:00",
+      "queried_at_utc": "2026-11-28T12:29:42+00:00",
       "status": "ok",
       "data": {
         "valid": true,
-        "latest_closed_start_utc": "2026-11-28T10:00:00+00:00",
+        "latest_closed_start_utc": "2026-11-28T11:00:00+00:00",
         "closed_bars": 39,
-        "latest_close_usdt": 0.1214,
-        "last_bar_change_percent": -0.0823,
-        "last_bar_quote_volume_usdt": 26866.37,
-        "observed_period_change_percent": 0.57995
+        "latest_close_usdt": 0.1229,
+        "last_bar_change_percent": 1.06908,
+        "last_bar_quote_volume_usdt": 56989.7,
+        "observed_period_change_percent": 1.90713
       }
     },
     {
@@ -1133,7 +1133,7 @@
       "interval": "1d",
       "venue": "okx",
       "url": "https://www.okx.com/api/v5/market/history-candles?instId=FET-USDT&bar=1Dutc&limit=40",
-      "queried_at_utc": "2026-11-28T11:27:44+00:00",
+      "queried_at_utc": "2026-11-28T12:29:43+00:00",
       "status": "ok",
       "data": {
         "valid": true,
@@ -1150,7 +1150,7 @@
       "interval": "1d",
       "venue": "gate",
       "url": "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=FET_USDT&interval=1d&limit=40",
-      "queried_at_utc": "2026-11-28T11:27:44+00:00",
+      "queried_at_utc": "2026-11-28T12:29:43+00:00",
       "status": "ok",
       "data": {
         "valid": true,
@@ -1167,16 +1167,16 @@
       "interval": "1h",
       "venue": "okx",
       "url": "https://www.okx.com/api/v5/market/history-candles?instId=RENDER-USDT&bar=1H&limit=40",
-      "queried_at_utc": "2026-11-28T11:27:44+00:00",
+      "queried_at_utc": "2026-11-28T12:29:44+00:00",
       "status": "ok",
       "data": {
         "valid": true,
-        "latest_closed_start_utc": "2026-11-28T10:00:00+00:00",
+        "latest_closed_start_utc": "2026-11-28T11:00:00+00:00",
         "closed_bars": 39,
-        "latest_close_usdt": 1.336,
-        "last_bar_change_percent": -0.52122,
-        "last_bar_quote_volume_usdt": 16647.9,
-        "observed_period_change_percent": -0.29851
+        "latest_close_usdt": 1.341,
+        "last_bar_change_percent": 0.29918,
+        "last_bar_quote_volume_usdt": 12184.8,
+        "observed_period_change_percent": 0.07463
       }
     },
     {
@@ -1184,16 +1184,16 @@
       "interval": "1h",
       "venue": "gate",
       "url": "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=RENDER_USDT&interval=1h&limit=40",
-      "queried_at_utc": "2026-11-28T11:27:45+00:00",
+      "queried_at_utc": "2026-11-28T12:29:44+00:00",
       "status": "ok",
       "data": {
         "valid": true,
-        "latest_closed_start_utc": "2026-11-28T10:00:00+00:00",
+        "latest_closed_start_utc": "2026-11-28T11:00:00+00:00",
         "closed_bars": 39,
-        "latest_close_usdt": 1.3364,
-        "last_bar_change_percent": -0.3356,
-        "last_bar_quote_volume_usdt": 51573.39,
-        "observed_period_change_percent": -0.20163
+        "latest_close_usdt": 1.3409,
+        "last_bar_change_percent": 0.37428,
+        "last_bar_quote_volume_usdt": 20645.03,
+        "observed_period_change_percent": 0.16434
       }
     },
     {
@@ -1201,7 +1201,7 @@
       "interval": "1d",
       "venue": "okx",
       "url": "https://www.okx.com/api/v5/market/history-candles?instId=RENDER-USDT&bar=1Dutc&limit=40",
-      "queried_at_utc": "2026-11-28T11:27:45+00:00",
+      "queried_at_utc": "2026-11-28T12:29:45+00:00",
       "status": "ok",
       "data": {
         "valid": true,
@@ -1218,7 +1218,7 @@
       "interval": "1d",
       "venue": "gate",
       "url": "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=RENDER_USDT&interval=1d&limit=40",
-      "queried_at_utc": "2026-11-28T11:27:45+00:00",
+      "queried_at_utc": "2026-11-28T12:29:45+00:00",
       "status": "ok",
       "data": {
         "valid": true,
@@ -1235,16 +1235,16 @@
       "interval": "1h",
       "venue": "okx",
       "url": "https://www.okx.com/api/v5/market/history-candles?instId=ONDO-USDT&bar=1H&limit=40",
-      "queried_at_utc": "2026-11-28T11:27:46+00:00",
+      "queried_at_utc": "2026-11-28T12:29:46+00:00",
       "status": "ok",
       "data": {
         "valid": true,
-        "latest_closed_start_utc": "2026-11-28T10:00:00+00:00",
+        "latest_closed_start_utc": "2026-11-28T11:00:00+00:00",
         "closed_bars": 39,
-        "latest_close_usdt": 0.2811,
-        "last_bar_change_percent": -0.17756,
-        "last_bar_quote_volume_usdt": 26623.94,
-        "observed_period_change_percent": -2.6999
+        "latest_close_usdt": 0.282,
+        "last_bar_change_percent": 0.2845,
+        "last_bar_quote_volume_usdt": 158280.11,
+        "observed_period_change_percent": -3.22581
       }
     },
     {
@@ -1252,16 +1252,16 @@
       "interval": "1h",
       "venue": "gate",
       "url": "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=ONDO_USDT&interval=1h&limit=40",
-      "queried_at_utc": "2026-11-28T11:27:46+00:00",
+      "queried_at_utc": "2026-11-28T12:29:46+00:00",
       "status": "ok",
       "data": {
         "valid": true,
-        "latest_closed_start_utc": "2026-11-28T10:00:00+00:00",
+        "latest_closed_start_utc": "2026-11-28T11:00:00+00:00",
         "closed_bars": 39,
-        "latest_close_usdt": 0.2811,
-        "last_bar_change_percent": -0.17756,
-        "last_bar_quote_volume_usdt": 35322.21,
-        "observed_period_change_percent": -2.6999
+        "latest_close_usdt": 0.2819,
+        "last_bar_change_percent": 0.2846,
+        "last_bar_quote_volume_usdt": 76577.68,
+        "observed_period_change_percent": -3.26012
       }
     },
     {
@@ -1269,7 +1269,7 @@
       "interval": "1d",
       "venue": "okx",
       "url": "https://www.okx.com/api/v5/market/history-candles?instId=ONDO-USDT&bar=1Dutc&limit=40",
-      "queried_at_utc": "2026-11-28T11:27:47+00:00",
+      "queried_at_utc": "2026-11-28T12:29:47+00:00",
       "status": "ok",
       "data": {
         "valid": true,
@@ -1286,7 +1286,7 @@
       "interval": "1d",
       "venue": "gate",
       "url": "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=ONDO_USDT&interval=1d&limit=40",
-      "queried_at_utc": "2026-11-28T11:27:47+00:00",
+      "queried_at_utc": "2026-11-28T12:29:47+00:00",
       "status": "ok",
       "data": {
         "valid": true,
@@ -1303,16 +1303,16 @@
       "interval": "1h",
       "venue": "okx",
       "url": "https://www.okx.com/api/v5/market/history-candles?instId=HYPE-USDT&bar=1H&limit=40",
-      "queried_at_utc": "2026-11-28T11:27:47+00:00",
+      "queried_at_utc": "2026-11-28T12:29:47+00:00",
       "status": "ok",
       "data": {
         "valid": true,
-        "latest_closed_start_utc": "2026-11-28T10:00:00+00:00",
+        "latest_closed_start_utc": "2026-11-28T11:00:00+00:00",
         "closed_bars": 39,
-        "latest_close_usdt": 62.681,
-        "last_bar_change_percent": -1.04198,
-        "last_bar_quote_volume_usdt": 1500246.93,
-        "observed_period_change_percent": 1.00715
+        "latest_close_usdt": 62.606,
+        "last_bar_change_percent": -0.12921,
+        "last_bar_quote_volume_usdt": 814688.65,
+        "observed_period_change_percent": -0.90067
       }
     },
     {
@@ -1320,16 +1320,16 @@
       "interval": "1h",
       "venue": "gate",
       "url": "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=HYPE_USDT&interval=1h&limit=40",
-      "queried_at_utc": "2026-11-28T11:27:48+00:00",
+      "queried_at_utc": "2026-11-28T12:29:48+00:00",
       "status": "ok",
       "data": {
         "valid": true,
-        "latest_closed_start_utc": "2026-11-28T10:00:00+00:00",
+        "latest_closed_start_utc": "2026-11-28T11:00:00+00:00",
         "closed_bars": 39,
-        "latest_close_usdt": 62.69,
-        "last_bar_change_percent": -1.04183,
-        "last_bar_quote_volume_usdt": 1320667.97,
-        "observed_period_change_percent": 1.04771
+        "latest_close_usdt": 62.6,
+        "last_bar_change_percent": -0.09575,
+        "last_bar_quote_volume_usdt": 839214.01,
+        "observed_period_change_percent": -0.96504
       }
     },
     {
@@ -1337,7 +1337,7 @@
       "interval": "1d",
       "venue": "okx",
       "url": "https://www.okx.com/api/v5/market/history-candles?instId=HYPE-USDT&bar=1Dutc&limit=40",
-      "queried_at_utc": "2026-11-28T11:27:48+00:00",
+      "queried_at_utc": "2026-11-28T12:29:48+00:00",
       "status": "ok",
       "data": {
         "valid": true,
@@ -1354,7 +1354,7 @@
       "interval": "1d",
       "venue": "gate",
       "url": "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=HYPE_USDT&interval=1d&limit=40",
-      "queried_at_utc": "2026-11-28T11:27:48+00:00",
+      "queried_at_utc": "2026-11-28T12:29:49+00:00",
       "status": "ok",
       "data": {
         "valid": true,
@@ -1371,16 +1371,16 @@
       "interval": "1h",
       "venue": "okx",
       "url": "https://www.okx.com/api/v5/market/history-candles?instId=ADA-USDT&bar=1H&limit=40",
-      "queried_at_utc": "2026-11-28T11:27:49+00:00",
+      "queried_at_utc": "2026-11-28T12:29:49+00:00",
       "status": "ok",
       "data": {
         "valid": true,
-        "latest_closed_start_utc": "2026-11-28T10:00:00+00:00",
+        "latest_closed_start_utc": "2026-11-28T11:00:00+00:00",
         "closed_bars": 39,
-        "latest_close_usdt": 0.1457,
-        "last_bar_change_percent": -0.342,
-        "last_bar_quote_volume_usdt": 168772.74,
-        "observed_period_change_percent": -3.31785
+        "latest_close_usdt": 0.1464,
+        "last_bar_change_percent": 0.41152,
+        "last_bar_quote_volume_usdt": 108268.59,
+        "observed_period_change_percent": -2.91777
       }
     },
     {
@@ -1388,16 +1388,16 @@
       "interval": "1h",
       "venue": "gate",
       "url": "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=ADA_USDT&interval=1h&limit=40",
-      "queried_at_utc": "2026-11-28T11:27:49+00:00",
+      "queried_at_utc": "2026-11-28T12:29:50+00:00",
       "status": "ok",
       "data": {
         "valid": true,
-        "latest_closed_start_utc": "2026-11-28T10:00:00+00:00",
+        "latest_closed_start_utc": "2026-11-28T11:00:00+00:00",
         "closed_bars": 39,
-        "latest_close_usdt": 0.14578,
-        "last_bar_change_percent": -0.2941,
-        "last_bar_quote_volume_usdt": 171774.09,
-        "observed_period_change_percent": -3.23908
+        "latest_close_usdt": 0.14631,
+        "last_bar_change_percent": 0.398,
+        "last_bar_quote_volume_usdt": 59361.59,
+        "observed_period_change_percent": -2.97102
       }
     },
     {
@@ -1405,7 +1405,7 @@
       "interval": "1d",
       "venue": "okx",
       "url": "https://www.okx.com/api/v5/market/history-candles?instId=ADA-USDT&bar=1Dutc&limit=40",
-      "queried_at_utc": "2026-11-28T11:27:50+00:00",
+      "queried_at_utc": "2026-11-28T12:29:50+00:00",
       "status": "ok",
       "data": {
         "valid": true,
@@ -1422,7 +1422,7 @@
       "interval": "1d",
       "venue": "gate",
       "url": "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=ADA_USDT&interval=1d&limit=40",
-      "queried_at_utc": "2026-11-28T11:27:50+00:00",
+      "queried_at_utc": "2026-11-28T12:29:51+00:00",
       "status": "ok",
       "data": {
         "valid": true,
@@ -1439,16 +1439,16 @@
       "interval": "1h",
       "venue": "okx",
       "url": "https://www.okx.com/api/v5/market/history-candles?instId=XRP-USDT&bar=1H&limit=40",
-      "queried_at_utc": "2026-11-28T11:27:50+00:00",
+      "queried_at_utc": "2026-11-28T12:29:51+00:00",
       "status": "ok",
       "data": {
         "valid": true,
-        "latest_closed_start_utc": "2026-11-28T10:00:00+00:00",
+        "latest_closed_start_utc": "2026-11-28T11:00:00+00:00",
         "closed_bars": 39,
-        "latest_close_usdt": 0.9382,
-        "last_bar_change_percent": -0.30815,
-        "last_bar_quote_volume_usdt": 528820.13,
-        "observed_period_change_percent": -1.54266
+        "latest_close_usdt": 0.9398,
+        "last_bar_change_percent": 0.17054,
+        "last_bar_quote_volume_usdt": 316854.46,
+        "observed_period_change_percent": -1.34369
       }
     },
     {
@@ -1456,16 +1456,16 @@
       "interval": "1h",
       "venue": "gate",
       "url": "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=XRP_USDT&interval=1h&limit=40",
-      "queried_at_utc": "2026-11-28T11:27:51+00:00",
+      "queried_at_utc": "2026-11-28T12:29:52+00:00",
       "status": "ok",
       "data": {
         "valid": true,
-        "latest_closed_start_utc": "2026-11-28T10:00:00+00:00",
+        "latest_closed_start_utc": "2026-11-28T11:00:00+00:00",
         "closed_bars": 39,
-        "latest_close_usdt": 0.9383,
-        "last_bar_change_percent": -0.29752,
-        "last_bar_quote_volume_usdt": 917127.31,
-        "observed_period_change_percent": -1.53216
+        "latest_close_usdt": 0.9399,
+        "last_bar_change_percent": 0.21324,
+        "last_bar_quote_volume_usdt": 582341.02,
+        "observed_period_change_percent": -1.32283
       }
     },
     {
@@ -1473,7 +1473,7 @@
       "interval": "1d",
       "venue": "okx",
       "url": "https://www.okx.com/api/v5/market/history-candles?instId=XRP-USDT&bar=1Dutc&limit=40",
-      "queried_at_utc": "2026-11-28T11:27:51+00:00",
+      "queried_at_utc": "2026-11-28T12:29:53+00:00",
       "status": "ok",
       "data": {
         "valid": true,
@@ -1490,7 +1490,7 @@
       "interval": "1d",
       "venue": "gate",
       "url": "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=XRP_USDT&interval=1d&limit=40",
-      "queried_at_utc": "2026-11-28T11:27:51+00:00",
+      "queried_at_utc": "2026-11-28T12:29:53+00:00",
       "status": "ok",
       "data": {
         "valid": true,
@@ -1507,16 +1507,16 @@
       "interval": "1h",
       "venue": "okx",
       "url": "https://www.okx.com/api/v5/market/history-candles?instId=DOGE-USDT&bar=1H&limit=40",
-      "queried_at_utc": "2026-11-28T11:27:52+00:00",
+      "queried_at_utc": "2026-11-28T12:29:53+00:00",
       "status": "ok",
       "data": {
         "valid": true,
-        "latest_closed_start_utc": "2026-11-28T10:00:00+00:00",
+        "latest_closed_start_utc": "2026-11-28T11:00:00+00:00",
         "closed_bars": 39,
-        "latest_close_usdt": 0.05669,
-        "last_bar_change_percent": -0.12333,
-        "last_bar_quote_volume_usdt": 603202.95,
-        "observed_period_change_percent": -0.77017
+        "latest_close_usdt": 0.05674,
+        "last_bar_change_percent": 0.0882,
+        "last_bar_quote_volume_usdt": 253197.41,
+        "observed_period_change_percent": -0.38624
       }
     },
     {
@@ -1524,16 +1524,16 @@
       "interval": "1h",
       "venue": "gate",
       "url": "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=DOGE_USDT&interval=1h&limit=40",
-      "queried_at_utc": "2026-11-28T11:27:52+00:00",
+      "queried_at_utc": "2026-11-28T12:29:54+00:00",
       "status": "ok",
       "data": {
         "valid": true,
-        "latest_closed_start_utc": "2026-11-28T10:00:00+00:00",
+        "latest_closed_start_utc": "2026-11-28T11:00:00+00:00",
         "closed_bars": 39,
-        "latest_close_usdt": 0.05669,
-        "last_bar_change_percent": -0.14092,
-        "last_bar_quote_volume_usdt": 491791.54,
-        "observed_period_change_percent": -0.7528
+        "latest_close_usdt": 0.05674,
+        "last_bar_change_percent": 0.10586,
+        "last_bar_quote_volume_usdt": 543959.96,
+        "observed_period_change_percent": -0.36874
       }
     },
     {
@@ -1541,7 +1541,7 @@
       "interval": "1d",
       "venue": "okx",
       "url": "https://www.okx.com/api/v5/market/history-candles?instId=DOGE-USDT&bar=1Dutc&limit=40",
-      "queried_at_utc": "2026-11-28T11:27:53+00:00",
+      "queried_at_utc": "2026-11-28T12:29:54+00:00",
       "status": "ok",
       "data": {
         "valid": true,
@@ -1558,7 +1558,7 @@
       "interval": "1d",
       "venue": "gate",
       "url": "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=DOGE_USDT&interval=1d&limit=40",
-      "queried_at_utc": "2026-11-28T11:27:53+00:00",
+      "queried_at_utc": "2026-11-28T12:29:55+00:00",
       "status": "ok",
       "data": {
         "valid": true,
@@ -1575,16 +1575,16 @@
       "interval": "1h",
       "venue": "okx",
       "url": "https://www.okx.com/api/v5/market/history-candles?instId=TAO-USDT&bar=1H&limit=40",
-      "queried_at_utc": "2026-11-28T11:27:53+00:00",
+      "queried_at_utc": "2026-11-28T12:29:55+00:00",
       "status": "ok",
       "data": {
         "valid": true,
-        "latest_closed_start_utc": "2026-11-28T10:00:00+00:00",
+        "latest_closed_start_utc": "2026-11-28T11:00:00+00:00",
         "closed_bars": 39,
-        "latest_close_usdt": 183.02,
-        "last_bar_change_percent": -0.83979,
-        "last_bar_quote_volume_usdt": 102803.1,
-        "observed_period_change_percent": -0.80217
+        "latest_close_usdt": 183.21,
+        "last_bar_change_percent": 0.11475,
+        "last_bar_quote_volume_usdt": 26440.49,
+        "observed_period_change_percent": -0.92472
       }
     },
     {
@@ -1592,16 +1592,16 @@
       "interval": "1h",
       "venue": "gate",
       "url": "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=TAO_USDT&interval=1h&limit=40",
-      "queried_at_utc": "2026-11-28T11:27:54+00:00",
+      "queried_at_utc": "2026-11-28T12:29:56+00:00",
       "status": "ok",
       "data": {
         "valid": true,
-        "latest_closed_start_utc": "2026-11-28T10:00:00+00:00",
+        "latest_closed_start_utc": "2026-11-28T11:00:00+00:00",
         "closed_bars": 39,
-        "latest_close_usdt": 183.06,
-        "last_bar_change_percent": -0.84498,
-        "last_bar_quote_volume_usdt": 101781.51,
-        "observed_period_change_percent": -0.76435
+        "latest_close_usdt": 183.23,
+        "last_bar_change_percent": 0.12568,
+        "last_bar_quote_volume_usdt": 31615.35,
+        "observed_period_change_percent": -0.91391
       }
     },
     {
@@ -1609,7 +1609,7 @@
       "interval": "1d",
       "venue": "okx",
       "url": "https://www.okx.com/api/v5/market/history-candles?instId=TAO-USDT&bar=1Dutc&limit=40",
-      "queried_at_utc": "2026-11-28T11:27:54+00:00",
+      "queried_at_utc": "2026-11-28T12:29:56+00:00",
       "status": "ok",
       "data": {
         "valid": true,
@@ -1626,7 +1626,7 @@
       "interval": "1d",
       "venue": "gate",
       "url": "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=TAO_USDT&interval=1d&limit=40",
-      "queried_at_utc": "2026-11-28T11:27:54+00:00",
+      "queried_at_utc": "2026-11-28T12:29:57+00:00",
       "status": "ok",
       "data": {
         "valid": true,
@@ -1645,7 +1645,7 @@
       "protocol_slug": "aave",
       "kind": "protocol",
       "url": "https://api.llama.fi/protocol/aave",
-      "queried_at_utc": "2026-11-28T11:27:55+00:00",
+      "queried_at_utc": "2026-11-28T12:29:57+00:00",
       "status": "error",
       "error": "ValueError: response_too_large"
     },
@@ -1654,7 +1654,7 @@
       "protocol_slug": "aave",
       "kind": "fees",
       "url": "https://api.llama.fi/summary/fees/aave?dataType=dailyFees",
-      "queried_at_utc": "2026-11-28T11:28:00+00:00",
+      "queried_at_utc": "2026-11-28T12:30:03+00:00",
       "status": "reachable",
       "data_keys": [
         "id",
@@ -1690,7 +1690,7 @@
       "protocol_slug": "aave",
       "kind": "dex",
       "url": "https://api.llama.fi/summary/dexs/aave?dataType=dailyVolume",
-      "queried_at_utc": "2026-11-28T11:28:00+00:00",
+      "queried_at_utc": "2026-11-28T12:30:05+00:00",
       "status": "error",
       "error": "HTTPError: HTTP Error 400: Bad Request"
     },
@@ -1699,7 +1699,7 @@
       "protocol_slug": "uniswap",
       "kind": "protocol",
       "url": "https://api.llama.fi/protocol/uniswap",
-      "queried_at_utc": "2026-11-28T11:28:01+00:00",
+      "queried_at_utc": "2026-11-28T12:30:10+00:00",
       "status": "error",
       "error": "TimeoutError: The read operation timed out"
     },
@@ -1708,7 +1708,7 @@
       "protocol_slug": "uniswap",
       "kind": "fees",
       "url": "https://api.llama.fi/summary/fees/uniswap?dataType=dailyFees",
-      "queried_at_utc": "2026-11-28T11:28:11+00:00",
+      "queried_at_utc": "2026-11-28T12:30:20+00:00",
       "status": "error",
       "error": "ValueError: response_too_large"
     },
@@ -1717,7 +1717,7 @@
       "protocol_slug": "uniswap",
       "kind": "dex",
       "url": "https://api.llama.fi/summary/dexs/uniswap?dataType=dailyVolume",
-      "queried_at_utc": "2026-11-28T11:28:12+00:00",
+      "queried_at_utc": "2026-11-28T12:30:21+00:00",
       "status": "error",
       "error": "ValueError: response_too_large"
     },
@@ -1726,7 +1726,7 @@
       "protocol_slug": "chainlink",
       "kind": "protocol",
       "url": "https://api.llama.fi/protocol/chainlink",
-      "queried_at_utc": "2026-11-28T11:28:14+00:00",
+      "queried_at_utc": "2026-11-28T12:30:22+00:00",
       "status": "error",
       "error": "ValueError: response_too_large"
     },
@@ -1735,7 +1735,7 @@
       "protocol_slug": "chainlink",
       "kind": "fees",
       "url": "https://api.llama.fi/summary/fees/chainlink?dataType=dailyFees",
-      "queried_at_utc": "2026-11-28T11:28:16+00:00",
+      "queried_at_utc": "2026-11-28T12:30:26+00:00",
       "status": "reachable",
       "data_keys": [
         "id",
@@ -1771,7 +1771,7 @@
       "protocol_slug": "chainlink",
       "kind": "dex",
       "url": "https://api.llama.fi/summary/dexs/chainlink?dataType=dailyVolume",
-      "queried_at_utc": "2026-11-28T11:28:16+00:00",
+      "queried_at_utc": "2026-11-28T12:30:27+00:00",
       "status": "error",
       "error": "HTTPError: HTTP Error 400: Bad Request"
     },
@@ -1780,7 +1780,7 @@
       "protocol_slug": "arbitrum",
       "kind": "protocol",
       "url": "https://api.llama.fi/protocol/arbitrum",
-      "queried_at_utc": "2026-11-28T11:28:17+00:00",
+      "queried_at_utc": "2026-11-28T12:30:29+00:00",
       "status": "error",
       "error": "HTTPError: HTTP Error 400: Bad Request"
     },
@@ -1789,7 +1789,7 @@
       "protocol_slug": "arbitrum",
       "kind": "fees",
       "url": "https://api.llama.fi/summary/fees/arbitrum?dataType=dailyFees",
-      "queried_at_utc": "2026-11-28T11:28:17+00:00",
+      "queried_at_utc": "2026-11-28T12:30:30+00:00",
       "status": "reachable",
       "data_keys": [
         "name",
@@ -1825,7 +1825,7 @@
       "protocol_slug": "arbitrum",
       "kind": "dex",
       "url": "https://api.llama.fi/summary/dexs/arbitrum?dataType=dailyVolume",
-      "queried_at_utc": "2026-11-28T11:28:18+00:00",
+      "queried_at_utc": "2026-11-28T12:30:31+00:00",
       "status": "error",
       "error": "HTTPError: HTTP Error 400: Bad Request"
     },
@@ -1834,7 +1834,7 @@
       "protocol_slug": "optimism",
       "kind": "protocol",
       "url": "https://api.llama.fi/protocol/optimism",
-      "queried_at_utc": "2026-11-28T11:28:19+00:00",
+      "queried_at_utc": "2026-11-28T12:30:33+00:00",
       "status": "error",
       "error": "HTTPError: HTTP Error 400: Bad Request"
     },
@@ -1843,7 +1843,7 @@
       "protocol_slug": "optimism",
       "kind": "fees",
       "url": "https://api.llama.fi/summary/fees/optimism?dataType=dailyFees",
-      "queried_at_utc": "2026-11-28T11:28:20+00:00",
+      "queried_at_utc": "2026-11-28T12:30:33+00:00",
       "status": "error",
       "error": "HTTPError: HTTP Error 400: Bad Request"
     },
@@ -1852,7 +1852,7 @@
       "protocol_slug": "optimism",
       "kind": "dex",
       "url": "https://api.llama.fi/summary/dexs/optimism?dataType=dailyVolume",
-      "queried_at_utc": "2026-11-28T11:28:21+00:00",
+      "queried_at_utc": "2026-11-28T12:30:34+00:00",
       "status": "error",
       "error": "HTTPError: HTTP Error 400: Bad Request"
     }
