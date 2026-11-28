@@ -2248,7 +2248,91 @@
           "reason": "no_verifiable_checkpoint_in_window"
         }
       },
-      "research_only": true
+      "research_only": true,
+      "sampled_path": {
+        "2026-11-28T14:00:00+00:00": 1641.33
+      },
+      "first_context": {
+        "captured_at_utc": "2026-11-28T14:15:33.623655+00:00",
+        "at_detection": false,
+        "btc_eth": {
+          "BTCUSDT": [
+            {
+              "venue": "okx",
+              "valid": true,
+              "candle_start_utc": "2026-11-28T13:45:00+00:00",
+              "change_percent": 0.10077,
+              "volume_multiplier": 1.0843,
+              "spot_quote_volume_usdt": 2018266.99,
+              "baseline_quote_volume_usdt": 1861353.12,
+              "spot_close_usdt": 59103.5,
+              "pattern_met": false
+            },
+            {
+              "venue": "gate",
+              "valid": true,
+              "candle_start_utc": "2026-11-28T13:45:00+00:00",
+              "change_percent": 0.10586,
+              "volume_multiplier": 2.9661,
+              "spot_quote_volume_usdt": 14877896.99,
+              "baseline_quote_volume_usdt": 5015907.55,
+              "spot_close_usdt": 59103.6,
+              "pattern_met": false
+            },
+            {
+              "venue": "bitget",
+              "valid": true,
+              "candle_start_utc": "2026-11-28T13:45:00+00:00",
+              "change_percent": 0.10384,
+              "volume_multiplier": 1.0974,
+              "spot_quote_volume_usdt": 3917139.27,
+              "baseline_quote_volume_usdt": 3569566.79,
+              "spot_close_usdt": 59104.89,
+              "pattern_met": false
+            }
+          ],
+          "ETHUSDT": [
+            {
+              "venue": "okx",
+              "valid": true,
+              "candle_start_utc": "2026-11-28T13:45:00+00:00",
+              "change_percent": 0.11834,
+              "volume_multiplier": 0.2853,
+              "spot_quote_volume_usdt": 1564796.39,
+              "baseline_quote_volume_usdt": 5484955.81,
+              "spot_close_usdt": 1641.31,
+              "pattern_met": false
+            },
+            {
+              "venue": "gate",
+              "valid": true,
+              "candle_start_utc": "2026-11-28T13:45:00+00:00",
+              "change_percent": 0.12017,
+              "volume_multiplier": 2.3272,
+              "spot_quote_volume_usdt": 8994271.66,
+              "baseline_quote_volume_usdt": 3864885.71,
+              "spot_close_usdt": 1641.33,
+              "pattern_met": false
+            },
+            {
+              "venue": "bitget",
+              "valid": true,
+              "candle_start_utc": "2026-11-28T13:45:00+00:00",
+              "change_percent": 0.11345,
+              "volume_multiplier": 3.272,
+              "spot_quote_volume_usdt": 3627425.73,
+              "baseline_quote_volume_usdt": 1108627.61,
+              "spot_close_usdt": 1641.35,
+              "pattern_met": false
+            }
+          ]
+        }
+      },
+      "sampled_extrema_percent": {
+        "max": -0.295,
+        "min": -0.295
+      },
+      "sampled_experiments": {}
     },
     {
       "event_id": "SOLUSDT|2026-11-25T14:45:00+00:00|EARLY_RESEARCH",
@@ -2290,7 +2374,108 @@
           "reason": "no_verifiable_checkpoint_in_window"
         }
       },
-      "research_only": true
+      "research_only": true,
+      "sampled_path": {
+        "2026-11-28T14:00:00+00:00": 70.28
+      },
+      "first_context": {
+        "captured_at_utc": "2026-11-28T14:15:33.623655+00:00",
+        "at_detection": false,
+        "btc_eth": {
+          "BTCUSDT": [
+            {
+              "venue": "okx",
+              "valid": true,
+              "candle_start_utc": "2026-11-28T13:45:00+00:00",
+              "change_percent": 0.10077,
+              "volume_multiplier": 1.0843,
+              "spot_quote_volume_usdt": 2018266.99,
+              "baseline_quote_volume_usdt": 1861353.12,
+              "spot_close_usdt": 59103.5,
+              "pattern_met": false
+            },
+            {
+              "venue": "gate",
+              "valid": true,
+              "candle_start_utc": "2026-11-28T13:45:00+00:00",
+              "change_percent": 0.10586,
+              "volume_multiplier": 2.9661,
+              "spot_quote_volume_usdt": 14877896.99,
+              "baseline_quote_volume_usdt": 5015907.55,
+              "spot_close_usdt": 59103.6,
+              "pattern_met": false
+            },
+            {
+              "venue": "bitget",
+              "valid": true,
+              "candle_start_utc": "2026-11-28T13:45:00+00:00",
+              "change_percent": 0.10384,
+              "volume_multiplier": 1.0974,
+              "spot_quote_volume_usdt": 3917139.27,
+              "baseline_quote_volume_usdt": 3569566.79,
+              "spot_close_usdt": 59104.89,
+              "pattern_met": false
+            }
+          ],
+          "ETHUSDT": [
+            {
+              "venue": "okx",
+              "valid": true,
+              "candle_start_utc": "2026-11-28T13:45:00+00:00",
+              "change_percent": 0.11834,
+              "volume_multiplier": 0.2853,
+              "spot_quote_volume_usdt": 1564796.39,
+              "baseline_quote_volume_usdt": 5484955.81,
+              "spot_close_usdt": 1641.31,
+              "pattern_met": false
+            },
+            {
+              "venue": "gate",
+              "valid": true,
+              "candle_start_utc": "2026-11-28T13:45:00+00:00",
+              "change_percent": 0.12017,
+              "volume_multiplier": 2.3272,
+              "spot_quote_volume_usdt": 8994271.66,
+              "baseline_quote_volume_usdt": 3864885.71,
+              "spot_close_usdt": 1641.33,
+              "pattern_met": false
+            },
+            {
+              "venue": "bitget",
+              "valid": true,
+              "candle_start_utc": "2026-11-28T13:45:00+00:00",
+              "change_percent": 0.11345,
+              "volume_multiplier": 3.272,
+              "spot_quote_volume_usdt": 3627425.73,
+              "baseline_quote_volume_usdt": 1108627.61,
+              "spot_close_usdt": 1641.35,
+              "pattern_met": false
+            }
+          ]
+        }
+      },
+      "sampled_extrema_percent": {
+        "max": 4.2627,
+        "min": 4.2627
+      },
+      "sampled_experiments": {
+        "reference_tp2_sl2.5": {
+          "entry_price": 67.40666667,
+          "entry_sample_utc": "2026-11-28T14:00:00+00:00",
+          "exit_sample_utc": "2026-11-28T14:00:00+00:00",
+          "exit_price": 70.28,
+          "net_percent": 3.7627,
+          "reason": "target_sample"
+        },
+        "reference_tp3_sl2.5": {
+          "entry_price": 67.40666667,
+          "entry_sample_utc": "2026-11-28T14:00:00+00:00",
+          "exit_sample_utc": "2026-11-28T14:00:00+00:00",
+          "exit_price": 70.28,
+          "net_percent": 3.7627,
+          "reason": "target_sample"
+        }
+      }
     },
     {
       "event_id": "NEARUSDT|2026-11-25T14:45:00+00:00|EARLY_RESEARCH",
@@ -2332,7 +2517,116 @@
           "reason": "no_verifiable_checkpoint_in_window"
         }
       },
-      "research_only": true
+      "research_only": true,
+      "sampled_path": {
+        "2026-11-28T14:00:00+00:00": 2.954
+      },
+      "first_context": {
+        "captured_at_utc": "2026-11-28T14:15:33.623655+00:00",
+        "at_detection": false,
+        "btc_eth": {
+          "BTCUSDT": [
+            {
+              "venue": "okx",
+              "valid": true,
+              "candle_start_utc": "2026-11-28T13:45:00+00:00",
+              "change_percent": 0.10077,
+              "volume_multiplier": 1.0843,
+              "spot_quote_volume_usdt": 2018266.99,
+              "baseline_quote_volume_usdt": 1861353.12,
+              "spot_close_usdt": 59103.5,
+              "pattern_met": false
+            },
+            {
+              "venue": "gate",
+              "valid": true,
+              "candle_start_utc": "2026-11-28T13:45:00+00:00",
+              "change_percent": 0.10586,
+              "volume_multiplier": 2.9661,
+              "spot_quote_volume_usdt": 14877896.99,
+              "baseline_quote_volume_usdt": 5015907.55,
+              "spot_close_usdt": 59103.6,
+              "pattern_met": false
+            },
+            {
+              "venue": "bitget",
+              "valid": true,
+              "candle_start_utc": "2026-11-28T13:45:00+00:00",
+              "change_percent": 0.10384,
+              "volume_multiplier": 1.0974,
+              "spot_quote_volume_usdt": 3917139.27,
+              "baseline_quote_volume_usdt": 3569566.79,
+              "spot_close_usdt": 59104.89,
+              "pattern_met": false
+            }
+          ],
+          "ETHUSDT": [
+            {
+              "venue": "okx",
+              "valid": true,
+              "candle_start_utc": "2026-11-28T13:45:00+00:00",
+              "change_percent": 0.11834,
+              "volume_multiplier": 0.2853,
+              "spot_quote_volume_usdt": 1564796.39,
+              "baseline_quote_volume_usdt": 5484955.81,
+              "spot_close_usdt": 1641.31,
+              "pattern_met": false
+            },
+            {
+              "venue": "gate",
+              "valid": true,
+              "candle_start_utc": "2026-11-28T13:45:00+00:00",
+              "change_percent": 0.12017,
+              "volume_multiplier": 2.3272,
+              "spot_quote_volume_usdt": 8994271.66,
+              "baseline_quote_volume_usdt": 3864885.71,
+              "spot_close_usdt": 1641.33,
+              "pattern_met": false
+            },
+            {
+              "venue": "bitget",
+              "valid": true,
+              "candle_start_utc": "2026-11-28T13:45:00+00:00",
+              "change_percent": 0.11345,
+              "volume_multiplier": 3.272,
+              "spot_quote_volume_usdt": 3627425.73,
+              "baseline_quote_volume_usdt": 1108627.61,
+              "spot_close_usdt": 1641.35,
+              "pattern_met": false
+            }
+          ]
+        }
+      },
+      "sampled_extrema_percent": {
+        "max": 5.9161,
+        "min": 5.9161
+      },
+      "sampled_experiments": {
+        "reference_tp2_sl2.5": {
+          "entry_price": 2.789,
+          "entry_sample_utc": "2026-11-28T14:00:00+00:00",
+          "exit_sample_utc": "2026-11-28T14:00:00+00:00",
+          "exit_price": 2.954,
+          "net_percent": 5.4161,
+          "reason": "target_sample"
+        },
+        "reference_tp3_sl2.5": {
+          "entry_price": 2.789,
+          "entry_sample_utc": "2026-11-28T14:00:00+00:00",
+          "exit_sample_utc": "2026-11-28T14:00:00+00:00",
+          "exit_price": 2.954,
+          "net_percent": 5.4161,
+          "reason": "target_sample"
+        },
+        "reference_tp5_sl2.5": {
+          "entry_price": 2.789,
+          "entry_sample_utc": "2026-11-28T14:00:00+00:00",
+          "exit_sample_utc": "2026-11-28T14:00:00+00:00",
+          "exit_price": 2.954,
+          "net_percent": 5.4161,
+          "reason": "target_sample"
+        }
+      }
     },
     {
       "event_id": "SUIUSDT|2026-11-25T14:45:00+00:00|EARLY_RESEARCH",
@@ -2374,7 +2668,116 @@
           "reason": "no_verifiable_checkpoint_in_window"
         }
       },
-      "research_only": true
+      "research_only": true,
+      "sampled_path": {
+        "2026-11-28T14:00:00+00:00": 0.6586
+      },
+      "first_context": {
+        "captured_at_utc": "2026-11-28T14:15:33.623655+00:00",
+        "at_detection": false,
+        "btc_eth": {
+          "BTCUSDT": [
+            {
+              "venue": "okx",
+              "valid": true,
+              "candle_start_utc": "2026-11-28T13:45:00+00:00",
+              "change_percent": 0.10077,
+              "volume_multiplier": 1.0843,
+              "spot_quote_volume_usdt": 2018266.99,
+              "baseline_quote_volume_usdt": 1861353.12,
+              "spot_close_usdt": 59103.5,
+              "pattern_met": false
+            },
+            {
+              "venue": "gate",
+              "valid": true,
+              "candle_start_utc": "2026-11-28T13:45:00+00:00",
+              "change_percent": 0.10586,
+              "volume_multiplier": 2.9661,
+              "spot_quote_volume_usdt": 14877896.99,
+              "baseline_quote_volume_usdt": 5015907.55,
+              "spot_close_usdt": 59103.6,
+              "pattern_met": false
+            },
+            {
+              "venue": "bitget",
+              "valid": true,
+              "candle_start_utc": "2026-11-28T13:45:00+00:00",
+              "change_percent": 0.10384,
+              "volume_multiplier": 1.0974,
+              "spot_quote_volume_usdt": 3917139.27,
+              "baseline_quote_volume_usdt": 3569566.79,
+              "spot_close_usdt": 59104.89,
+              "pattern_met": false
+            }
+          ],
+          "ETHUSDT": [
+            {
+              "venue": "okx",
+              "valid": true,
+              "candle_start_utc": "2026-11-28T13:45:00+00:00",
+              "change_percent": 0.11834,
+              "volume_multiplier": 0.2853,
+              "spot_quote_volume_usdt": 1564796.39,
+              "baseline_quote_volume_usdt": 5484955.81,
+              "spot_close_usdt": 1641.31,
+              "pattern_met": false
+            },
+            {
+              "venue": "gate",
+              "valid": true,
+              "candle_start_utc": "2026-11-28T13:45:00+00:00",
+              "change_percent": 0.12017,
+              "volume_multiplier": 2.3272,
+              "spot_quote_volume_usdt": 8994271.66,
+              "baseline_quote_volume_usdt": 3864885.71,
+              "spot_close_usdt": 1641.33,
+              "pattern_met": false
+            },
+            {
+              "venue": "bitget",
+              "valid": true,
+              "candle_start_utc": "2026-11-28T13:45:00+00:00",
+              "change_percent": 0.11345,
+              "volume_multiplier": 3.272,
+              "spot_quote_volume_usdt": 3627425.73,
+              "baseline_quote_volume_usdt": 1108627.61,
+              "spot_close_usdt": 1641.35,
+              "pattern_met": false
+            }
+          ]
+        }
+      },
+      "sampled_extrema_percent": {
+        "max": 5.0482,
+        "min": 5.0482
+      },
+      "sampled_experiments": {
+        "reference_tp2_sl2.5": {
+          "entry_price": 0.62695,
+          "entry_sample_utc": "2026-11-28T14:00:00+00:00",
+          "exit_sample_utc": "2026-11-28T14:00:00+00:00",
+          "exit_price": 0.6586,
+          "net_percent": 4.5482,
+          "reason": "target_sample"
+        },
+        "reference_tp3_sl2.5": {
+          "entry_price": 0.62695,
+          "entry_sample_utc": "2026-11-28T14:00:00+00:00",
+          "exit_sample_utc": "2026-11-28T14:00:00+00:00",
+          "exit_price": 0.6586,
+          "net_percent": 4.5482,
+          "reason": "target_sample"
+        },
+        "reference_tp5_sl2.5": {
+          "entry_price": 0.62695,
+          "entry_sample_utc": "2026-11-28T14:00:00+00:00",
+          "exit_sample_utc": "2026-11-28T14:00:00+00:00",
+          "exit_price": 0.6586,
+          "net_percent": 4.5482,
+          "reason": "target_sample"
+        }
+      }
     },
     {
       "event_id": "PEPEUSDT|2026-11-25T14:45:00+00:00|EARLY_RESEARCH",
@@ -2416,7 +2819,91 @@
           "reason": "no_verifiable_checkpoint_in_window"
         }
       },
-      "research_only": true
+      "research_only": true,
+      "sampled_path": {
+        "2026-11-28T14:00:00+00:00": 3.4033e-06
+      },
+      "first_context": {
+        "captured_at_utc": "2026-11-28T14:15:33.623655+00:00",
+        "at_detection": false,
+        "btc_eth": {
+          "BTCUSDT": [
+            {
+              "venue": "okx",
+              "valid": true,
+              "candle_start_utc": "2026-11-28T13:45:00+00:00",
+              "change_percent": 0.10077,
+              "volume_multiplier": 1.0843,
+              "spot_quote_volume_usdt": 2018266.99,
+              "baseline_quote_volume_usdt": 1861353.12,
+              "spot_close_usdt": 59103.5,
+              "pattern_met": false
+            },
+            {
+              "venue": "gate",
+              "valid": true,
+              "candle_start_utc": "2026-11-28T13:45:00+00:00",
+              "change_percent": 0.10586,
+              "volume_multiplier": 2.9661,
+              "spot_quote_volume_usdt": 14877896.99,
+              "baseline_quote_volume_usdt": 5015907.55,
+              "spot_close_usdt": 59103.6,
+              "pattern_met": false
+            },
+            {
+              "venue": "bitget",
+              "valid": true,
+              "candle_start_utc": "2026-11-28T13:45:00+00:00",
+              "change_percent": 0.10384,
+              "volume_multiplier": 1.0974,
+              "spot_quote_volume_usdt": 3917139.27,
+              "baseline_quote_volume_usdt": 3569566.79,
+              "spot_close_usdt": 59104.89,
+              "pattern_met": false
+            }
+          ],
+          "ETHUSDT": [
+            {
+              "venue": "okx",
+              "valid": true,
+              "candle_start_utc": "2026-11-28T13:45:00+00:00",
+              "change_percent": 0.11834,
+              "volume_multiplier": 0.2853,
+              "spot_quote_volume_usdt": 1564796.39,
+              "baseline_quote_volume_usdt": 5484955.81,
+              "spot_close_usdt": 1641.31,
+              "pattern_met": false
+            },
+            {
+              "venue": "gate",
+              "valid": true,
+              "candle_start_utc": "2026-11-28T13:45:00+00:00",
+              "change_percent": 0.12017,
+              "volume_multiplier": 2.3272,
+              "spot_quote_volume_usdt": 8994271.66,
+              "baseline_quote_volume_usdt": 3864885.71,
+              "spot_close_usdt": 1641.33,
+              "pattern_met": false
+            },
+            {
+              "venue": "bitget",
+              "valid": true,
+              "candle_start_utc": "2026-11-28T13:45:00+00:00",
+              "change_percent": 0.11345,
+              "volume_multiplier": 3.272,
+              "spot_quote_volume_usdt": 3627425.73,
+              "baseline_quote_volume_usdt": 1108627.61,
+              "spot_close_usdt": 1641.35,
+              "pattern_met": false
+            }
+          ]
+        }
+      },
+      "sampled_extrema_percent": {
+        "max": 0.3923,
+        "min": 0.3923
+      },
+      "sampled_experiments": {}
     },
     {
       "event_id": "HYPEUSDT|2026-11-25T14:45:00+00:00|EARLY_RESEARCH",
@@ -2458,7 +2945,116 @@
           "reason": "no_verifiable_checkpoint_in_window"
         }
       },
-      "research_only": true
+      "research_only": true,
+      "sampled_path": {
+        "2026-11-28T14:00:00+00:00": 62.412
+      },
+      "first_context": {
+        "captured_at_utc": "2026-11-28T14:15:33.623655+00:00",
+        "at_detection": false,
+        "btc_eth": {
+          "BTCUSDT": [
+            {
+              "venue": "okx",
+              "valid": true,
+              "candle_start_utc": "2026-11-28T13:45:00+00:00",
+              "change_percent": 0.10077,
+              "volume_multiplier": 1.0843,
+              "spot_quote_volume_usdt": 2018266.99,
+              "baseline_quote_volume_usdt": 1861353.12,
+              "spot_close_usdt": 59103.5,
+              "pattern_met": false
+            },
+            {
+              "venue": "gate",
+              "valid": true,
+              "candle_start_utc": "2026-11-28T13:45:00+00:00",
+              "change_percent": 0.10586,
+              "volume_multiplier": 2.9661,
+              "spot_quote_volume_usdt": 14877896.99,
+              "baseline_quote_volume_usdt": 5015907.55,
+              "spot_close_usdt": 59103.6,
+              "pattern_met": false
+            },
+            {
+              "venue": "bitget",
+              "valid": true,
+              "candle_start_utc": "2026-11-28T13:45:00+00:00",
+              "change_percent": 0.10384,
+              "volume_multiplier": 1.0974,
+              "spot_quote_volume_usdt": 3917139.27,
+              "baseline_quote_volume_usdt": 3569566.79,
+              "spot_close_usdt": 59104.89,
+              "pattern_met": false
+            }
+          ],
+          "ETHUSDT": [
+            {
+              "venue": "okx",
+              "valid": true,
+              "candle_start_utc": "2026-11-28T13:45:00+00:00",
+              "change_percent": 0.11834,
+              "volume_multiplier": 0.2853,
+              "spot_quote_volume_usdt": 1564796.39,
+              "baseline_quote_volume_usdt": 5484955.81,
+              "spot_close_usdt": 1641.31,
+              "pattern_met": false
+            },
+            {
+              "venue": "gate",
+              "valid": true,
+              "candle_start_utc": "2026-11-28T13:45:00+00:00",
+              "change_percent": 0.12017,
+              "volume_multiplier": 2.3272,
+              "spot_quote_volume_usdt": 8994271.66,
+              "baseline_quote_volume_usdt": 3864885.71,
+              "spot_close_usdt": 1641.33,
+              "pattern_met": false
+            },
+            {
+              "venue": "bitget",
+              "valid": true,
+              "candle_start_utc": "2026-11-28T13:45:00+00:00",
+              "change_percent": 0.11345,
+              "volume_multiplier": 3.272,
+              "spot_quote_volume_usdt": 3627425.73,
+              "baseline_quote_volume_usdt": 1108627.61,
+              "spot_close_usdt": 1641.35,
+              "pattern_met": false
+            }
+          ]
+        }
+      },
+      "sampled_extrema_percent": {
+        "max": 8.3956,
+        "min": 8.3956
+      },
+      "sampled_experiments": {
+        "reference_tp2_sl2.5": {
+          "entry_price": 57.578,
+          "entry_sample_utc": "2026-11-28T14:00:00+00:00",
+          "exit_sample_utc": "2026-11-28T14:00:00+00:00",
+          "exit_price": 62.412,
+          "net_percent": 7.8956,
+          "reason": "target_sample"
+        },
+        "reference_tp3_sl2.5": {
+          "entry_price": 57.578,
+          "entry_sample_utc": "2026-11-28T14:00:00+00:00",
+          "exit_sample_utc": "2026-11-28T14:00:00+00:00",
+          "exit_price": 62.412,
+          "net_percent": 7.8956,
+          "reason": "target_sample"
+        },
+        "reference_tp5_sl2.5": {
+          "entry_price": 57.578,
+          "entry_sample_utc": "2026-11-28T14:00:00+00:00",
+          "exit_sample_utc": "2026-11-28T14:00:00+00:00",
+          "exit_price": 62.412,
+          "net_percent": 7.8956,
+          "reason": "target_sample"
+        }
+      }
     },
     {
       "event_id": "XRPUSDT|2026-11-25T14:45:00+00:00|EARLY_RESEARCH",
@@ -2500,7 +3096,108 @@
           "reason": "no_verifiable_checkpoint_in_window"
         }
       },
-      "research_only": true
+      "research_only": true,
+      "sampled_path": {
+        "2026-11-28T14:00:00+00:00": 0.9349
+      },
+      "first_context": {
+        "captured_at_utc": "2026-11-28T14:15:33.623655+00:00",
+        "at_detection": false,
+        "btc_eth": {
+          "BTCUSDT": [
+            {
+              "venue": "okx",
+              "valid": true,
+              "candle_start_utc": "2026-11-28T13:45:00+00:00",
+              "change_percent": 0.10077,
+              "volume_multiplier": 1.0843,
+              "spot_quote_volume_usdt": 2018266.99,
+              "baseline_quote_volume_usdt": 1861353.12,
+              "spot_close_usdt": 59103.5,
+              "pattern_met": false
+            },
+            {
+              "venue": "gate",
+              "valid": true,
+              "candle_start_utc": "2026-11-28T13:45:00+00:00",
+              "change_percent": 0.10586,
+              "volume_multiplier": 2.9661,
+              "spot_quote_volume_usdt": 14877896.99,
+              "baseline_quote_volume_usdt": 5015907.55,
+              "spot_close_usdt": 59103.6,
+              "pattern_met": false
+            },
+            {
+              "venue": "bitget",
+              "valid": true,
+              "candle_start_utc": "2026-11-28T13:45:00+00:00",
+              "change_percent": 0.10384,
+              "volume_multiplier": 1.0974,
+              "spot_quote_volume_usdt": 3917139.27,
+              "baseline_quote_volume_usdt": 3569566.79,
+              "spot_close_usdt": 59104.89,
+              "pattern_met": false
+            }
+          ],
+          "ETHUSDT": [
+            {
+              "venue": "okx",
+              "valid": true,
+              "candle_start_utc": "2026-11-28T13:45:00+00:00",
+              "change_percent": 0.11834,
+              "volume_multiplier": 0.2853,
+              "spot_quote_volume_usdt": 1564796.39,
+              "baseline_quote_volume_usdt": 5484955.81,
+              "spot_close_usdt": 1641.31,
+              "pattern_met": false
+            },
+            {
+              "venue": "gate",
+              "valid": true,
+              "candle_start_utc": "2026-11-28T13:45:00+00:00",
+              "change_percent": 0.12017,
+              "volume_multiplier": 2.3272,
+              "spot_quote_volume_usdt": 8994271.66,
+              "baseline_quote_volume_usdt": 3864885.71,
+              "spot_close_usdt": 1641.33,
+              "pattern_met": false
+            },
+            {
+              "venue": "bitget",
+              "valid": true,
+              "candle_start_utc": "2026-11-28T13:45:00+00:00",
+              "change_percent": 0.11345,
+              "volume_multiplier": 3.272,
+              "spot_quote_volume_usdt": 3627425.73,
+              "baseline_quote_volume_usdt": 1108627.61,
+              "spot_close_usdt": 1641.35,
+              "pattern_met": false
+            }
+          ]
+        }
+      },
+      "sampled_extrema_percent": {
+        "max": 3.3495,
+        "min": 3.3495
+      },
+      "sampled_experiments": {
+        "reference_tp2_sl2.5": {
+          "entry_price": 0.9046,
+          "entry_sample_utc": "2026-11-28T14:00:00+00:00",
+          "exit_sample_utc": "2026-11-28T14:00:00+00:00",
+          "exit_price": 0.9349,
+          "net_percent": 2.8495,
+          "reason": "target_sample"
+        },
+        "reference_tp3_sl2.5": {
+          "entry_price": 0.9046,
+          "entry_sample_utc": "2026-11-28T14:00:00+00:00",
+          "exit_sample_utc": "2026-11-28T14:00:00+00:00",
+          "exit_price": 0.9349,
+          "net_percent": 2.8495,
+          "reason": "target_sample"
+        }
+      }
     },
     {
       "event_id": "DOGEUSDT|2026-11-25T14:45:00+00:00|EARLY_RESEARCH",
@@ -2542,7 +3239,116 @@
           "reason": "no_verifiable_checkpoint_in_window"
         }
       },
-      "research_only": true
+      "research_only": true,
+      "sampled_path": {
+        "2026-11-28T14:00:00+00:00": 0.0563
+      },
+      "first_context": {
+        "captured_at_utc": "2026-11-28T14:15:33.623655+00:00",
+        "at_detection": false,
+        "btc_eth": {
+          "BTCUSDT": [
+            {
+              "venue": "okx",
+              "valid": true,
+              "candle_start_utc": "2026-11-28T13:45:00+00:00",
+              "change_percent": 0.10077,
+              "volume_multiplier": 1.0843,
+              "spot_quote_volume_usdt": 2018266.99,
+              "baseline_quote_volume_usdt": 1861353.12,
+              "spot_close_usdt": 59103.5,
+              "pattern_met": false
+            },
+            {
+              "venue": "gate",
+              "valid": true,
+              "candle_start_utc": "2026-11-28T13:45:00+00:00",
+              "change_percent": 0.10586,
+              "volume_multiplier": 2.9661,
+              "spot_quote_volume_usdt": 14877896.99,
+              "baseline_quote_volume_usdt": 5015907.55,
+              "spot_close_usdt": 59103.6,
+              "pattern_met": false
+            },
+            {
+              "venue": "bitget",
+              "valid": true,
+              "candle_start_utc": "2026-11-28T13:45:00+00:00",
+              "change_percent": 0.10384,
+              "volume_multiplier": 1.0974,
+              "spot_quote_volume_usdt": 3917139.27,
+              "baseline_quote_volume_usdt": 3569566.79,
+              "spot_close_usdt": 59104.89,
+              "pattern_met": false
+            }
+          ],
+          "ETHUSDT": [
+            {
+              "venue": "okx",
+              "valid": true,
+              "candle_start_utc": "2026-11-28T13:45:00+00:00",
+              "change_percent": 0.11834,
+              "volume_multiplier": 0.2853,
+              "spot_quote_volume_usdt": 1564796.39,
+              "baseline_quote_volume_usdt": 5484955.81,
+              "spot_close_usdt": 1641.31,
+              "pattern_met": false
+            },
+            {
+              "venue": "gate",
+              "valid": true,
+              "candle_start_utc": "2026-11-28T13:45:00+00:00",
+              "change_percent": 0.12017,
+              "volume_multiplier": 2.3272,
+              "spot_quote_volume_usdt": 8994271.66,
+              "baseline_quote_volume_usdt": 3864885.71,
+              "spot_close_usdt": 1641.33,
+              "pattern_met": false
+            },
+            {
+              "venue": "bitget",
+              "valid": true,
+              "candle_start_utc": "2026-11-28T13:45:00+00:00",
+              "change_percent": 0.11345,
+              "volume_multiplier": 3.272,
+              "spot_quote_volume_usdt": 3627425.73,
+              "baseline_quote_volume_usdt": 1108627.61,
+              "spot_close_usdt": 1641.35,
+              "pattern_met": false
+            }
+          ]
+        }
+      },
+      "sampled_extrema_percent": {
+        "max": 5.5889,
+        "min": 5.5889
+      },
+      "sampled_experiments": {
+        "reference_tp2_sl2.5": {
+          "entry_price": 0.05332,
+          "entry_sample_utc": "2026-11-28T14:00:00+00:00",
+          "exit_sample_utc": "2026-11-28T14:00:00+00:00",
+          "exit_price": 0.0563,
+          "net_percent": 5.0889,
+          "reason": "target_sample"
+        },
+        "reference_tp3_sl2.5": {
+          "entry_price": 0.05332,
+          "entry_sample_utc": "2026-11-28T14:00:00+00:00",
+          "exit_sample_utc": "2026-11-28T14:00:00+00:00",
+          "exit_price": 0.0563,
+          "net_percent": 5.0889,
+          "reason": "target_sample"
+        },
+        "reference_tp5_sl2.5": {
+          "entry_price": 0.05332,
+          "entry_sample_utc": "2026-11-28T14:00:00+00:00",
+          "exit_sample_utc": "2026-11-28T14:00:00+00:00",
+          "exit_price": 0.0563,
+          "net_percent": 5.0889,
+          "reason": "target_sample"
+        }
+      }
     },
     {
       "event_id": "LTCUSDT|2026-11-25T14:45:00+00:00|EARLY_RESEARCH",
@@ -2584,7 +3390,116 @@
           "reason": "no_verifiable_checkpoint_in_window"
         }
       },
-      "research_only": true
+      "research_only": true,
+      "sampled_path": {
+        "2026-11-28T14:00:00+00:00": 43.74
+      },
+      "first_context": {
+        "captured_at_utc": "2026-11-28T14:15:33.623655+00:00",
+        "at_detection": false,
+        "btc_eth": {
+          "BTCUSDT": [
+            {
+              "venue": "okx",
+              "valid": true,
+              "candle_start_utc": "2026-11-28T13:45:00+00:00",
+              "change_percent": 0.10077,
+              "volume_multiplier": 1.0843,
+              "spot_quote_volume_usdt": 2018266.99,
+              "baseline_quote_volume_usdt": 1861353.12,
+              "spot_close_usdt": 59103.5,
+              "pattern_met": false
+            },
+            {
+              "venue": "gate",
+              "valid": true,
+              "candle_start_utc": "2026-11-28T13:45:00+00:00",
+              "change_percent": 0.10586,
+              "volume_multiplier": 2.9661,
+              "spot_quote_volume_usdt": 14877896.99,
+              "baseline_quote_volume_usdt": 5015907.55,
+              "spot_close_usdt": 59103.6,
+              "pattern_met": false
+            },
+            {
+              "venue": "bitget",
+              "valid": true,
+              "candle_start_utc": "2026-11-28T13:45:00+00:00",
+              "change_percent": 0.10384,
+              "volume_multiplier": 1.0974,
+              "spot_quote_volume_usdt": 3917139.27,
+              "baseline_quote_volume_usdt": 3569566.79,
+              "spot_close_usdt": 59104.89,
+              "pattern_met": false
+            }
+          ],
+          "ETHUSDT": [
+            {
+              "venue": "okx",
+              "valid": true,
+              "candle_start_utc": "2026-11-28T13:45:00+00:00",
+              "change_percent": 0.11834,
+              "volume_multiplier": 0.2853,
+              "spot_quote_volume_usdt": 1564796.39,
+              "baseline_quote_volume_usdt": 5484955.81,
+              "spot_close_usdt": 1641.31,
+              "pattern_met": false
+            },
+            {
+              "venue": "gate",
+              "valid": true,
+              "candle_start_utc": "2026-11-28T13:45:00+00:00",
+              "change_percent": 0.12017,
+              "volume_multiplier": 2.3272,
+              "spot_quote_volume_usdt": 8994271.66,
+              "baseline_quote_volume_usdt": 3864885.71,
+              "spot_close_usdt": 1641.33,
+              "pattern_met": false
+            },
+            {
+              "venue": "bitget",
+              "valid": true,
+              "candle_start_utc": "2026-11-28T13:45:00+00:00",
+              "change_percent": 0.11345,
+              "volume_multiplier": 3.272,
+              "spot_quote_volume_usdt": 3627425.73,
+              "baseline_quote_volume_usdt": 1108627.61,
+              "spot_close_usdt": 1641.35,
+              "pattern_met": false
+            }
+          ]
+        }
+      },
+      "sampled_extrema_percent": {
+        "max": 8.3478,
+        "min": 8.3478
+      },
+      "sampled_experiments": {
+        "reference_tp2_sl2.5": {
+          "entry_price": 40.37,
+          "entry_sample_utc": "2026-11-28T14:00:00+00:00",
+          "exit_sample_utc": "2026-11-28T14:00:00+00:00",
+          "exit_price": 43.74,
+          "net_percent": 7.8478,
+          "reason": "target_sample"
+        },
+        "reference_tp3_sl2.5": {
+          "entry_price": 40.37,
+          "entry_sample_utc": "2026-11-28T14:00:00+00:00",
+          "exit_sample_utc": "2026-11-28T14:00:00+00:00",
+          "exit_price": 43.74,
+          "net_percent": 7.8478,
+          "reason": "target_sample"
+        },
+        "reference_tp5_sl2.5": {
+          "entry_price": 40.37,
+          "entry_sample_utc": "2026-11-28T14:00:00+00:00",
+          "exit_sample_utc": "2026-11-28T14:00:00+00:00",
+          "exit_price": 43.74,
+          "net_percent": 7.8478,
+          "reason": "target_sample"
+        }
+      }
     },
     {
       "event_id": "ZECUSDT|2026-11-25T14:45:00+00:00|EARLY_RESEARCH",
@@ -2626,7 +3541,108 @@
           "reason": "no_verifiable_checkpoint_in_window"
         }
       },
-      "research_only": true
+      "research_only": true,
+      "sampled_path": {
+        "2026-11-28T14:00:00+00:00": 717.31
+      },
+      "first_context": {
+        "captured_at_utc": "2026-11-28T14:15:33.623655+00:00",
+        "at_detection": false,
+        "btc_eth": {
+          "BTCUSDT": [
+            {
+              "venue": "okx",
+              "valid": true,
+              "candle_start_utc": "2026-11-28T13:45:00+00:00",
+              "change_percent": 0.10077,
+              "volume_multiplier": 1.0843,
+              "spot_quote_volume_usdt": 2018266.99,
+              "baseline_quote_volume_usdt": 1861353.12,
+              "spot_close_usdt": 59103.5,
+              "pattern_met": false
+            },
+            {
+              "venue": "gate",
+              "valid": true,
+              "candle_start_utc": "2026-11-28T13:45:00+00:00",
+              "change_percent": 0.10586,
+              "volume_multiplier": 2.9661,
+              "spot_quote_volume_usdt": 14877896.99,
+              "baseline_quote_volume_usdt": 5015907.55,
+              "spot_close_usdt": 59103.6,
+              "pattern_met": false
+            },
+            {
+              "venue": "bitget",
+              "valid": true,
+              "candle_start_utc": "2026-11-28T13:45:00+00:00",
+              "change_percent": 0.10384,
+              "volume_multiplier": 1.0974,
+              "spot_quote_volume_usdt": 3917139.27,
+              "baseline_quote_volume_usdt": 3569566.79,
+              "spot_close_usdt": 59104.89,
+              "pattern_met": false
+            }
+          ],
+          "ETHUSDT": [
+            {
+              "venue": "okx",
+              "valid": true,
+              "candle_start_utc": "2026-11-28T13:45:00+00:00",
+              "change_percent": 0.11834,
+              "volume_multiplier": 0.2853,
+              "spot_quote_volume_usdt": 1564796.39,
+              "baseline_quote_volume_usdt": 5484955.81,
+              "spot_close_usdt": 1641.31,
+              "pattern_met": false
+            },
+            {
+              "venue": "gate",
+              "valid": true,
+              "candle_start_utc": "2026-11-28T13:45:00+00:00",
+              "change_percent": 0.12017,
+              "volume_multiplier": 2.3272,
+              "spot_quote_volume_usdt": 8994271.66,
+              "baseline_quote_volume_usdt": 3864885.71,
+              "spot_close_usdt": 1641.33,
+              "pattern_met": false
+            },
+            {
+              "venue": "bitget",
+              "valid": true,
+              "candle_start_utc": "2026-11-28T13:45:00+00:00",
+              "change_percent": 0.11345,
+              "volume_multiplier": 3.272,
+              "spot_quote_volume_usdt": 3627425.73,
+              "baseline_quote_volume_usdt": 1108627.61,
+              "spot_close_usdt": 1641.35,
+              "pattern_met": false
+            }
+          ]
+        }
+      },
+      "sampled_extrema_percent": {
+        "max": 3.0507,
+        "min": 3.0507
+      },
+      "sampled_experiments": {
+        "reference_tp2_sl2.5": {
+          "entry_price": 696.075,
+          "entry_sample_utc": "2026-11-28T14:00:00+00:00",
+          "exit_sample_utc": "2026-11-28T14:00:00+00:00",
+          "exit_price": 717.31,
+          "net_percent": 2.5507,
+          "reason": "target_sample"
+        },
+        "reference_tp3_sl2.5": {
+          "entry_price": 696.075,
+          "entry_sample_utc": "2026-11-28T14:00:00+00:00",
+          "exit_sample_utc": "2026-11-28T14:00:00+00:00",
+          "exit_price": 717.31,
+          "net_percent": 2.5507,
+          "reason": "target_sample"
+        }
+      }
     },
     {
       "event_id": "PUMPUSDT|2026-11-25T14:45:00+00:00|MOMENTUM_RESEARCH",
@@ -2668,7 +3684,116 @@
           "reason": "no_verifiable_checkpoint_in_window"
         }
       },
-      "research_only": true
+      "research_only": true,
+      "sampled_path": {
+        "2026-11-28T14:00:00+00:00": 0.002532
+      },
+      "first_context": {
+        "captured_at_utc": "2026-11-28T14:15:33.623655+00:00",
+        "at_detection": false,
+        "btc_eth": {
+          "BTCUSDT": [
+            {
+              "venue": "okx",
+              "valid": true,
+              "candle_start_utc": "2026-11-28T13:45:00+00:00",
+              "change_percent": 0.10077,
+              "volume_multiplier": 1.0843,
+              "spot_quote_volume_usdt": 2018266.99,
+              "baseline_quote_volume_usdt": 1861353.12,
+              "spot_close_usdt": 59103.5,
+              "pattern_met": false
+            },
+            {
+              "venue": "gate",
+              "valid": true,
+              "candle_start_utc": "2026-11-28T13:45:00+00:00",
+              "change_percent": 0.10586,
+              "volume_multiplier": 2.9661,
+              "spot_quote_volume_usdt": 14877896.99,
+              "baseline_quote_volume_usdt": 5015907.55,
+              "spot_close_usdt": 59103.6,
+              "pattern_met": false
+            },
+            {
+              "venue": "bitget",
+              "valid": true,
+              "candle_start_utc": "2026-11-28T13:45:00+00:00",
+              "change_percent": 0.10384,
+              "volume_multiplier": 1.0974,
+              "spot_quote_volume_usdt": 3917139.27,
+              "baseline_quote_volume_usdt": 3569566.79,
+              "spot_close_usdt": 59104.89,
+              "pattern_met": false
+            }
+          ],
+          "ETHUSDT": [
+            {
+              "venue": "okx",
+              "valid": true,
+              "candle_start_utc": "2026-11-28T13:45:00+00:00",
+              "change_percent": 0.11834,
+              "volume_multiplier": 0.2853,
+              "spot_quote_volume_usdt": 1564796.39,
+              "baseline_quote_volume_usdt": 5484955.81,
+              "spot_close_usdt": 1641.31,
+              "pattern_met": false
+            },
+            {
+              "venue": "gate",
+              "valid": true,
+              "candle_start_utc": "2026-11-28T13:45:00+00:00",
+              "change_percent": 0.12017,
+              "volume_multiplier": 2.3272,
+              "spot_quote_volume_usdt": 8994271.66,
+              "baseline_quote_volume_usdt": 3864885.71,
+              "spot_close_usdt": 1641.33,
+              "pattern_met": false
+            },
+            {
+              "venue": "bitget",
+              "valid": true,
+              "candle_start_utc": "2026-11-28T13:45:00+00:00",
+              "change_percent": 0.11345,
+              "volume_multiplier": 3.272,
+              "spot_quote_volume_usdt": 3627425.73,
+              "baseline_quote_volume_usdt": 1108627.61,
+              "spot_close_usdt": 1641.35,
+              "pattern_met": false
+            }
+          ]
+        }
+      },
+      "sampled_extrema_percent": {
+        "max": 7.6805,
+        "min": 7.6805
+      },
+      "sampled_experiments": {
+        "reference_tp2_sl2.5": {
+          "entry_price": 0.0023514,
+          "entry_sample_utc": "2026-11-28T14:00:00+00:00",
+          "exit_sample_utc": "2026-11-28T14:00:00+00:00",
+          "exit_price": 0.002532,
+          "net_percent": 7.1805,
+          "reason": "target_sample"
+        },
+        "reference_tp3_sl2.5": {
+          "entry_price": 0.0023514,
+          "entry_sample_utc": "2026-11-28T14:00:00+00:00",
+          "exit_sample_utc": "2026-11-28T14:00:00+00:00",
+          "exit_price": 0.002532,
+          "net_percent": 7.1805,
+          "reason": "target_sample"
+        },
+        "reference_tp5_sl2.5": {
+          "entry_price": 0.0023514,
+          "entry_sample_utc": "2026-11-28T14:00:00+00:00",
+          "exit_sample_utc": "2026-11-28T14:00:00+00:00",
+          "exit_price": 0.002532,
+          "net_percent": 7.1805,
+          "reason": "target_sample"
+        }
+      }
     },
     {
       "event_id": "HYPEUSDT|2026-11-27T03:00:00+00:00|EARLY_RESEARCH",
@@ -2710,7 +3835,116 @@
           "net_after_assumed_fees_percent": -3.1996
         }
       },
-      "research_only": true
+      "research_only": true,
+      "sampled_path": {
+        "2026-11-28T14:00:00+00:00": 62.412
+      },
+      "first_context": {
+        "captured_at_utc": "2026-11-28T14:15:33.623655+00:00",
+        "at_detection": false,
+        "btc_eth": {
+          "BTCUSDT": [
+            {
+              "venue": "okx",
+              "valid": true,
+              "candle_start_utc": "2026-11-28T13:45:00+00:00",
+              "change_percent": 0.10077,
+              "volume_multiplier": 1.0843,
+              "spot_quote_volume_usdt": 2018266.99,
+              "baseline_quote_volume_usdt": 1861353.12,
+              "spot_close_usdt": 59103.5,
+              "pattern_met": false
+            },
+            {
+              "venue": "gate",
+              "valid": true,
+              "candle_start_utc": "2026-11-28T13:45:00+00:00",
+              "change_percent": 0.10586,
+              "volume_multiplier": 2.9661,
+              "spot_quote_volume_usdt": 14877896.99,
+              "baseline_quote_volume_usdt": 5015907.55,
+              "spot_close_usdt": 59103.6,
+              "pattern_met": false
+            },
+            {
+              "venue": "bitget",
+              "valid": true,
+              "candle_start_utc": "2026-11-28T13:45:00+00:00",
+              "change_percent": 0.10384,
+              "volume_multiplier": 1.0974,
+              "spot_quote_volume_usdt": 3917139.27,
+              "baseline_quote_volume_usdt": 3569566.79,
+              "spot_close_usdt": 59104.89,
+              "pattern_met": false
+            }
+          ],
+          "ETHUSDT": [
+            {
+              "venue": "okx",
+              "valid": true,
+              "candle_start_utc": "2026-11-28T13:45:00+00:00",
+              "change_percent": 0.11834,
+              "volume_multiplier": 0.2853,
+              "spot_quote_volume_usdt": 1564796.39,
+              "baseline_quote_volume_usdt": 5484955.81,
+              "spot_close_usdt": 1641.31,
+              "pattern_met": false
+            },
+            {
+              "venue": "gate",
+              "valid": true,
+              "candle_start_utc": "2026-11-28T13:45:00+00:00",
+              "change_percent": 0.12017,
+              "volume_multiplier": 2.3272,
+              "spot_quote_volume_usdt": 8994271.66,
+              "baseline_quote_volume_usdt": 3864885.71,
+              "spot_close_usdt": 1641.33,
+              "pattern_met": false
+            },
+            {
+              "venue": "bitget",
+              "valid": true,
+              "candle_start_utc": "2026-11-28T13:45:00+00:00",
+              "change_percent": 0.11345,
+              "volume_multiplier": 3.272,
+              "spot_quote_volume_usdt": 3627425.73,
+              "baseline_quote_volume_usdt": 1108627.61,
+              "spot_close_usdt": 1641.35,
+              "pattern_met": false
+            }
+          ]
+        }
+      },
+      "sampled_extrema_percent": {
+        "max": -5.558,
+        "min": -5.558
+      },
+      "sampled_experiments": {
+        "reference_tp2_sl2.5": {
+          "entry_price": 66.085,
+          "entry_sample_utc": "2026-11-28T14:00:00+00:00",
+          "exit_sample_utc": "2026-11-28T14:00:00+00:00",
+          "exit_price": 62.412,
+          "net_percent": -6.058,
+          "reason": "stop_sample"
+        },
+        "reference_tp3_sl2.5": {
+          "entry_price": 66.085,
+          "entry_sample_utc": "2026-11-28T14:00:00+00:00",
+          "exit_sample_utc": "2026-11-28T14:00:00+00:00",
+          "exit_price": 62.412,
+          "net_percent": -6.058,
+          "reason": "stop_sample"
+        },
+        "reference_tp5_sl2.5": {
+          "entry_price": 66.085,
+          "entry_sample_utc": "2026-11-28T14:00:00+00:00",
+          "exit_sample_utc": "2026-11-28T14:00:00+00:00",
+          "exit_price": 62.412,
+          "net_percent": -6.058,
+          "reason": "stop_sample"
+        }
+      }
     },
     {
       "event_id": "EVAAUSDT|2026-11-28T09:00:00+00:00|EARLY_RESEARCH",

@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-11-28T13:43:58.826376+00:00",
+  "generated_at_utc": "2026-11-28T14:15:33.623244+00:00",
   "research_only": true,
   "no_actual_orders_or_fills": true,
   "fee_assumption_roundtrip_percent": 0.5,
@@ -39,5 +39,101 @@
     "Checkpoint prices are scheduled observations, not real stop/target fills.",
     "Missed checkpoints remain missing, never interpolated.",
     "No strategy tuning without adequate out-of-sample results."
-  ]
+  ],
+  "research_audit": {
+    "cohorts": [
+      {
+        "first_seen_minute_utc": "2026-11-15T02:39",
+        "simultaneous_events": 2,
+        "observed_4h": 0,
+        "positive_4h": 0,
+        "mean_net_4h": null
+      },
+      {
+        "first_seen_minute_utc": "2026-11-15T09:27",
+        "simultaneous_events": 11,
+        "observed_4h": 11,
+        "positive_4h": 3,
+        "mean_net_4h": -0.3018
+      },
+      {
+        "first_seen_minute_utc": "2026-11-17T19:53",
+        "simultaneous_events": 1,
+        "observed_4h": 0,
+        "positive_4h": 0,
+        "mean_net_4h": null
+      },
+      {
+        "first_seen_minute_utc": "2026-11-17T21:40",
+        "simultaneous_events": 1,
+        "observed_4h": 1,
+        "positive_4h": 0,
+        "mean_net_4h": -2.5555
+      },
+      {
+        "first_seen_minute_utc": "2026-11-19T12:51",
+        "simultaneous_events": 1,
+        "observed_4h": 1,
+        "positive_4h": 0,
+        "mean_net_4h": -5.9613
+      },
+      {
+        "first_seen_minute_utc": "2026-11-21T06:48",
+        "simultaneous_events": 1,
+        "observed_4h": 0,
+        "positive_4h": 0,
+        "mean_net_4h": null
+      },
+      {
+        "first_seen_minute_utc": "2026-11-21T13:40",
+        "simultaneous_events": 1,
+        "observed_4h": 1,
+        "positive_4h": 1,
+        "mean_net_4h": 1.664
+      },
+      {
+        "first_seen_minute_utc": "2026-11-22T09:53",
+        "simultaneous_events": 1,
+        "observed_4h": 0,
+        "positive_4h": 0,
+        "mean_net_4h": null
+      },
+      {
+        "first_seen_minute_utc": "2026-11-23T14:17",
+        "simultaneous_events": 23,
+        "observed_4h": 23,
+        "positive_4h": 0,
+        "mean_net_4h": -3.2187
+      },
+      {
+        "first_seen_minute_utc": "2026-11-25T15:15",
+        "simultaneous_events": 11,
+        "observed_4h": 11,
+        "positive_4h": 11,
+        "mean_net_4h": 5.0726
+      },
+      {
+        "first_seen_minute_utc": "2026-11-27T03:25",
+        "simultaneous_events": 1,
+        "observed_4h": 0,
+        "positive_4h": 0,
+        "mean_net_4h": null
+      },
+      {
+        "first_seen_minute_utc": "2026-11-28T09:29",
+        "simultaneous_events": 1,
+        "observed_4h": 0,
+        "positive_4h": 0,
+        "mean_net_4h": null
+      }
+    ],
+    "research_only": true,
+    "live_rules_changed": false,
+    "limitations": [
+      "Historical intrabar prices and detection context not reconstructed.",
+      "Sampled exits are not actual fills; missing intervals may hide stop or target hits.",
+      "Reference entry is retrospective and may not be executable.",
+      "No automatic parameter selection; validate on later independent market days."
+    ]
+  }
 }
