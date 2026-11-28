@@ -1,44 +1,27 @@
 {
-  "generated_at_utc": "2026-11-28T02:59:50.049448+00:00",
-  "latest_generated_at_utc": "2026-11-28T02:58:56+00:00",
-  "latest_age_minutes": 0.9,
+  "generated_at_utc": "2026-11-28T04:01:19.869721+00:00",
+  "latest_generated_at_utc": "2026-11-28T04:00:04+00:00",
+  "latest_age_minutes": 1.26,
   "source_classification": "CURRENT_RESEARCH",
   "research_only": true,
   "counts": {
-    "checks": 153,
-    "valid": 139,
-    "volume_1_8x": 19,
-    "invalid": 14,
-    "invalid_ValueError": 7,
+    "checks": 150,
+    "valid": 137,
+    "volume_1_8x": 13,
+    "invalid": 13,
+    "invalid_ValueError": 6,
     "invalid_HTTPError": 7
   },
   "single_venue_watchlist": [],
   "single_venue_watchlist_total": 0,
-  "discovery_status": "ok",
+  "discovery_status": "no_correlated_candidates",
   "discovery_diagnostics": {
-    "gate_shortlist": 19,
-    "ticker_correlated": 5,
+    "gate_shortlist": 20,
+    "ticker_correlated": 0,
     "okx_bitget_pairs": 0,
-    "candle_checked": 5,
-    "candle_rejected": [
-      {
-        "symbol": "BTWUSDT",
-        "reason": "ValueError: gate:insufficient_closed_15m_quote_volume"
-      },
-      {
-        "symbol": "WLDUSDT",
-        "reason": "ValueError: bitget:insufficient_closed_15m_quote_volume"
-      },
-      {
-        "symbol": "BNBUSDT",
-        "reason": "ValueError: bitget:insufficient_closed_15m_quote_volume"
-      },
-      {
-        "symbol": "XAUTUSDT",
-        "reason": "ValueError: gate:insufficient_closed_15m_quote_volume"
-      }
-    ],
-    "validated": 1
+    "candle_checked": 0,
+    "candle_rejected": [],
+    "validated": 0
   },
   "discovery_venue_fetch_errors": {},
   "discovery_venues_reached": [
