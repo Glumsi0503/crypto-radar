@@ -99,11 +99,65 @@ def advance(spot, events, journal, now):
                         "Missed checkpoints remain missing, never interpolated.",
                         "No strategy tuning without adequate out-of-sample results."]}
 
+def research_audit(spot, journal, now):
+    """Forward-only sampled price experiments; never infer intrabar fills."""
+    markets=market(spot)
+    items=journal["observations"]
+    cohorts={}
+    for row in items:
+        cohort=row["first_seen_utc"][:16]
+        cohorts.setdefault(cohort,[]).append(row)
+        first=parse_time(row["first_seen_utc"])
+        if now-first>dt.timedelta(hours=72):continue
+        obs=quote(markets,row["symbol"])
+        if not obs:continue
+        closed=parse_time(obs["candle"])+dt.timedelta(minutes=15)
+        if not first<closed<=now or now-closed>MAX_SOURCE_AGE:continue
+        path=row.setdefault("sampled_path",{})
+        path[closed.isoformat()]=obs["price"]
+        row["sampled_path"]=dict(sorted(path.items()))
+        if "first_context" not in row:
+            row["first_context"]={"captured_at_utc":now.isoformat(),
+                "at_detection":False,"btc_eth":{s:[{"venue":v,**d} for v,d in markets.get(s,[])] for s in ("BTCUSDT","ETHUSDT")}}
+        prices=list(row["sampled_path"].values())
+        ref=row["reference_price_usdt"]
+        row["sampled_extrema_percent"]={"max":round(100*(max(prices)/ref-1),4),"min":round(100*(min(prices)/ref-1),4)}
+        experiments={}
+        for entry_rule in ("reference","first_observed","pullback_1pct"):
+            entry=None
+            for stamp,price in row["sampled_path"].items():
+                if entry is None:
+                    if entry_rule=="pullback_1pct" and price>ref*.99:continue
+                    entry=ref if entry_rule=="reference" else price
+                    entry_stamp=stamp
+                    if entry_rule!="reference":continue
+                for target in (2,3,5):
+                    key=f"{entry_rule}_tp{target}_sl2.5"
+                    if key in experiments:continue
+                    gross=100*(price/entry-1)
+                    if gross>=target or gross<=-2.5:
+                        experiments[key]={"entry_price":entry,"entry_sample_utc":entry_stamp,
+                            "exit_sample_utc":stamp,"exit_price":price,"net_percent":round(gross-.5,4),
+                            "reason":"target_sample" if gross>=target else "stop_sample"}
+        row["sampled_experiments"]=experiments
+    summary=[]
+    for stamp,rows in sorted(cohorts.items()):
+        vals=[r["checkpoints"]["4h"]["net_after_assumed_fees_percent"] for r in rows if r["checkpoints"].get("4h",{}).get("status")=="observed"]
+        summary.append({"first_seen_minute_utc":stamp,"simultaneous_events":len(rows),
+            "observed_4h":len(vals),"positive_4h":sum(x>0 for x in vals),
+            "mean_net_4h":round(sum(vals)/len(vals),4) if vals else None})
+    return {"cohorts":summary,"research_only":True,"live_rules_changed":False,
+        "limitations":["Historical intrabar prices and detection context not reconstructed.",
+        "Sampled exits are not actual fills; missing intervals may hide stop or target hits.",
+        "Reference entry is retrospective and may not be executable.",
+        "No automatic parameter selection; validate on later independent market days."]}
+
 def main():
     spot=json.loads(SOURCE.read_text())
     events=json.loads(EVENTS.read_text()) if EVENTS.exists() else {"events":[]}
     journal=json.loads(JOURNAL.read_text()) if JOURNAL.exists() else {"observations":[]}
     outcome=advance(spot,events,journal,dt.datetime.now(UTC))
+    outcome["research_audit"]=research_audit(spot,journal,dt.datetime.now(UTC))
     JOURNAL.write_text(json.dumps(journal,ensure_ascii=False,indent=2)+"\n")
     OUTPUT.write_text(json.dumps(outcome,ensure_ascii=False,indent=2)+"\n")
     print(json.dumps({"observations":outcome["observation_count"],"real_orders":0}))
