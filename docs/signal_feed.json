@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-11-28T08:28:24.876660+00:00",
-  "source_generated_at_utc": "2026-11-28T08:27:10+00:00",
+  "generated_at_utc": "2026-11-28T09:29:54.642264+00:00",
+  "source_generated_at_utc": "2026-11-28T09:28:56+00:00",
   "research_only": true,
   "auto_push_connected": false,
   "venue_buyability_checked": false,
@@ -22,11 +22,51 @@
     "max_spot_price_disagreement_percent": 1.0,
     "classification": "subjective_not_statistically_calibrated"
   },
-  "current_candidates": [],
+  "current_candidates": [
+    {
+      "symbol": "EVAAUSDT",
+      "candle_start_utc": "2026-11-28T09:00:00+00:00",
+      "reference_price_usdt": 2.03255,
+      "venues": [
+        "bitget",
+        "gate"
+      ],
+      "stage": "EARLY_RESEARCH",
+      "not_a_buy_signal": true,
+      "event_id": "EVAAUSDT|2026-11-28T09:00:00+00:00|EARLY_RESEARCH"
+    }
+  ],
   "historical_candidates": [],
-  "new_events": [],
-  "recent_events_3h": [],
+  "new_events": [
+    {
+      "symbol": "EVAAUSDT",
+      "candle_start_utc": "2026-11-28T09:00:00+00:00",
+      "reference_price_usdt": 2.03255,
+      "venues": [
+        "bitget",
+        "gate"
+      ],
+      "stage": "EARLY_RESEARCH",
+      "not_a_buy_signal": true,
+      "event_id": "EVAAUSDT|2026-11-28T09:00:00+00:00|EARLY_RESEARCH"
+    }
+  ],
+  "recent_events_3h": [
+    {
+      "symbol": "EVAAUSDT",
+      "candle_start_utc": "2026-11-28T09:00:00+00:00",
+      "reference_price_usdt": 2.03255,
+      "venues": [
+        "bitget",
+        "gate"
+      ],
+      "stage": "EARLY_RESEARCH",
+      "not_a_buy_signal": true,
+      "event_id": "EVAAUSDT|2026-11-28T09:00:00+00:00|EARLY_RESEARCH",
+      "first_seen_utc": "2026-11-28T09:29:54.642264+00:00"
+    }
+  ],
   "historical_events_24h": [],
-  "new_event_count": 0,
+  "new_event_count": 1,
   "notice": "Research observations only. No automatic external push, no order, no verified exchange availability."
 }
