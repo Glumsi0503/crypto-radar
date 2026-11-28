@@ -7,7 +7,7 @@ from statistics import median
 from strategy import market,parse_time
 
 UTC=dt.timezone.utc
-CHECKPOINT_HOURS=(1,4,24,72)
+CHECKPOINT_HOURS=(0.25,0.5,1,2,4,24,72)
 OBSERVATION_WINDOW=dt.timedelta(minutes=90)
 MAX_CHECKPOINT_PRICE_OFFSET=dt.timedelta(minutes=20)
 MAX_SOURCE_AGE=dt.timedelta(minutes=40)
@@ -60,7 +60,7 @@ def advance(spot, events, journal, now):
         first=parse_time(row["first_seen_utc"])
         obs=quote(markets,row["symbol"])
         for hours in CHECKPOINT_HOURS:
-            k=str(hours)+"h"
+            k=f"{hours:g}h"
             if k in row["checkpoints"]:continue
             age=now-first-dt.timedelta(hours=hours)
             if age < dt.timedelta(0):continue
@@ -83,7 +83,7 @@ def advance(spot, events, journal, now):
     # Only observed checkpoints; small samples never used for optimisation.
     performance={}
     for hours in CHECKPOINT_HOURS:
-        k=str(hours)+"h"
+        k=f"{hours:g}h"
         values=[r["checkpoints"][k]["net_after_assumed_fees_percent"] for r in items
                 if r["checkpoints"].get(k,{}).get("status")=="observed"]
         missing=sum(r["checkpoints"].get(k,{}).get("status")=="missed_window" for r in items)
@@ -113,6 +113,14 @@ def research_audit(spot, journal, now):
         if not obs:continue
         closed=parse_time(obs["candle"])+dt.timedelta(minutes=15)
         if not first<closed<=now or now-closed>MAX_SOURCE_AGE:continue
+        # Archive matching closed bars from independent venues, without inventing gaps.
+        archive=row.setdefault("ohlcv_by_venue",{})
+        for venue,data in markets.get(row["symbol"],[]):
+            dest=archive.setdefault(venue,{})
+            for bar in data.get("closed_bars",[]):
+                t=dt.datetime.fromtimestamp(bar["ts"]/1000,UTC)
+                if first-dt.timedelta(hours=24)<=t and t+dt.timedelta(minutes=15)<=now:
+                    dest[str(bar["ts"])]=bar
         path=row.setdefault("sampled_path",{})
         path[closed.isoformat()]=obs["price"]
         row["sampled_path"]=dict(sorted(path.items()))
