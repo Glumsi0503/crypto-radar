@@ -1,31 +1,27 @@
 {
-  "generated_at_utc": "2026-11-28T18:23:44.188980+00:00",
-  "latest_generated_at_utc": "2026-11-28T18:22:28+00:00",
-  "latest_age_minutes": 1.27,
+  "generated_at_utc": "2026-11-28T19:27:40.830168+00:00",
+  "latest_generated_at_utc": "2026-11-28T19:26:37+00:00",
+  "latest_age_minutes": 1.06,
   "source_classification": "CURRENT_RESEARCH",
   "research_only": true,
   "counts": {
     "checks": 150,
     "valid": 137,
-    "volume_1_8x": 17,
+    "volume_1_8x": 26,
     "invalid": 13,
     "invalid_ValueError": 6,
-    "invalid_HTTPError": 7
+    "invalid_HTTPError": 7,
+    "gain_1_5": 1
   },
   "single_venue_watchlist": [],
   "single_venue_watchlist_total": 0,
   "discovery_status": "no_correlated_candidates",
   "discovery_diagnostics": {
     "gate_shortlist": 21,
-    "ticker_correlated": 1,
+    "ticker_correlated": 0,
     "okx_bitget_pairs": 0,
-    "candle_checked": 1,
-    "candle_rejected": [
-      {
-        "symbol": "WLDUSDT",
-        "reason": "ValueError: okx:insufficient_closed_15m_quote_volume"
-      }
-    ],
+    "candle_checked": 0,
+    "candle_rejected": [],
     "validated": 0
   },
   "discovery_venue_fetch_errors": {},
