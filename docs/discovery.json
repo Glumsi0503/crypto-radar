@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-11-27T23:39:07+00:00",
+  "generated_at_utc": "2026-11-28T00:40:29+00:00",
   "source_urls": {
     "gate": "https://api.gateio.ws/api/v4/spot/tickers",
     "okx": "https://www.okx.com/api/v5/market/tickers?instType=SPOT",
@@ -24,16 +24,11 @@
     "okx"
   ],
   "diagnostics": {
-    "gate_shortlist": 20,
-    "ticker_correlated": 1,
+    "gate_shortlist": 18,
+    "ticker_correlated": 0,
     "okx_bitget_pairs": 0,
-    "candle_checked": 1,
-    "candle_rejected": [
-      {
-        "symbol": "PONSUSDT",
-        "reason": "ValueError: gate:insufficient_closed_15m_quote_volume"
-      }
-    ],
+    "candle_checked": 0,
+    "candle_rejected": [],
     "validated": 0
   }
 }
