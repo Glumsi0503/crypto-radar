@@ -92,6 +92,32 @@ def build(report, history, now):
             "simultaneous_symbols":len({x["symbol"] for x in research if x["candle_start_utc"]==candle}),
             "open_checks":["independent_live_confirmation","token_identity","bid_ask_spread","trigger","invalidation"]}
     research=[x for x in research if dt.timedelta(0)<=now-(parse_time(x["candle_start_utc"])+dt.timedelta(minutes=15))<=dt.timedelta(minutes=40)] if source_mode=="current" else research
+    # Experimental features only: missing inputs are not treated as verified.
+    from statistics import median
+    for item in research:
+        candle=item["candle_start_utc"]
+        rows=[d for v,d in markets.get(item["symbol"],[]) if d.get("candle_start_utc")==candle]
+        benchmarks=[d for s in ("BTCUSDT","ETHUSDT") for v,d in markets.get(s,[]) if d.get("candle_start_utc")==candle]
+        trends={s:{k:median(vals) for k in ("60","240","1440") if len(vals:=[d["trend_percent"][k] for v,d in markets.get(s,[]) if d.get("candle_start_utc")==candle and k in d.get("trend_percent",{})])>=2} for s in ("BTCUSDT","ETHUSDT")}
+        gain=median([d["change_percent"] for d in rows]) if rows else 0
+        vol=median([d["volume_multiplier"] for d in rows]) if rows else 0
+        relative=gain-median([d["change_percent"] for d in benchmarks]) if len(benchmarks)>=4 else None
+        breadth=len({x["symbol"] for x in research if x["candle_start_utc"]==candle})
+        parts={"volume":min(20,max(0,vol/3*20)),
+               "momentum":max(0,15-abs(gain-2)*3),
+               "venue_confirmation":15 if len(item["venues"])>=2 else 0,
+               "relative_strength":min(5,max(0,relative)) if relative is not None else None,
+               "market_phase":20 if all(trends[s].get("60",0)>0 and trends[s].get("240",0)>0 for s in trends) else (0 if all("60" in trends[s] and "240" in trends[s] for s in trends) else None),
+               "entry_timing":None,"liquidity_and_spread":None}
+        item["research_features"]={"benchmark_trends":trends,"relative_strength_15m":relative,
+            "breadth_count":breadth,"breadth_warning":breadth>=15,
+            "score_components":parts,"partial_score":round(sum(v for v in parts.values() if v is not None),2),
+            "score_available_max":sum(w for (k,v),w in zip(parts.items(),(20,15,15,5,20,15,10)) if v is not None),
+            "score_calibrated":False,"strategy_tags":["control"]+
+                (["early"] if item["stage"]!="MOMENTUM_RESEARCH" else [])+
+                (["trend"] if parts["market_phase"]==20 else [])+
+                (["relative_strength"] if relative is not None and relative>=1 else [])+
+                (["reversal_research"] if all(trends[s].get("240",0)<0 for s in trends) else [])}
     seen=set(history.get("keys",[]))
     new=[]
     for item in research:
