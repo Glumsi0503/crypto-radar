@@ -69,6 +69,29 @@ def build(report, history, now):
     early=[x for x in prewatch(markets)
            if (x["symbol"],x["candle_start_utc"]) not in confirmed_candles]
     research=early+confirmed
+    # Lower threshold is observation only, never a live entry.
+    existing={(x["symbol"],x["candle_start_utc"]) for x in research}
+    for symbol,rows in markets.items():
+        groups={}
+        for venue,d in rows:
+            if 1<=d.get("change_percent",0)<=8 and d.get("volume_multiplier",0)>=1.5 and d.get("spot_quote_volume_usdt",0)>=100000:
+                groups.setdefault(d["candle_start_utc"],[]).append((venue,d))
+        for candle,group in groups.items():
+            if (symbol,candle) in existing:continue
+            prices=[d["spot_close_usdt"] for _,d in group]
+            if min(prices)<=0 or max(prices)/min(prices)>1.01:continue
+            research.append({"symbol":symbol,"candle_start_utc":candle,
+                "reference_price_usdt":sum(prices)/len(prices),"venues":sorted({v for v,_ in group}),
+                "stage":"UNCONFIRMED_RESEARCH","not_a_buy_signal":True})
+    for item in research:
+        candle=item["candle_start_utc"]
+        item["detection_context"]={"market_regime_15m":market_regime(markets),
+            "btc_eth":[{"symbol":s,"venue":v,**d} for s in ("BTCUSDT","ETHUSDT")
+                       for v,d in markets.get(s,[]) if d.get("candle_start_utc")==candle],
+            "spot_checks":[{"venue":v,**d} for v,d in markets.get(item["symbol"],[]) if d.get("candle_start_utc")==candle],
+            "simultaneous_symbols":len({x["symbol"] for x in research if x["candle_start_utc"]==candle}),
+            "open_checks":["independent_live_confirmation","token_identity","bid_ask_spread","trigger","invalidation"]}
+    research=[x for x in research if dt.timedelta(0)<=now-(parse_time(x["candle_start_utc"])+dt.timedelta(minutes=15))<=dt.timedelta(minutes=40)] if source_mode=="current" else research
     seen=set(history.get("keys",[]))
     new=[]
     for item in research:
