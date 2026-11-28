@@ -1,17 +1,38 @@
 {
-  "generated_at_utc": "2026-11-28T14:17:58.232916+00:00",
+  "generated_at_utc": "2026-11-28T14:20:43.102636+00:00",
   "research_only": true,
   "no_actual_orders_or_fills": true,
   "fee_assumption_roundtrip_percent": 0.5,
   "slippage_modelled": false,
   "observation_count": 55,
   "checkpoint_summary": {
+    "0.25h": {
+      "observed": 0,
+      "missed": 55,
+      "median_net_percent": null,
+      "positive_fraction": null,
+      "sufficient_sample": false
+    },
+    "0.5h": {
+      "observed": 0,
+      "missed": 55,
+      "median_net_percent": null,
+      "positive_fraction": null,
+      "sufficient_sample": false
+    },
     "1h": {
       "observed": 38,
       "missed": 17,
       "median_net_percent": -0.1667,
       "positive_fraction": 0.3947,
       "sufficient_sample": true
+    },
+    "2h": {
+      "observed": 0,
+      "missed": 55,
+      "median_net_percent": null,
+      "positive_fraction": null,
+      "sufficient_sample": false
     },
     "4h": {
       "observed": 48,
@@ -41,6 +62,193 @@
     "No strategy tuning without adequate out-of-sample results."
   ],
   "research_audit": {
+    "strategy_cohorts": {
+      "control": {
+        "0.25h": {
+          "n": 0,
+          "mean_net": null,
+          "wins": 0
+        },
+        "0.5h": {
+          "n": 0,
+          "mean_net": null,
+          "wins": 0
+        },
+        "1h": {
+          "n": 0,
+          "mean_net": null,
+          "wins": 0
+        },
+        "2h": {
+          "n": 0,
+          "mean_net": null,
+          "wins": 0
+        },
+        "4h": {
+          "n": 0,
+          "mean_net": null,
+          "wins": 0
+        },
+        "24h": {
+          "n": 0,
+          "mean_net": null,
+          "wins": 0
+        },
+        "72h": {
+          "n": 0,
+          "mean_net": null,
+          "wins": 0
+        }
+      },
+      "early": {
+        "0.25h": {
+          "n": 0,
+          "mean_net": null,
+          "wins": 0
+        },
+        "0.5h": {
+          "n": 0,
+          "mean_net": null,
+          "wins": 0
+        },
+        "1h": {
+          "n": 0,
+          "mean_net": null,
+          "wins": 0
+        },
+        "2h": {
+          "n": 0,
+          "mean_net": null,
+          "wins": 0
+        },
+        "4h": {
+          "n": 0,
+          "mean_net": null,
+          "wins": 0
+        },
+        "24h": {
+          "n": 0,
+          "mean_net": null,
+          "wins": 0
+        },
+        "72h": {
+          "n": 0,
+          "mean_net": null,
+          "wins": 0
+        }
+      },
+      "trend": {
+        "0.25h": {
+          "n": 0,
+          "mean_net": null,
+          "wins": 0
+        },
+        "0.5h": {
+          "n": 0,
+          "mean_net": null,
+          "wins": 0
+        },
+        "1h": {
+          "n": 0,
+          "mean_net": null,
+          "wins": 0
+        },
+        "2h": {
+          "n": 0,
+          "mean_net": null,
+          "wins": 0
+        },
+        "4h": {
+          "n": 0,
+          "mean_net": null,
+          "wins": 0
+        },
+        "24h": {
+          "n": 0,
+          "mean_net": null,
+          "wins": 0
+        },
+        "72h": {
+          "n": 0,
+          "mean_net": null,
+          "wins": 0
+        }
+      },
+      "relative_strength": {
+        "0.25h": {
+          "n": 0,
+          "mean_net": null,
+          "wins": 0
+        },
+        "0.5h": {
+          "n": 0,
+          "mean_net": null,
+          "wins": 0
+        },
+        "1h": {
+          "n": 0,
+          "mean_net": null,
+          "wins": 0
+        },
+        "2h": {
+          "n": 0,
+          "mean_net": null,
+          "wins": 0
+        },
+        "4h": {
+          "n": 0,
+          "mean_net": null,
+          "wins": 0
+        },
+        "24h": {
+          "n": 0,
+          "mean_net": null,
+          "wins": 0
+        },
+        "72h": {
+          "n": 0,
+          "mean_net": null,
+          "wins": 0
+        }
+      },
+      "reversal_research": {
+        "0.25h": {
+          "n": 0,
+          "mean_net": null,
+          "wins": 0
+        },
+        "0.5h": {
+          "n": 0,
+          "mean_net": null,
+          "wins": 0
+        },
+        "1h": {
+          "n": 0,
+          "mean_net": null,
+          "wins": 0
+        },
+        "2h": {
+          "n": 0,
+          "mean_net": null,
+          "wins": 0
+        },
+        "4h": {
+          "n": 0,
+          "mean_net": null,
+          "wins": 0
+        },
+        "24h": {
+          "n": 0,
+          "mean_net": null,
+          "wins": 0
+        },
+        "72h": {
+          "n": 0,
+          "mean_net": null,
+          "wins": 0
+        }
+      }
+    },
     "cohorts": [
       {
         "first_seen_minute_utc": "2026-11-15T02:39",
