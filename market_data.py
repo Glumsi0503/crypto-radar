@@ -20,28 +20,28 @@ def get_json(url):
 
 def fetch(exchange, symbol):
     if exchange == "binance":
-        url = f"https://api.binance.com/api/v3/klines?symbol={symbol}&interval=15m&limit=30"
+        url = f"https://api.binance.com/api/v3/klines?symbol={symbol}&interval=15m&limit=100"
         rows = get_json(url)
-        bars = [{"ts":int(x[0]),"open":float(x[1]),"close":float(x[4]),"volume":float(x[7])} for x in rows]
+        bars = [{"ts":int(x[0]),"open":float(x[1]),"high":float(x[2]),"low":float(x[3]),"close":float(x[4]),"volume":float(x[7])} for x in rows]
     elif exchange == "bybit":
         url = f"https://api.bybit.com/v5/market/kline?category=spot&symbol={symbol}&interval=15&limit=30"
         obj = get_json(url)
         if obj.get("retCode") != 0: raise ValueError(str(obj.get("retMsg")))
-        bars = [{"ts":int(x[0]),"open":float(x[1]),"close":float(x[4]),"volume":float(x[6])} for x in obj["result"]["list"]]
+        bars = [{"ts":int(x[0]),"open":float(x[1]),"high":float(x[2]),"low":float(x[3]),"close":float(x[4]),"volume":float(x[6])} for x in obj["result"]["list"]]
     elif exchange == "okx":
         url = f"https://www.okx.com/api/v5/market/candles?instId={symbol[:-4]}-USDT&bar=15m&limit=30"
         obj = get_json(url)
         if obj.get("code") != "0": raise ValueError(str(obj.get("msg")))
-        bars = [{"ts":int(x[0]),"open":float(x[1]),"close":float(x[4]),"volume":float(x[7]),"confirmed":x[8]=="1"} for x in obj["data"]]
+        bars = [{"ts":int(x[0]),"open":float(x[1]),"high":float(x[2]),"low":float(x[3]),"close":float(x[4]),"volume":float(x[7]),"confirmed":x[8]=="1"} for x in obj["data"]]
     elif exchange == "gate":
         url = f"https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair={symbol[:-4]}_USDT&interval=15m&limit=30"
         rows = get_json(url)
-        bars = [{"ts":int(x[0])*1000,"open":float(x[5]),"close":float(x[2]),"volume":float(x[1]),"confirmed":bool(x[7]) if len(x)>7 else True} for x in rows]
+        bars = [{"ts":int(x[0])*1000,"open":float(x[5]),"high":float(x[3]),"low":float(x[4]),"close":float(x[2]),"volume":float(x[1]),"confirmed":str(x[7]).lower() in ("true","1") if len(x)>7 else True} for x in rows]
     elif exchange == "bitget":
         url = f"https://api.bitget.com/api/v3/market/candles?category=SPOT&symbol={symbol}&interval=15m&limit=30"
         obj = get_json(url)
         if obj.get("code") != "00000": raise ValueError(str(obj.get("msg")))
-        bars = [{"ts":int(x[0]),"open":float(x[1]),"close":float(x[4]),"volume":float(x[6])} for x in obj["data"]]
+        bars = [{"ts":int(x[0]),"open":float(x[1]),"high":float(x[2]),"low":float(x[3]),"close":float(x[4]),"volume":float(x[6])} for x in obj["data"]]
     else:
         raise ValueError("unknown exchange")
     return url, sorted(bars, key=lambda b:b["ts"])
@@ -64,7 +64,7 @@ def evaluate(bars, now_ms):
     return {"valid":True,"candle_start_utc":dt.datetime.fromtimestamp(last["ts"]/1000,dt.timezone.utc).isoformat(),
             "change_percent":round(change,5),"volume_multiplier":round(ratio,4),
             "spot_quote_volume_usdt":round(last["volume"],2),"baseline_quote_volume_usdt":round(base,2),
-            "spot_close_usdt":last["close"],"pattern_met":change>=3 and ratio>=3}
+            "spot_close_usdt":last["close"],"closed_bars":closed,"trend_percent":{str(n*15):round(100*(last["close"]/closed[-n]["open"]-1),5) for n in (4,16,96) if len(closed)>=n and all(closed[i+1]["ts"]-closed[i]["ts"]==CANDLE_MS for i in range(len(closed)-n,len(closed)-1))},"pattern_met":change>=3 and ratio>=3}
 
 def collect(symbols=SYMBOLS, venues=EXCHANGES, fetcher=fetch, current_ms=None):
     now_ms=current_ms if current_ms is not None else int(time.time()*1000)
