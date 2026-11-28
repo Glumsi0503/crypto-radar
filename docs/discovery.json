@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-11-28T09:27:46+00:00",
+  "generated_at_utc": "2026-11-28T10:28:41+00:00",
   "source_urls": {
     "gate": "https://api.gateio.ws/api/v4/spot/tickers",
     "okx": "https://www.okx.com/api/v5/market/tickers?instType=SPOT",
@@ -9,52 +9,27 @@
   "research_only": true,
   "candidates": [
     {
-      "symbol": "WLFIUSDT",
-      "quote_volume_24h_usdt": 9214995.76,
-      "abs_change_24h_percent": 49.43,
-      "gate_last_usdt": 0.0209,
+      "symbol": "DGAIUSDT",
+      "quote_volume_24h_usdt": 3219912.59,
+      "abs_change_24h_percent": 1.12,
+      "gate_last_usdt": 0.9078,
       "second_venue": "bitget",
-      "second_venue_quote_volume_24h_usdt": 4229514.95,
-      "second_venue_last_usdt": 0.02087,
-      "ticker_price_disagreement_percent": 0.144,
+      "second_venue_quote_volume_24h_usdt": 4449860.48,
+      "second_venue_last_usdt": 0.908174,
+      "ticker_price_disagreement_percent": 0.041,
       "validated_spot_venues": [
         "gate",
         "bitget"
       ],
-      "verified_same_closed_15m_candle_utc": "2026-11-28T09:00:00+00:00",
+      "verified_same_closed_15m_candle_utc": "2026-11-28T10:00:00+00:00",
       "closed_15m_quote_volume_usdt": {
-        "gate": 168975.75,
-        "bitget": 119192.0
+        "gate": 31671.81,
+        "bitget": 48991.26
       },
-      "closed_15m_price_disagreement_percent": 0.383,
+      "closed_15m_price_disagreement_percent": 0.038,
       "source_urls": {
-        "gate": "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=WLFI_USDT&interval=15m&limit=30",
-        "bitget": "https://api.bitget.com/api/v3/market/candles?category=SPOT&symbol=WLFIUSDT&interval=15m&limit=30"
-      },
-      "two_venue_ohlcv_verified": true
-    },
-    {
-      "symbol": "EVAAUSDT",
-      "quote_volume_24h_usdt": 19898729.8,
-      "abs_change_24h_percent": 3.18,
-      "gate_last_usdt": 2.0407,
-      "second_venue": "bitget",
-      "second_venue_quote_volume_24h_usdt": 6475055.34,
-      "second_venue_last_usdt": 2.0638,
-      "ticker_price_disagreement_percent": 1.132,
-      "validated_spot_venues": [
-        "gate",
-        "bitget"
-      ],
-      "verified_same_closed_15m_candle_utc": "2026-11-28T09:00:00+00:00",
-      "closed_15m_quote_volume_usdt": {
-        "gate": 853675.2,
-        "bitget": 171420.61
-      },
-      "closed_15m_price_disagreement_percent": 0.034,
-      "source_urls": {
-        "gate": "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=EVAA_USDT&interval=15m&limit=30",
-        "bitget": "https://api.bitget.com/api/v3/market/candles?category=SPOT&symbol=EVAAUSDT&interval=15m&limit=30"
+        "gate": "https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair=DGAI_USDT&interval=15m&limit=30",
+        "bitget": "https://api.bitget.com/api/v3/market/candles?category=SPOT&symbol=DGAIUSDT&interval=15m&limit=30"
       },
       "two_venue_ohlcv_verified": true
     }
@@ -75,24 +50,16 @@
     "okx"
   ],
   "diagnostics": {
-    "gate_shortlist": 22,
-    "ticker_correlated": 5,
+    "gate_shortlist": 24,
+    "ticker_correlated": 2,
     "okx_bitget_pairs": 0,
-    "candle_checked": 5,
+    "candle_checked": 2,
     "candle_rejected": [
       {
         "symbol": "BTWUSDT",
         "reason": "ValueError: gate:insufficient_closed_15m_quote_volume"
-      },
-      {
-        "symbol": "PORTALUSDT",
-        "reason": "ValueError: gate:insufficient_closed_15m_quote_volume"
-      },
-      {
-        "symbol": "BNBUSDT",
-        "reason": "ValueError: bitget:insufficient_closed_15m_quote_volume"
       }
     ],
-    "validated": 2
+    "validated": 1
   }
 }
