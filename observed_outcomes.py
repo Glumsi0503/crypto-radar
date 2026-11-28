@@ -53,7 +53,7 @@ def advance(spot, events, journal, now):
         except (ValueError,KeyError,TypeError):continue
         row={"event_id":key,"symbol":incoming["symbol"],"stage":incoming["stage"],
              "first_seen_utc":first.isoformat(),"reference_price_usdt":entry,
-             "checkpoints":{},"research_only":True}
+             "checkpoints":{},"research_only":True,"detection_context":incoming.get("detection_context"),"venues":incoming.get("venues",[])}
         items.append(row)
         indexed[key]=row
     for row in items:
